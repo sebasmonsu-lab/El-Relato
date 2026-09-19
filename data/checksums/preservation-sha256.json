@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T03:53:39+00:00",
+  "generated_at": "2026-09-19T03:58:14+00:00",
   "algorithm": "sha256",
   "files": [
     {
@@ -56,6 +56,46 @@
       "path": "vendor/SBLGNT/data/sblgnt/xml/Matt.xml",
       "sha256": "98030ff7ddec7d1b89811c912b64e52a6c6a5806048e619abc708fe19a416424",
       "size": 909675
+    },
+    {
+      "path": "vendor/SBLGNT/data/sblgntapp/text/John.txt",
+      "sha256": "fbfb6ca71bee74da2ee7f27472bd75fd03e9894e7baa42ba4c8304913b766305",
+      "size": 55512
+    },
+    {
+      "path": "vendor/SBLGNT/data/sblgntapp/text/Luke.txt",
+      "sha256": "687348bf3002146877b58e425c82697e797b81edf075c42b5e4f973984c8e212",
+      "size": 83568
+    },
+    {
+      "path": "vendor/SBLGNT/data/sblgntapp/text/Mark.txt",
+      "sha256": "25f90cb6d683f4cf4e0aa3e14931cfcf514f20e5ced8e039ea913a3050b53f35",
+      "size": 72456
+    },
+    {
+      "path": "vendor/SBLGNT/data/sblgntapp/text/Matt.txt",
+      "sha256": "c08131305cfa3885f277a0b85d0883264d9fb33c31d4afcafb87dea7b84649fc",
+      "size": 63273
+    },
+    {
+      "path": "vendor/SBLGNT/data/sblgntapp/xml/John.xml",
+      "sha256": "9be56ef52ab655bcb0abf8880db529232f800d592623226b322ae06d4d074baa",
+      "size": 73234
+    },
+    {
+      "path": "vendor/SBLGNT/data/sblgntapp/xml/Luke.xml",
+      "sha256": "392b3aefbefd625f35cf437d59ab07cc139992352435e8c0dc770b3642cf27f4",
+      "size": 109267
+    },
+    {
+      "path": "vendor/SBLGNT/data/sblgntapp/xml/Mark.xml",
+      "sha256": "119360f19dfafe085c5aa11e869087eaac84d710b72520813977e25d24b1c433",
+      "size": 92189
+    },
+    {
+      "path": "vendor/SBLGNT/data/sblgntapp/xml/Matt.xml",
+      "sha256": "c10a68e83f2506f974d7b5b450416fa10cc9acff3c64adee136349449881d40e",
+      "size": 82492
     },
     {
       "path": "vendor/STEPBible-Data/Lexicons/TBESG - Translators Brief lexicon of Extended Strongs for Greek - STEPBible.org CC BY.txt",

@@ -9,6 +9,14 @@ fe1b5a4c15db71e7e30f33fb67966ca93baffae377085ece0b88f66316729638  vendor/SBLGNT/
 960c0f7743f6ee68b7ee341991b76e14e83143eac4ba1f2df179327ec4bae8d5  vendor/SBLGNT/data/sblgnt/xml/Luke.xml
 5901ccefcd7d9aedfaf228b1f99c3a13f37b4509c1b38d16123a860247a59d76  vendor/SBLGNT/data/sblgnt/xml/Mark.xml
 98030ff7ddec7d1b89811c912b64e52a6c6a5806048e619abc708fe19a416424  vendor/SBLGNT/data/sblgnt/xml/Matt.xml
+fbfb6ca71bee74da2ee7f27472bd75fd03e9894e7baa42ba4c8304913b766305  vendor/SBLGNT/data/sblgntapp/text/John.txt
+687348bf3002146877b58e425c82697e797b81edf075c42b5e4f973984c8e212  vendor/SBLGNT/data/sblgntapp/text/Luke.txt
+25f90cb6d683f4cf4e0aa3e14931cfcf514f20e5ced8e039ea913a3050b53f35  vendor/SBLGNT/data/sblgntapp/text/Mark.txt
+c08131305cfa3885f277a0b85d0883264d9fb33c31d4afcafb87dea7b84649fc  vendor/SBLGNT/data/sblgntapp/text/Matt.txt
+9be56ef52ab655bcb0abf8880db529232f800d592623226b322ae06d4d074baa  vendor/SBLGNT/data/sblgntapp/xml/John.xml
+392b3aefbefd625f35cf437d59ab07cc139992352435e8c0dc770b3642cf27f4  vendor/SBLGNT/data/sblgntapp/xml/Luke.xml
+119360f19dfafe085c5aa11e869087eaac84d710b72520813977e25d24b1c433  vendor/SBLGNT/data/sblgntapp/xml/Mark.xml
+c10a68e83f2506f974d7b5b450416fa10cc9acff3c64adee136349449881d40e  vendor/SBLGNT/data/sblgntapp/xml/Matt.xml
 312f723d7b8ef263bbdfb0451c9b8057125804dfff390b6f8544cff2a84b57f4  vendor/STEPBible-Data/Lexicons/TBESG - Translators Brief lexicon of Extended Strongs for Greek - STEPBible.org CC BY.txt
 5f0416f7617019a6082285214903bde569a980d5fd3b88b8d7020d944e94de82  vendor/STEPBible-Data/Morphology codes/TEGMC - Translators Expansion of Greek Morphhology Codes - STEPBible.org CC BY.txt
 1179cc0de292f5ee4cbfbc5fd06331c0f1dc623e4fca93e38fbeecf5906f36d9  vendor/STEPBible-Data/Older Formats/TAGNT Mat-Jhn - Translators Amalgamated Greek NT - STEPBible.org CC-BY.txt
