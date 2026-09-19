@@ -1,13 +1,13 @@
 {
-  "tested_at": "2026-09-19T05:31:06+00:00",
-  "head": "50f10acae4d043eba7a6036e6a3145b0839e9bb2",
+  "tested_at": "2026-09-19T05:37:02+00:00",
+  "head": "237f6fa16403b14b39761803928078b0be31802b",
   "restore_test": "PASS",
   "git_fsck": "PASS",
   "git_lfs_fsck": "PASS",
   "repository_validation": "PASS",
   "query_database_rebuild": "PASS",
   "app_self_test": "PASS",
-  "bundle_bytes": 22518239,
+  "bundle_bytes": 22527100,
   "lfs_archive_bytes": 2434508800,
   "lfs_tracked_entries": 924
 }
