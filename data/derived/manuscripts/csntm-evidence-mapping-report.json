@@ -1,7 +1,8 @@
 {
-  "manuscript_images": 372,
-  "witness_attestations": 623,
-  "missing_image_files": 21,
+  "manuscript_images": 645,
+  "witness_attestations": 5834,
+  "normalized_transcription_units_processed": 5206,
+  "source_specific_missing_image_files": 21,
   "missing_samples": [
     {
       "manuscript": "P45",
@@ -89,25 +90,59 @@
     }
   ],
   "by_manuscript": {
-    "P4": {
+    "p4": {
       "images": 10,
-      "attestations": 94
+      "attestations": 94,
+      "attestations_with_images": 94,
+      "attestations_with_transcriptions": 0
     },
-    "P45": {
+    "p45": {
       "images": 215,
-      "attestations": 521
+      "attestations": 521,
+      "attestations_with_images": 521,
+      "attestations_with_transcriptions": 0
     },
-    "P52": {
+    "p52": {
       "images": 2,
-      "attestations": 5
+      "attestations": 5,
+      "attestations_with_images": 5,
+      "attestations_with_transcriptions": 5
     },
-    "P66": {
-      "images": 145,
-      "attestations": 3
+    "p66": {
+      "images": 308,
+      "attestations": 830,
+      "attestations_with_images": 3,
+      "attestations_with_transcriptions": 830
     },
-    "P104": {
+    "p75": {
+      "images": 108,
+      "attestations": 626,
+      "attestations_with_images": 0,
+      "attestations_with_transcriptions": 626
+    },
+    "p104": {
+      "images": 2,
+      "attestations": 7,
+      "attestations_with_images": 7,
+      "attestations_with_transcriptions": 0
+    },
+    "p137": {
       "images": 0,
-      "attestations": 0
+      "attestations": 6,
+      "attestations_with_images": 0,
+      "attestations_with_transcriptions": 0
+    },
+    "01": {
+      "images": 0,
+      "attestations": 3745,
+      "attestations_with_images": 0,
+      "attestations_with_transcriptions": 3745
+    },
+    "03": {
+      "images": 0,
+      "attestations": 0,
+      "attestations_with_images": 0,
+      "attestations_with_transcriptions": 0
     }
   }
 }
