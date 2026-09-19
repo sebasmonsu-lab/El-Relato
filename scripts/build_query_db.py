@@ -38,6 +38,9 @@ def main():
     apparatus=rows(Path("data/normalized/apparatus/edition-apparatus-units.jsonl"))
     manuscripts=rows(Path("data/normalized/manuscripts.jsonl"))
     sources=rows(Path("data/normalized/sources.jsonl"))
+    manuscript_images=rows(Path("data/normalized/manuscript-evidence/images.jsonl"))
+    witness_attestations=rows(Path("data/normalized/manuscript-evidence/witness-attestations.jsonl"))
+    sinaiticus_transcriptions=rows(Path("data/normalized/transcriptions/sinaiticus-gospels.jsonl"))
 
     facsimile_summary_path=ROOT/"data/derived/manuscripts/core-gospel-facsimile-mirror-summary.json"
     facsimiles=[]
@@ -152,6 +155,50 @@ def main():
       status TEXT
     );
 
+    CREATE TABLE manuscript_images (
+      id TEXT PRIMARY KEY,
+      manuscript_id TEXT NOT NULL,
+      source_id TEXT,
+      image_name TEXT,
+      local_path TEXT,
+      upstream_url TEXT,
+      sha256 TEXT,
+      size INTEGER,
+      book TEXT,
+      chapter INTEGER,
+      verse_start INTEGER,
+      verse_end INTEGER,
+      metadata_json TEXT
+    );
+
+    CREATE TABLE witness_attestations (
+      id TEXT PRIMARY KEY,
+      manuscript_id TEXT NOT NULL,
+      passage_id TEXT NOT NULL,
+      status TEXT,
+      source_id TEXT,
+      image_ids_json TEXT,
+      transcription_ids_json TEXT,
+      reading_id TEXT,
+      notes TEXT
+    );
+
+    CREATE TABLE transcriptions (
+      id TEXT PRIMARY KEY,
+      manuscript_id TEXT NOT NULL,
+      source_id TEXT,
+      book TEXT,
+      chapter INTEGER,
+      verse INTEGER,
+      passage_ids_json TEXT,
+      image_id TEXT,
+      layer TEXT,
+      format TEXT,
+      text TEXT,
+      local_path TEXT,
+      notes TEXT
+    );
+
     CREATE TABLE sources (
       id TEXT PRIMARY KEY,
       title TEXT,
@@ -212,6 +259,30 @@ def main():
          x["local_path"],x.get("width"),x.get("height"),x.get("sha256"),x.get("size"),x.get("status"))
         for x in facsimiles
     ])
+    con.executemany("INSERT INTO manuscript_images VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)",[
+        (
+          x["id"],x["manuscript_id"],x.get("source_id"),x.get("image_name"),
+          x.get("local_path"),x.get("upstream_url"),x.get("sha256"),x.get("size"),
+          x.get("book"),x.get("chapter"),x.get("verse_start"),x.get("verse_end"),j(x)
+        )
+        for x in manuscript_images
+    ])
+    con.executemany("INSERT INTO witness_attestations VALUES (?,?,?,?,?,?,?,?,?)",[
+        (
+          x["id"],x["manuscript_id"],x["passage_id"],x.get("status"),x.get("source_id"),
+          j(x.get("image_ids")),j(x.get("transcription_ids")),x.get("reading_id"),x.get("notes")
+        )
+        for x in witness_attestations
+    ])
+    con.executemany("INSERT INTO transcriptions VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)",[
+        (
+          x["id"],x["manuscript_id"],x.get("source_id"),x.get("book"),x.get("chapter"),x.get("verse"),
+          j(x.get("passage_ids")),x.get("image_id"),x.get("layer"),x.get("format"),x.get("text"),
+          x.get("local_path"),x.get("notes")
+        )
+        for x in sinaiticus_transcriptions
+    ])
+
     con.executemany("INSERT INTO sources VALUES (?,?,?,?,?,?,?,?,?,?)",[
         (x["id"],x["title"],x["category"],x.get("institution"),x["upstream_url"],x.get("external_id"),
          x.get("version"),x.get("local_path"),x.get("sha256"),x.get("capture_status"))
@@ -227,12 +298,26 @@ def main():
     CREATE INDEX idx_strong_ext_e ON strong_extended(e_strong);
     CREATE INDEX idx_strong_ext_d ON strong_extended(d_strong_id);
     CREATE INDEX idx_strong_orig_id ON strong_original(strong_id);
+    CREATE INDEX idx_ms_images_ms ON manuscript_images(manuscript_id);
+    CREATE INDEX idx_ms_images_ref ON manuscript_images(book,chapter,verse_start,verse_end);
+    CREATE INDEX idx_attest_passage ON witness_attestations(passage_id);
+    CREATE INDEX idx_attest_ms ON witness_attestations(manuscript_id);
+    CREATE INDEX idx_tx_ref ON transcriptions(book,chapter,verse);
+    CREATE INDEX idx_tx_ms ON transcriptions(manuscript_id);
 
     CREATE VIEW token_analysis AS
       SELECT token_id,book,chapter,verse,position,surface,textual_status,
              strongs,lemma,morphology_code,morphology_known,gloss,
              spanish_translation,sub_meaning,match_method,strong_original_id
       FROM tokens;
+
+    CREATE VIEW passage_evidence AS
+      SELECT a.passage_id,a.manuscript_id,a.status,
+             a.image_ids_json,a.transcription_ids_json,
+             m.label AS manuscript_label,m.ga_id,
+             m.primary_source
+      FROM witness_attestations a
+      LEFT JOIN manuscripts m ON m.id=a.manuscript_id;
     """)
     con.commit()
 
@@ -245,6 +330,9 @@ def main():
         "edition_apparatus_units":con.execute("SELECT count(*) FROM edition_apparatus").fetchone()[0],
         "manuscripts":con.execute("SELECT count(*) FROM manuscripts").fetchone()[0],
         "facsimiles":con.execute("SELECT count(*) FROM facsimiles").fetchone()[0],
+        "manuscript_images":con.execute("SELECT count(*) FROM manuscript_images").fetchone()[0],
+        "witness_attestations":con.execute("SELECT count(*) FROM witness_attestations").fetchone()[0],
+        "transcription_units":con.execute("SELECT count(*) FROM transcriptions").fetchone()[0],
         "database_bytes":out.stat().st_size,
     }
     con.close()
