@@ -1,0 +1,767 @@
+{
+  "source": "sinaiticus_full_v195.xml",
+  "books": [
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B0-00-FRAG",
+        "n": "0",
+        "type": "book",
+        "title": "Fragments"
+      },
+      "title": null,
+      "verses": 1,
+      "words": 889,
+      "pages": 0
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B1-01-GEN",
+        "n": "1",
+        "type": "book",
+        "title": "Γένεϲιϲ"
+      },
+      "title": null,
+      "verses": 73,
+      "words": 1245,
+      "pages": 3
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B2-02-LEV",
+        "n": "2",
+        "type": "book",
+        "title": "Λευϊτικόν"
+      },
+      "title": null,
+      "verses": 55,
+      "words": 1209,
+      "pages": 1
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B3-03-NUM",
+        "n": "3",
+        "type": "book",
+        "title": "Ἀριθμοί"
+      },
+      "title": null,
+      "verses": 216,
+      "words": 4933,
+      "pages": 9
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B4-04-DEUT",
+        "n": "4",
+        "type": "book",
+        "title": "Δευτερονόμιον"
+      },
+      "title": null,
+      "verses": 87,
+      "words": 2482,
+      "pages": 3
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B5-05-JOSH",
+        "n": "5",
+        "type": "book",
+        "title": "Ἰηϲοῦϲ"
+      },
+      "title": null,
+      "verses": 55,
+      "words": 823,
+      "pages": 1
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B6-06-JUDG",
+        "n": "6",
+        "type": "book",
+        "title": "Κρίται"
+      },
+      "title": null,
+      "verses": 228,
+      "words": 5789,
+      "pages": 11
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B70-07-1CHR",
+        "n": "70",
+        "type": "book",
+        "title": "Παραλειπομένων Α"
+      },
+      "title": null,
+      "verses": 18,
+      "words": 322,
+      "pages": 1
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B7-07-1CHR",
+        "n": "7",
+        "type": "book",
+        "title": "Παραλειπομένων Α"
+      },
+      "title": null,
+      "verses": 283,
+      "words": 5416,
+      "pages": 9
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B8-08-2ESD",
+        "n": "8",
+        "type": "book",
+        "title": "Ἔϲδραϲ β"
+      },
+      "title": null,
+      "verses": 456,
+      "words": 10094,
+      "pages": 17
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B9-09-EST",
+        "n": "9",
+        "type": "book",
+        "title": "Ἐϲθήρ"
+      },
+      "title": null,
+      "verses": 254,
+      "words": 7202,
+      "pages": 12
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B10-10-TOB",
+        "n": "10",
+        "type": "book",
+        "title": "Τωβείθ"
+      },
+      "title": null,
+      "verses": 235,
+      "words": 7364,
+      "pages": 14
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B11-11-JDT",
+        "n": "11",
+        "type": "book",
+        "title": "Ἰουδίθ"
+      },
+      "title": null,
+      "verses": 328,
+      "words": 8825,
+      "pages": 17
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B12-12-1MACC",
+        "n": "12",
+        "type": "book",
+        "title": "Μακκαβαίων Α"
+      },
+      "title": null,
+      "verses": 925,
+      "words": 19566,
+      "pages": 35
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B13-13-4MACC",
+        "n": "13",
+        "type": "book",
+        "title": "Μακκαβαίων Δ"
+      },
+      "title": null,
+      "verses": 480,
+      "words": 8460,
+      "pages": 15
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B14-14-ISA",
+        "n": "14",
+        "type": "book",
+        "title": "Ἠϲαΐαϲ"
+      },
+      "title": null,
+      "verses": 1290,
+      "words": 33149,
+      "pages": 52
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B15-15-JER",
+        "n": "15",
+        "type": "book",
+        "title": "Ιερεμίαϲ"
+      },
+      "title": null,
+      "verses": 1298,
+      "words": 33241,
+      "pages": 57
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B16-16-LAM",
+        "n": "16",
+        "type": "book",
+        "title": "Θρῆνοι Ἰερεμίου"
+      },
+      "title": null,
+      "verses": 43,
+      "words": 1403,
+      "pages": 2
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B17-17-JOEL",
+        "n": "17",
+        "type": "book",
+        "title": "Ἰωήλ"
+      },
+      "title": null,
+      "verses": 74,
+      "words": 1948,
+      "pages": 3
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B18-18-OBAD",
+        "n": "18",
+        "type": "book",
+        "title": "Ὀβδιού"
+      },
+      "title": null,
+      "verses": 22,
+      "words": 580,
+      "pages": 1
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B19-19-JONAH",
+        "n": "19",
+        "type": "book",
+        "title": "Ἰωνᾶς"
+      },
+      "title": null,
+      "verses": 49,
+      "words": 1348,
+      "pages": 2
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B20-20-NAH",
+        "n": "20",
+        "type": "book",
+        "title": "Ναούμ"
+      },
+      "title": null,
+      "verses": 48,
+      "words": 1197,
+      "pages": 2
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B21-21-HAB",
+        "n": "21",
+        "type": "book",
+        "title": "Ἀμβακούμ"
+      },
+      "title": null,
+      "verses": 57,
+      "words": 1382,
+      "pages": 2
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B22-22-ZEPH",
+        "n": "22",
+        "type": "book",
+        "title": "Σοφονίας"
+      },
+      "title": null,
+      "verses": 54,
+      "words": 1530,
+      "pages": 2
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B23-23-HAG",
+        "n": "23",
+        "type": "book",
+        "title": "Ἀγγαῖος"
+      },
+      "title": null,
+      "verses": 39,
+      "words": 1109,
+      "pages": 1
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B24-24-ZECH",
+        "n": "24",
+        "type": "book",
+        "title": "Ζαχαρίας"
+      },
+      "title": null,
+      "verses": 212,
+      "words": 6155,
+      "pages": 9
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B25-25-MAL",
+        "n": "25",
+        "type": "book",
+        "title": "Μαλαχίας"
+      },
+      "title": null,
+      "verses": 56,
+      "words": 1702,
+      "pages": 3
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B26-26-PS",
+        "n": "26",
+        "type": "book",
+        "title": "Ψαλμοί"
+      },
+      "title": null,
+      "verses": 2533,
+      "words": 37408,
+      "pages": 80
+    },
+    {
+      "attributes": {
+        "type": "book",
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B27-27-PROV",
+        "n": "27",
+        "title": "Παροιμίαι"
+      },
+      "title": null,
+      "verses": 894,
+      "words": 11841,
+      "pages": 28
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B28-28-ECCL",
+        "n": "28",
+        "type": "book",
+        "title": "Ἐκκλησιαστής"
+      },
+      "title": null,
+      "verses": 223,
+      "words": 4832,
+      "pages": 10
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B29-29-CANT",
+        "n": "29",
+        "type": "book",
+        "title": "Ἄσμα"
+      },
+      "title": null,
+      "verses": 118,
+      "words": 2378,
+      "pages": 6
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B30-30-WIS",
+        "n": "30",
+        "type": "book",
+        "title": "Σοφία Σαλoμῶντος"
+      },
+      "title": null,
+      "verses": 436,
+      "words": 7640,
+      "pages": 18
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B31-31-SIR",
+        "n": "31",
+        "type": "book",
+        "title": "Σοφία Σειράχ"
+      },
+      "title": null,
+      "verses": 1404,
+      "words": 20235,
+      "pages": 50
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B32-32-JOB",
+        "n": "32",
+        "type": "book",
+        "title": "Ἰώβ"
+      },
+      "title": null,
+      "verses": 1070,
+      "words": 14583,
+      "pages": 28
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B33-33-MATT",
+        "n": "33",
+        "type": "book",
+        "title": "Κατὰ Μαθθαῖον"
+      },
+      "title": null,
+      "verses": 1069,
+      "words": 19641,
+      "pages": 34
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B34-34-MARK",
+        "n": "34",
+        "type": "book",
+        "title": "Κατὰ Μάρκον"
+      },
+      "title": null,
+      "verses": 662,
+      "words": 11749,
+      "pages": 21
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B35-35-LUKE",
+        "n": "35",
+        "type": "book",
+        "title": "Κατὰ Λουκᾶν"
+      },
+      "title": null,
+      "verses": 1151,
+      "words": 21119,
+      "pages": 37
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B36-36-JOHN",
+        "n": "36",
+        "type": "book",
+        "title": "Κατὰ Ἰωάννην"
+      },
+      "title": null,
+      "verses": 867,
+      "words": 16896,
+      "pages": 26
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B37-37-ROM",
+        "n": "37",
+        "type": "book",
+        "title": "Πρὸς Ρωμαίους"
+      },
+      "title": null,
+      "verses": 433,
+      "words": 7397,
+      "pages": 13
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B38-38-1COR",
+        "n": "38",
+        "type": "book",
+        "title": "Πρὸς Κορινθίους Α´"
+      },
+      "title": null,
+      "verses": 438,
+      "words": 7174,
+      "pages": 13
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B39-39-2COR",
+        "n": "39",
+        "type": "book",
+        "title": "Πρὸς Κορινθίους Β´"
+      },
+      "title": null,
+      "verses": 257,
+      "words": 4685,
+      "pages": 9
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B40-40-GAL",
+        "n": "40",
+        "type": "book",
+        "title": "Πρὸς Γαλατάς"
+      },
+      "title": null,
+      "verses": 150,
+      "words": 2310,
+      "pages": 4
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B41-41-EPH",
+        "n": "41",
+        "type": "book",
+        "title": "Πρὸς Εφεσίους"
+      },
+      "title": null,
+      "verses": 156,
+      "words": 2580,
+      "pages": 5
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B42-42-PHIL",
+        "n": "42",
+        "type": "book",
+        "title": "Πρὸς Φιλιππησίους"
+      },
+      "title": null,
+      "verses": 105,
+      "words": 1725,
+      "pages": 3
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B43-43-COL",
+        "n": "43",
+        "type": "book",
+        "title": "Πρὸϲ Κολοσσαεῖς"
+      },
+      "title": null,
+      "verses": 96,
+      "words": 1712,
+      "pages": 3
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B44-44-1THESS",
+        "n": "44",
+        "type": "book",
+        "title": "Πρὸς Θεσσαλονικεῖς Α´"
+      },
+      "title": null,
+      "verses": 90,
+      "words": 1571,
+      "pages": 2
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B45-45-2THESS",
+        "n": "45",
+        "type": "book",
+        "title": "Πρὸς Θεσσαλονικεῖς Β´"
+      },
+      "title": null,
+      "verses": 48,
+      "words": 870,
+      "pages": 1
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B46-46-HEB",
+        "n": "46",
+        "type": "book",
+        "title": "Πρὸς Ἑβραίους"
+      },
+      "title": null,
+      "verses": 304,
+      "words": 5189,
+      "pages": 10
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B47-47-1TIM",
+        "n": "47",
+        "type": "book",
+        "title": "Πρὸς Τιμόθεον Α´"
+      },
+      "title": null,
+      "verses": 114,
+      "words": 1652,
+      "pages": 3
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B48-48-2TIM",
+        "n": "48",
+        "type": "book",
+        "title": "Πρὸς Τιμόθεον Β´"
+      },
+      "title": null,
+      "verses": 84,
+      "words": 1283,
+      "pages": 3
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B49-49-TITUS",
+        "n": "49",
+        "type": "book",
+        "title": "Πρὸς Τίτον"
+      },
+      "title": null,
+      "verses": 47,
+      "words": 696,
+      "pages": 1
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B50-50-PHLM",
+        "n": "50",
+        "type": "book",
+        "title": "Πρὸς Φιλήμονα"
+      },
+      "title": null,
+      "verses": 26,
+      "words": 351,
+      "pages": 1
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B51-51-ACTS",
+        "n": "51",
+        "type": "book",
+        "title": "Πράξεις Ἀποστόλων"
+      },
+      "title": null,
+      "verses": 1003,
+      "words": 19092,
+      "pages": 36
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B52-52-JAS",
+        "n": "52",
+        "type": "book",
+        "title": "Ἰακώβου"
+      },
+      "title": null,
+      "verses": 109,
+      "words": 1808,
+      "pages": 3
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B53-53-1PET",
+        "n": "53",
+        "type": "book",
+        "title": "Πέτρου Α´"
+      },
+      "title": null,
+      "verses": 106,
+      "words": 1820,
+      "pages": 4
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B54-54-2PET",
+        "n": "54",
+        "type": "book",
+        "title": "Πέτρου Β´"
+      },
+      "title": null,
+      "verses": 62,
+      "words": 1148,
+      "pages": 2
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B55-55-1JOHN",
+        "n": "55",
+        "type": "book",
+        "title": "Ἰωάννου Α´"
+      },
+      "title": null,
+      "verses": 106,
+      "words": 2200,
+      "pages": 4
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B56-56-2JOHN",
+        "n": "56",
+        "type": "book",
+        "title": "Ἰωάννου Β´"
+      },
+      "title": null,
+      "verses": 14,
+      "words": 264,
+      "pages": 1
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B57-57-3JOHN",
+        "n": "57",
+        "type": "book",
+        "title": "Ἰωάννου Γ´"
+      },
+      "title": null,
+      "verses": 16,
+      "words": 222,
+      "pages": 0
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B58-58-JUDE",
+        "n": "58",
+        "type": "book",
+        "title": "Ἰούδα"
+      },
+      "title": null,
+      "verses": 26,
+      "words": 497,
+      "pages": 1
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B59-59-REV",
+        "n": "59",
+        "type": "book",
+        "title": "Ἀποκάλυψις Ἰωάννου"
+      },
+      "title": null,
+      "verses": 406,
+      "words": 10421,
+      "pages": 17
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B60-60-BARN",
+        "n": "60",
+        "type": "book",
+        "title": "Βαρναβᾶ ἐπιϲτολή"
+      },
+      "title": null,
+      "verses": 195,
+      "words": 7027,
+      "pages": 13
+    },
+    {
+      "attributes": {
+        "{http://www.w3.org/XML/1998/namespace}id": "B-B61-61-HERM",
+        "n": "61",
+        "type": "book",
+        "title": "Ὁ Ποιμήν τοῦ Ἑρμά"
+      },
+      "title": null,
+      "verses": 250,
+      "words": 9951,
+      "pages": 17
+    }
+  ],
+  "totals": {
+    "books": 63,
+    "pages": 823,
+    "verses": 22004,
+    "words": 431330
+  }
+}
