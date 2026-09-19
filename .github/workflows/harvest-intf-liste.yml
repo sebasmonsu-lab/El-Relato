@@ -12,6 +12,7 @@ permissions:
 jobs:
   harvest:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - name: Checkout El-Relato
         uses: actions/checkout@v4
@@ -24,7 +25,7 @@ jobs:
       - name: Install HTTP dependency
         run: python -m pip install --disable-pip-version-check requests
 
-      - name: Capture official INTF Liste responses
+      - name: Capture official INTF Liste responses adaptively
         shell: bash
         run: |
           python - <<'PY'
@@ -32,6 +33,7 @@ jobs:
           import datetime as dt
           import hashlib
           import json
+          import time
           from pathlib import Path
           import requests
 
@@ -41,61 +43,126 @@ jobs:
           RAW.mkdir(parents=True, exist_ok=True)
 
           session = requests.Session()
-          session.headers.update({"User-Agent": "El-Relato-research-preservation/1.0"})
+          session.headers.update({
+              "User-Agent": "El-Relato-research-preservation/1.0",
+              "Accept-Encoding": "identity",
+          })
 
-          queries = []
-          for book in ["Matt", "Mark", "Luke", "John"]:
-              queries.append({
-                  "name": f"papyri-{book.lower()}",
-                  "params": {
-                      "indexContent": book,
-                      "docID": "10000-19999",
-                      "detail": "document",
-                      "format": "json",
-                      "limit": "10000",
-                  },
-              })
-              queries.append({
-                  "name": f"majuscules-through-v-{book.lower()}",
-                  "params": {
-                      "indexContent": book,
-                      "docID": "20000-29999",
-                      "dateMax": "599",
-                      "detail": "document",
-                      "format": "json",
-                      "limit": "10000",
-                  },
-              })
+          def get(params, timeout=75, attempts=4):
+              last = None
+              for attempt in range(1, attempts + 1):
+                  try:
+                      r = session.get(API, params=params, timeout=timeout)
+                      r.raise_for_status()
+                      return r
+                  except Exception as exc:
+                      last = exc
+                      if attempt < attempts:
+                          time.sleep(2 ** (attempt - 1))
+              raise last
+
+          def extract_count(payload):
+              try:
+                  obj = json.loads(payload)
+              except Exception:
+                  return None
+              if isinstance(obj, int):
+                  return obj
+              if isinstance(obj, list):
+                  return len(obj)
+              if isinstance(obj, dict):
+                  for key in ("count", "total", "totalCount", "resultCount", "documentCount"):
+                      val = obj.get(key)
+                      if isinstance(val, int):
+                          return val
+                      if isinstance(val, str) and val.isdigit():
+                          return int(val)
+                  # Search one level deeper for a conventional count key.
+                  for val in obj.values():
+                      if isinstance(val, dict):
+                          for key in ("count", "total", "totalCount", "resultCount", "documentCount"):
+                              n = val.get(key)
+                              if isinstance(n, int):
+                                  return n
+                              if isinstance(n, str) and n.isdigit():
+                                  return int(n)
+              return None
 
           manifest = {
               "source": "INTF Kurzgefasste Liste / NTVMR",
               "api": API,
               "captured_at_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
-              "queries": [],
+              "method": "adaptive docID range subdivision; broad count probes, then document-level captures",
+              "scope": {
+                  "papyri": "all docIDs 10000-19999 containing Matt/Mark/Luke/John",
+                  "majuscules": "all docIDs 20000-29999 containing Matt/Mark/Luke/John with dateMax=499",
+              },
+              "captures": [],
           }
 
-          for q in queries:
-              r = session.get(API, params=q["params"], timeout=120)
-              r.raise_for_status()
-              payload = r.content
-              path = RAW / f"{q['name']}.json"
-              # Preserve exact HTTP response bytes first.
-              path.write_bytes(payload)
-              manifest["queries"].append({
-                  "name": q["name"],
+          def capture_range(book, kind, lo, hi, extra):
+              base = {
+                  "indexContent": book,
+                  "docID": f"{lo}-{hi}",
+                  "format": "json",
+                  **extra,
+              }
+
+              # Fast count probe. If INTF does not expose a parseable count,
+              # recursively subdivide by docID until the range is small.
+              count_params = {**base, "detail": "count"}
+              count_resp = get(count_params, timeout=45)
+              count = extract_count(count_resp.content)
+
+              # Empty count is definitive.
+              if count == 0:
+                  return
+
+              width = hi - lo + 1
+              should_split = (count is None and width > 100) or (count is not None and count > 30 and width > 25)
+
+              if should_split:
+                  mid = (lo + hi) // 2
+                  capture_range(book, kind, lo, mid, extra)
+                  capture_range(book, kind, mid + 1, hi, extra)
+                  return
+
+              params = {**base, "detail": "document", "limit": "250"}
+              try:
+                  r = get(params, timeout=90)
+              except requests.exceptions.ReadTimeout:
+                  if width <= 1:
+                      raise
+                  mid = (lo + hi) // 2
+                  capture_range(book, kind, lo, mid, extra)
+                  capture_range(book, kind, mid + 1, hi, extra)
+                  return
+
+              name = f"{kind}-{book.lower()}-{lo}-{hi}.json"
+              path = RAW / name
+              path.write_bytes(r.content)
+              manifest["captures"].append({
+                  "book": book,
+                  "kind": kind,
+                  "docID_range": f"{lo}-{hi}",
+                  "count_probe": count,
                   "request_url": r.url,
                   "status_code": r.status_code,
                   "content_type": r.headers.get("Content-Type"),
-                  "bytes": len(payload),
-                  "sha256": hashlib.sha256(payload).hexdigest(),
+                  "bytes": len(r.content),
+                  "sha256": hashlib.sha256(r.content).hexdigest(),
                   "local_path": str(path),
               })
+
+          for book in ["Matt", "Mark", "Luke", "John"]:
+              capture_range(book, "papyri", 10000, 19999, {})
+              capture_range(book, "majuscules-through-v", 20000, 29999, {"dateMax": "499"})
 
           (ROOT / "capture-manifest.json").write_text(
               json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
               encoding="utf-8",
           )
-          print(json.dumps(manifest, indent=2))
+          print(f"Captured {len(manifest['captures'])} non-empty/raw INTF result blocks")
           PY
 
       - name: Commit INTF raw catalogue capture
