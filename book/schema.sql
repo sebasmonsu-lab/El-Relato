@@ -132,3 +132,34 @@ FROM (
     ORDER BY u.global_order
 )
 GROUP BY edition_id;
+
+CREATE TABLE translation_runs (
+    run_id TEXT PRIMARY KEY,
+    edition_id TEXT NOT NULL REFERENCES editions(edition_id) ON DELETE CASCADE,
+    baseline_edition_id TEXT NOT NULL REFERENCES editions(edition_id),
+    provider TEXT NOT NULL,
+    model_name TEXT NOT NULL,
+    policy_id TEXT NOT NULL,
+    policy_sha256 TEXT NOT NULL,
+    target_locale TEXT NOT NULL,
+    units_expected INTEGER NOT NULL,
+    units_generated INTEGER NOT NULL,
+    generated_at TEXT NOT NULL,
+    status TEXT NOT NULL,
+    notes TEXT
+);
+
+CREATE TABLE translation_unit_audit (
+    edition_id TEXT NOT NULL REFERENCES editions(edition_id) ON DELETE CASCADE,
+    unit_id TEXT NOT NULL REFERENCES units(unit_id) ON DELETE CASCADE,
+    baseline_edition_id TEXT NOT NULL REFERENCES editions(edition_id),
+    source_text_sha256 TEXT NOT NULL,
+    output_text_sha256 TEXT NOT NULL,
+    policy_sha256 TEXT NOT NULL,
+    model_name TEXT NOT NULL,
+    PRIMARY KEY (edition_id, unit_id)
+);
+
+CREATE INDEX idx_translation_runs_edition ON translation_runs(edition_id);
+CREATE INDEX idx_translation_audit_unit ON translation_unit_audit(unit_id);
+
