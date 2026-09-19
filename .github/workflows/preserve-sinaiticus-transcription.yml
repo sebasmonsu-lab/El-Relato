@@ -1,0 +1,65 @@
+name: Preserve Codex Sinaiticus transcription releases
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+on:
+  push:
+    paths:
+      - ".github/workflows/preserve-sinaiticus-transcription.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  preserve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          lfs: true
+
+      - name: Setup Git LFS and provenance identity
+        shell: bash
+        run: |
+          git lfs install
+          git lfs track "sources/manuscripts/Sinaiticus/transcription/raw/*.xml"
+          git config user.name "El-Relato Bot"
+          git config user.email "el-relato-bot@users.noreply.github.com"
+
+      - name: Clone academic transcription source
+        shell: bash
+        run: |
+          rm -rf /tmp/codex-sinaiticus
+          git clone --depth 1 https://github.com/itsee-birmingham/codex-sinaiticus.git /tmp/codex-sinaiticus
+          mkdir -p sources/manuscripts/Sinaiticus/transcription/raw
+          mkdir -p sources/manuscripts/Sinaiticus/transcription/metadata
+
+          cp /tmp/codex-sinaiticus/README.md sources/manuscripts/Sinaiticus/transcription/metadata/upstream-README.md
+          cp /tmp/codex-sinaiticus/license.md sources/manuscripts/Sinaiticus/transcription/metadata/license.md
+          cp /tmp/codex-sinaiticus/tei_all_sinaiticus.dtd sources/manuscripts/Sinaiticus/transcription/metadata/tei_all_sinaiticus.dtd
+          cp /tmp/codex-sinaiticus/XMLspecs_sinaiticus.pdf sources/manuscripts/Sinaiticus/transcription/metadata/XMLspecs_sinaiticus.pdf
+
+          cp /tmp/codex-sinaiticus/archive/FINAL_TRANSCRIPTION_version100_July2009.xml sources/manuscripts/Sinaiticus/transcription/raw/
+          cp /tmp/codex-sinaiticus/archive/FINAL_TRANSCRIPTION_version101_Oct2010.xml sources/manuscripts/Sinaiticus/transcription/raw/
+          cp /tmp/codex-sinaiticus/archive/FINAL_TRANSCRIPTION_version102_June2011.xml sources/manuscripts/Sinaiticus/transcription/raw/
+          cp /tmp/codex-sinaiticus/archive/FINAL_TRANSCRIPTION_version103_March2014.xml sources/manuscripts/Sinaiticus/transcription/raw/
+          cp /tmp/codex-sinaiticus/archive/FINAL_TRANSCRIPTION_version104_March2014.xml sources/manuscripts/Sinaiticus/transcription/raw/
+          cp /tmp/codex-sinaiticus/archive/FINAL_TRANSCRIPTION_version105.xml sources/manuscripts/Sinaiticus/transcription/raw/
+          cp /tmp/codex-sinaiticus/archive/sinaiticus_full_v194.xml sources/manuscripts/Sinaiticus/transcription/raw/
+          cp /tmp/codex-sinaiticus/sinaiticus_full_v195.xml sources/manuscripts/Sinaiticus/transcription/raw/
+
+          UPSTREAM_COMMIT=$(git -C /tmp/codex-sinaiticus rev-parse HEAD)
+          printf '%s\n' "$UPSTREAM_COMMIT" > sources/manuscripts/Sinaiticus/transcription/metadata/upstream-commit.txt
+          sha256sum sources/manuscripts/Sinaiticus/transcription/raw/*.xml             > sources/manuscripts/Sinaiticus/transcription/metadata/SHA256SUMS.txt
+
+      - name: Commit preserved transcription history
+        shell: bash
+        run: |
+          git add .gitattributes sources/manuscripts/Sinaiticus/transcription
+          git commit -m "Preserve complete Codex Sinaiticus transcription releases"
+          bash scripts/push_generated_commit.sh
