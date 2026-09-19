@@ -54,7 +54,7 @@ jobs:
           ]
 
           session = requests.Session()
-          session.headers.update({"User-Agent": "El-Relato-preservation/1.0"})
+          session.headers.update({"User-Agent": "El-Relato-preservation/1.0", "Accept-Encoding": "identity"})
           manifest = {
               "source": "https://github.com/STEPBible/STEPBible-Data",
               "upstream_tree": "b99716b0cddb648ddb95cc786a197180f2f97d48",
