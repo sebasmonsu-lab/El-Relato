@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T05:32:14+00:00",
+  "generated_at": "2026-09-19T05:36:49+00:00",
   "overall": "PASS_WITH_BLOCKERS",
   "counts": {
     "pass": 22,
@@ -434,8 +434,8 @@
       "title": "Source license/permission registry",
       "detail": null,
       "metrics": {
-        "sources": 23,
-        "license_entries": 23
+        "sources": 24,
+        "license_entries": 24
       }
     },
     {

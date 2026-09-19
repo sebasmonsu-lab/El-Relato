@@ -1,6 +1,6 @@
 # El-Relato — Audit Report
 
-Generated: 2026-09-19T05:32:14+00:00
+Generated: 2026-09-19T05:36:49+00:00
 
 **Overall: PASS_WITH_BLOCKERS**
 
@@ -381,8 +381,8 @@ Raw scholarly TEI is preserved and a diplomatic verse-level view is regenerated 
 ### ✅ integrity:license-registry — Source license/permission registry
 ~~~json
 {
-  "sources": 23,
-  "license_entries": 23
+  "sources": 24,
+  "license_entries": 24
 }
 ~~~
 
