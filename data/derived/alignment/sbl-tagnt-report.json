@@ -13,8 +13,8 @@
     "double-bracketed-exact": 330
   },
   "low_confidence_positional_links": 639,
-  "links_with_unknown_morphology_code": 127,
-  "unique_unknown_morphology_codes": 17,
+  "links_with_unknown_morphology_code": 0,
+  "unique_unknown_morphology_codes": 0,
   "links_with_strong_but_no_tbesg_entry": 0,
   "links_with_strong_original": 64452,
   "verses_total": 3768,
