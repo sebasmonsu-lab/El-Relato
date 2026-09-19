@@ -1,0 +1,30 @@
+name: Export book database
+
+on:
+  push:
+    paths:
+      - ".github/workflows/export-book-db.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          lfs: false
+      - name: Verify canonical book DB
+        run: |
+          test -f book/el-relato-book.sqlite
+          sqlite3 book/el-relato-book.sqlite ".tables"
+          sqlite3 book/el-relato-book.sqlite "PRAGMA integrity_check;"
+      - name: Upload canonical book DB
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-book-sqlite
+          path: book/el-relato-book.sqlite
+          retention-days: 2
