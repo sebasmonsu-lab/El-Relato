@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://el-relato.local/schemas/source.schema.json",
+  "title": "Source",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "category",
+    "upstream_url",
+    "capture_status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^src:"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "category": {
+      "enum": [
+        "manuscript_facsimile",
+        "manuscript_transcription",
+        "critical_text",
+        "lexicon",
+        "morphology",
+        "apparatus",
+        "translation",
+        "metadata",
+        "other"
+      ]
+    },
+    "institution": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "upstream_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "external_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "upstream_commit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "license_declared": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "captured_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "local_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-fA-F0-9]{64}$"
+    },
+    "capture_status": {
+      "enum": [
+        "registered",
+        "partial",
+        "mirrored",
+        "blocked"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
