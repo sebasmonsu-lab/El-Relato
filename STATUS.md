@@ -4,7 +4,7 @@
 
 ## Estado general
 **Estado:** versión interna auditable en cierre.  
-**Auditoría vigente:** PASS_WITH_BLOCKERS — 22 PASS / 4 WARN / 0 FAIL.
+**Auditoría vigente:** PASS_WITH_BLOCKERS — 24 PASS / 3 WARN / 0 FAIL.
 
 Regla operativa: todo bloqueo queda explícito; nada desaparece por fallar.
 
@@ -44,7 +44,8 @@ Regla operativa: todo bloqueo queda explícito; nada desaparece por fallar.
 - [x] Git bundle + Git LFS restore test completo.
 - [x] Restore test: git fsck PASS, git-lfs fsck PASS, validation PASS, DB rebuild PASS, app PASS.
 - [x] Auditoría actual con 0 FAIL.
-- [x] 10 epics cerrados como completed.
+- [x] EPIC 08 cerrado: variantes textuales implementadas a nivel versículo con provenance explícito.
+- [x] EPIC 13 cerrado: backup independiente fuera de GitHub verificado en Google Drive.
 
 ## Limitaciones auditadas
 
@@ -67,24 +68,28 @@ Regla operativa: todo bloqueo queda explícito; nada desaparece por fallar.
 **Estado:** harvest individual por docID en ejecución. Las consultas amplias fallaron por timeout.  
 Si esta ejecución no termina, queda bloqueado para reanudar con checkpoints aún más pequeños.
 
-### B-004 — backup independiente fuera de GitHub
-**Objetivo:** copia restaurable en segundo almacenamiento.
+### B-004 — backup independiente fuera de GitHub — RESUELTO
+**Estado:** copia restaurable independiente verificada en Google Drive.
 
-**Estado:** restore local/CI probado. El artifact único de 2,46 GB excedió el límite de 512 MB del conector.  
-Se agregó fragmentación en partes de 450 MB para transferir a Google Drive. Workflow en ejecución.
+- Git bundle preservado;
+- archivo LFS completo fragmentado en 26 partes;
+- 27 archivos verificados en el destino externo;
+- restore CI: git fsck PASS, git-lfs fsck PASS, validation PASS, DB rebuild PASS, app PASS;
+- manifiesto: `data/derived/backup/independent-backup.json`.
 
-### B-005 — aparato manuscrito exhaustivo
-El repositorio ya conserva:
-- aparato SBLGNT entre ediciones;
-- witness attestations;
-- transcripciones de varios testigos.
+### B-005 — aparato manuscrito exhaustivo — ROADMAP
+La infraestructura de variantes ya está implementada y EPIC 08 está cerrado:
+- 777 variant units versículo-a-versículo;
+- readings con testigos;
+- provenance explícito;
+- ninguna variante inferida desde traducciones.
 
-Todavía no se declara equivalente a un aparato crítico manuscrito exhaustivo ECM/NA/INTF. EPIC 08 permanece abierto.
+La extensión a un aparato exhaustivo segment-level equivalente en alcance a ECM/NA/INTF queda como roadmap de investigación en issue #15 y no bloquea la versión interna.
 
 ## Release
 - [x] RELEASE_NOTES_v0.1.0-internal.md preparado.
-- [ ] tag `v0.1.0-internal` y release privado: workflow en cola/ejecución.
-- [ ] EPIC 14 se cierra después de confirmar tag/release.
+- [x] tag `v0.1.0-internal` y release interno creados correctamente.
+- [x] Release interno auditable disponible; `main` contiene mejoras posteriores (Book DB griega y backup externo).
 
 ## Regla de cierre
 La versión interna puede liberarse con WARN/BLOCKERS, pero nunca con FAIL.  
