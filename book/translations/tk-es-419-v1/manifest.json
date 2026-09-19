@@ -1,0 +1,16 @@
+{
+  "edition_id": "edition:el-relato:tk-es-419:v1",
+  "baseline_edition_id": "edition:el-relato:grc-sblgnt-2010:v1",
+  "book_id": "book:el-relato",
+  "family": "TK",
+  "code": "tk-es-419-v1",
+  "language_code": "es",
+  "locale": "es-419",
+  "title": "El Relato — Español Latinoamericano IA V1",
+  "version": "1",
+  "status": "generating",
+  "provider": "GitHub Models",
+  "model_name": "pending",
+  "units_expected": 4123,
+  "review_required": true
+}

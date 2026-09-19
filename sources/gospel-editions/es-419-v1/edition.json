@@ -1,0 +1,12 @@
+{
+  "edition_id": "edition:gospels:es-419:v1",
+  "title": "Evangelios — Español Latinoamericano IA V1",
+  "language_code": "es",
+  "version": "1",
+  "status": "draft",
+  "kind": "translation",
+  "base_edition_id": "edition:gospels:grc-sblgnt-2010:v1",
+  "materialization": "verses-jsonl",
+  "publication": "private",
+  "notes": "AI translation directly from Greek SBLGNT source; español latinoamericano contemporáneo, natural para México, Colombia y comunidades hispanohablantes de Estados Unidos; usa ustedes, evita voseo, españolismos y arcaísmos innecesarios; human review required."
+}
