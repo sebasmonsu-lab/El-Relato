@@ -1,5 +1,9 @@
 name: Sample STEPBible preserved datasets
 
+concurrency:
+  group: el-relato-writers
+  cancel-in-progress: false
+
 on:
   push:
     paths:
@@ -15,6 +19,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Produce deterministic format samples
         shell: bash
