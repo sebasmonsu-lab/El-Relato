@@ -7,6 +7,8 @@ on:
       - "book/data/**"
       - "book/schema.sql"
       - "scripts/build_book_db.py"
+      - "scripts/apply_tk_es419.py"
+      - "book/translations/tk-es-419/**"
       - "data/normalized/sblgnt/edition-verses.jsonl"
       - "data/normalized/sblgnt/tokens.jsonl"
       - ".github/workflows/build-book-db.yml"
@@ -36,6 +38,9 @@ jobs:
       - name: Build SQLite
         run: python scripts/build_book_db.py
 
+      - name: Apply TK es-419 V0.1 pilot
+        run: python scripts/apply_tk_es419.py
+
       - name: Verify SQLite
         run: |
           python - <<'PY'
@@ -61,6 +66,14 @@ jobs:
           print("PASS", expected)
           print("build_stats", stats)
           print("unresolved_witnesses=0 missing_primary_texts=0 validation_errors=0")
+          es419 = "edition:el-relato:tk-es-419:v0.1"
+          translated = db.execute("select count(*) from unit_texts where edition_id=?", (es419,)).fetchone()[0]
+          audit = db.execute("select count(*) from translation_unit_audit where edition_id=?", (es419,)).fetchone()[0]
+          run = db.execute("select units_generated, status from translation_runs where edition_id=?", (es419,)).fetchone()
+          assert translated == 349, translated
+          assert audit == 349, audit
+          assert run == (349, "generated-pilot"), run
+          print("TK-es-419 PASS translated_units=349 audit_rows=349 scenes=1-10 status=generated-pilot")
           db.close()
           PY
 
@@ -68,7 +81,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add book/el-relato-book.sqlite book/exports/
+          git add book/el-relato-book.sqlite book/exports/ book/translations/tk-es-419/build-report.json
           if git diff --cached --quiet; then
             echo "Database unchanged."
             exit 0
