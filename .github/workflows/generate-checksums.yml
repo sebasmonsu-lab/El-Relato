@@ -1,7 +1,7 @@
 name: Generate preservation checksums
 
 concurrency:
-  group: el-relato-writers
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
 
 on:
@@ -76,5 +76,5 @@ jobs:
             echo "No checksum changes."
           else
             git commit -m "Refresh preservation SHA-256 manifests"
-            git push
+            bash scripts/push_generated_commit.sh
           fi
