@@ -1,0 +1,160 @@
+﻿TAGNT Mat-Jhn - Translators Amalgamated Greek NT -  STEPBible.org CC BY 4.0
+TAGNT Act-Rev - Translators Amalgamated Greek NT -  STEPBible.org CC BY 4.0
+(This is saved as 2  files because a single file too large for Hithub)
+=================================================
+All the words from standard Greek editions (NA27/28, TR, SBL, TH, Byz, WH, Treg) with translations, grammar, sources & variants marked with significance
+=================================================================================================
+Further explanation at: 	https://docs.google.com/document/d/1a24mPFzfAEkDbGvNXvmTzVk5NawntoEozYYAgzM5VmE/preview	
+Spreadsheet version at: 	https://docs.google.com/spreadsheets/d/16Y1OCgWcqZndmWP3CA3YfYMPjwxIRb0UMQt-cSS8Wdw/edit#gid=0	
+Word version at:	https://drive.google.com/file/d/1kSPJdBuRARV8bNIMK0T1B5MomWnL77ak/view?usp=sharing
+
+	==============================================================												
+	Data created by www.STEPBible.org based on work at Tyndale House Cambridge (CC BY 4.0)												
+	==============================================================												
+	This licence allows you to:												
+	* Include any part of this data in software or publications without requesting permission 												
+	* Download the data and reformat it for your application, without changing the data												
+	* Send any proposed corrections to STEPBibleATGmail.com. to be verified 												
+	  (You MAY make changes yourself, but you should include a note of changes that can be viewed by those who use your new data)												
+	* Refer others to github.com/STEPBible as the source of the data. Please do not redistribute it yourself. 												
+	  (Updates or corrections are easier to implement when the data is distributed from a single source)												
+	* We'd love to hear about your project when you make it available. Email us at STEPBibleATGmail.com..												
+	==============================================================												
+
+=======================================================================
+
+Summary of words included in the Amalgamated Greek NT:
+=====================================
+WORD TYPES:	USAGE IN BIBLES			EDITIONS				
+=NA same TR	133304 words are translated in both traditional KJV and modern Bibles.			NA27/28 + TR + others all having the same meaning				
+=NA diff TR	3922 words may translate differently in traditional and modern Bibles.			NA27/28 + others having the same meaning but there are.also .. 				| Variants = different meanings in TR + others
+=NA not TR	761 words are translated in most modern Bibles but not in the KJV.			NA27/28 + others having the same meaning but not TR				
+=TR+NIV/ESV not NA	227 words are translated in the KJV and in some modern Bibles.			TR + others having the same meaning but not NA27/28				
+=TR not NA,NIV/ESV	3573 words are translated in the KJV but not in most modern Bibles.			TR + others having the same meaning but not NA27/28				
+Not in NA or TR	245 words occur in early manuscripts but not translated in most Bibles.			Others having a word that is not found in TR or NA27/28				
+
+
+FIELD DESCRIPTIONS:
+==============
+
+Ref: Versification used by SBL and all modern texts. Significantly different from KJV at Mat.17.14; 20.4; Mrk.3.19; 12.15; Luk.1.74; 6.17; 7.19; Act.2.10; 3.19; 4.6; 5.40; 9.29; 13.39; 19.41; 24.18; Rom.7.9; 9.11; 2Co.1.6; 8.13; 10.5; 13.13; 13.14; Gal.2.20; Eph.1.11; 2.15; 5.13; Php.2.8; Col.1.21; 1Th.1.3; 2.6; 2.11; Heb.3.9; 7.21; 12.23; 1Pe.3.15; Rev.2.27; 13.1; 17.10; 
+Word Type: Source of the word, privileging NA, then TR. 
+Greek: spelling based on NA28 for NA, then TR if not in NA, then other Eds if in neither.  Cases and final accents based on the punctuation which follows THGHT
+English is based on Berean Study Bible, with permission, as at 1-July02019. This covered only NA words. Others supplied by Tyndale scholars, and the complete work was unified in many ways. 
+Extended Strong: Extended with words not used in the KJV. Backwardly compatible with standard Strongs and NASB tagging, as defined in the Brief Lexicon at https://STEPBible\.github.io/STEPBible-Data/
+Morphology: Based on James Tuaber, with addtional details by Tyndale scholars: persons added to Personal, Reflexive and Possessive pronouns; distinguish 2nd verbal forms (e.g. 2nd Aorist); distinguished betweeen "Passive", "Either middle or Passive", "Deponent"
+ - some changes have been made, including: 
+	ἐμοῦ  A-GSMN => P-1GS @ Jhn.016.015
+	ευθυς =G2117 A-MNSM "straight" => G2112 ADV "immediately" @ Mat.003.016; Mat.013.20; Mat.013.21; Mrk.001.012; Mrk.001.028; Jhn.013.032; Jhn.019.034; Jhn.021.003
+	V-PAI-3P changed to V-PAP-DPM except for  εισι[ν] (G1510) which is V-PAI-3P while οὖσι[ν] (G1510) is V-PAP-DPM
+	τίς etc changed from I-NSM etc to X-MNSM etc at Act.025.014; 1Co.010.019; Heb.010.025, 27, 28; 11.040; 12.15x2, 16; 13.002; Jas.001.005, 7, 18, 23, 26; 2.014, 16, 18; 3.002; 5.013x2, 14x2; 5.019x2; 1Pe.002.019
+	G4302 changed to G4277 when προειπον  is used, ie 45_Act.001.016-A, 49_Gal.005.021-A, 53_1Th.004.006-A
+	G4302 changed to G4280 when προερέω is used, ie 41_Mat.024.025-A, 42_Mrk.013.023-INSTW, 42_Mrk.013.023-B, 46_Rom.009.029-A, 48_2Co.007.003-A, 48_2Co.013.002-A, 49_Gal.001.009-A, 59_Heb.004.007-IMNSTW, 59_Heb.010.015-B, 62_2Pe.003.002-A, 66_Jud.001.017-A, 
+	ποῦ =G4225 => G4226 at 42_Mrk.015.047-A, 44_Jhn.001.039-A, 63_1Jn.002.011-A
+Lexical form & Gloss: from the TBESG - Tyndale Brief lexicon of Extended Strongs for Greek at https://STEPBible\.github.io/STEPBible-Data/
+Editions: those which use the same letters, though they may be accented or capitalised differently. Byz=Byzantine based on RP;  NA27=Nestle-Aland 27th ed; NA28 2012 (this is NOT the same as ECM Acts - see eg Act.1.10 ἐσθῆτι in ECM); TR= Textus Receptus; SBL= SBLGNT; Treg= Tregelles; WH= WH;  Tyn= Tyndale House GNT. 
+Spanish is based on  Marvel Bible Project as on 9-Jan-2019 from https://github.com/eliranwong/OpenGNT/blob/master/OpenGNT_BASE_TEXT.zip &  OpenGNT_keyedFeatures.csv.zip. This was available only for words in NA28. Other words are supplied by Tyndale scholars.
+Sub-meanings: words with more than one meaning are supplied with a context-sensitive sub-meaning. Individuals and Places are identified as in TIPNR. Other are based on CSG (Context Sensitive Gloss) from Marvel Bible Project as at 9-Jan-2019 from https://github.com/eliranwong/OpenGNT/blob/master/OpenGNT_BASE_TEXT.zip &  OpenGNT_keyedFeatures.csv.zip. This was available only for words in NA28. Other words are supplied by Tyndale House who also edited the CSG for words where sub-meanings  were not sufficiently detailed. 
+Conjoined data: links words that might not be translated (eg articles and particles) with the word they are connected to, which are often separated by several other words. 
+
+
+Reference + word	Word #	Greek	English Translation	Strongs	Grammar	Dictionary form	English gloss	Editions		Spelling variants	Meaning variants	Spanish Translation	Sub-meaning	Super-meaning	Conjoin word
+=========================================================================================================================================================================================================================================
+
+
+# Mat.1.1	Βίβλος	γενέσεως	Ἰησοῦ	Χριστοῦ	υἱοῦ	Δαυὶδ	υἱοῦ	Ἀβραάμ.							
+#_Translation	[The] book	of [the] genealogy	of Jesus	Christ,	son	of David,	son	of Abraham:							
+#_Word=Grammar	G0976=N-NSF	G1078=N-GSF	G2424=N-GSM-P	G5547=N-GSM-T	G5207=N-GSM	G1138=N-GSM-P	G5207=N-GSM	G0011=N-GSM-P							
+#_Non-NA variants															
+#_REFERENCE	WORD TYPE	GREEK	ENGLISH TRANSLATION	STRONGS	GRAMMAR	DICTIONARY FORM	GLOSS	EDITIONS	SPELLING VARIANTS	MEANING VARIANTS	SPANISH TRANSLATION	SUB-MEANING	SUPER-MEANING	CONJOIN WORD	
+41_Mat.001.001	=NA same TR ~~	Βίβλος	[The] book	G0976	N-NSF	βίβλος	book	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	βίβλος		Libro	book			
+41_Mat.001.001	=NA same TR ~~	γενέσεως	of [the] genealogy	G1078	N-GSF	γένεσις	origin	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	γενέσεως		de origen	origin			
+41_Mat.001.001	=NA same TR ~~	Ἰησοῦ	of Jesus	G2424	N-GSM-P	Ἰησοῦς	Jesus/Joshua	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	ἰησοῦ		de Jesús	Jesus§Jesus@Mat.1.1			
+41_Mat.001.001	=NA same TR ~~	Χριστοῦ	Christ,	G5547	N-GSM-T	Χριστός	Christ	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	χριστοῦ		Ungido	Christ§Christ|Jesus@Mat.1.1			
+41_Mat.001.001	=NA same TR ~~	υἱοῦ	son	G5207	N-GSM	υἱός	son	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	υἱοῦ		hijo	son			
+41_Mat.001.001	=NA same TR ~~	Δαυὶδ	of David,	G1138	N-GSM-P	Δαυείδ, Δαυίδ, Δαβίδ	David	NA27+NA28+SBL+Treg+Byz+NIV ; TR ; Tyn+WH	δαυὶδ ; δαβὶδ ; δαυεὶδ		de David	David§David@Rut.4.17			
+41_Mat.001.001	=NA same TR ~~	υἱοῦ	son	G5207	N-GSM	υἱός	son	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	υἱοῦ		hijo	son			
+41_Mat.001.001	=NA same TR ~~	Ἀβραάμ.	of Abraham:	G0011	N-GSM-P	Ἀβραάμ	Abraham	NA27+NA28+SBL+WH+Treg+TR+Byz+NIV ; Tyn	ἀβραάμ ; ἁβραάμ		de Abrahán	Abraham§Abraham@Gen.11.26			
+															
+															
+# Mat.1.2	Ἀβραὰμ	ἐγέννησεν	τὸν	Ἰσαάκ·	Ἰσαὰκ	δὲ	ἐγέννησεν	τὸν	Ἰακώβ·	Ἰακὼβ	δὲ				
+#_Translation	Abraham	begat	<the>	Isaac,	Isaac	then	begat	<the>	Jacob,	Jacob	then				
+#_Word=Grammar	G0011=N-NSM-P	G1080=V-AAI-3S	G3588=T-ASM	G2464=N-ASM-P	G2464=N-NSM-P	G1161=CONJ	G1080=V-AAI-3S	G3588=T-ASM	G2384=N-ASM-P	G2384=N-NSM-P	G1161=CONJ				
+#_Non-NA variants															
+#_Mat.1.2 cont.	ἐγέννησεν	τὸν	Ἰούδαν	καὶ	τοὺς	ἀδελφοὺς	αὐτοῦ·								
+#_Translation	begat	<the>	Judah	and	the	brothers	of him.								
+#_Word=Grammar	G1080=V-AAI-3S	G3588=T-ASM	G2455=N-ASM-P	G2532=CONJ	G3588=T-APM	G0080=N-APM	G0846=P-GSM								
+#_Non-NA variants															
+#_REFERENCE	WORD TYPE	GREEK	ENGLISH TRANSLATION	STRONGS	GRAMMAR	DICTIONARY FORM	GLOSS	EDITIONS	SPELLING VARIANTS	MEANING VARIANTS	SPANISH TRANSLATION	SUB-MEANING	SUPER-MEANING	CONJOIN WORD	
+41_Mat.001.002	=NA same TR ~~	Ἀβραὰμ	Abraham	G0011	N-NSM-P	Ἀβραάμ	Abraham	NA27+NA28+SBL+WH+Treg+TR+Byz+NIV ; Tyn	ἀβραὰμ ; ἁβραὰμ		Abrahán	Abraham§Abraham@Gen.11.26			
+41_Mat.001.002	=NA same TR ~~	ἐγέννησεν	begat	G1080	V-AAI-3S	γεννάω	to beget	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	ἐγέννησεν		generó	to beget			
+41_Mat.001.002	=NA same TR ~~	τὸν	<the>	G3588	T-ASM	ὁ	the/this/who	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	τὸν		a el	the		»008:G2464	
+41_Mat.001.002	=NA same TR ~~	Ἰσαάκ·	Isaac,	G2464	N-ASM-P	Ἰσαάκ	Isaac	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	ἰσαάκ		Isaac	Isaac§Isaac@Gen.17.19			
+41_Mat.001.002	=NA same TR ~~	Ἰσαὰκ	Isaac	G2464	N-NSM-P	Ἰσαάκ	Isaac	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	ἰσαὰκ		Isaac	Isaac§Isaac@Gen.17.19			
+41_Mat.001.002	=NA same TR ~~	δὲ	then	G1161	CONJ	δέ	but/and	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	δὲ		pero	and			
+41_Mat.001.002	=NA same TR ~~	ἐγέννησεν	begat	G1080	V-AAI-3S	γεννάω	to beget	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	ἐγέννησεν		generó	to beget			
+41_Mat.001.002	=NA same TR ~~	τὸν	<the>	G3588	T-ASM	ὁ	the/this/who	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	τὸν		a el	the		»018:G2384	
+41_Mat.001.002	=NA same TR ~~	Ἰακώβ·	Jacob,	G2384	N-ASM-P	Ἰακώβ	Jacob	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	ἰακώβ		Jacob	Jacob§Jacob|Israel@Gen.25.26			
+41_Mat.001.002	=NA same TR ~~	Ἰακὼβ	Jacob	G2384	N-NSM-P	Ἰακώβ	Jacob	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	ἰακὼβ		Jacob	Jacob§Jacob|Israel@Gen.25.26			
+41_Mat.001.002	=NA same TR ~~	δὲ	then	G1161	CONJ	δέ	but/and	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	δὲ		pero	and			
+41_Mat.001.002	=NA same TR ~~	ἐγέννησεν	begat	G1080	V-AAI-3S	γεννάω	to beget	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	ἐγέννησεν		generó	to beget			
+41_Mat.001.002	=NA same TR ~~	τὸν	<the>	G3588	T-ASM	ὁ	the/this/who	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	τὸν		a el	the		»028:G2455	
+41_Mat.001.002	=NA same TR ~~	Ἰούδαν	Judah	G2455	N-ASM-P	Ἰούδας	Judah/Judas/Jude	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	ἰούδαν		Judá	Judah§Judah@Gen.29.35			
+41_Mat.001.002	=NA same TR ~~	καὶ	and	G2532	CONJ	καί	and	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	καὶ		y	and			
+41_Mat.001.002	=NA same TR ~~	τοὺς	the	G3588	T-APM	ὁ	the/this/who	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	τοὺς		a los	the		»034:G0080	
+41_Mat.001.002	=NA same TR ~~	ἀδελφοὺς	brothers	G0080	N-APM	ἀδελφός	brother	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	ἀδελφοὺς		hermanos	brother			
+41_Mat.001.002	=NA same TR ~~	αὐτοῦ·	of him.	G0846	P-GSM	αὐτός	he/she/it/self	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	αὐτοῦ		de él	his		«034:G0080	
+															
+															
+# Mat.1.3	Ἰούδας	δὲ	ἐγέννησεν	τὸν	Φάρες	καὶ	τὸν	Ζάρα	ἐκ	τῆς	Θαμάρ·				
+#_Translation	Judah	then	begat	<the>	Perez	and	<the>	Zerah	out of	<the>	Tamar,				
+#_Word=Grammar	G2455=N-NSM-P	G1161=CONJ	G1080=V-AAI-3S	G3588=T-ASM	G5329=N-ASM-P	G2532=CONJ	G3588=T-ASM	G2196=N-ASM-P	G1537=PREP	G3588=T-GSF	G2283=N-GSF-P				
+#_Non-NA variants															
+#_Mat.1.3 cont.	Φάρες	δὲ	ἐγέννησεν	τὸν	Ἑσρώμ·	Ἑσρὼμ	δὲ	ἐγέννησεν	τὸν	Ἀράμ·					
+#_Translation	Perez	then	begat	<the>	Hezron,	Hezron	then	begat	<the>	Ram.					
+#_Word=Grammar	G5329=N-NSM-P	G1161=CONJ	G1080=V-AAI-3S	G3588=T-ASM	G2074=N-ASM-P	G2074=N-NSM-P	G1161=CONJ	G1080=V-AAI-3S	G3588=T-ASM	G0689=N-ASM-P					
+#_Non-NA variants															
+#_REFERENCE	WORD TYPE	GREEK	ENGLISH TRANSLATION	STRONGS	GRAMMAR	DICTIONARY FORM	GLOSS	EDITIONS	SPELLING VARIANTS	MEANING VARIANTS	SPANISH TRANSLATION	SUB-MEANING	SUPER-MEANING	CONJOIN WORD	
+41_Mat.001.003	=NA same TR ~~	Ἰούδας	Judah	G2455	N-NSM-P	Ἰούδας	Judah/Judas/Jude	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	ἰούδας		Judá	Judah§Judah@Gen.29.35			
+41_Mat.001.003	=NA same TR ~~	δὲ	then	G1161	CONJ	δέ	but/and	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	δὲ		pero	and			
+41_Mat.001.003	=NA same TR ~~	ἐγέννησεν	begat	G1080	V-AAI-3S	γεννάω	to beget	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	ἐγέννησεν		generó	to beget			
+41_Mat.001.003	=NA same TR ~~	τὸν	<the>	G3588	T-ASM	ὁ	the/this/who	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	τὸν		a el	the		»010:G5329	
+41_Mat.001.003	=NA same TR ~~	Φάρες	Perez	G5329	N-ASM-P	Φάρες	Perez	NA27+NA28+NIV , Tyn+SBL+WH+Treg+TR+Byz	φάρες , φαρὲς		Pérez	Perez§Perez@Gen.38.29			
+41_Mat.001.003	=NA same TR ~~	καὶ	and	G2532	CONJ	καί	and	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	καὶ		y	and			
+41_Mat.001.003	=NA same TR ~~	τὸν	<the>	G3588	T-ASM	ὁ	the/this/who	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	τὸν		a el	the		»016:G2196	
+41_Mat.001.003	=NA same TR ~~	Ζάρα	Zerah	G2196	N-ASM-P	Ζαρά	Zerah	NA27+NA28+SBL+Treg+TR+Byz+NIV , Tyn+WH	ζάρα , ζαρὰ		Zérah	Zerah§Zerah@Gen.38.30			
+41_Mat.001.003	=NA same TR ~~	ἐκ	out of	G1537	PREP	ἐκ	out from	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	ἐκ		procedente de	out of			
+41_Mat.001.003	=NA same TR ~~	τῆς	<the>	G3588	T-GSF	ὁ	the/this/who	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	τῆς		la	the		»022:G2283	
+41_Mat.001.003	=NA same TR ~~	Θαμάρ·	Tamar,	G2283	N-GSF-P	Θάμαρ	Tamar	NA27+NA28+SBL+Treg+TR+Byz+NIV , Tyn+WH	θαμάρ , θάμαρ		Tamar	Tamar§Tamar@Gen.38.6			
+41_Mat.001.003	=NA same TR ~~	Φάρες	Perez	G5329	N-NSM-P	Φάρες	Perez	NA27+NA28+NIV , Tyn+SBL+WH+Treg+TR+Byz	φάρες , φαρὲς		Pérez	Perez§Perez@Gen.38.29			
+41_Mat.001.003	=NA same TR ~~	δὲ	then	G1161	CONJ	δέ	but/and	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	δὲ		pero	and			
+41_Mat.001.003	=NA same TR ~~	ἐγέννησεν	begat	G1080	V-AAI-3S	γεννάω	to beget	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	ἐγέννησεν		generó	to beget			
+41_Mat.001.003	=NA same TR ~~	τὸν	<the>	G3588	T-ASM	ὁ	the/this/who	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	τὸν		a el	the		»032:G2074	
+41_Mat.001.003	=NA same TR ~~	Ἑσρώμ·	Hezron,	G2074	N-ASM-P	Ἐσρώμ	Hezron	NA27+NA28+SBL+WH+Treg+TR+Byz+NIV ; Tyn	ἑσρώμ ; ἐσρώμ		Hezrón	Hezron§Hezron@Gen.46.12			
+41_Mat.001.003	=NA same TR ~~	Ἑσρὼμ	Hezron	G2074	N-NSM-P	Ἐσρώμ	Hezron	NA27+NA28+SBL+WH+Treg+TR+Byz+NIV ; Tyn	ἑσρὼμ ; ἐσρὼμ		Hezrón	Hezron§Hezron@Gen.46.12			
+41_Mat.001.003	=NA same TR ~~	δὲ	then	G1161	CONJ	δέ	but/and	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	δὲ		pero	and			
+41_Mat.001.003	=NA same TR ~~	ἐγέννησεν	begat	G1080	V-AAI-3S	γεννάω	to beget	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	ἐγέννησεν		generó	to beget			
+41_Mat.001.003	=NA same TR ~~	τὸν	<the>	G3588	T-ASM	ὁ	the/this/who	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	τὸν		a el	the		»042:G0689	
+41_Mat.001.003	=NA same TR ~~	Ἀράμ·	Ram.	G0689	N-ASM-P	Ἀράμ	Aram	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	ἀράμ		Ram	Aram§Ram@Rut.4.19			
+															
+															
+# Mat.1.4	Ἀρὰμ	δὲ	ἐγέννησεν	τὸν	Ἀμιναδάβ·	Ἀμιναδὰβ	δὲ	ἐγέννησεν	τὸν	Ναασσών·	Ναασσὼν				
+#_Translation	Ram	then	begat	<the>	Amminadab,	Amminadab	then	begat	<the>	Nahshon,	Nahshon				
+#_Word=Grammar	G0689=N-NSM-P	G1161=CONJ	G1080=V-AAI-3S	G3588=T-ASM	G0284=N-ASM-P	G0284=N-NSM-P	G1161=CONJ	G1080=V-AAI-3S	G3588=T-ASM	G3476=N-ASM-P	G3476=N-NSM-P				
+#_Non-NA variants															
+#_Mat.1.4 cont.	δὲ	ἐγέννησεν	τὸν	Σαλμών·											
+#_Translation	then	begat	<the>	Salmon.											
+#_Word=Grammar	G1161=CONJ	G1080=V-AAI-3S	G3588=T-ASM	G4533=N-ASM-P											
+#_Non-NA variants															
+#_REFERENCE	WORD TYPE	GREEK	ENGLISH TRANSLATION	STRONGS	GRAMMAR	DICTIONARY FORM	GLOSS	EDITIONS	SPELLING VARIANTS	MEANING VARIANTS	SPANISH TRANSLATION	SUB-MEANING	SUPER-MEANING	CONJOIN WORD	
+41_Mat.001.004	=NA same TR ~~	Ἀρὰμ	Ram	G0689	N-NSM-P	Ἀράμ	Aram	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	ἀρὰμ		Ram	Aram§Ram@Rut.4.19			
+41_Mat.001.004	=NA same TR ~~	δὲ	then	G1161	CONJ	δέ	but/and	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	δὲ		pero	and			
+41_Mat.001.004	=NA same TR ~~	ἐγέννησεν	begat	G1080	V-AAI-3S	γεννάω	to beget	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	ἐγέννησεν		generó	to beget			
+41_Mat.001.004	=NA same TR ~~	τὸν	<the>	G3588	T-ASM	ὁ	the/this/who	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	τὸν		a el	the		»010:G0284	
+41_Mat.001.004	=NA same TR ~~	Ἀμιναδάβ·	Amminadab,	G0284	N-ASM-P	Ἀμιναδάβ	Amminadab	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	ἀμιναδάβ		Aminadab	Amminadab§Amminadab@Exo.6.23			
+41_Mat.001.004	=NA same TR ~~	Ἀμιναδὰβ	Amminadab	G0284	N-NSM-P	Ἀμιναδάβ	Amminadab	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	ἀμιναδὰβ		Aminadab	Amminadab§Amminadab@Exo.6.23			
+41_Mat.001.004	=NA same TR ~~	δὲ	then	G1161	CONJ	δέ	but/and	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	δὲ		pero	and			
+41_Mat.001.004	=NA same TR ~~	ἐγέννησεν	begat	G1080	V-AAI-3S	γεννάω	to beget	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	ἐγέννησεν		generó	to beget			
+41_Mat.001.004	=NA same TR ~~	τὸν	<the>	G3588	T-ASM	ὁ	the/this/who	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	τὸν		a el	the		»020:G3476	
+41_Mat.001.004	=NA same TR ~~	Ναασσών·	Nahshon,	G3476	N-ASM-P	Ναασσών	Nahshon	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	ναασσών		Nahsón	Nahshon§Nahshon@Exo.6.23			
+41_Mat.001.004	=NA same TR ~~	Ναασσὼν	Nahshon	G3476	N-NSM-P	Ναασσών	Nahshon	NA27+NA28+Tyn+SBL+WH+Treg+TR+Byz+NIV	ναασσὼν		Nahsón	Nahshon§Nahshon@Exo.6.23			

@@ -1,0 +1,3 @@
+312f723d7b8ef263bbdfb0451c9b8057125804dfff390b6f8544cff2a84b57f4  vendor/STEPBible-Data/Lexicons/TBESG - Translators Brief lexicon of Extended Strongs for Greek - STEPBible.org CC BY.txt
+1179cc0de292f5ee4cbfbc5fd06331c0f1dc623e4fca93e38fbeecf5906f36d9  vendor/STEPBible-Data/Older Formats/TAGNT Mat-Jhn - Translators Amalgamated Greek NT - STEPBible.org CC-BY.txt
+5f0416f7617019a6082285214903bde569a980d5fd3b88b8d7020d944e94de82  vendor/STEPBible-Data/Morphology codes/TEGMC - Translators Expansion of Greek Morphhology Codes - STEPBible.org CC BY.txt
