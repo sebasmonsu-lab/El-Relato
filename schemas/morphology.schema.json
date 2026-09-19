@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://el-relato.local/schemas/morphology.schema.json",
+  "title": "GreekMorphology",
+  "type": "object",
+  "required": [
+    "code",
+    "source_id",
+    "part_of_speech"
+  ],
+  "properties": {
+    "code": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^src:"
+    },
+    "part_of_speech": {
+      "type": "string",
+      "minLength": 1
+    },
+    "person": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tense": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "voice": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "mood": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "case": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gender": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "degree": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "raw_expansion": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
