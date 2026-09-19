@@ -255,7 +255,7 @@ def main():
     a=ap.parse_args(); target=TARGETS[a.locale]
     token=os.environ.get("GITHUB_TOKEN")
     if not token: raise SystemExit("GITHUB_TOKEN required")
-    models=[x.strip() for x in os.environ.get("TRANSLATION_MODELS","gpt-5.6-sol,gpt-5.4,claude-sonnet-4.6").split(",") if x.strip()]
+    models=[x.strip() for x in os.environ.get("TRANSLATION_MODELS","auto").split(",") if x.strip()]
 
     bsrc=book_source_rows(); ssrc=source_rows(); b_by={x["unit_id"]:x for x in bsrc}; s_by={x["id"]:x for x in ssrc}
     bhave=existing_book(target); shave=existing_source(target)
