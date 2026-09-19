@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T03:59:33+00:00",
+  "generated_at": "2026-09-19T04:01:16+00:00",
   "algorithm": "sha256",
   "files": [
     {
@@ -146,6 +146,36 @@
       "path": "sources/manuscripts/README.md",
       "sha256": "279853f040af4fe57a803fc9e9cd3f4461c7b5b1e4a907f1fafd2779354eca49",
       "size": 629
+    },
+    {
+      "path": "sources/manuscripts/Sinaiticus/raw/british-library/iiif-canvases.jsonl",
+      "sha256": "d9c8b702c58fed33e52fe2bd366f387aac2372e7824f364f66b96658c4389b97",
+      "size": 231179
+    },
+    {
+      "path": "sources/manuscripts/Sinaiticus/raw/british-library/iiif-manifest.json",
+      "sha256": "e98bb0c143a946c572af051f700e5e28f0db52eafd5dfedc4291855deb1b0d5e",
+      "size": 1471838
+    },
+    {
+      "path": "sources/manuscripts/Sinaiticus/raw/british-library/iiif-summary.json",
+      "sha256": "c409f7529ad1de3f5922d5488488533b7bb6dac6e081b2edf5de77a8d76b1ab7",
+      "size": 976
+    },
+    {
+      "path": "sources/manuscripts/Vaticanus/raw/iiif-canvases.jsonl",
+      "sha256": "28b32a2e6778f25da25f331309af7a71e39e81d55893f164d27e83595644e5c3",
+      "size": 423379
+    },
+    {
+      "path": "sources/manuscripts/Vaticanus/raw/iiif-manifest.json",
+      "sha256": "560815310c3c648ef78c25c7b6eb8eb8ac4e14c67f34b2f0de6dceb05d7511d2",
+      "size": 2050234
+    },
+    {
+      "path": "sources/manuscripts/Vaticanus/raw/iiif-summary.json",
+      "sha256": "7b5b56acc9a7d1e0b65b98ecedf2e0ce5455dbfe6825f68fd76b0bad67a7cc53",
+      "size": 812
     }
   ]
 }
