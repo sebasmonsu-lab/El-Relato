@@ -1,0 +1,39 @@
+name: Index Codex Sinaiticus transcription
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+on:
+  push:
+    paths:
+      - "scripts/inventory_sinaiticus_transcription.py"
+      - "sources/manuscripts/Sinaiticus/transcription/raw/sinaiticus_full_v195.xml"
+      - ".github/workflows/index-sinaiticus-transcription.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          lfs: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/inventory_sinaiticus_transcription.py
+      - name: Commit inventory
+        shell: bash
+        run: |
+          git config user.name "El-Relato Bot"
+          git config user.email "el-relato-bot@users.noreply.github.com"
+          git add data/derived/manuscripts/Sinaiticus-transcription-inventory.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Index Codex Sinaiticus transcription structure"
+            bash scripts/push_generated_commit.sh
+          fi
