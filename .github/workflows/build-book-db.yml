@@ -50,6 +50,10 @@ jobs:
           missing = db.execute("select count(*) from unit_texts where text is null or trim(text)='' ").fetchone()[0]
           issues = db.execute("select count(*) from validation_issues where severity='ERROR'").fetchone()[0]
           fk = db.execute("pragma foreign_key_check").fetchall()
+          if unresolved or issues or missing:
+              print("validation_issues")
+              for row in db.execute("select unit_id, reference_component, code, message from validation_issues order by issue_id"):
+                  print(row)
           assert unresolved == 0, stats
           assert missing == 0, missing
           assert issues == 0, issues
