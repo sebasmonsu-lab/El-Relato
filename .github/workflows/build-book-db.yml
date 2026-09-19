@@ -24,7 +24,13 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          lfs: true
+
+      - name: Restore Book LFS inputs only
+        run: |
+          git lfs install --local
+          git lfs pull --include="book/el-relato/canon/El Relato - Listado de referencias.xlsx,book/el-relato/source/El Relato.docx" --exclude="*"
+          file "book/el-relato/canon/El Relato - Listado de referencias.xlsx"
+          file "book/el-relato/source/El Relato.docx"
 
       - name: Set up Python
         uses: actions/setup-python@v5
