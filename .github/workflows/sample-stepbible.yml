@@ -1,0 +1,51 @@
+name: Sample STEPBible preserved datasets
+
+on:
+  push:
+    paths:
+      - ".github/workflows/sample-stepbible.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Produce deterministic format samples
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p data/samples/STEPBible
+
+          TBESG="vendor/STEPBible-Data/Lexicons/TBESG - Translators Brief lexicon of Extended Strongs for Greek - STEPBible.org CC BY.txt"
+          TAGNT="vendor/STEPBible-Data/Older Formats/TAGNT Mat-Jhn - Translators Amalgamated Greek NT - STEPBible.org CC-BY.txt"
+          TEGMC="vendor/STEPBible-Data/Morphology codes/TEGMC - Translators Expansion of Greek Morphhology Codes - STEPBible.org CC BY.txt"
+
+          head -n 160 "$TBESG" > data/samples/STEPBible/TBESG-head-160.txt
+          head -n 160 "$TAGNT" > data/samples/STEPBible/TAGNT-head-160.txt
+          head -n 160 "$TEGMC" > data/samples/STEPBible/TEGMC-head-160.txt
+
+          # Representative Gospel passages from TAGNT.
+          grep -m 40 -E '^Mat[[:space:]]+1:|^Matt[[:space:]]+1:|^Mat\.1\.|^Matt\.1\.' "$TAGNT"             > data/samples/STEPBible/TAGNT-matthew1-sample.txt || true
+          grep -m 40 -E '^Jhn[[:space:]]+1:|^John[[:space:]]+1:|^Jhn\.1\.|^John\.1\.' "$TAGNT"             > data/samples/STEPBible/TAGNT-john1-sample.txt || true
+
+          wc -l -c "$TBESG" "$TAGNT" "$TEGMC" > data/samples/STEPBible/file-stats.txt
+          sha256sum "$TBESG" "$TAGNT" "$TEGMC" > data/samples/STEPBible/source-sha256.txt
+
+      - name: Commit samples
+        shell: bash
+        run: |
+          git config user.name "El-Relato Bot"
+          git config user.email "el-relato-bot@users.noreply.github.com"
+          git add data/samples/STEPBible
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Add deterministic STEPBible format samples"
+            git push
+          fi
