@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 import json
+import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -149,6 +150,32 @@ add("query:db","PASS" if db and db.get("tokens")==64686 and db.get("witness_atte
     "Integrated reproducible SQLite query layer",metrics=db or {})
 add("query:app","PASS" if exists("app/el_relato.py") and exists(".github/workflows/test-app.yml") else "FAIL",
     "Local research interface and self-test")
+
+book_db_path=ROOT/"book/el-relato-book.sqlite"
+if book_db_path.exists():
+    try:
+        bdb=sqlite3.connect(book_db_path)
+        table_counts={t:bdb.execute(f"select count(*) from {t}").fetchone()[0]
+                      for t in ("chapters","scenes","units","unit_texts","unit_witnesses")}
+        book_stats=dict(bdb.execute("select metric,value from build_stats"))
+        unresolved=int(book_stats.get("unresolved_witnesses","0"))
+        tr_fallback=int(book_stats.get("tagnt_tr_fallback_witness_materializations",book_stats.get("tagnt_fallback_witness_materializations","0")))
+        empty=bdb.execute("select count(*) from unit_texts where text is null or trim(text)=''").fetchone()[0]
+        errors=bdb.execute("select count(*) from validation_issues where severity='ERROR'").fetchone()[0]
+        fk=len(bdb.execute("pragma foreign_key_check").fetchall())
+        bdb.close()
+        metrics={"table_counts":table_counts,"unresolved_witnesses":unresolved,
+                 "tr_fallback_witness_materializations":tr_fallback,
+                 "empty_primary_texts":empty,"validation_errors":errors,"foreign_key_errors":fk}
+        ok=(table_counts=={"chapters":6,"scenes":120,"units":4123,"unit_texts":4123,"unit_witnesses":5381}
+            and unresolved==0 and tr_fallback==12 and empty==0 and errors==0 and fk==0)
+        add("book:greek-db","PASS" if ok else "FAIL","Canonical El-Relato Greek book database",
+            "SBLGNT is primary; 12 numbered verses absent from its main text are materialized from the separately identified TAGNT Textus Receptus source.",
+            metrics)
+    except Exception as exc:
+        add("book:greek-db","FAIL","Canonical El-Relato Greek book database",f"Could not validate SQLite: {type(exc).__name__}: {exc}")
+else:
+    add("book:greek-db","FAIL","Canonical El-Relato Greek book database","Missing book/el-relato-book.sqlite")
 
 status_text=(ROOT/"STATUS.md").read_text(encoding="utf-8") if exists("STATUS.md") else ""
 if "B-003" in status_text:
