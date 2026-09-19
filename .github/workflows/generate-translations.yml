@@ -1,0 +1,123 @@
+name: Generate translations
+
+on:
+  workflow_dispatch:
+    inputs:
+      locale:
+        description: Translation target
+        required: true
+        default: es-419
+        type: choice
+        options: [es-419, en, pt-BR]
+      loop:
+        description: Retry counter for provider throttling
+        required: false
+        default: "0"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/generate_translations.py"
+      - "scripts/consolidate_book_translation.py"
+      - ".github/workflows/generate-translations.yml"
+
+permissions:
+  contents: write
+  actions: write
+  models: read
+
+concurrency:
+  group: translation-${{ inputs.locale || 'es-419' }}
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    env:
+      LOCALE: ${{ inputs.locale || 'es-419' }}
+      LOOP: ${{ inputs.loop || '0' }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      TRANSLATION_MODELS: openai/gpt-5.6-sol,openai/gpt-5,openai/gpt-4.1
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate next translation batches
+        id: translate
+        shell: bash
+        run: |
+          set +e
+          python scripts/generate_translations.py --locale "$LOCALE" --max-calls 35
+          rc=$?
+          echo "generator_rc=$rc" >> "$GITHUB_OUTPUT"
+          test -f build/translation-status.json || echo '{"complete":false,"blocked":"generator-no-status"}' > build/translation-status.json
+          cat build/translation-status.json
+          exit 0
+
+      - name: Commit generated text progress
+        shell: bash
+        run: |
+          git config user.name "el-relato-translation-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add book/translations sources/gospel-editions
+          if ! git diff --cached --quiet; then
+            git commit -m "translate(${LOCALE}): persist generated Greek-derived batches"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Read status
+        id: status
+        shell: bash
+        run: |
+          complete=$(python -c 'import json; print(str(json.load(open("build/translation-status.json"))["complete"]).lower())')
+          blocked=$(python -c 'import json; print(json.load(open("build/translation-status.json")).get("blocked") or "")')
+          echo "complete=$complete" >> "$GITHUB_OUTPUT"
+          echo "blocked=$blocked" >> "$GITHUB_OUTPUT"
+
+      - name: Consolidate completed BOOK edition into latest SQLite
+        if: steps.status.outputs.complete == 'true'
+        shell: bash
+        run: |
+          git pull --rebase origin main
+          python scripts/consolidate_book_translation.py --locale "$LOCALE"
+          git add book/el-relato-book.sqlite book/translations
+          git commit -m "translate(${LOCALE}): consolidate full BOOK translation" || true
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+      - name: Rebuild public web after completion
+        if: steps.status.outputs.complete == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run build-web.yml --ref main
+
+      - name: Continue same locale
+        if: steps.status.outputs.complete != 'true' && steps.status.outputs.blocked == ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run generate-translations.yml --ref main -f locale="$LOCALE" -f loop=0
+
+      - name: Retry provider throttling once
+        if: steps.status.outputs.complete != 'true' && steps.status.outputs.blocked != '' && fromJSON(env.LOOP) < 2
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          sleep 75
+          next=$((LOOP+1))
+          gh workflow run generate-translations.yml --ref main -f locale="$LOCALE" -f loop="$next"
+
+      - name: Start next locale
+        if: steps.status.outputs.complete == 'true' && env.LOCALE != 'pt-BR'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          if [ "$LOCALE" = "es-419" ]; then next="en"; else next="pt-BR"; fi
+          gh workflow run generate-translations.yml --ref main -f locale="$next" -f loop=0
