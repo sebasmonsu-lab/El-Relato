@@ -1,0 +1,180 @@
+name: Harvest core manuscript IIIF manifests
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+on:
+  push:
+    paths:
+      - ".github/workflows/harvest-core-iiif.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install HTTP dependency
+        run: python -m pip install --disable-pip-version-check requests
+
+      - name: Preserve IIIF manifests and canvas inventories
+        shell: bash
+        run: |
+          python - <<'PY'
+          from __future__ import annotations
+          import hashlib
+          import json
+          from pathlib import Path
+          import requests
+
+          targets = [
+              {
+                  "id": "Vaticanus",
+                  "url": "https://digi.vatlib.it/iiif/MSS_Vat.gr.1209/manifest.json",
+                  "dir": Path("sources/manuscripts/Vaticanus/raw"),
+              },
+              {
+                  "id": "Sinaiticus-BL",
+                  "url": "https://bl.digirati.io/iiif/ark:/81055/man_10000000.0x000001",
+                  "dir": Path("sources/manuscripts/Sinaiticus/raw/british-library"),
+              },
+          ]
+
+          session = requests.Session()
+          session.headers.update({
+              "User-Agent": "El-Relato-preservation/1.0",
+              "Accept": "application/ld+json, application/json",
+          })
+
+          def label_text(value):
+              if value is None:
+                  return None
+              if isinstance(value, str):
+                  return value
+              if isinstance(value, dict):
+                  if "@value" in value:
+                      return str(value["@value"])
+                  vals = []
+                  for x in value.values():
+                      if isinstance(x, list):
+                          vals.extend(str(i) for i in x)
+                      elif isinstance(x, str):
+                          vals.append(x)
+                  return " | ".join(vals) if vals else json.dumps(value, ensure_ascii=False)
+              return str(value)
+
+          def canvases_v2(obj):
+              seqs = obj.get("sequences") or []
+              return (seqs[0].get("canvases") or []) if seqs else []
+
+          def canvases_v3(obj):
+              return obj.get("items") or []
+
+          def extract_canvas(c):
+              row = {
+                  "id": c.get("@id") or c.get("id"),
+                  "label": label_text(c.get("label")),
+                  "width": c.get("width"),
+                  "height": c.get("height"),
+                  "image_id": None,
+                  "image_service": None,
+              }
+              # IIIF Presentation v2
+              images = c.get("images") or []
+              if images:
+                  res = (images[0].get("resource") or {})
+                  row["image_id"] = res.get("@id") or res.get("id")
+                  service = res.get("service")
+                  if isinstance(service, list):
+                      service = service[0] if service else None
+                  if isinstance(service, dict):
+                      row["image_service"] = service.get("@id") or service.get("id")
+              # IIIF Presentation v3
+              if not row["image_id"]:
+                  pages = c.get("items") or []
+                  if pages:
+                      anns = pages[0].get("items") or []
+                      if anns:
+                          body = anns[0].get("body") or {}
+                          row["image_id"] = body.get("id") or body.get("@id")
+                          service = body.get("service")
+                          if isinstance(service, list):
+                              service = service[0] if service else None
+                          if isinstance(service, dict):
+                              row["image_service"] = service.get("id") or service.get("@id")
+              return row
+
+          global_manifest = {"sources": []}
+
+          for target in targets:
+              r = session.get(target["url"], timeout=120)
+              r.raise_for_status()
+              raw = r.content
+              obj = r.json()
+              target["dir"].mkdir(parents=True, exist_ok=True)
+              raw_path = target["dir"] / "iiif-manifest.json"
+              raw_path.write_bytes(raw)
+
+              canvases = canvases_v2(obj)
+              version = "2"
+              if not canvases:
+                  canvases = canvases_v3(obj)
+                  version = "3"
+
+              rows = [extract_canvas(c) for c in canvases]
+              inventory = target["dir"] / "iiif-canvases.jsonl"
+              with inventory.open("w", encoding="utf-8", newline="\n") as fh:
+                  for row in rows:
+                      fh.write(json.dumps(row, ensure_ascii=False, separators=(",", ":")) + "\n")
+
+              summary = {
+                  "id": target["id"],
+                  "source_url": target["url"],
+                  "iiif_presentation_version_detected": version,
+                  "manifest_bytes": len(raw),
+                  "manifest_sha256": hashlib.sha256(raw).hexdigest(),
+                  "canvas_count": len(rows),
+                  "canvases_with_image_service": sum(bool(x["image_service"]) for x in rows),
+                  "canvases_with_dimensions": sum(x["width"] is not None and x["height"] is not None for x in rows),
+                  "first_labels": [x["label"] for x in rows[:20]],
+                  "last_labels": [x["label"] for x in rows[-20:]],
+              }
+              (target["dir"] / "iiif-summary.json").write_text(
+                  json.dumps(summary, ensure_ascii=False, indent=2) + "\n",
+                  encoding="utf-8",
+              )
+              global_manifest["sources"].append(summary)
+
+          Path("data/derived/manuscripts").mkdir(parents=True, exist_ok=True)
+          Path("data/derived/manuscripts/core-iiif-summary.json").write_text(
+              json.dumps(global_manifest, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8",
+          )
+          print(json.dumps(global_manifest, ensure_ascii=False, indent=2))
+          PY
+
+      - name: Commit preserved manifests
+        shell: bash
+        run: |
+          git config user.name "El-Relato Bot"
+          git config user.email "el-relato-bot@users.noreply.github.com"
+          git add sources/manuscripts/Vaticanus/raw sources/manuscripts/Sinaiticus/raw data/derived/manuscripts/core-iiif-summary.json
+          if git diff --cached --quiet; then
+            echo "No IIIF changes."
+          else
+            git commit -m "Preserve Vaticanus and Sinaiticus IIIF manifests"
+            bash scripts/push_generated_commit.sh
+          fi
