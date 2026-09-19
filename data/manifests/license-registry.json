@@ -78,6 +78,21 @@
       "source_id": "src:morphgnt:strongs-greek-xml",
       "status": "public_license",
       "evidence_path": "vendor/StrongGreekOriginal/README.md"
+    },
+    {
+      "source_id": "src:igntp:p52",
+      "status": "public_license",
+      "evidence_path": "sources/manuscripts/P52/transcription/raw/igntp/repository-record.html"
+    },
+    {
+      "source_id": "src:igntp:p66",
+      "status": "public_license",
+      "evidence_path": "sources/manuscripts/P66/transcription/raw/igntp/repository-record.html"
+    },
+    {
+      "source_id": "src:igntp:p75",
+      "status": "public_license",
+      "evidence_path": "sources/manuscripts/P75/transcription/raw/igntp/repository-record.html"
     }
   ]
 }
