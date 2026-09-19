@@ -1,0 +1,113 @@
+{
+  "manuscript_images": 372,
+  "witness_attestations": 623,
+  "missing_image_files": 21,
+  "missing_samples": [
+    {
+      "manuscript": "P45",
+      "image_name": "P45_001-002a_w1-2.jpg"
+    },
+    {
+      "manuscript": "P45",
+      "image_name": "P45_001-002b_w1-2.jpg"
+    },
+    {
+      "manuscript": "P66",
+      "image_name": "P66_004.jpg"
+    },
+    {
+      "manuscript": "P66",
+      "image_name": "P66_005.jpg"
+    },
+    {
+      "manuscript": "P66",
+      "image_name": "P66_006.jpg"
+    },
+    {
+      "manuscript": "P66",
+      "image_name": "P66_007.jpg"
+    },
+    {
+      "manuscript": "P66",
+      "image_name": "P66_002.jpg"
+    },
+    {
+      "manuscript": "P66",
+      "image_name": "P66_008.jpg"
+    },
+    {
+      "manuscript": "P66",
+      "image_name": "P66_009.jpg"
+    },
+    {
+      "manuscript": "P66",
+      "image_name": "P66_010.jpg"
+    },
+    {
+      "manuscript": "P66",
+      "image_name": "P66_011.jpg"
+    },
+    {
+      "manuscript": "P66",
+      "image_name": "P66_012.jpg"
+    },
+    {
+      "manuscript": "P66",
+      "image_name": "P66_013.jpg"
+    },
+    {
+      "manuscript": "P66",
+      "image_name": "P66_014.jpg"
+    },
+    {
+      "manuscript": "P66",
+      "image_name": "P66_015.jpg"
+    },
+    {
+      "manuscript": "P66",
+      "image_name": "P66_016.jpg"
+    },
+    {
+      "manuscript": "P66",
+      "image_name": "P66_017.jpg"
+    },
+    {
+      "manuscript": "P66",
+      "image_name": "P66_018.jpg"
+    },
+    {
+      "manuscript": "P66",
+      "image_name": "P66_019.jpg"
+    },
+    {
+      "manuscript": "P104",
+      "image_name": "P104_0001a.jpg"
+    },
+    {
+      "manuscript": "P104",
+      "image_name": "P104_0001b.jpg"
+    }
+  ],
+  "by_manuscript": {
+    "P4": {
+      "images": 10,
+      "attestations": 94
+    },
+    "P45": {
+      "images": 215,
+      "attestations": 521
+    },
+    "P52": {
+      "images": 2,
+      "attestations": 5
+    },
+    "P66": {
+      "images": 145,
+      "attestations": 3
+    },
+    "P104": {
+      "images": 0,
+      "attestations": 0
+    }
+  }
+}
