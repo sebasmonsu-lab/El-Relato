@@ -1,7 +1,7 @@
 name: Ingest large STEPBible files
 
 concurrency:
-  group: el-relato-writers
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
 
 on:
@@ -148,5 +148,5 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "Mirror and verify large STEPBible Gospel datasets"
-            git push
+            bash scripts/push_generated_commit.sh
           fi
