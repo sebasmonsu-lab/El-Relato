@@ -1,6 +1,6 @@
 # El-Relato — Audit Report
 
-Generated: 2026-09-19T05:06:51+00:00
+Generated: 2026-09-19T05:08:19+00:00
 
 **Overall: PASS_WITH_BLOCKERS**
 
@@ -296,8 +296,8 @@ Incomplete fallbacks: P137
 ### ✅ integrity:license-registry — Source license/permission registry
 ~~~json
 {
-  "sources": 20,
-  "license_entries": 20
+  "sources": 22,
+  "license_entries": 22
 }
 ~~~
 
