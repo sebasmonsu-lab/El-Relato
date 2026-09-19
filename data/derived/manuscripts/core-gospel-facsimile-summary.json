@@ -1,0 +1,19 @@
+{
+  "selected_canvases": 269,
+  "by_source": {
+    "Vaticanus": 148,
+    "Sinaiticus-BL": 121
+  },
+  "by_gospel_membership": {
+    "Matthew": 78,
+    "Mark": 49,
+    "Luke": 84,
+    "John": 61
+  },
+  "size_probe_enabled": true,
+  "measured_files": 196,
+  "unmeasured_files": 73,
+  "known_total_bytes": 158629651,
+  "known_total_gib": 0.148,
+  "note": "Gospel memberships overlap at boundary canvases where a page/folio contains material from two Gospels."
+}
