@@ -41,7 +41,10 @@ def main():
     sources=rows(Path("data/normalized/sources.jsonl"))
     manuscript_images=rows(Path("data/normalized/manuscript-evidence/images.jsonl"))
     witness_attestations=rows(Path("data/normalized/manuscript-evidence/witness-attestations.jsonl"))
-    sinaiticus_transcriptions=rows(Path("data/normalized/transcriptions/sinaiticus-gospels.jsonl"))
+    transcriptions_all=(
+        rows(Path("data/normalized/transcriptions/sinaiticus-gospels.jsonl"))
+        + rows(Path("data/normalized/transcriptions/igntp-papyri.jsonl"))
+    )
 
     facsimile_summary_path=ROOT/"data/derived/manuscripts/core-gospel-facsimile-mirror-summary.json"
     facsimiles=[]
@@ -278,7 +281,7 @@ def main():
         for x in witness_attestations
     ])
     transcription_rows=[]
-    for x in sinaiticus_transcriptions:
+    for x in transcriptions_all:
         book=chapter=verse=None
         pids=x.get("passage_ids") or []
         if pids:
