@@ -1,0 +1,78 @@
+{
+  "project": "El-Relato",
+  "statement": "Repository owner states that licenses/permissions are available for all preserved sources.",
+  "evidence_policy": "Each source should eventually have archived documentary evidence or a precise license reference. Until that artifact is stored, status remains declared_by_owner.",
+  "updated": "2026-09-19",
+  "entries": [
+    {
+      "source_id": "src:sblgnt:faithlife",
+      "status": "declared_by_owner",
+      "evidence_path": null
+    },
+    {
+      "source_id": "src:stepbible:tegmc",
+      "status": "declared_by_owner",
+      "evidence_path": null
+    },
+    {
+      "source_id": "src:stepbible:tbesg",
+      "status": "declared_by_owner",
+      "evidence_path": null
+    },
+    {
+      "source_id": "src:stepbible:tagnt-mat-jhn",
+      "status": "declared_by_owner",
+      "evidence_path": null
+    },
+    {
+      "source_id": "src:intf:liste",
+      "status": "declared_by_owner",
+      "evidence_path": null
+    },
+    {
+      "source_id": "src:csntm:p4",
+      "status": "declared_by_owner",
+      "evidence_path": null
+    },
+    {
+      "source_id": "src:csntm:p45",
+      "status": "declared_by_owner",
+      "evidence_path": null
+    },
+    {
+      "source_id": "src:csntm:p52",
+      "status": "declared_by_owner",
+      "evidence_path": null
+    },
+    {
+      "source_id": "src:csntm:p66",
+      "status": "declared_by_owner",
+      "evidence_path": null
+    },
+    {
+      "source_id": "src:csntm:p75",
+      "status": "declared_by_owner",
+      "evidence_path": null
+    },
+    {
+      "source_id": "src:csntm:p104",
+      "status": "declared_by_owner",
+      "evidence_path": null
+    },
+    {
+      "source_id": "src:ees:p137",
+      "status": "declared_by_owner",
+      "evidence_path": null
+    },
+    {
+      "source_id": "src:sinaiticus:project",
+      "status": "declared_by_owner",
+      "evidence_path": null
+    },
+    {
+      "source_id": "src:vatlib:vaticanus",
+      "status": "declared_by_owner",
+      "evidence_path": null
+    }
+  ]
+}
