@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://el-relato.local/schemas/manuscript-image.schema.json",
+  "title": "ManuscriptImage",
+  "type": "object",
+  "required": [
+    "id",
+    "manuscript_id",
+    "source_id",
+    "local_path"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^image:"
+    },
+    "manuscript_id": {
+      "type": "string",
+      "pattern": "^ms:ga:"
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^src:"
+    },
+    "folio": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "page_label": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "side": {
+      "enum": [
+        "recto",
+        "verso",
+        "unknown",
+        null
+      ]
+    },
+    "local_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "upstream_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-fA-F0-9]{64}$"
+    },
+    "mime_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "width": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "height": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
