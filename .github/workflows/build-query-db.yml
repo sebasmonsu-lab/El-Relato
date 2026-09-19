@@ -1,0 +1,56 @@
+name: Build and test query database
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+on:
+  push:
+    paths:
+      - "scripts/build_query_db.py"
+      - "scripts/query_examples.sql"
+      - "data/normalized/**"
+      - "data/derived/manuscripts/core-gospel-facsimile-mirror-summary.json"
+      - ".github/workflows/build-query-db.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build SQLite
+        run: python scripts/build_query_db.py --output build/el-relato.sqlite
+      - name: Acceptance tests
+        shell: bash
+        run: |
+          python - <<'PY'
+          import sqlite3
+          db=sqlite3.connect("build/el-relato.sqlite")
+          def scalar(sql):
+              return db.execute(sql).fetchone()[0]
+          assert scalar("select count(*) from tokens") == 64686
+          assert scalar("select count(*) from tokens where tagnt_row_id is not null") > 64000
+          assert scalar("select count(*) from tokens where book='John' and chapter=1 and verse=1") == 17
+          assert scalar("select count(*) from tokens where strongs like 'G0746%'") > 0
+          assert scalar("select count(*) from edition_apparatus") >= 3600
+          assert scalar("select count(*) from facsimiles") == 269
+          print("QUERY DATABASE ACCEPTANCE OK")
+          PY
+      - name: Query smoke test
+        run: sqlite3 -header -column build/el-relato.sqlite < scripts/query_examples.sql | head -n 120
+      - name: Upload regenerated SQLite artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-sqlite
+          path: build/el-relato.sqlite
+          retention-days: 14
