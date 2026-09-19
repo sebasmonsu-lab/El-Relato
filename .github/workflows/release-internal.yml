@@ -1,0 +1,56 @@
+name: Create internal release
+
+on:
+  push:
+    paths:
+      - ".github/workflows/release-internal.yml"
+      - "RELEASE_NOTES_v0.1.0-internal.md"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Require zero audit FAIL
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path("data/derived/audit/audit-report.json")
+          report=json.loads(p.read_text())
+          assert report["counts"]["fail"] == 0, report
+          print("Audit gate:", report["overall"], report["counts"])
+          PY
+      - name: Create immutable internal tag
+        shell: bash
+        run: |
+          git config user.name "El-Relato Bot"
+          git config user.email "el-relato-bot@users.noreply.github.com"
+          if git rev-parse "v0.1.0-internal" >/dev/null 2>&1; then
+            echo "Tag already exists."
+          else
+            git tag -a v0.1.0-internal -m "El-Relato v0.1.0 internal audited corpus"
+            git push origin v0.1.0-internal
+          fi
+      - name: Create private GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          if gh release view v0.1.0-internal >/dev/null 2>&1; then
+            echo "Release already exists."
+          else
+            gh release create v0.1.0-internal               --title "El-Relato v0.1.0-internal"               --notes-file RELEASE_NOTES_v0.1.0-internal.md               --prerelease
+          fi
