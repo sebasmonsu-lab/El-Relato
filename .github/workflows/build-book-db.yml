@@ -1,0 +1,60 @@
+name: Build El Relato Book DB
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "book/el-relato/canon/**"
+      - "book/el-relato/source/El Relato.docx"
+      - "book/schema.sql"
+      - "scripts/build_book_db.py"
+      - "data/normalized/sblgnt/edition-verses.jsonl"
+      - "data/normalized/sblgnt/tokens.jsonl"
+      - ".github/workflows/build-book-db.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-book-db:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build SQLite
+        run: python scripts/build_book_db.py
+
+      - name: Verify SQLite
+        run: |
+          python - <<'PY'
+          import sqlite3
+          db = sqlite3.connect("book/el-relato-book.sqlite")
+          assert db.execute("select count(*) from chapters").fetchone()[0] == 6
+          assert db.execute("select count(*) from scenes").fetchone()[0] == 120
+          assert db.execute("select count(*) from units").fetchone()[0] == 4123
+          assert db.execute("select count(*) from unit_texts").fetchone()[0] == 4123
+          print(dict(db.execute("select metric, value from build_stats")))
+          print("validation_issues", db.execute("select count(*) from validation_issues").fetchone()[0])
+          db.close()
+          PY
+
+      - name: Commit generated DB
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add book/el-relato-book.sqlite
+          if git diff --cached --quiet; then
+            echo "Database unchanged."
+            exit 0
+          fi
+          git commit -m "build(book): generate Greek book database v1"
+          bash scripts/push_generated_commit.sh
