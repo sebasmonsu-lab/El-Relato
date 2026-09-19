@@ -9,7 +9,7 @@
   "title": "El Relato — Español Latinoamericano IA V1",
   "version": "1",
   "status": "generating",
-  "provider": "GitHub Models",
+  "provider": "GitHub Copilot CLI",
   "model_name": "pending",
   "units_expected": 4123,
   "review_required": true
