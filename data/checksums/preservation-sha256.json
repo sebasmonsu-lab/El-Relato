@@ -1,0 +1,96 @@
+{
+  "generated_at": "2026-09-19T03:48:32+00:00",
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "vendor/SBLGNT/About.md",
+      "sha256": "4c7198fb57ce5f3b6572e856bd8b9439c9793c9d6b678e0e1ac123c887591765",
+      "size": 3914
+    },
+    {
+      "path": "vendor/SBLGNT/LICENSE",
+      "sha256": "7e7170e3cebf88a9f60c7b8421418323c09304da1af4d5e90f4da1dc1c8a2661",
+      "size": 18650
+    },
+    {
+      "path": "vendor/SBLGNT/README.md",
+      "sha256": "7ae1dc2622a8dafe55cf8b17d4935c3e39a70c46636277dd0fc46fe8b7464721",
+      "size": 1136
+    },
+    {
+      "path": "vendor/SBLGNT/data/sblgnt/text/John.txt",
+      "sha256": "ada9643154a990ae2725ab847c6cfb576ce2c3bcd4945d47606e8a90c8d065f5",
+      "size": 189793
+    },
+    {
+      "path": "vendor/SBLGNT/data/sblgnt/text/Luke.txt",
+      "sha256": "102d65ec7a91271777115d1a605688776adfda6a1188680ccf593e27e3e876d6",
+      "size": 251219
+    },
+    {
+      "path": "vendor/SBLGNT/data/sblgnt/text/Mark.txt",
+      "sha256": "fe1b5a4c15db71e7e30f33fb67966ca93baffae377085ece0b88f66316729638",
+      "size": 148655
+    },
+    {
+      "path": "vendor/SBLGNT/data/sblgnt/text/Matt.txt",
+      "sha256": "4fa718540cbc6330591b233c99c68bbf52b85afc90016e4188efe5cd9719eeb0",
+      "size": 235067
+    },
+    {
+      "path": "vendor/SBLGNT/data/sblgnt/xml/John.xml",
+      "sha256": "11fa4ec61127f109f4582845737963dc66a532e33dca7d489875b9dd91da00e2",
+      "size": 762321
+    },
+    {
+      "path": "vendor/SBLGNT/data/sblgnt/xml/Luke.xml",
+      "sha256": "960c0f7743f6ee68b7ee341991b76e14e83143eac4ba1f2df179327ec4bae8d5",
+      "size": 970739
+    },
+    {
+      "path": "vendor/SBLGNT/data/sblgnt/xml/Mark.xml",
+      "sha256": "5901ccefcd7d9aedfaf228b1f99c3a13f37b4509c1b38d16123a860247a59d76",
+      "size": 572329
+    },
+    {
+      "path": "vendor/SBLGNT/data/sblgnt/xml/Matt.xml",
+      "sha256": "98030ff7ddec7d1b89811c912b64e52a6c6a5806048e619abc708fe19a416424",
+      "size": 909675
+    },
+    {
+      "path": "vendor/STEPBible-Data/Lexicons/TBESG - Translators Brief lexicon of Extended Strongs for Greek - STEPBible.org CC BY.txt",
+      "sha256": "312f723d7b8ef263bbdfb0451c9b8057125804dfff390b6f8544cff2a84b57f4",
+      "size": 4736912
+    },
+    {
+      "path": "vendor/STEPBible-Data/Morphology codes/TEGMC - Translators Expansion of Greek Morphhology Codes - STEPBible.org CC BY.txt",
+      "sha256": "5f0416f7617019a6082285214903bde569a980d5fd3b88b8d7020d944e94de82",
+      "size": 467056
+    },
+    {
+      "path": "vendor/STEPBible-Data/Older Formats/TAGNT Mat-Jhn - Translators Amalgamated Greek NT - STEPBible.org CC-BY.txt",
+      "sha256": "1179cc0de292f5ee4cbfbc5fd06331c0f1dc623e4fca93e38fbeecf5906f36d9",
+      "size": 14300601
+    },
+    {
+      "path": "vendor/STEPBible-Data/README.md",
+      "sha256": "261d5157c0ffeadeedad3f734db945a4c3642e3e4ce5fa28002985b6c52437b1",
+      "size": 14495
+    },
+    {
+      "path": "sources/critical-texts/SBLGNT/PROVENANCE.md",
+      "sha256": "8db5422c272db8ec248052019e14f6477b727e2730de6bcaa687a8141b15aedd",
+      "size": 525
+    },
+    {
+      "path": "sources/lexicons/STEPBible/PROVENANCE.md",
+      "sha256": "991b088b7614c92ad2975fe317c68a840845bffafdb78db8f63265402dd32022",
+      "size": 1274
+    },
+    {
+      "path": "sources/manuscripts/README.md",
+      "sha256": "279853f040af4fe57a803fc9e9cd3f4461c7b5b1e4a907f1fafd2779354eca49",
+      "size": 629
+    }
+  ]
+}
