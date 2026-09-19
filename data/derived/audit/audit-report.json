@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-19T05:04:37+00:00",
+  "generated_at": "2026-09-19T05:06:35+00:00",
   "overall": "PASS_WITH_BLOCKERS",
   "counts": {
-    "pass": 20,
-    "warn": 6,
+    "pass": 21,
+    "warn": 5,
     "fail": 0
   },
   "checks": [
@@ -346,12 +346,12 @@
     },
     {
       "id": "integrity:license-registry",
-      "status": "WARN",
+      "status": "PASS",
       "title": "Source license/permission registry",
-      "detail": "Sources without license registry entries: ['src:sinaiticus:itsee-v195']",
+      "detail": null,
       "metrics": {
-        "sources": 19,
-        "license_entries": 18
+        "sources": 20,
+        "license_entries": 20
       }
     },
     {

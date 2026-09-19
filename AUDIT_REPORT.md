@@ -1,11 +1,11 @@
 # El-Relato — Audit Report
 
-Generated: 2026-09-19T05:04:37+00:00
+Generated: 2026-09-19T05:06:35+00:00
 
 **Overall: PASS_WITH_BLOCKERS**
 
-- PASS: 20
-- WARN / BLOCKED: 6
+- PASS: 21
+- WARN / BLOCKED: 5
 - FAIL: 0
 
 ## Checks
@@ -293,12 +293,11 @@ Incomplete fallbacks: P137
 }
 ~~~
 
-### ⚠️ integrity:license-registry — Source license/permission registry
-Sources without license registry entries: ['src:sinaiticus:itsee-v195']
+### ✅ integrity:license-registry — Source license/permission registry
 ~~~json
 {
-  "sources": 19,
-  "license_entries": 18
+  "sources": 20,
+  "license_entries": 20
 }
 ~~~
 
