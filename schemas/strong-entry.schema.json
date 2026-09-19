@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://el-relato.local/schemas/strong-entry.schema.json",
+  "title": "StrongEntry",
+  "type": "object",
+  "required": [
+    "id",
+    "source_id",
+    "e_strong",
+    "greek",
+    "gloss"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^strong-entry:"
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^src:"
+    },
+    "e_strong": {
+      "type": "string",
+      "pattern": "^G[0-9]{4,5}$"
+    },
+    "d_strong_raw": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "d_strong_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^G[0-9]{4,5}[A-Z]?$"
+    },
+    "u_strong": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "greek": {
+      "type": "string"
+    },
+    "transliteration": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lexical_morphology": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gloss": {
+      "type": "string"
+    },
+    "meaning_html": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "row_ordinal": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "additionalProperties": false
+}
