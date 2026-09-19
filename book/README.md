@@ -51,3 +51,27 @@ book/
 ```
 
 La capa `book/` está diseñada para admitir otras obras además de El Relato, cada una con su propio manifiesto composicional.
+
+
+## Base editorial SQLite
+
+La base materializada de la obra es `book/el-relato-book.sqlite`. Se reconstruye de forma determinista con `scripts/build_book_db.py` a partir de la estructura editorial normalizada y del corpus griego preservado.
+
+### Edición griega V1
+
+ID: `edition:el-relato:grc-sblgnt-2010:v1`
+
+- **6 capítulos**
+- **120 escenas**
+- **4.123 unidades editoriales**
+- **5.381 testigos/referencias griegas**
+- **4.913** materializaciones exactas desde SBLGNT
+- **456** materializaciones de microsegmentos `a/b/c/...`, con límites heurísticos trazables sobre tokens SBLGNT
+- **12** materializaciones de fallback desde la selección **Textus Receptus (TR)** de STEPBible TAGNT, exclusivamente para referencias numeradas que SBLGNT omite del texto principal
+- **0** testigos sin resolver
+- **0** textos primarios vacíos
+- **0** errores de integridad referencial
+
+Cuando una unidad contiene referencias paralelas, todas se conservan en `unit_witnesses`; la primera referencia de la unidad se usa como texto editorial primario de esta V1. Esto evita fabricar un texto griego híbrido entre Evangelios.
+
+Los fallbacks TR están identificados mediante `derivation_method = 'tagnt-tr-fallback'` y una edición fuente independiente. No se presentan como texto SBLGNT.
