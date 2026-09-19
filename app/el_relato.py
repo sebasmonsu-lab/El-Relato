@@ -133,6 +133,24 @@ def render_home():
     """)
 
 
+def strong_links(value:str):
+    ids=[]
+    for raw in (value or "").replace(","," ").replace(";"," ").split():
+        token=raw.strip().upper()
+        if token.startswith("G") and token[1:].isdigit():
+            token="G"+token[1:].zfill(4)
+            if token not in ids: ids.append(token)
+    if not ids: return html.escape(value or "")
+    return " ".join(f"<a class='strong-link' href='/strong?id={urllib.parse.quote(x)}' title='Ver significado y apariciones'>{html.escape(x)}</a>" for x in ids)
+
+
+def brief_definition(original:dict):
+    raw=(original.get("strongs_definition") or original.get("definition") or original.get("gloss") or "").strip()
+    if not raw: return "Definición resumida no disponible en la fuente léxica local."
+    first=raw.split(";")[0].strip()
+    return first if len(first)<=220 else first[:217].rsplit(" ",1)[0]+"…"
+
+
 def render_passage(payload):
     toks=payload["tokens"]
     greek=" ".join(
@@ -141,7 +159,7 @@ def render_passage(payload):
     )
     rows="".join(
       f"<tr><td>{x['position']}</td><td class='greek'>{html.escape(x['surface'])}</td>"
-      f"<td>{html.escape(x.get('strongs') or '')}</td><td class='greek'>{html.escape(x.get('lemma') or '')}</td>"
+      f"<td>{strong_links(x.get('strongs') or '')}</td><td class='greek'>{html.escape(x.get('lemma') or '')}</td>"
       f"<td>{html.escape(x.get('morphology_code') or '')}</td><td>{html.escape(x.get('gloss') or '')}</td>"
       f"<td>{html.escape(x.get('spanish_translation') or '')}</td>"
       f"<td><span class='badge'>{html.escape(x.get('textual_status') or '')}</span></td></tr>"
