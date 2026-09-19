@@ -1,7 +1,7 @@
 name: Build normalized STEPBible datasets
 
 concurrency:
-  group: el-relato-writers
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
 
 on:
@@ -50,5 +50,5 @@ jobs:
             echo "No normalized changes."
           else
             git commit -m "Build normalized STEPBible Strong and morphology datasets"
-            git push
+            bash scripts/push_generated_commit.sh
           fi
