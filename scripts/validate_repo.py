@@ -48,9 +48,13 @@ normalized = ROOT / "data" / "normalized"
 if normalized.exists():
     for path in normalized.rglob("*.jsonl"):
         schema_name = schema_map.get(path.name)
-        schema = None
+        validator = None
         if schema_name and jsonschema is not None:
             schema = load_json(ROOT / "schemas" / schema_name)
+            if schema is not None:
+                validator_cls = jsonschema.validators.validator_for(schema)
+                validator_cls.check_schema(schema)
+                validator = validator_cls(schema, format_checker=jsonschema.FormatChecker())
 
         for lineno, raw in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
             if not raw.strip():
@@ -60,11 +64,12 @@ if normalized.exists():
             except Exception as exc:
                 errors.append(f"{path.relative_to(ROOT)}:{lineno}: invalid JSONL: {exc}")
                 continue
-            if schema is not None:
-                try:
-                    jsonschema.validate(obj, schema)
-                except Exception as exc:
-                    errors.append(f"{path.relative_to(ROOT)}:{lineno}: schema error: {exc}")
+            if validator is not None:
+                row_errors = sorted(validator.iter_errors(obj), key=lambda e: list(e.path))
+                for exc in row_errors:
+                    where = ".".join(str(x) for x in exc.path)
+                    suffix = f" [{where}]" if where else ""
+                    errors.append(f"{path.relative_to(ROOT)}:{lineno}: schema error{suffix}: {exc.message}")
 
 # 3) Basic preservation invariants.
 required = [
