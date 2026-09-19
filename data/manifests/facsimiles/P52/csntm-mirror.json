@@ -1,0 +1,29 @@
+{
+  "manuscript": "P52",
+  "source": "CSNTM",
+  "listed_images": 2,
+  "mirrored_or_present": 2,
+  "failed": 0,
+  "total_bytes": 6336360,
+  "complete": true,
+  "files": [
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P52/P_52_0001a.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P52/P_52_0001a.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P52/images/csntm/P_52_0001a.jpg",
+      "status": "mirrored",
+      "size": 3207034,
+      "sha256": "08d8a1bdb1daf6279cad9470429a471d960cdce2b8332dfe93c39e7057a5266e",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P52/P_52_0001b.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P52/P_52_0001b.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P52/images/csntm/P_52_0001b.jpg",
+      "status": "mirrored",
+      "size": 3129326,
+      "sha256": "d8a4d4a71eb96b6396a393a31628ba31a902de685379d589a2db9cb51756d080",
+      "error": null
+    }
+  ]
+}
