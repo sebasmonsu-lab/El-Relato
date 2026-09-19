@@ -1,0 +1,39 @@
+{
+  "source_version": "1.95",
+  "book_div_ids": {
+    "Matthew": "B-B33-33-MATT",
+    "Mark": "B-B34-34-MARK",
+    "Luke": "B-B35-35-LUKE",
+    "John": "B-B36-36-JOHN"
+  },
+  "normalized_units": 3745,
+  "units_by_book": {
+    "John": 866,
+    "Luke": 1150,
+    "Mark": 661,
+    "Matthew": 1068
+  },
+  "unmapped_ab_units": 4,
+  "unmapped_samples": [
+    {
+      "book": "Matthew",
+      "id": "V-B33K1V0-33-MATT",
+      "n": "0"
+    },
+    {
+      "book": "Mark",
+      "id": "V-B34K1V0-34-MARK",
+      "n": "0"
+    },
+    {
+      "book": "Luke",
+      "id": "V-B35K1V0-35-LUKE",
+      "n": "0"
+    },
+    {
+      "book": "John",
+      "id": "V-B36K1V0-36-JOHN",
+      "n": "0"
+    }
+  ]
+}
