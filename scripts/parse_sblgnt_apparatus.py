@@ -22,7 +22,7 @@ FILES = {
 }
 
 KNOWN_SIGLA = {
-    "WH","WHmarg","Treg","NA28","RP","NIV","Holmes","SBL","SBLGNT",
+    "WH","WHmarg","Treg","NA28","RP","NIV","Holmes","TR","Greeven","SBL","SBLGNT",
 }
 LOCATION_RE = re.compile(r"^(?:•\s*)?(?P<loc>(?:\d+:)?\d+(?:[–-]\d+)?)\s+(?P<rest>.*)$")
 SIGLUM_RE = re.compile(r"^[A-Za-z][A-Za-z0-9]*$")
