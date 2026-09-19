@@ -113,6 +113,11 @@
       "source_id": "src:oxford:p104-facsimile",
       "status": "public_license",
       "evidence_path": "data/derived/manuscripts/fallback-facsimile-mirror-summary.json"
+    },
+    {
+      "source_id": "src:vatlib:p75-facsimile",
+      "status": "declared_by_owner",
+      "evidence_path": null
     }
   ]
 }
