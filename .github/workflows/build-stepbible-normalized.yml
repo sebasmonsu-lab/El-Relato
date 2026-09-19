@@ -1,0 +1,48 @@
+name: Build normalized STEPBible datasets
+
+on:
+  push:
+    paths:
+      - "scripts/parse_stepbible.py"
+      - "schemas/strong-entry.schema.json"
+      - "schemas/tagnt-row.schema.json"
+      - "vendor/STEPBible-Data/**"
+      - ".github/workflows/build-stepbible-normalized.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Parse preserved STEPBible sources
+        run: python scripts/parse_stepbible.py
+
+      - name: Install validation dependency
+        run: python -m pip install --disable-pip-version-check jsonschema
+
+      - name: Validate repository including generated JSONL
+        run: python scripts/validate_repo.py
+
+      - name: Commit normalized datasets
+        shell: bash
+        run: |
+          git config user.name "El-Relato Bot"
+          git config user.email "el-relato-bot@users.noreply.github.com"
+          git add data/normalized/stepbible data/derived/stepbible
+          if git diff --cached --quiet; then
+            echo "No normalized changes."
+          else
+            git commit -m "Build normalized STEPBible Strong and morphology datasets"
+            git push
+          fi
