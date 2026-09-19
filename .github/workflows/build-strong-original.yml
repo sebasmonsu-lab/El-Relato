@@ -1,7 +1,7 @@
 name: Build Strong original Greek dataset
 
 concurrency:
-  group: el-relato-writers
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
 
 on:
@@ -42,5 +42,5 @@ jobs:
             echo "No Strong normalized changes."
           else
             git commit -m "Build normalized Strong original Greek dataset"
-            git push
+            bash scripts/push_generated_commit.sh
           fi
