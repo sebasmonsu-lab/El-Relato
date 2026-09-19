@@ -1,0 +1,35 @@
+{
+  "manuscripts": {
+    "P52": {
+      "normalized_units": 5,
+      "features": {
+        "gap": 8,
+        "supplied": 71,
+        "unclear": 12,
+        "apparatus": 0,
+        "nomina_sacra": 2
+      }
+    },
+    "P66": {
+      "normalized_units": 830,
+      "features": {
+        "gap": 179,
+        "supplied": 2515,
+        "unclear": 1108,
+        "apparatus": 440,
+        "nomina_sacra": 557
+      }
+    },
+    "P75": {
+      "normalized_units": 626,
+      "features": {
+        "gap": 20,
+        "supplied": 2637,
+        "unclear": 2147,
+        "apparatus": 51,
+        "nomina_sacra": 345
+      }
+    }
+  },
+  "total_units": 1461
+}
