@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-19T06:22:28+00:00",
-  "overall": "PASS_WITH_BLOCKERS",
+  "generated_at": "2026-09-19T23:23:35+00:00",
+  "overall": "FAIL",
   "counts": {
-    "pass": 24,
+    "pass": 23,
     "warn": 3,
-    "fail": 0
+    "fail": 1
   },
   "checks": [
     {
@@ -424,8 +424,8 @@
       "title": "Preservation SHA-256 manifest",
       "detail": null,
       "metrics": {
-        "files": 35,
-        "generated_at": "2026-09-19T04:01:16+00:00"
+        "files": 1836,
+        "generated_at": "2026-09-19T19:56:28+00:00"
       }
     },
     {
@@ -467,7 +467,7 @@
     },
     {
       "id": "book:greek-db",
-      "status": "PASS",
+      "status": "FAIL",
       "title": "Canonical El-Relato Greek book database",
       "detail": "SBLGNT is primary; 12 numbered verses absent from its main text are materialized from the separately identified TAGNT Textus Receptus source.",
       "metrics": {
@@ -475,7 +475,7 @@
           "chapters": 6,
           "scenes": 120,
           "units": 4123,
-          "unit_texts": 4123,
+          "unit_texts": 4472,
           "unit_witnesses": 5381
         },
         "unresolved_witnesses": 0,

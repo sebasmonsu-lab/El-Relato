@@ -1,12 +1,12 @@
 # El-Relato — Audit Report
 
-Generated: 2026-09-19T06:22:28+00:00
+Generated: 2026-09-19T23:23:35+00:00
 
-**Overall: PASS_WITH_BLOCKERS**
+**Overall: FAIL**
 
-- PASS: 24
+- PASS: 23
 - WARN / BLOCKED: 3
-- FAIL: 0
+- FAIL: 1
 
 ## Checks
 
@@ -373,8 +373,8 @@ Raw scholarly TEI is preserved and a diplomatic verse-level view is regenerated 
 ### ✅ integrity:checksums — Preservation SHA-256 manifest
 ~~~json
 {
-  "files": 35,
-  "generated_at": "2026-09-19T04:01:16+00:00"
+  "files": 1836,
+  "generated_at": "2026-09-19T19:56:28+00:00"
 }
 ~~~
 
@@ -406,7 +406,7 @@ Raw scholarly TEI is preserved and a diplomatic verse-level view is regenerated 
 
 ### ✅ query:app — Local research interface and self-test
 
-### ✅ book:greek-db — Canonical El-Relato Greek book database
+### ❌ book:greek-db — Canonical El-Relato Greek book database
 SBLGNT is primary; 12 numbered verses absent from its main text are materialized from the separately identified TAGNT Textus Receptus source.
 ~~~json
 {
@@ -414,7 +414,7 @@ SBLGNT is primary; 12 numbered verses absent from its main text are materialized
     "chapters": 6,
     "scenes": 120,
     "units": 4123,
-    "unit_texts": 4123,
+    "unit_texts": 4472,
     "unit_witnesses": 5381
   },
   "unresolved_witnesses": 0,
