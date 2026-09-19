@@ -1,5 +1,9 @@
 name: Build normalized STEPBible datasets
 
+concurrency:
+  group: el-relato-writers
+  cancel-in-progress: false
+
 on:
   push:
     paths:
@@ -19,6 +23,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Setup Python
         uses: actions/setup-python@v5
