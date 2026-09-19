@@ -73,6 +73,11 @@
       "source_id": "src:vatlib:vaticanus",
       "status": "declared_by_owner",
       "evidence_path": null
+    },
+    {
+      "source_id": "src:morphgnt:strongs-greek-xml",
+      "status": "public_license",
+      "evidence_path": "vendor/StrongGreekOriginal/README.md"
     }
   ]
 }
