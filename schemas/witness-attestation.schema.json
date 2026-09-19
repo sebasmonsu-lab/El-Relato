@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://el-relato.local/schemas/witness-attestation.schema.json",
+  "title": "WitnessAttestation",
+  "type": "object",
+  "required": [
+    "id",
+    "manuscript_id",
+    "passage_id",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^attest:"
+    },
+    "manuscript_id": {
+      "type": "string",
+      "pattern": "^ms:ga:"
+    },
+    "passage_id": {
+      "type": "string",
+      "pattern": "^passage:"
+    },
+    "reading_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^reading:"
+    },
+    "image_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^image:"
+      },
+      "uniqueItems": true
+    },
+    "transcription_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^tx:"
+      },
+      "uniqueItems": true
+    },
+    "status": {
+      "enum": [
+        "extant",
+        "lacuna",
+        "uncertain",
+        "not_extant"
+      ]
+    },
+    "source_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^src:"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
