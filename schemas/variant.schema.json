@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://el-relato.local/schemas/variant.schema.json",
+  "title": "VariantUnit",
+  "type": "object",
+  "required": [
+    "id",
+    "book",
+    "chapter",
+    "verse",
+    "source_id",
+    "readings"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^variant:"
+    },
+    "book": {
+      "enum": [
+        "Matthew",
+        "Mark",
+        "Luke",
+        "John"
+      ]
+    },
+    "chapter": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "verse": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^src:"
+    },
+    "location_note": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "readings": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "text",
+          "witnesses"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^reading:"
+          },
+          "text": {
+            "type": "string"
+          },
+          "witnesses": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^ms:ga:"
+            },
+            "uniqueItems": true
+          },
+          "note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
