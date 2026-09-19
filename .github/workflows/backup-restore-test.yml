@@ -67,7 +67,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p build/backups/chunks
-          split -b 450M -d -a 2 build/backups/el-relato-lfs.tar build/backups/chunks/el-relato-lfs.tar.part-
+          split -b 90M -d -a 2 build/backups/el-relato-lfs.tar build/backups/chunks/el-relato-lfs.tar.part-
           sha256sum build/backups/chunks/el-relato-lfs.tar.part-* > build/backups/chunks/SHA256SUMS.txt
           ls -lh build/backups/chunks
 
@@ -124,5 +124,145 @@ jobs:
         with:
           name: el-relato-lfs-part-05
           path: build/backups/chunks/el-relato-lfs.tar.part-05
+          retention-days: 7
+          compression-level: 0
+      - name: Upload LFS chunk 06
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-lfs-part-06
+          path: build/backups/chunks/el-relato-lfs.tar.part-06
+          retention-days: 7
+          compression-level: 0
+      - name: Upload LFS chunk 07
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-lfs-part-07
+          path: build/backups/chunks/el-relato-lfs.tar.part-07
+          retention-days: 7
+          compression-level: 0
+      - name: Upload LFS chunk 08
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-lfs-part-08
+          path: build/backups/chunks/el-relato-lfs.tar.part-08
+          retention-days: 7
+          compression-level: 0
+      - name: Upload LFS chunk 09
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-lfs-part-09
+          path: build/backups/chunks/el-relato-lfs.tar.part-09
+          retention-days: 7
+          compression-level: 0
+      - name: Upload LFS chunk 10
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-lfs-part-10
+          path: build/backups/chunks/el-relato-lfs.tar.part-10
+          retention-days: 7
+          compression-level: 0
+      - name: Upload LFS chunk 11
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-lfs-part-11
+          path: build/backups/chunks/el-relato-lfs.tar.part-11
+          retention-days: 7
+          compression-level: 0
+      - name: Upload LFS chunk 12
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-lfs-part-12
+          path: build/backups/chunks/el-relato-lfs.tar.part-12
+          retention-days: 7
+          compression-level: 0
+      - name: Upload LFS chunk 13
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-lfs-part-13
+          path: build/backups/chunks/el-relato-lfs.tar.part-13
+          retention-days: 7
+          compression-level: 0
+      - name: Upload LFS chunk 14
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-lfs-part-14
+          path: build/backups/chunks/el-relato-lfs.tar.part-14
+          retention-days: 7
+          compression-level: 0
+      - name: Upload LFS chunk 15
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-lfs-part-15
+          path: build/backups/chunks/el-relato-lfs.tar.part-15
+          retention-days: 7
+          compression-level: 0
+      - name: Upload LFS chunk 16
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-lfs-part-16
+          path: build/backups/chunks/el-relato-lfs.tar.part-16
+          retention-days: 7
+          compression-level: 0
+      - name: Upload LFS chunk 17
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-lfs-part-17
+          path: build/backups/chunks/el-relato-lfs.tar.part-17
+          retention-days: 7
+          compression-level: 0
+      - name: Upload LFS chunk 18
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-lfs-part-18
+          path: build/backups/chunks/el-relato-lfs.tar.part-18
+          retention-days: 7
+          compression-level: 0
+      - name: Upload LFS chunk 19
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-lfs-part-19
+          path: build/backups/chunks/el-relato-lfs.tar.part-19
+          retention-days: 7
+          compression-level: 0
+      - name: Upload LFS chunk 20
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-lfs-part-20
+          path: build/backups/chunks/el-relato-lfs.tar.part-20
+          retention-days: 7
+          compression-level: 0
+      - name: Upload LFS chunk 21
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-lfs-part-21
+          path: build/backups/chunks/el-relato-lfs.tar.part-21
+          retention-days: 7
+          compression-level: 0
+      - name: Upload LFS chunk 22
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-lfs-part-22
+          path: build/backups/chunks/el-relato-lfs.tar.part-22
+          retention-days: 7
+          compression-level: 0
+      - name: Upload LFS chunk 23
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-lfs-part-23
+          path: build/backups/chunks/el-relato-lfs.tar.part-23
+          retention-days: 7
+          compression-level: 0
+      - name: Upload LFS chunk 24
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-lfs-part-24
+          path: build/backups/chunks/el-relato-lfs.tar.part-24
+          retention-days: 7
+          compression-level: 0
+      - name: Upload LFS chunk 25
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-lfs-part-25
+          path: build/backups/chunks/el-relato-lfs.tar.part-25
           retention-days: 7
           compression-level: 0
