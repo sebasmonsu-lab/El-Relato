@@ -1,0 +1,40 @@
+name: Build Strong original Greek dataset
+
+on:
+  push:
+    paths:
+      - "scripts/parse_strong_original.py"
+      - "vendor/StrongGreekOriginal/**"
+      - "schemas/strong-original-entry.schema.json"
+      - ".github/workflows/build-strong-original.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Parse Strong XML
+        run: python scripts/parse_strong_original.py
+      - name: Install validator
+        run: python -m pip install --disable-pip-version-check jsonschema
+      - name: Validate
+        run: python scripts/validate_repo.py
+      - name: Commit normalized Strong data
+        shell: bash
+        run: |
+          git config user.name "El-Relato Bot"
+          git config user.email "el-relato-bot@users.noreply.github.com"
+          git add data/normalized/strong-original data/derived/strong-original
+          if git diff --cached --quiet; then
+            echo "No Strong normalized changes."
+          else
+            git commit -m "Build normalized Strong original Greek dataset"
+            git push
+          fi
