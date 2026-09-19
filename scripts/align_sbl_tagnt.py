@@ -41,6 +41,12 @@ def is_sbl_row(row) -> bool:
     return bool(re.search(r"(^|[+ ;])SBL($|[+ ;])", row.get("editions") or ""))
 
 
+def morphology_parts(code: str | None):
+    if not code:
+        return []
+    return [x.strip() for x in re.split(r"\\s*\\+\\s*", code) if x.strip()]
+
+
 def strong_base(s: str | None):
     if not s:
         return None
@@ -166,6 +172,8 @@ def main():
 
             original_id = original_by_id.get(base) if base else None
             morphology_code = trow.get("grammar") or None
+            morphology_components = morphology_parts(morphology_code)
+            morphology_known = bool(morphology_components) and all(x in morph_codes for x in morphology_components)
             methods[method] += 1
 
             link = {
@@ -183,7 +191,8 @@ def main():
                 "normalized_equal": norm_greek(srow["surface"]) == norm_greek(trow["greek"]),
                 "strongs": raw_strong,
                 "morphology_code": morphology_code,
-                "morphology_known": morphology_code in morph_codes if morphology_code else False,
+                "morphology_components": morphology_components,
+                "morphology_known": morphology_known,
                 "lemma": trow.get("dictionary_form"),
                 "gloss": trow.get("gloss"),
                 "spanish_translation": trow.get("spanish_translation"),
