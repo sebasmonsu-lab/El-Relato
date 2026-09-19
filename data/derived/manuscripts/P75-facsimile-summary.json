@@ -1,0 +1,549 @@
+{
+  "planned": 108,
+  "mirrored": 108,
+  "missing": 0,
+  "complete": true,
+  "total_bytes": 201965150,
+  "files": [
+    {
+      "path": "sources/manuscripts/P75/images/1A.10r.jpg",
+      "size": 1745175,
+      "sha256": "98696e2820a3b6985dc1e5979290b72187f322db8f1cc149a4d3c1dfa807edfb"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1A.10v.jpg",
+      "size": 1802428,
+      "sha256": "e66eda84fbdd1b4772c2eecf1687d317e0f1a53d4e99e99790f9c910527ff8cd"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1A.11r.jpg",
+      "size": 1814586,
+      "sha256": "e1f88aaf8bcc2c9c14259ad37bd8eb0c98c77e79ec6fdab482ecb00e143610ad"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1A.11v.jpg",
+      "size": 1737695,
+      "sha256": "56a21c30d905d6c3bce4f441ad367123748f0fd04f15e4bb29e53d7e8e09f4ed"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1A.12r.jpg",
+      "size": 1867207,
+      "sha256": "ee819ec6b76bcd0094f6e635da4d01e14adb28396988338af50f506f0fef75f3"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1A.12v.jpg",
+      "size": 1820967,
+      "sha256": "1daac43bf0e0f5171de4303b9d2caf6ff82b2eeba822f958ea18872d074ae55f"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1A.1r.jpg",
+      "size": 1339571,
+      "sha256": "68be29d7e83ecacb67a15eaaab8aaf3b88838928125bcc91eab8a312c3aadd86"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1A.1v.jpg",
+      "size": 1695933,
+      "sha256": "e3c4d6ebf4972e705b84d7814c348cd7e0b781f326cac3faa7897ef6437f2acc"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1A.2r.jpg",
+      "size": 1460083,
+      "sha256": "aa95254d8bece3654a095609c4a4dda84f1c3113ea259eac66e1b4c78d62fe9f"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1A.2v.jpg",
+      "size": 1408808,
+      "sha256": "fe67220ed1ae83ac5c17f5a7dd83e6413e09764cc2fb68859a2f36c5d8e09117"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1A.3r.jpg",
+      "size": 1938121,
+      "sha256": "d74738b2435ac2fc9c83b8bed5093d13c9a14d8322771006a7b489eab5af8a56"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1A.3v.jpg",
+      "size": 1961618,
+      "sha256": "30d1decf44bad9ecb781e869162392273ac20267ac213abf14768388acd7af54"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1A.4r.jpg",
+      "size": 1642693,
+      "sha256": "eac8fa7a57432bdba5b1a00e5eb9eaca02a54075fa5268dc5d81a0ad88ac4f2b"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1A.4v.jpg",
+      "size": 1583668,
+      "sha256": "ad6d626e8af860690211ed8c5e01677d58a9892a40731c63e6bb0769accfbee4"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1A.5r.jpg",
+      "size": 1678841,
+      "sha256": "4ced576311a87d456ba95ec0178f40cf6dae3f9fae620f045ed3fc183026152d"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1A.5v.jpg",
+      "size": 1630828,
+      "sha256": "22a4f271df9b3c7170d2be7b53742fcb4c5d05c9bfd811c2237ddb6d6d95e06f"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1A.6r.jpg",
+      "size": 1597211,
+      "sha256": "9a6c8646042fc9602b728ca9d17c812e841b6101b21a820df736792b6af31722"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1A.6v.jpg",
+      "size": 1636828,
+      "sha256": "056ba67b934a8a2a677683cc3b0159bf0903c5ed57527f9efb2a57584621b286"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1A.7r.jpg",
+      "size": 1262907,
+      "sha256": "2d8d43e28d969e5f78b647aeeb44478ec6cb1f86335639c74e962b2d9518aec2"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1A.7v.jpg",
+      "size": 1267637,
+      "sha256": "95d68e0387037f3e56d4e7a41bf5cd9c4f6654956885698eb30d1d4fe9097358"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1A.8r.jpg",
+      "size": 2030770,
+      "sha256": "4802dab75ca9cb69db624caf6dee037dea6bb136414a627cca93648e44e36622"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1A.8v.jpg",
+      "size": 1995490,
+      "sha256": "297d9995167a6a1d54294c4188168179074219c58a99c527a6907f67d5635560"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1A.9r.jpg",
+      "size": 1720212,
+      "sha256": "0b50cc1369552170869aed760209d80278eb7088ba7ba5191c11c3d285a2af92"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1A.9v.jpg",
+      "size": 1776514,
+      "sha256": "d3b01d437bfca3ee3fed773ba20c40a9e36a663248b84c5f82079decd55a2ecf"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.10r.jpg",
+      "size": 2136594,
+      "sha256": "e7c2818c86ee6bb8cf5c05f0f44c31911855ff13ce7894d13c06792623ea36f8"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.10v.jpg",
+      "size": 2157105,
+      "sha256": "b3b1a3c41143a15fba35aa989ef344f71e74ab02581a5f52870c1377e664b60f"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.11r.jpg",
+      "size": 2120692,
+      "sha256": "b813bb36f71222ea72e342a26862cbadf63949977b575f23d49277dd7d74c69a"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.11v.jpg",
+      "size": 2109023,
+      "sha256": "552024993e5d32e4d4f5c18ab2cdc0b27a2b9e0ef22356fe21764f59ccec63a2"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.12r.jpg",
+      "size": 2136568,
+      "sha256": "006816b2a34bb719784c521d8beb1adb3d0946968493dcdb48dbdea1d05df5f7"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.12v.jpg",
+      "size": 2144769,
+      "sha256": "1a5306c11c428ccd0cf6b66d4cc8ff01a7d91bd8c5cf9fae0b601879c563694a"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.1r.jpg",
+      "size": 1981269,
+      "sha256": "f5e2defec8fa8c7e99ff1d3a06fca9fe6ea8f5a2ccdfbf99e4f1836709a3d0ce"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.1v.jpg",
+      "size": 1926405,
+      "sha256": "676c31e1aca100c5554b1320402b34b8c7387979891e96df10ff416b7e5f89e4"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.2r.jpg",
+      "size": 2092936,
+      "sha256": "aa5988213c901b33b3f4ab8446000a77227e9365038ab995f10789141ccf5cdd"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.2v.jpg",
+      "size": 2043046,
+      "sha256": "8fd969ff08d1031a3f5356184060adb3d8c32af3ade571dd671e9c8715e3c700"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.3r.jpg",
+      "size": 2143927,
+      "sha256": "a1af5745f1b73f7ade234fd595baebca8b5087a88a846ea52176265b5887e938"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.3v.jpg",
+      "size": 2102319,
+      "sha256": "ea1ee608e4caa4be62a57b0a65f12207444bb346478a53ca489f2b7c201e1ec5"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.4r.jpg",
+      "size": 2195465,
+      "sha256": "8decdc2b1f1104c5038f90d132e4d6c82e49b2ac654b9a3cba843732491b310c"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.4v.jpg",
+      "size": 2155832,
+      "sha256": "ef6916e362feae542a3a503cfc21611ec7b7086ae4dce9b98c6c6af6711f8583"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.5r.jpg",
+      "size": 2108292,
+      "sha256": "64b964169b7ee22026602c8bccfcb98745cf88e0efca13c78ad579740636bb36"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.5v.jpg",
+      "size": 2178916,
+      "sha256": "3d396b135abfd3c651c4a4e3e0582f7237a2732672cbf78ee3bbe96d7571ee6d"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.6r.jpg",
+      "size": 2220935,
+      "sha256": "fd41479f5170b6346d44d2354b10146615c265d5334921671d150143d42d8762"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.6v.jpg",
+      "size": 2198166,
+      "sha256": "0a1df9b946b934c870fe39d1e5dd293b072aea3a1525ab5b070fb82f80836c4d"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.7r.jpg",
+      "size": 2221587,
+      "sha256": "8eb20abb21ff36ed97e33b64c710d17b7777bdf27eb0b555cd853ed0541ab3d2"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.7v.jpg",
+      "size": 2151356,
+      "sha256": "11545a3da49c183fc416e5b134874dbfb02399286aee6c48cca92e79ce09eb3d"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.8r.jpg",
+      "size": 2140419,
+      "sha256": "a4fae4bc92d6a94d367fa75e9075aa480d53886992c9efce16d9c02d143690df"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.8v.jpg",
+      "size": 2060257,
+      "sha256": "9b81ab8267c1afba8c1fce94e7b781670b8df3caf814f49e50188203b8847b86"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.9r.jpg",
+      "size": 2208268,
+      "sha256": "2d1753a788d5a5c510d81bdf7f90b4bf7d58651719aaa94252c5a8c534847b33"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/1B.9v.jpg",
+      "size": 2070530,
+      "sha256": "bc4e51b66be49f9ad839e5889dad8c5adcd898c36a11d3c22727f9f957758d75"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.10r.jpg",
+      "size": 2192880,
+      "sha256": "5fef5bd595f4c9c52e7b3909ad1d3a90aecf28bcbf38aaa0b78b7cf7e86fa0e0"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.10v.jpg",
+      "size": 2226024,
+      "sha256": "9e14f242759115a0c43f2ace10b0df36f25a20ca3d48aa2490acd782336ee00f"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.11r.jpg",
+      "size": 2142345,
+      "sha256": "534ad378223067a88508c2a97f5994e4c75cf07d9e21b3e69fd61ef8717c7e63"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.11v.jpg",
+      "size": 2150218,
+      "sha256": "99a2b2ad15f09ff311893fae773e8d3a8dd22e02888a3be4b23c48eefaa7ead4"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.12r.jpg",
+      "size": 2094892,
+      "sha256": "5c453c88afc98218716691f71f0c66ebf904de5b5645f2796b772104b67d858b"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.12v.jpg",
+      "size": 2150835,
+      "sha256": "302645526ace9029fe140b7de819350e38ab1e1321406c96e9360c9ded3474f2"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.1r.jpg",
+      "size": 1910286,
+      "sha256": "9415698c8f02e38a07bad68c6a69398bd558c5390fa6c4f974c67f10f5bb6a15"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.1v.jpg",
+      "size": 1839426,
+      "sha256": "87f33437f8dc91d56ad3488257917242dc1eea2ccce5bf02c18bede0d15ca9e4"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.2r.jpg",
+      "size": 1533071,
+      "sha256": "0a6c875fae93ab1cc83ceb0bd1a8c9c27940cfc63e4098700b2e842b2156d976"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.2v.jpg",
+      "size": 1531773,
+      "sha256": "67e055dfb48aa044fc52093a41798aad87ffd22a67ca960c8c174a7f72332e60"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.3r.jpg",
+      "size": 1725828,
+      "sha256": "d4e7250c8e75ea6974a6d76c07448afc825495f4acfbf0612f572b70857defb0"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.3v.jpg",
+      "size": 1731142,
+      "sha256": "dbb360307b48fd7941e5bf5f829f2bf24fb314e26e0bdda1f417f164aaceaed4"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.4r.jpg",
+      "size": 2087582,
+      "sha256": "a27fcb468c13c8067eeb44d4a853fd91f4cb740d14a2d2795075850d8ce2a0c5"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.4v.jpg",
+      "size": 2150132,
+      "sha256": "6e6b9d8b1753317ffe926eadda0ba55995fdc7b9170aad6a3ee134c73e52bed6"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.5r.jpg",
+      "size": 2148289,
+      "sha256": "05456ac9ca30b5af7bd86f177c2b45b75c97ba1376b78dd045b88cfacbf37f40"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.5v.jpg",
+      "size": 2164788,
+      "sha256": "2a93aad82b47b167e0089ca9ea7032d16251de01e79dd0b5a7474d774790cbde"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.6r.jpg",
+      "size": 2190557,
+      "sha256": "c48ee56d733f2fda890c41f56a98ce3a941fdb23936f92f38ed09d4e23d9ea6c"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.6v.jpg",
+      "size": 2016590,
+      "sha256": "00e414fedf6e59dc2a794b2fab17f9507dbb4252503b7c20770579e61c2df2c0"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.7r.jpg",
+      "size": 1979451,
+      "sha256": "01c885f7abe583244ce7b6e75ca7db4e4c87a54c8018924301da9babffe5dbce"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.7v.jpg",
+      "size": 1878083,
+      "sha256": "4f369f124c4715175c4176338a0bced140c4a8d96141dfc42b32a5e092f06033"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.8r.jpg",
+      "size": 2201735,
+      "sha256": "46301a39eba9ebc5bd3c919a5338a836af0da18fdfa4b3edffbe26152fc32265"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.8v.jpg",
+      "size": 2208871,
+      "sha256": "598b96f771b01ca9854333831365593d9895d9b714bb9b4d21628823948d30c4"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.9r.jpg",
+      "size": 2208602,
+      "sha256": "b9a4e04a976ec2e7a26a0aae3b66505912b9ac326daa2b62816a895f5d1ee711"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2A.9v.jpg",
+      "size": 2223688,
+      "sha256": "340de1c82849ff3050d87abadbedb1626a70ef79e258c44b11063e178af9466f"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.10r.jpg",
+      "size": 1602800,
+      "sha256": "f0ba1738cf7706148c9d33dda8ed436c114ffe810ce5c441ada20760b0ae10f2"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.10v.jpg",
+      "size": 1654375,
+      "sha256": "a135f2adbcaef4d527004b08f411d3b01658da0462125819bcc32165a6425a77"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.11r.jpg",
+      "size": 1709151,
+      "sha256": "284dde55b6fccefad896d5781f80119e78d02366f803183fcdc21a9f22438c55"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.11v.jpg",
+      "size": 1685759,
+      "sha256": "a01228a4dc7f57a50e92a773f5d420a3782f7b2e6f76e59938da4e53dfe3d308"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.12r.jpg",
+      "size": 1375945,
+      "sha256": "47752e163a574fb798d378542b153acf30966aaafe8f7909f943b458eff84c55"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.12v.jpg",
+      "size": 1327778,
+      "sha256": "b103857f102d4aa2f5d299dc0949346d81819192b3589ee21ec618ec7b707986"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.1r.jpg",
+      "size": 2085261,
+      "sha256": "d5ae222aa6e0afa1c0f308a3e167cc32f169e5ad248c3d1f52e80f6844c2ebd4"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.1v.jpg",
+      "size": 2094088,
+      "sha256": "cc4305f9d432cd869860e5136b1dcea82f4f5a2380733b079ba5e3eff687a99d"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.2r.jpg",
+      "size": 1637098,
+      "sha256": "f7141782c830fa5616da8613fa3b57915c1e13925e0c2dc964938be906eba715"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.2v.jpg",
+      "size": 1642127,
+      "sha256": "79d7cd94008f0a5215feb5c7d361e68ef104ca3d93254689f86560f1777638fb"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.3r.jpg",
+      "size": 1751924,
+      "sha256": "bbb7e2a8dec8ebd648d4452624ad1d04e75c1ceac9debd541ecfe94ac5df0f70"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.3v.jpg",
+      "size": 1747060,
+      "sha256": "0f3fc65c4d334853b869addda39d5f999c2c122241ac4c1a61e29b73c6dbf573"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.4r.jpg",
+      "size": 1595320,
+      "sha256": "ba3a5b4848e52df3c849733cd7ef4d99dc0b6f70ff6bdf7edae3d14ddd6745de"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.4v.jpg",
+      "size": 1604593,
+      "sha256": "2f532d6f97eefb1fd85d6ba6e1882cbaccb68764f582e1d4293680c1ffd28e81"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.5r.jpg",
+      "size": 1655639,
+      "sha256": "42b2a8ae565bb96d100046b3e24462f83e808f1fa4564fdf69c00e5ca1eed6a0"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.5v.jpg",
+      "size": 1685344,
+      "sha256": "2b0c2ba0968dc7e91392b8f709aaea0ea5fd3e9994d5212a3286c6e521d599fb"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.6r.jpg",
+      "size": 1732707,
+      "sha256": "e91b8a26930313150ea6d397e195219de20ceaace2b5eddd69bba151867c1e17"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.6v.jpg",
+      "size": 1762823,
+      "sha256": "d9d5a9f65f8d0b5841d783f0640a2c3ea199264038e2bd38c0675aa2cc213fcf"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.7r.jpg",
+      "size": 1935535,
+      "sha256": "30124c99e01f9c78c268e9a231ccee1f4fc77c46ebf23cd7fe39ffdc4d6944d7"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.7v.jpg",
+      "size": 1982454,
+      "sha256": "20e29474ce4d61a943f1806a954330243ec49b1f31d393710ffc256ff75988d5"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.8r.jpg",
+      "size": 1954676,
+      "sha256": "6063ed893ee7b9559fab7c322eb76d63e6dd1970bd3ac15e1fbdd96236aefa84"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.8v.jpg",
+      "size": 1995544,
+      "sha256": "f313c1b5fc4ce3cc5ab3886a23a782cf0ab693b780cfdd4ba66f34d0a29c3882"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.9r.jpg",
+      "size": 1939224,
+      "sha256": "37312a9f8525891e365ef9fd4712eb4f5f6f2611552df6e190125d59ec3f923d"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/2B.9v.jpg",
+      "size": 1858309,
+      "sha256": "db6acf9a1c67d31d92f32db2a980b1c7c4dc385291aa6060f21923b718b9d486"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/3A.1r.jpg",
+      "size": 1676225,
+      "sha256": "3798f8168300aafbc8dd508c1afe365d1d907a756cbde5d8774dd46487f7d7dd"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/3A.1v.jpg",
+      "size": 1687988,
+      "sha256": "901c480e33bc1f96c178686a9edf67dabe268c6de09266f4106135cb65da70af"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/3A.2r.jpg",
+      "size": 1840526,
+      "sha256": "cefaf702b34e2039054fa122e11d1506687155135aaacee9f1f2cd7e58a58046"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/3A.2v.jpg",
+      "size": 1912335,
+      "sha256": "6a074ebb5f202a1f601c343732f55e7a72a1b1f09171428edcd66e275a41a49c"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/3A.3r.jpg",
+      "size": 1974808,
+      "sha256": "f6b88aab8fc9039a77b7aa7d26e980f579c3f692a9cd44a8a42504bc9059dfc3"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/3A.3v.jpg",
+      "size": 2039651,
+      "sha256": "fe8f99ead38fe43aa465392797429b64ad7cec050306d37ff4c2b73cd6f45ebd"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/3A.4r.jpg",
+      "size": 1415945,
+      "sha256": "ed6fcd71b1215a2537b46fbee261f2e64e1329e9bb22b1ca1d7930aa11b1053e"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/3A.4v.jpg",
+      "size": 1465194,
+      "sha256": "fcc24a8ba082b05403f9cbb0aecff0e6b012fe46468527233f5846b35530e4f5"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/3A.5r.jpg",
+      "size": 1370679,
+      "sha256": "8fc2fb140a36917e7cb01d9a9c7041f6577fef9bea22e8624bbefc2e42f0468b"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/3A.5v.jpg",
+      "size": 1349308,
+      "sha256": "202b6f41968bb536a86ce846962c88b7e3534236a8022e712a06d4f83f06b40d"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/3A.6r.jpg",
+      "size": 1574619,
+      "sha256": "3795b91bcf37a5f94a7f37fc52e111f5265388b56604a2b97aac0eced27498e0"
+    },
+    {
+      "path": "sources/manuscripts/P75/images/3A.6v.jpg",
+      "size": 1534783,
+      "sha256": "40e574e49c9135be3e7d2aeabbdc52ba375f4896c9f5df53b1794071869febf3"
+    }
+  ]
+}
