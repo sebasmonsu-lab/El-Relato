@@ -37,7 +37,7 @@ jobs:
       LOCALE: ${{ inputs.locale || 'es-419' }}
       LOOP: ${{ inputs.loop || '0' }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      TRANSLATION_MODELS: auto
+      TRANSLATION_MODELS: claude-haiku-4.5,auto
     steps:
       - uses: actions/checkout@v4
         with:
