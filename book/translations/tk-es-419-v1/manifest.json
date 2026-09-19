@@ -10,7 +10,7 @@
   "version": "1",
   "status": "generating",
   "provider": "GitHub Copilot CLI",
-  "model_name": "pending",
+  "model_name": "auto",
   "units_expected": 4123,
   "review_required": true
 }
