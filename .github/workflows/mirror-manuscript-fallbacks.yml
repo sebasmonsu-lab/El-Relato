@@ -1,0 +1,43 @@
+name: Mirror manuscript fallback facsimiles
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+on:
+  push:
+    paths:
+      - "scripts/mirror_manuscript_fallbacks.py"
+      - ".github/workflows/mirror-manuscript-fallbacks.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --disable-pip-version-check requests
+      - name: Mirror fallback facsimiles
+        run: python scripts/mirror_manuscript_fallbacks.py
+      - name: Commit mirrors
+        shell: bash
+        run: |
+          git config user.name "El-Relato Bot"
+          git config user.email "el-relato-bot@users.noreply.github.com"
+          git add sources/manuscripts/P66/raw/bodmer sources/manuscripts/P66/images/bodmer                   sources/manuscripts/P104/images/oxford-commons sources/manuscripts/P137/images/ees                   data/derived/manuscripts/fallback-facsimile-mirror-summary.json
+          if git diff --cached --quiet; then
+            echo "No fallback mirror changes."
+          else
+            git commit -m "Mirror P66 Bodmer, P104 Oxford archive, and P137 EES facsimiles"
+            bash scripts/push_generated_commit.sh
+          fi
