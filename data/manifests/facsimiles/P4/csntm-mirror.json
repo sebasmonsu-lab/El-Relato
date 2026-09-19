@@ -1,0 +1,101 @@
+{
+  "manuscript": "P4",
+  "source": "CSNTM",
+  "listed_images": 10,
+  "mirrored_or_present": 10,
+  "failed": 0,
+  "total_bytes": 3015717,
+  "complete": true,
+  "files": [
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P4/GA_P4_0001a.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P4/GA_P4_0001a.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P4/images/csntm/GA_P4_0001a.jpg",
+      "status": "mirrored",
+      "size": 224644,
+      "sha256": "43332f2339c239c2e67991eacf4d64546a3ceb638409533a9b994e5d8664e1b4",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P4/GA_P4_0001b.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P4/GA_P4_0001b.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P4/images/csntm/GA_P4_0001b.jpg",
+      "status": "mirrored",
+      "size": 233328,
+      "sha256": "59450db7cf8bcb092e2fac561fd6f7e82f04d7faa9ff5a931f89df3144d09173",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P4/GA_P4_0002a.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P4/GA_P4_0002a.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P4/images/csntm/GA_P4_0002a.jpg",
+      "status": "mirrored",
+      "size": 380699,
+      "sha256": "26ab0f9d91289d960f19a50132c8403e50a207f9c30171d515682263a0fb38c8",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P4/GA_P4_0002b.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P4/GA_P4_0002b.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P4/images/csntm/GA_P4_0002b.jpg",
+      "status": "mirrored",
+      "size": 352094,
+      "sha256": "8ebdf0b1bd1110452195e821147674e1024e35cb29eeabe5ea232f79b9c59e9d",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P4/GA_P4_0003a.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P4/GA_P4_0003a.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P4/images/csntm/GA_P4_0003a.jpg",
+      "status": "mirrored",
+      "size": 195111,
+      "sha256": "eb080a4e760a254ed07454d3fa6b331dd9d3d3f1dae2a2d3c8a3d8051a48a3c9",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P4/GA_P4_0003b.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P4/GA_P4_0003b.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P4/images/csntm/GA_P4_0003b.jpg",
+      "status": "mirrored",
+      "size": 203355,
+      "sha256": "0365d7d69e4e5618d1b98517b2ee1d698fcd79f6a5e4728b13184fac716fd1b0",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P4/GA_P4_0004a.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P4/GA_P4_0004a.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P4/images/csntm/GA_P4_0004a.jpg",
+      "status": "mirrored",
+      "size": 536074,
+      "sha256": "67a3a9f1baa3848a707a5db2ec8f4e9fd85ff89cb106929682670ceb1d61138f",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P4/GA_P4_0004b.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P4/GA_P4_0004b.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P4/images/csntm/GA_P4_0004b.jpg",
+      "status": "mirrored",
+      "size": 289818,
+      "sha256": "5d00c2744df1cfda788b66cbd1c941e646ad95054bf465f7b14b6e01a0e20f19",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P4/GA_P4_0005a.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P4/GA_P4_0005a.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P4/images/csntm/GA_P4_0005a.jpg",
+      "status": "mirrored",
+      "size": 298438,
+      "sha256": "84bb06a36f7ec8977f9040df7b862985c49f26c7ddad562f2113babfd3e7641c",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P4/GA_P4_0005b.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P4/GA_P4_0005b.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P4/images/csntm/GA_P4_0005b.jpg",
+      "status": "mirrored",
+      "size": 302156,
+      "sha256": "0a12419b0992d9f7ebd627ba79cad0c9e9182ccd5fc1e798993e19bdc23c0194",
+      "error": null
+    }
+  ]
+}
