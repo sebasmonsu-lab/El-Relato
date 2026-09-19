@@ -33,7 +33,7 @@ a{color:#315d85}.hero{padding:38px 0 20px}
 .muted{color:#716c62}.greek{font-family:Georgia,'Times New Roman',serif;font-size:1.35rem;line-height:1.9}
 .text{font-size:1.12rem;line-height:1.9}
 .token{display:inline-block;padding:0 2px;border-radius:4px;text-decoration:none;color:#202b35}
-.token:hover{background:#e9dfca}
+.token:hover{background:#e9dfca}\n.token.align-active{background:#f3d98b;box-shadow:0 0 0 2px #e4c15f}\n.trans-token.align-active{background:#d8e9f7;box-shadow:0 0 0 2px #93aac2}
 .trans-token{display:inline-block;padding:0 2px;border-radius:4px;text-decoration:none;color:#183d66;border-bottom:2px solid #93aac2}
 .trans-token:hover{background:#dfeaf3}.trans-token.medium{border-bottom-style:dashed}
 .unaligned-token{border-bottom:1px dotted #9a8f80;color:#625c53}
@@ -72,7 +72,19 @@ def page(root, title, body):
         f'<header><a href="{root}index.html"><strong>El Relato</strong></a><nav>'
         f'<a href="{root}editions/index.html">El Relato</a>'
         f'<a href="{root}source/index.html">Griego / evidencia</a>'
-        f'<a href="{root}about.html">Método</a></nav></header><main>{body}</main></body></html>'
+        f'<a href="{root}about.html">Método</a></nav></header><main>{body}</main>'
+        '<script>(function(){function set(a,on){var u=a.closest(".unit")||document;'
+        'var ids=(a.dataset.sourceIds||"").split("|").filter(Boolean);'
+        'ids.forEach(function(id){u.querySelectorAll(".token[data-source-id=\\\""+CSS.escape(id)+"\\\"]").forEach(function(g){g.classList.toggle("align-active",on);});});'
+        'a.classList.toggle("align-active",on);}'
+        'document.querySelectorAll(".trans-token[data-source-ids]").forEach(function(a){'
+        'a.addEventListener("mouseenter",function(){set(a,true)});a.addEventListener("mouseleave",function(){set(a,false)});'
+        'a.addEventListener("focus",function(){set(a,true)});a.addEventListener("blur",function(){set(a,false)});});'
+        'document.querySelectorAll(".token[data-source-id]").forEach(function(g){'
+        'function back(on){var u=g.closest(".unit")||document;u.querySelectorAll(".trans-token[data-source-ids]").forEach(function(a){'
+        'var ids=(a.dataset.sourceIds||"").split("|");if(ids.indexOf(g.dataset.sourceId)>=0)a.classList.toggle("align-active",on);});g.classList.toggle("align-active",on);}'
+        'g.addEventListener("mouseenter",function(){back(true)});g.addEventListener("mouseleave",function(){back(false)});'
+        'g.addEventListener("focus",function(){back(true)});g.addEventListener("blur",function(){back(false)});});})();</script></body></html>'
     )
 
 
@@ -82,7 +94,7 @@ def token_span(root, token):
     pre = esc(token.get("prefix_before"))
     post = esc(token.get("punctuation_after"))
     if tid:
-        link = f'<a class="token" href="{root}token/{safe(tid)}.html" title="{esc(token.get("strongs"))}">{surface}</a>'
+        link = f'<a class="token" data-source-id="{esc(tid)}" href="{root}token/{safe(tid)}.html" title="{esc(token.get("strongs"))}">{surface}</a>'
     else:
         link = surface
     return pre + link + post
@@ -130,6 +142,7 @@ def render_translation(root, eslug, uid, text, alignment, token_by_id):
             conf = tok.get("confidence", "medium")
             parts.append(
                 f'<a class="trans-token {esc(conf)}" '
+                f'data-source-ids="{esc("|".join(source_ids))}" '
                 f'href="{root}alignment/{eslug}/{safe(uid)}/{tok["index"]}.html" '
                 f'title="Griego: {esc(greek)}">{label}</a>'
             )
