@@ -1,4 +1,4 @@
-name: Build CSNTM passage evidence mapping
+name: Build integrated manuscript evidence mapping
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -14,6 +14,10 @@ on:
       - "sources/manuscripts/P66/raw/csntm/image-details.jsonl"
       - "sources/manuscripts/P104/raw/csntm/image-details.jsonl"
       - "scripts/build_csntm_evidence_mapping.py"
+      - "data/derived/manuscripts/fallback-facsimile-mirror-summary.json"
+      - "data/derived/manuscripts/P75-facsimile-summary.json"
+      - "data/normalized/transcriptions/**"
+      - "sources/manuscripts/P137/raw/**"
       - ".github/workflows/build-csntm-evidence.yml"
   workflow_dispatch:
 
@@ -41,6 +45,6 @@ jobs:
           git config user.email "el-relato-bot@users.noreply.github.com"
           git add data/normalized/manuscript-evidence data/derived/manuscripts/csntm-evidence-mapping-report.json
           if ! git diff --cached --quiet; then
-            git commit -m "Build CSNTM passage-to-image witness mapping"
+            git commit -m "Build integrated manuscript evidence mapping"
             bash scripts/push_generated_commit.sh
           fi
