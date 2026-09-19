@@ -1,6 +1,6 @@
 # El-Relato — Audit Report
 
-Generated: 2026-09-19T05:28:15+00:00
+Generated: 2026-09-19T05:32:14+00:00
 
 **Overall: PASS_WITH_BLOCKERS**
 
@@ -413,15 +413,15 @@ The nucleus is preserved, but the declared exhaustive scope (all Gospel papyri +
 Offline restore from Git bundle + LFS archive is tested in CI.
 ~~~json
 {
-  "tested_at": "2026-09-19T05:15:52+00:00",
-  "head": "e34d9bc72b4e068b32bae2e08d52faef310f359c",
+  "tested_at": "2026-09-19T05:31:06+00:00",
+  "head": "50f10acae4d043eba7a6036e6a3145b0839e9bb2",
   "restore_test": "PASS",
   "git_fsck": "PASS",
   "git_lfs_fsck": "PASS",
   "repository_validation": "PASS",
   "query_database_rebuild": "PASS",
   "app_self_test": "PASS",
-  "bundle_bytes": 22507469,
+  "bundle_bytes": 22518239,
   "lfs_archive_bytes": 2434508800,
   "lfs_tracked_entries": 924
 }
