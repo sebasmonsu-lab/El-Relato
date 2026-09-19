@@ -3,21 +3,21 @@
 Última actualización: 2026-09-19
 
 ## Estado general
-**Fase actual:** 0 / 3 en paralelo — Gobierno + preservación STEPBible.
+**Fase activa:** Gobierno completado; preservación STEPBible bloqueada parcialmente; schemas/validación en ejecución.
 
 ## Completado
 - [x] Repositorio privado `sebasmonsu-lab/El-Relato`.
 - [x] README inicial.
+- [x] PROJECT_PLAN.md maestro.
+- [x] docs/ARCHITECTURE.md.
+- [x] docs/LOOP_PROTOCOL.md.
+- [x] 14 epics de ejecución creados en GitHub Issues.
 - [x] Metodología básica de jerarquía de fuentes.
 - [x] Registro inicial de manuscritos núcleo.
-- [x] SBLGNT Mateo TXT.
-- [x] SBLGNT Marcos TXT.
-- [x] SBLGNT Lucas TXT.
-- [x] SBLGNT Juan TXT.
-- [x] SBLGNT Mateo XML.
-- [x] SBLGNT Marcos XML.
-- [x] SBLGNT Lucas XML.
-- [x] SBLGNT Juan XML.
+- [x] SBLGNT Mateo TXT/XML.
+- [x] SBLGNT Marcos TXT/XML.
+- [x] SBLGNT Lucas TXT/XML.
+- [x] SBLGNT Juan TXT/XML.
 - [x] README/About/LICENSE SBLGNT.
 - [x] README STEPBible.
 - [x] TEGMC — códigos de morfología griega.
@@ -25,24 +25,33 @@
 - [x] Procedencia inicial STEPBible.
 
 ## En ejecución
+- [ ] Schemas de datos.
+- [ ] Convenciones de IDs.
+- [ ] Validación automática inicial.
+- [ ] Inventario académico ampliado de manuscritos.
+
+## Pendiente con bloqueo
 - [ ] TBESG — Extended Strong Greek completo.
 - [ ] TAGNT Mat–Jhn completo.
-- [ ] Estrategia de fragmentación y reconstrucción de archivos grandes.
-- [ ] Checksums iniciales.
-- [ ] Plan maestro y arquitectura.
-
-## Próximo bloque
-- [ ] Validar inventario real de archivos SBLGNT/STEPBible.
-- [ ] Crear manifests con hashes.
-- [ ] Completar datos académicos de manuscritos núcleo.
-- [ ] Localizar/capturar transcripciones y facsímiles.
 
 ## Bloqueos conocidos
 
-### B-001 — límite del conector para archivos grandes
-Afecta TBESG y TAGNT Mat–Jhn.
+### B-001 — lectura incremental de blobs grandes de STEPBible
+**Afecta:** TBESG (~4.5 MB) y TAGNT Mat–Jhn (~14 MB).
 
-**Resolución acordada:** copiar por partes dentro del límite de API, almacenar manifest de partes y procedimiento de ensamblado. No cerrar hasta comprobar hash del archivo reconstruido.
+**Observación técnica:** el endpoint del conector disponible no entrega rangos parciales para estos blobs grandes. Aunque se solicitan rangos de líneas, el conector intenta resolver el blob completo y falla por límite de cuerpo.
+
+**Estrategia acordada por el proyecto:** preservación incremental/fragmentada, sin abandonar los archivos.
+
+**Estado:** ABIERTO. Debemos elegir/implementar un mecanismo que realmente permita leer fragmentos del upstream (por ejemplo un proceso externo controlado o una acción dentro de GitHub) y después verificar hash final. Hasta entonces no se marca como mirrored.
+
+## Próximo bloque
+1. Terminar schemas e IDs.
+2. Crear validadores y CI.
+3. Completar manifests/checksums de lo ya preservado.
+4. Profundizar metadata de manuscritos núcleo.
+5. Resolver B-001 y completar TBESG/TAGNT.
+6. Continuar con facsímiles/transcripciones.
 
 ## Regla de estado
 Un ítem nunca desaparece porque falle. Se mueve a **Bloqueos conocidos** hasta resolverlo.
