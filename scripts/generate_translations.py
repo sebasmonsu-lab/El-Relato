@@ -8,8 +8,7 @@ import re
 import sqlite3
 import sys
 import time
-import urllib.error
-import urllib.request
+import subprocess
 from collections import defaultdict
 from pathlib import Path
 
@@ -18,7 +17,6 @@ BOOK_DB = ROOT / "book/el-relato-book.sqlite"
 SBL_VERSES = ROOT / "data/normalized/sblgnt/edition-verses.jsonl"
 BASE_BOOK_EDITION = "edition:el-relato:grc-sblgnt-2010:v1"
 BASE_GOSPEL_EDITION = "edition:gospels:grc-sblgnt-2010:v1"
-API_URL = "https://models.github.ai/inference/chat/completions"
 
 TARGETS = {
     "es-419": {
@@ -97,59 +95,62 @@ def call_model(token: str, models: list[str], target, kind: str, batch):
         payload_items = [{"id": x["id"], "reference": f'{x["book"]} {x["chapter"]}:{x["verse"]}', "greek": x["text"]} for x in batch]
         unit_note = "Each item is one canonical verse. Translate the supplied Greek verse itself. Do not import wording from another verse or a published translation."
     prompt = (
-        f"Target locale: {target['locale']}. Style: {target['style']}.\n"
-        f"{unit_note}\n"
-        "Return exactly this JSON shape: {\"items\":[{\"id\":\"...\",\"text\":\"...\"}]}.\n"
-        "INPUT:\n" + json.dumps(payload_items, ensure_ascii=False, separators=(",", ":"))
+        SYSTEM + "\n\n"
+        + f"Target locale: {target['locale']}. Style: {target['style']}.\n"
+        + unit_note + "\n"
+        + 'Return exactly this JSON shape: {"items":[{"id":"...","text":"..."}]}.\n'
+        + "INPUT:\n" + json.dumps(payload_items, ensure_ascii=False, separators=(",", ":"))
     )
-    unavailable = []
     last = None
     for model in models:
-        body = json.dumps({
-            "model": model,
-            "messages": [{"role":"system","content":SYSTEM},{"role":"user","content":prompt}],
-            "max_tokens": 30000,
-        }).encode()
-        req = urllib.request.Request(API_URL, data=body, method="POST", headers={
-            "Authorization": f"Bearer {token}", "Content-Type": "application/json", "Accept": "application/json"
-        })
-        for attempt in range(4):
+        for attempt in range(3):
+            env = os.environ.copy()
+            env["GITHUB_TOKEN"] = token
             try:
-                with urllib.request.urlopen(req, timeout=300) as resp:
-                    data = json.loads(resp.read().decode())
-                content = data["choices"][0]["message"]["content"]
-                obj = extract_json(content)
+                p = subprocess.run(
+                    ["copilot", "-s", "--no-ask-user", "--model", model, "-p", prompt],
+                    cwd=ROOT, env=env, text=True, capture_output=True, timeout=600,
+                )
+            except subprocess.TimeoutExpired as e:
+                last = f"timeout model={model}: {e}"
+                continue
+            if p.returncode != 0:
+                raw = (p.stderr or p.stdout or "")[-3000:]
+                last = f"copilot rc={p.returncode} model={model}: {raw}"
+                low = raw.lower()
+                if any(x in low for x in ("not available", "unsupported model", "unknown model", "model_not_available")):
+                    break
+                if any(x in low for x in ("rate limit", "too many requests", "credit", "quota")):
+                    if attempt < 2:
+                        time.sleep(20 * (attempt + 1))
+                        continue
+                    break
+                if attempt < 2:
+                    time.sleep(5 * (attempt + 1))
+                    continue
+                break
+            try:
+                obj = extract_json(p.stdout)
                 items = obj.get("items") if isinstance(obj, dict) else None
-                if not isinstance(items, list): raise ModelError(f"Model {model} did not return items array")
+                if not isinstance(items, list):
+                    raise ModelError(f"Copilot model {model} did not return items array")
                 expected = [x["unit_id"] if kind=="book" else x["id"] for x in batch]
                 got = [str(x.get("id")) for x in items]
                 if len(got) != len(expected) or set(got) != set(expected) or len(got) != len(set(got)):
                     raise ModelError(f"Coverage mismatch from {model}: expected={len(expected)} got={len(got)}")
                 mapped = {str(x["id"]): str(x.get("text") or "").strip() for x in items}
-                if any(not mapped[i] for i in expected): raise ModelError(f"Empty translation from {model}")
+                if any(not mapped[i] for i in expected):
+                    raise ModelError(f"Empty translation from {model}")
                 return mapped, model
-            except urllib.error.HTTPError as e:
-                raw = e.read().decode(errors="replace")[:1500]
-                last = f"HTTP {e.code} {raw}"
-                if e.code in (404, 400) and ("model" in raw.lower() or "unavailable" in raw.lower()):
-                    unavailable.append(model); break
-                if e.code == 429:
-                    retry = int(e.headers.get("Retry-After") or min(60, 4 * (2 ** attempt)))
-                    if attempt == 3: break
-                    time.sleep(retry); continue
-                if e.code >= 500 and attempt < 3:
-                    time.sleep(3 * (attempt + 1)); continue
-                break
-            except (urllib.error.URLError, TimeoutError) as e:
-                last = repr(e)
-                if attempt < 3: time.sleep(3 * (attempt + 1)); continue
-                break
             except (json.JSONDecodeError, KeyError, ModelError) as e:
-                last = repr(e)
-                if attempt < 2: time.sleep(2); continue
+                last = f"parse model={model}: {e}; stdout_tail={p.stdout[-2000:]}"
+                if attempt < 2:
+                    time.sleep(3)
+                    continue
                 break
-    if last and "429" in last: raise RateLimited(last)
-    raise ModelError(f"All models failed; unavailable={unavailable}; last={last}")
+    if last and any(x in last.lower() for x in ("rate limit", "too many requests", "credit", "quota")):
+        raise RateLimited(last)
+    raise ModelError(f"All Copilot models failed; last={last}")
 
 def pack(groups, max_chars=15000):
     batches=[]; cur=[]; n=0
@@ -230,7 +231,7 @@ Traducción nueva generada directamente desde el griego primario materializado e
 Reglas: fidelidad semántica; no imitar traducciones bíblicas modernas; no armonizar testigos; no agregar exégesis; una salida por unidad; trazabilidad a la unidad y testigo griego. Estado generado requiere revisión humana antes de presentarse como revisión filológica.
 """
     (bdir/"POLICY.md").write_text(policy,encoding="utf-8")
-    manifest={"edition_id":target["book_edition_id"],"baseline_edition_id":BASE_BOOK_EDITION,"book_id":"book:el-relato","family":"TK","code":target["book_slug"],"language_code":target["language_code"],"locale":target["locale"],"title":target["book_title"],"version":"1","status":"generated-full" if book_done else "generating","provider":"GitHub Models","model_name":model_used or "pending","units_expected":4123,"review_required":True}
+    manifest={"edition_id":target["book_edition_id"],"baseline_edition_id":BASE_BOOK_EDITION,"book_id":"book:el-relato","family":"TK","code":target["book_slug"],"language_code":target["language_code"],"locale":target["locale"],"title":target["book_title"],"version":"1","status":"generated-full" if book_done else "generating","provider":"GitHub Copilot CLI","model_name":model_used or "pending","units_expected":4123,"review_required":True}
     (bdir/"manifest.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 
     sdir=ROOT/"sources/gospel-editions"/target["slug"]; sdir.mkdir(parents=True,exist_ok=True)
@@ -254,7 +255,7 @@ def main():
     a=ap.parse_args(); target=TARGETS[a.locale]
     token=os.environ.get("GITHUB_TOKEN")
     if not token: raise SystemExit("GITHUB_TOKEN required")
-    models=[x.strip() for x in os.environ.get("TRANSLATION_MODELS","openai/gpt-5.6-sol,openai/gpt-5,openai/gpt-4.1").split(",") if x.strip()]
+    models=[x.strip() for x in os.environ.get("TRANSLATION_MODELS","gpt-5.6-sol,gpt-5.4,claude-sonnet-4.6").split(",") if x.strip()]
 
     bsrc=book_source_rows(); ssrc=source_rows(); b_by={x["unit_id"]:x for x in bsrc}; s_by={x["id"]:x for x in ssrc}
     bhave=existing_book(target); shave=existing_source(target)
