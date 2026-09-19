@@ -32,3 +32,14 @@ Una traducción consolidada debe cubrir exactamente el conjunto de versículos d
 - **Fuentes**: explorador técnico del SOURCE, token, Strong, lema, morfología, variantes y manuscritos.
 
 Los tres navegadores apuntan al mismo sistema de IDs y provenance, pero no mezclan sus responsabilidades.
+
+## Separación pública de productos
+
+La interfaz pública no cruza navegación entre **El Relato** y **Los Evangelios**.
+
+- **El Relato → SOURCE griego/evidencia**.
+- **Evangelios traducidos → edición griega de los Evangelios → SOURCE griego/evidencia**.
+- No se publica navegación **El Relato ↔ Evangelios**.
+- Las fichas públicas de tokens griegos son neutrales: describen la evidencia léxica/textual y no funcionan como puente entre ambas familias.
+
+Las relaciones cruzadas pueden conservarse internamente para auditoría y trazabilidad, sin exponerse como experiencia de navegación pública.

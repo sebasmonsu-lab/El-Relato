@@ -12,13 +12,26 @@ import json
 import sqlite3
 from pathlib import Path
 
-from build_web import BOOK_LABELS, BOOK_SLUGS, esc, page, safe, token_span
+from build_web import BOOK_LABELS, BOOK_SLUGS, CSS, esc, safe, token_span
 
 ROOT = Path(__file__).resolve().parents[1]
 EDITIONS_ROOT = ROOT / "sources/gospel-editions"
 PUBLIC_STATUSES = {"canonical-source", "consolidated", "published"}
 CANON = ["Matthew", "Mark", "Luke", "John"]
 GREEK_EDITION_ID = "edition:gospels:grc-sblgnt-2010:v1"
+
+
+def gospel_page(site_root, title, body):
+    greek_slug = safe(GREEK_EDITION_ID)
+    return (
+        '<!doctype html><html lang="es"><head><meta charset="utf-8">'
+        '<meta name="viewport" content="width=device-width,initial-scale=1">'
+        f"<title>{esc(title)} · Los Evangelios</title><style>{CSS}</style></head><body>"
+        f'<header><a href="{site_root}gospels/index.html"><strong>Los Evangelios</strong></a><nav>'
+        f'<a href="{site_root}gospels/index.html">Ediciones</a>'
+        f'<a href="{site_root}gospels/{greek_slug}/index.html">Griego</a>'
+        f'</nav></header><main>{body}</main></body></html>'
+    )
 
 
 def connect_ro(path: Path):
@@ -113,7 +126,7 @@ def main():
     )
     (site / "gospels").mkdir(parents=True, exist_ok=True)
     (site / "gospels/index.html").write_text(
-        page(
+        gospel_page(
             "../",
             "Los Evangelios",
             '<section class="hero"><h1>Los Evangelios</h1>'
@@ -136,7 +149,7 @@ def main():
         edir = site / "gospels" / slug
         edir.mkdir(parents=True, exist_ok=True)
         (edir / "index.html").write_text(
-            page(
+            gospel_page(
                 "../../",
                 edition["title"],
                 f'<h1>{esc(edition["title"])}</h1>'
@@ -162,7 +175,7 @@ def main():
             bdir = edir / bslug
             bdir.mkdir(parents=True, exist_ok=True)
             (bdir / "index.html").write_text(
-                page(
+                gospel_page(
                     "../../../",
                     BOOK_LABELS[book],
                     f'<div class="crumbs"><a href="../index.html">{esc(edition["title"])}</a></div>'
@@ -219,7 +232,7 @@ def main():
                         )
                     (edir / bslug / str(chapter)).mkdir(parents=True, exist_ok=True)
                     (edir / bslug / str(chapter) / f"{verse}.html").write_text(
-                        page("../../../../", f"{BOOK_LABELS[book]} {chapter}:{verse}", vbody),
+                        gospel_page("../../../../", f"{BOOK_LABELS[book]} {chapter}:{verse}", vbody),
                         encoding="utf-8",
                     )
 
@@ -232,7 +245,7 @@ def main():
                 cdir = edir / bslug / str(chapter)
                 cdir.mkdir(parents=True, exist_ok=True)
                 (cdir / "index.html").write_text(
-                    page("../../../../", f"{BOOK_LABELS[book]} {chapter}", cbody),
+                    gospel_page("../../../../", f"{BOOK_LABELS[book]} {chapter}", cbody),
                     encoding="utf-8",
                 )
 

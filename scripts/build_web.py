@@ -71,8 +71,7 @@ def page(root, title, body):
         f"<title>{esc(title)} · El Relato</title><style>{CSS}</style></head><body>"
         f'<header><a href="{root}index.html"><strong>El Relato</strong></a><nav>'
         f'<a href="{root}editions/index.html">El Relato</a>'
-        f'<a href="{root}gospels/index.html">Evangelios</a>'
-        f'<a href="{root}source/index.html">Fuentes</a>'
+        f'<a href="{root}source/index.html">Griego / evidencia</a>'
         f'<a href="{root}about.html">Método</a></nav></header><main>{body}</main></body></html>'
     )
 
@@ -245,9 +244,7 @@ def build(out):
                 '<section class="hero"><h1>El Relato</h1>'
                 '<p>Libro multilingüe y herramienta de investigación trazable de los cuatro Evangelios.</p></section>'
                 f'<h2>Ediciones disponibles</h2><div class="grid">{edcards}</div>'
-                '<a class="card" href="gospels/index.html"><h2>Leer los Evangelios</h2>'
-                '<p>Mateo, Marcos, Lucas y Juan en orden canónico y por idioma.</p></a>'
-                '<a class="card" href="source/index.html"><h2>Explorar SOURCE</h2>'
+                '<a class="card" href="source/index.html"><h2>Explorar el griego</h2>'
                 '<p>Capa técnica: griego, tokens, Strong, lema y morfología.</p></a>',
             ),
         )
@@ -471,24 +468,6 @@ def build(out):
             for _, chapter_number, verse in keys:
                 tokens = verse_tokens[(book_code, chapter_number, verse)]
                 greek = "".join(token_span("../../../", token) for token in tokens)
-                used = []
-                seen = set()
-                for token in tokens:
-                    for hit in reverse.get(token["token_id"], []):
-                        key = (hit["scene_number"], hit["unit_id"])
-                        if key not in seen:
-                            seen.add(key)
-                            used.append(hit)
-                usage = ""
-                for hit in used:
-                    links = " · ".join(
-                        f'<a href="../../../editions/{edition_slug(e)}/scene/{hit["scene_number"]}.html#'
-                        f'{esc(hit["unit_id"])}">{esc(e["language_code"])}</a>'
-                        for e in editions
-                    )
-                    usage += (
-                        f'<li>Escena {hit["scene_number"]} · {esc(hit["reference"])} — {links}</li>'
-                    )
                 write(
                     out / f"source/{slug}/{chapter_number}/{verse}.html",
                     page(
@@ -496,8 +475,7 @@ def build(out):
                         f"{BOOK_LABELS[book_code]} {chapter_number}:{verse}",
                         f'<h1>{BOOK_LABELS[book_code]} {chapter_number}:{verse}</h1>'
                         f'<div class="card greek">{greek}</div>'
-                        f'<div class="card"><h2>Uso en El Relato</h2><ul>'
-                        f'{usage or "<li>No utilizado.</li>"}</ul></div>',
+                        f'<p class="muted">SOURCE griego normalizado y trazable palabra por palabra.</p>',
                     ),
                 )
 
@@ -515,28 +493,6 @@ def build(out):
             dl = "".join(
                 f"<dt>{esc(label)}</dt><dd>{esc(value) or '—'}</dd>" for label, value in fields
             )
-            use = ""
-            for hit in hits:
-                links = " · ".join(
-                    f'<a href="../editions/{edition_slug(e)}/scene/{hit["scene_number"]}.html#'
-                    f'{esc(hit["unit_id"])}">{esc(e["language_code"])}</a>'
-                    for e in editions
-                )
-                use += f'<li>Escena {hit["scene_number"]} — {links}</li>'
-
-            aligned_translation = ""
-            for match in translation_reverse.get(token["token_id"], []):
-                edition = edition_by_id.get(match["edition_id"])
-                if not edition:
-                    continue
-                eslug = edition_slug(edition)
-                aligned_translation += (
-                    f'<li><a href="../alignment/{eslug}/{safe(match["unit_id"])}/'
-                    f'{match["token_index"]}.html">{esc(match["surface"])}</a> · '
-                    f'{esc(edition["language_code"])} · escena {match["scene_number"]} · '
-                    f'{esc(match["confidence"])}</li>'
-                )
-
             write(
                 out / "token" / (safe(token["token_id"]) + ".html"),
                 page(
@@ -544,10 +500,8 @@ def build(out):
                     token["surface"],
                     f'<h1 class="greek">{esc(token["surface"])}</h1>'
                     f'<div class="card analysis"><dl>{dl}</dl><code>{esc(token["token_id"])}</code></div>'
-                    f'<div class="card"><h2>Traducciones alineadas</h2><ul>'
-                    f'{aligned_translation or "<li>Sin traducción tokenizada alineada.</li>"}</ul></div>'
-                    f'<div class="card"><h2>Uso por edición</h2><ul>'
-                    f'{use or "<li>No utilizado.</li>"}</ul></div>',
+                    f'<p><a href="../source/{BOOK_SLUGS[token["book"]]}/{token["chapter"]}/{token["verse"]}.html">'
+                    f'Abrir {BOOK_LABELS[token["book"]]} {token["chapter"]}:{token["verse"]} en griego →</a></p>',
                 ),
             )
 
