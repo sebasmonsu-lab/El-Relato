@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   bundle:
@@ -19,6 +19,19 @@ jobs:
           ref: main
           fetch-depth: 0
           lfs: false
+
+      - name: Freeze v0.2.0 internal tag
+        shell: bash
+        run: |
+          git config user.name "El-Relato Bot"
+          git config user.email "el-relato-bot@users.noreply.github.com"
+          if git rev-parse "v0.2.0-internal" >/dev/null 2>&1; then
+            echo "Tag v0.2.0-internal already exists."
+          else
+            git tag -a v0.2.0-internal -m "El-Relato v0.2.0 internal closure"
+            git push origin v0.2.0-internal
+          fi
+
       - name: Create final Git-only bundle
         shell: bash
         run: |
@@ -27,6 +40,21 @@ jobs:
           sha256sum build/final-bundle/el-relato-final.bundle > build/final-bundle/el-relato-final.bundle.sha256
           git rev-parse HEAD > build/final-bundle/HEAD.txt
           git bundle verify build/final-bundle/el-relato-final.bundle
+
+      - name: Create v0.2.0 internal release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          if gh release view v0.2.0-internal >/dev/null 2>&1; then
+            echo "Release already exists."
+          else
+            gh release create v0.2.0-internal \
+              --title "El-Relato v0.2.0-internal" \
+              --prerelease \
+              --notes "Internal closure release: canonical Greek Book DB, inspectable JSONL exports, source provenance, manuscript evidence, textual variants, reproducible query layer, validated independent Git+LFS backup, and explicit research blockers."
+          fi
+
       - name: Upload final Git bundle
         uses: actions/upload-artifact@v4
         with:
