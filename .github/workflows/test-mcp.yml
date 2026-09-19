@@ -1,0 +1,26 @@
+name: Test MCP interfaces
+
+on:
+  push:
+    paths:
+      - "mcp/**"
+      - "data/normalized/**"
+      - "book/exports/**"
+      - "book/translations/**"
+      - ".github/workflows/test-mcp.yml"
+  pull_request:
+    paths:
+      - "mcp/**"
+      - "data/normalized/**"
+      - "book/exports/**"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pytest
+      - run: pytest -q mcp/tests
