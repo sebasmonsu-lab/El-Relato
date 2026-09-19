@@ -46,8 +46,12 @@ jobs:
           assert m["scenes"] == 120, m
           assert m["units"] == 4123, m
           assert len(m["editions"]) >= 1, m\n          assert m["source_tokens"] > 64000, m
-          assert (root/"edition/scene/1.html").exists()
-          assert (root/"edition/scene/120.html").exists()
+          assert (root/"editions/index.html").exists()
+          import re
+          for e in m["editions"]:
+              slug=re.sub(r"[^A-Za-z0-9._-]+","-",e["edition_id"]).strip("-").lower()
+              assert (root/"editions"/slug/"scene/1.html").exists(), e
+              assert (root/"editions"/slug/"scene/120.html").exists(), e
           assert (root/"source/matthew/1/1.html").exists()
           assert (root/"source/john/21/25.html").exists()
           token_pages=list((root/"token").glob("*.html"))
