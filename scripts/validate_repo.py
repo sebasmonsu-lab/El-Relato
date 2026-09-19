@@ -44,6 +44,8 @@ schema_map = {
     "edition-verses.jsonl": "edition-verse.schema.json",
     "sbl-tagnt-links.jsonl": "sbl-tagnt-link.schema.json",
     "edition-apparatus-units.jsonl": "edition-apparatus-unit.schema.json",
+    "igntp-papyri.jsonl": "transcription-unit.schema.json",
+    "sinaiticus-gospels.jsonl": "transcription-unit.schema.json",
     "sinaiticus-gospels.jsonl": "transcription-unit.schema.json",
     "images.jsonl": "manuscript-image.schema.json",
     "witness-attestations.jsonl": "witness-attestation.schema.json",
