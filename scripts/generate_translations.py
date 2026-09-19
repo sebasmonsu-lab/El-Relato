@@ -109,7 +109,7 @@ def call_model(token: str, models: list[str], target, kind: str, batch):
             try:
                 p = subprocess.run(
                     ["copilot", "-s", "--no-ask-user", "--model", model, "-p", prompt],
-                    cwd=ROOT, env=env, text=True, capture_output=True, timeout=600,
+                    cwd=ROOT, env=env, text=True, capture_output=True, timeout=180,
                 )
             except subprocess.TimeoutExpired as e:
                 last = f"timeout model={model}: {e}"
@@ -268,7 +268,7 @@ def main():
     for x in ssrc:
         if x["id"] not in shave: sgdict[(x["book"],x["chapter"])].append(x)
     sgroups=[sgdict[k] for k in sorted(sgdict,key=lambda k:(order[k[0]],k[1]))]
-    batches=[("book",x) for x in pack(bgroups,14500)] + [("source",x) for x in pack(sgroups,14500)]
+    batches=[("book",x) for x in pack(bgroups,5000)] + [("source",x) for x in pack(sgroups,5000)]
     calls=0; model_used=None; blocked=None
     for kind,batch in batches:
         if calls>=a.max_calls: break
