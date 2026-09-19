@@ -1,5 +1,9 @@
 name: Ingest large STEPBible files
 
+concurrency:
+  group: el-relato-writers
+  cancel-in-progress: false
+
 on:
   push:
     paths:
@@ -15,6 +19,8 @@ jobs:
     steps:
       - name: Checkout El-Relato
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Setup Python
         uses: actions/setup-python@v5
