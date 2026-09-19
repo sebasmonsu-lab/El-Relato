@@ -10,7 +10,9 @@
     "chapter",
     "verse",
     "position",
-    "surface"
+    "surface",
+    "prefix_before",
+    "textual_status"
   ],
   "properties": {
     "id": {
@@ -95,6 +97,18 @@
         "null"
       ],
       "pattern": "^src:"
+    },
+    "prefix_before": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "textual_status": {
+      "enum": [
+        "main",
+        "double-bracketed"
+      ]
     }
   },
   "additionalProperties": false
