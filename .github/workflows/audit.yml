@@ -1,0 +1,49 @@
+name: Audit El-Relato
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+on:
+  push:
+    paths:
+      - "scripts/audit_project.py"
+      - "data/normalized/**"
+      - "data/derived/**"
+      - "data/checksums/**"
+      - "data/manifests/**"
+      - "STATUS.md"
+      - "backup/**"
+      - "app/**"
+      - ".github/workflows/audit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Audit project
+        run: python scripts/audit_project.py
+      - name: Commit audit report
+        if: always()
+        shell: bash
+        run: |
+          git config user.name "El-Relato Bot"
+          git config user.email "el-relato-bot@users.noreply.github.com"
+          git add AUDIT_REPORT.md data/derived/audit/audit-report.json || true
+          if git diff --cached --quiet; then
+            echo "No audit changes."
+          else
+            git commit -m "Refresh El-Relato audit report"
+            bash scripts/push_generated_commit.sh
+          fi
