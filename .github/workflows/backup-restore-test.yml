@@ -37,6 +37,8 @@ jobs:
           path: |
             build/backups/el-relato.bundle
             build/backups/el-relato.bundle.sha256
+            build/backups/el-relato-lfs.tar
+            build/backups/el-relato-lfs.tar.sha256
             build/backups/backup-metadata.json
           retention-days: 7
           compression-level: 0
