@@ -1,0 +1,71 @@
+name: Mirror P75 facsimile
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+on:
+  push:
+    paths:
+      - "scripts/mirror_iiif_inventory.py"
+      - ".github/workflows/mirror-p75.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          lfs: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Setup
+        run: |
+          python -m pip install --disable-pip-version-check requests
+          git lfs install
+          git config user.name "El-Relato Bot"
+          git config user.email "el-relato-bot@users.noreply.github.com"
+      - name: Mirror P75 in checkpoints
+        shell: bash
+        run: |
+          for offset in 0 40 80; do
+            python scripts/mirror_iiif_inventory.py               --manuscript P75               --inventory sources/manuscripts/P75/raw/iiif-canvases.jsonl               --offset "$offset" --limit 40
+            git add sources/manuscripts/P75/images data/manifests/facsimiles/P75
+            if ! git diff --cached --quiet; then
+              git commit -m "Mirror P75 facsimile batch $offset"
+              bash scripts/push_generated_commit.sh
+            fi
+          done
+      - name: Audit completeness
+        shell: bash
+        run: |
+          python - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          root=Path(".")
+          inv=[json.loads(x) for x in Path("sources/manuscripts/P75/raw/iiif-canvases.jsonl").read_text().splitlines() if x.strip()]
+          imgs=sorted((root/"sources/manuscripts/P75/images").glob("*.jpg"))
+          rows=[]
+          for p in imgs:
+              data=p.read_bytes()
+              rows.append({"path":str(p),"size":len(data),"sha256":hashlib.sha256(data).hexdigest()})
+          summary={"planned":len(inv),"mirrored":len(imgs),"missing":len(inv)-len(imgs),"complete":len(imgs)==len(inv),"total_bytes":sum(x["size"] for x in rows),"files":rows}
+          out=root/"data/derived/manuscripts/P75-facsimile-summary.json"
+          out.parent.mkdir(parents=True,exist_ok=True)
+          out.write_text(json.dumps(summary,indent=2)+"\n")
+          if not summary["complete"]:
+              raise SystemExit(f"P75 incomplete: {summary['missing']} missing")
+          print(json.dumps({k:v for k,v in summary.items() if k!="files"},indent=2))
+          PY
+          git add data/derived/manuscripts/P75-facsimile-summary.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Audit complete P75 facsimile mirror"
+            bash scripts/push_generated_commit.sh
+          fi
