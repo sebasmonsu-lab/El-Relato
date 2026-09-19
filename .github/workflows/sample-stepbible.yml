@@ -1,7 +1,7 @@
 name: Sample STEPBible preserved datasets
 
 concurrency:
-  group: el-relato-writers
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
 
 on:
@@ -53,5 +53,5 @@ jobs:
             echo "No changes."
           else
             git commit -m "Add deterministic STEPBible format samples"
-            git push
+            bash scripts/push_generated_commit.sh
           fi
