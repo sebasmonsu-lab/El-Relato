@@ -1,6 +1,6 @@
 # El-Relato — Audit Report
 
-Generated: 2026-09-19T05:06:35+00:00
+Generated: 2026-09-19T05:06:51+00:00
 
 **Overall: PASS_WITH_BLOCKERS**
 
@@ -314,8 +314,8 @@ Incomplete fallbacks: P137
   "facsimiles": 269,
   "manuscript_images": 372,
   "witness_attestations": 623,
-  "transcription_units": 3745,
-  "database_bytes": 35270656
+  "transcription_units": 5206,
+  "database_bytes": 36106240
 }
 ~~~
 
