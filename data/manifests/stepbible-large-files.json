@@ -1,0 +1,28 @@
+{
+  "source": "https://github.com/STEPBible/STEPBible-Data",
+  "upstream_tree": "b99716b0cddb648ddb95cc786a197180f2f97d48",
+  "strategy": "HTTP byte-range download; exact reconstruction verified against upstream Git blob SHA-1; SHA-256 recorded",
+  "chunk_size": 900000,
+  "files": [
+    {
+      "name": "TBESG",
+      "path": "vendor/STEPBible-Data/Lexicons/TBESG - Translators Brief lexicon of Extended Strongs for Greek - STEPBible.org CC BY.txt",
+      "upstream_url": "https://raw.githubusercontent.com/STEPBible/STEPBible-Data/master/Lexicons/TBESG%20-%20Translators%20Brief%20lexicon%20of%20Extended%20Strongs%20for%20Greek%20-%20STEPBible.org%20CC%20BY.txt",
+      "size": 4736912,
+      "chunks": 6,
+      "expected_git_blob_sha1": "efe271a1dbb73fa01f8fa6e0f164c6687757a9ae",
+      "verified_git_blob_sha1": "efe271a1dbb73fa01f8fa6e0f164c6687757a9ae",
+      "sha256": "312f723d7b8ef263bbdfb0451c9b8057125804dfff390b6f8544cff2a84b57f4"
+    },
+    {
+      "name": "TAGNT Mat-Jhn",
+      "path": "vendor/STEPBible-Data/Older Formats/TAGNT Mat-Jhn - Translators Amalgamated Greek NT - STEPBible.org CC-BY.txt",
+      "upstream_url": "https://raw.githubusercontent.com/STEPBible/STEPBible-Data/master/Older%20Formats/TAGNT%20Mat-Jhn%20-%20Translators%20Amalgamated%20Greek%20NT%20-%20STEPBible.org%20CC-BY.txt",
+      "size": 14300601,
+      "chunks": 16,
+      "expected_git_blob_sha1": "b4e80bbf11fe2f9546531303c22821f05c75971a",
+      "verified_git_blob_sha1": "b4e80bbf11fe2f9546531303c22821f05c75971a",
+      "sha256": "1179cc0de292f5ee4cbfbc5fd06331c0f1dc623e4fca93e38fbeecf5906f36d9"
+    }
+  ]
+}
