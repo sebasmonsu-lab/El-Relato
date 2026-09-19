@@ -1,6 +1,6 @@
 # El-Relato — Audit Report
 
-Generated: 2026-09-19T05:04:19+00:00
+Generated: 2026-09-19T05:04:37+00:00
 
 **Overall: PASS_WITH_BLOCKERS**
 
@@ -316,7 +316,7 @@ Sources without license registry entries: ['src:sinaiticus:itsee-v195']
   "manuscript_images": 372,
   "witness_attestations": 623,
   "transcription_units": 3745,
-  "database_bytes": 35262464
+  "database_bytes": 35270656
 }
 ~~~
 
