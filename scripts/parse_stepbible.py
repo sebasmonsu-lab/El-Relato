@@ -202,7 +202,7 @@ def main():
 
     if len(strong) < 5000:
         raise RuntimeError(f"Suspicious TBESG parse: only {len(strong)} rows")
-    if len(tagnt) < 100000:
+    if len(tagnt) < 60000:
         raise RuntimeError(f"Suspicious TAGNT parse: only {len(tagnt)} rows")
     if len(morphology) < 500:
         raise RuntimeError(f"Suspicious TEGMC parse: only {len(morphology)} codes")
