@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "id": "book:el-relato",
+  "title": "El Relato",
+  "subtitle": "Los cuatro evangelios ordenados cronológicamente, versículo a versículo, en una sola biografía de Jesús",
+  "canonical_composition_source": "canon/El Relato - Listado de referencias.xlsx",
+  "editorial_source": "source/El Relato.docx",
+  "composition": {
+    "chapters": [
+      {
+        "id": "I",
+        "title": "LA LUZ ENTRA EN NUESTRA HISTORIA",
+        "scene_range": "1-20",
+        "scenes": 20,
+        "references": 610
+      },
+      {
+        "id": "II",
+        "title": "EL REINO SE ACERCA",
+        "scene_range": "21-45",
+        "scenes": 25,
+        "references": 688
+      },
+      {
+        "id": "III",
+        "title": "CUANDO LO IMPOSIBLE ENCUENTRA A JESÚS",
+        "scene_range": "46-65",
+        "scenes": 20,
+        "references": 634
+      },
+      {
+        "id": "IV",
+        "title": "EL CAMINO DEL REINO",
+        "scene_range": "66-92",
+        "scenes": 27,
+        "references": 911
+      },
+      {
+        "id": "V",
+        "title": "EL REY ENTRA EN JERUSALÉN",
+        "scene_range": "93-106",
+        "scenes": 14,
+        "references": 697
+      },
+      {
+        "id": "VI",
+        "title": "LA OBRA CONSUMADA",
+        "scene_range": "107-120",
+        "scenes": 14,
+        "references": 583
+      }
+    ],
+    "scenes": 120,
+    "ordered_reference_entries": 4123,
+    "hierarchy": [
+      "chapter",
+      "scene",
+      "ordered_reference_entry"
+    ],
+    "columns": [
+      "Capítulo (#)",
+      "Capítulo (título)",
+      "Escena (#)",
+      "Escena (título)",
+      "Orden",
+      "Referencia"
+    ]
+  },
+  "preserved_files": [
+    {
+      "path": "canon/El Relato - Listado de referencias.xlsx",
+      "size_bytes": 143026,
+      "sha256": "7fc20bc121d09805097194c6645a72cc86038b6be4cc854d67192a877a4a6d5b",
+      "role": "canonical-composition"
+    },
+    {
+      "path": "source/El Relato.docx",
+      "size_bytes": 204297,
+      "sha256": "4de39b95792d5aae0bb7ff4088c650fcefb5031842b33ff8df0f1fa2c9b403ff",
+      "role": "editorial-source"
+    }
+  ],
+  "translation_model": "derived-from-composition-and-sources",
+  "notes": [
+    "The composition manifest is independent from any single Bible translation.",
+    "Existing third-party translations require their own license/permission for reproduction.",
+    "LLM translations should be generated from authorized Greek/textual sources with full provenance."
+  ]
+}
