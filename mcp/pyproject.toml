@@ -1,0 +1,6 @@
+[project]
+name = "el-relato-mcp"
+version = "0.1.0"
+description = "Independent MCP interfaces for the canonical Gospels and the editorial work El Relato"
+requires-python = ">=3.10"
+dependencies = ["mcp>=2,<3"]
