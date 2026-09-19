@@ -1,0 +1,44 @@
+{
+  "manuscripts": [
+    {
+      "manuscript": "P4",
+      "listed_images": 10,
+      "mirrored_or_present": 10,
+      "failed": 0,
+      "total_bytes": 3015717,
+      "complete": true
+    },
+    {
+      "manuscript": "P45",
+      "listed_images": 217,
+      "mirrored_or_present": 215,
+      "failed": 2,
+      "total_bytes": 491176070,
+      "complete": false
+    },
+    {
+      "manuscript": "P52",
+      "listed_images": 2,
+      "mirrored_or_present": 2,
+      "failed": 0,
+      "total_bytes": 6336360,
+      "complete": true
+    },
+    {
+      "manuscript": "P66",
+      "listed_images": 162,
+      "mirrored_or_present": 145,
+      "failed": 17,
+      "total_bytes": 384932965,
+      "complete": false
+    },
+    {
+      "manuscript": "P104",
+      "listed_images": 2,
+      "mirrored_or_present": 0,
+      "failed": 2,
+      "total_bytes": 0,
+      "complete": false
+    }
+  ]
+}
