@@ -1,0 +1,146 @@
+name: Ingest large STEPBible files
+
+on:
+  push:
+    paths:
+      - ".github/workflows/ingest-stepbible-large.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout El-Relato
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install HTTP dependency
+        run: python -m pip install --disable-pip-version-check requests
+
+      - name: Download upstream files in byte ranges and verify exact Git blob
+        shell: bash
+        run: |
+          python - <<'PY'
+          from __future__ import annotations
+          import hashlib
+          import json
+          import os
+          from pathlib import Path
+          from urllib.parse import quote
+          import requests
+
+          ROOT = Path(".")
+          BASE = "https://raw.githubusercontent.com/STEPBible/STEPBible-Data/master/"
+          CHUNK_SIZE = 900_000
+
+          targets = [
+              {
+                  "name": "TBESG",
+                  "upstream_path": "Lexicons/TBESG - Translators Brief lexicon of Extended Strongs for Greek - STEPBible.org CC BY.txt",
+                  "expected_git_blob_sha1": "efe271a1dbb73fa01f8fa6e0f164c6687757a9ae",
+              },
+              {
+                  "name": "TAGNT Mat-Jhn",
+                  "upstream_path": "Older Formats/TAGNT Mat-Jhn - Translators Amalgamated Greek NT - STEPBible.org CC-BY.txt",
+                  "expected_git_blob_sha1": "b4e80bbf11fe2f9546531303c22821f05c75971a",
+              },
+          ]
+
+          session = requests.Session()
+          session.headers.update({"User-Agent": "El-Relato-preservation/1.0"})
+          manifest = {
+              "source": "https://github.com/STEPBible/STEPBible-Data",
+              "upstream_tree": "b99716b0cddb648ddb95cc786a197180f2f97d48",
+              "strategy": "HTTP byte-range download; exact reconstruction verified against upstream Git blob SHA-1; SHA-256 recorded",
+              "chunk_size": CHUNK_SIZE,
+              "files": [],
+          }
+
+          for item in targets:
+              upstream_path = item["upstream_path"]
+              url = BASE + quote(upstream_path, safe="/")
+              probe = session.get(url, headers={"Range": "bytes=0-0"}, timeout=60)
+              if probe.status_code != 206:
+                  raise RuntimeError(
+                      f"{item['name']}: upstream did not honor Range request; "
+                      f"expected HTTP 206, got {probe.status_code}. Refusing non-incremental fallback."
+                  )
+              content_range = probe.headers.get("Content-Range", "")
+              if "/" not in content_range:
+                  raise RuntimeError(f"{item['name']}: missing Content-Range")
+              total = int(content_range.rsplit("/", 1)[1])
+
+              dest = ROOT / "vendor" / "STEPBible-Data" / upstream_path
+              dest.parent.mkdir(parents=True, exist_ok=True)
+              tmp = dest.with_suffix(dest.suffix + ".assembling")
+
+              sha256 = hashlib.sha256()
+              downloaded = 0
+              chunks = 0
+              with tmp.open("wb") as out:
+                  for start in range(0, total, CHUNK_SIZE):
+                      end = min(start + CHUNK_SIZE - 1, total - 1)
+                      r = session.get(url, headers={"Range": f"bytes={start}-{end}"}, timeout=120)
+                      if r.status_code != 206:
+                          raise RuntimeError(
+                              f"{item['name']}: range {start}-{end} returned {r.status_code}"
+                          )
+                      expected_len = end - start + 1
+                      if len(r.content) != expected_len:
+                          raise RuntimeError(
+                              f"{item['name']}: range {start}-{end} length {len(r.content)} != {expected_len}"
+                          )
+                      out.write(r.content)
+                      sha256.update(r.content)
+                      downloaded += len(r.content)
+                      chunks += 1
+
+              data = tmp.read_bytes()
+              if len(data) != total or downloaded != total:
+                  raise RuntimeError(f"{item['name']}: reconstructed length mismatch")
+
+              header = f"blob {len(data)}\0".encode()
+              git_blob_sha1 = hashlib.sha1(header + data).hexdigest()
+              if git_blob_sha1 != item["expected_git_blob_sha1"]:
+                  raise RuntimeError(
+                      f"{item['name']}: Git blob mismatch: {git_blob_sha1} != "
+                      f"{item['expected_git_blob_sha1']}"
+                  )
+
+              tmp.replace(dest)
+              manifest["files"].append({
+                  "name": item["name"],
+                  "path": str(dest),
+                  "upstream_url": url,
+                  "size": total,
+                  "chunks": chunks,
+                  "expected_git_blob_sha1": item["expected_git_blob_sha1"],
+                  "verified_git_blob_sha1": git_blob_sha1,
+                  "sha256": sha256.hexdigest(),
+              })
+
+          out_manifest = ROOT / "data" / "manifests" / "stepbible-large-files.json"
+          out_manifest.parent.mkdir(parents=True, exist_ok=True)
+          out_manifest.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          print(json.dumps(manifest, indent=2))
+          PY
+
+      - name: Commit verified mirrors
+        shell: bash
+        run: |
+          git config user.name "El-Relato Bot"
+          git config user.email "el-relato-bot@users.noreply.github.com"
+          git add vendor/STEPBible-Data data/manifests/stepbible-large-files.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Mirror and verify large STEPBible Gospel datasets"
+            git push
+          fi
