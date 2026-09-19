@@ -15,7 +15,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -29,7 +29,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Build SQLite
-        run: python scripts/build_query_db.py --output build/el-relato.sqlite
+        run: python scripts/build_query_db.py --output build/el-relato.sqlite --stats-output data/derived/query/db-stats.json
       - name: Acceptance tests
         shell: bash
         run: |
@@ -44,10 +44,28 @@ jobs:
           assert scalar("select count(*) from tokens where strongs like 'G0746%'") > 0
           assert scalar("select count(*) from edition_apparatus") >= 3600
           assert scalar("select count(*) from facsimiles") == 269
+          assert scalar("select count(*) from manuscript_images") >= 372
+          assert scalar("select count(*) from witness_attestations") >= 623
+          assert scalar("select count(*) from transcriptions") >= 3745
+          assert scalar("select count(*) from passage_evidence where passage_id='passage:john:18:37' and manuscript_id='ms:ga:p52'") == 1
+          assert scalar("select count(*) from verse_transcriptions where book='John' and chapter=1 and verse=1 and manuscript_id='ms:ga:01'") == 1
           print("QUERY DATABASE ACCEPTANCE OK")
           PY
       - name: Query smoke test
         run: sqlite3 -header -column build/el-relato.sqlite < scripts/query_examples.sql | head -n 120
+      - name: Commit persistent DB build report
+        shell: bash
+        run: |
+          git config user.name "El-Relato Bot"
+          git config user.email "el-relato-bot@users.noreply.github.com"
+          git add data/derived/query/db-stats.json
+          if git diff --cached --quiet; then
+            echo "No DB report changes."
+          else
+            git commit -m "Refresh integrated query database report"
+            bash scripts/push_generated_commit.sh
+          fi
+
       - name: Upload regenerated SQLite artifact
         uses: actions/upload-artifact@v4
         with:
