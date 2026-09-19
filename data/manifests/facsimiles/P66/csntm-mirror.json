@@ -1,0 +1,1469 @@
+{
+  "manuscript": "P66",
+  "source": "CSNTM",
+  "listed_images": 162,
+  "mirrored_or_present": 145,
+  "failed": 17,
+  "total_bytes": 384932965,
+  "complete": false,
+  "files": [
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_004.jpg",
+      "url": null,
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_004.jpg",
+      "status": "failed",
+      "size": null,
+      "sha256": null,
+      "error": "RuntimeError: too small: 0"
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_005.jpg",
+      "url": null,
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_005.jpg",
+      "status": "failed",
+      "size": null,
+      "sha256": null,
+      "error": "RuntimeError: too small: 0"
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_006.jpg",
+      "url": null,
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_006.jpg",
+      "status": "failed",
+      "size": null,
+      "sha256": null,
+      "error": "RuntimeError: too small: 0"
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_007.jpg",
+      "url": null,
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_007.jpg",
+      "status": "failed",
+      "size": null,
+      "sha256": null,
+      "error": "HTTPError: 500 Server Error: Internal Server Error for url: https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_007.jpg/full/full/0/default.jpg"
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_002.jpg",
+      "url": null,
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_002.jpg",
+      "status": "failed",
+      "size": null,
+      "sha256": null,
+      "error": "RuntimeError: too small: 0"
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_008.jpg",
+      "url": null,
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_008.jpg",
+      "status": "failed",
+      "size": null,
+      "sha256": null,
+      "error": "HTTPError: 500 Server Error: Internal Server Error for url: https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_008.jpg/full/full/0/default.jpg"
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_009.jpg",
+      "url": null,
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_009.jpg",
+      "status": "failed",
+      "size": null,
+      "sha256": null,
+      "error": "RuntimeError: too small: 0"
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_010.jpg",
+      "url": null,
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_010.jpg",
+      "status": "failed",
+      "size": null,
+      "sha256": null,
+      "error": "HTTPError: 500 Server Error: Internal Server Error for url: https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_010.jpg/full/full/0/default.jpg"
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_011.jpg",
+      "url": null,
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_011.jpg",
+      "status": "failed",
+      "size": null,
+      "sha256": null,
+      "error": "HTTPError: 500 Server Error: Internal Server Error for url: https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_011.jpg/full/full/0/default.jpg"
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_012.jpg",
+      "url": null,
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_012.jpg",
+      "status": "failed",
+      "size": null,
+      "sha256": null,
+      "error": "HTTPError: 500 Server Error: Internal Server Error for url: https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_012.jpg/full/full/0/default.jpg"
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_013.jpg",
+      "url": null,
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_013.jpg",
+      "status": "failed",
+      "size": null,
+      "sha256": null,
+      "error": "HTTPError: 500 Server Error: Internal Server Error for url: https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_013.jpg/full/full/0/default.jpg"
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_014.jpg",
+      "url": null,
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_014.jpg",
+      "status": "failed",
+      "size": null,
+      "sha256": null,
+      "error": "HTTPError: 500 Server Error: Internal Server Error for url: https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_014.jpg/full/full/0/default.jpg"
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_015.jpg",
+      "url": null,
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_015.jpg",
+      "status": "failed",
+      "size": null,
+      "sha256": null,
+      "error": "HTTPError: 500 Server Error: Internal Server Error for url: https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_015.jpg/full/full/0/default.jpg"
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_016.jpg",
+      "url": null,
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_016.jpg",
+      "status": "failed",
+      "size": null,
+      "sha256": null,
+      "error": "HTTPError: 500 Server Error: Internal Server Error for url: https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_016.jpg/full/full/0/default.jpg"
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_017.jpg",
+      "url": null,
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_017.jpg",
+      "status": "failed",
+      "size": null,
+      "sha256": null,
+      "error": "HTTPError: 500 Server Error: Internal Server Error for url: https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_017.jpg/full/full/0/default.jpg"
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_018.jpg",
+      "url": null,
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_018.jpg",
+      "status": "failed",
+      "size": null,
+      "sha256": null,
+      "error": "HTTPError: 500 Server Error: Internal Server Error for url: https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_018.jpg/full/full/0/default.jpg"
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_019.jpg",
+      "url": null,
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_019.jpg",
+      "status": "failed",
+      "size": null,
+      "sha256": null,
+      "error": "HTTPError: 500 Server Error: Internal Server Error for url: https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_019.jpg/full/full/0/default.jpg"
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_020.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_020.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_020.jpg",
+      "status": "mirrored",
+      "size": 1464758,
+      "sha256": "049fcc55a8452c9b52aaf63c50da8d3760b49bd63dd4920e9286c62288f332dd",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_021.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_021.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_021.jpg",
+      "status": "mirrored",
+      "size": 1571788,
+      "sha256": "7fa2df7fdc116de1dbd8e6c54db640f8cdf80e9368863db00ebab11f6f1a6b82",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_022.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_022.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_022.jpg",
+      "status": "mirrored",
+      "size": 1451767,
+      "sha256": "348c84433d2bb94cc34270ca2d396e243d2d9f2a9e4ef28eb663f9d61cedee90",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_023.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_023.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_023.jpg",
+      "status": "mirrored",
+      "size": 1677282,
+      "sha256": "2bd8e9c8b03ea6694d01cb0da9ff2667ce5088c64ce4c4dca670d98d573f818c",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_024.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_024.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_024.jpg",
+      "status": "mirrored",
+      "size": 1518580,
+      "sha256": "cee4cc4e478dab434007fa52dc50cb966709fb7c5f3a96bcbd11c6b0e38a50f9",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_025.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_025.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_025.jpg",
+      "status": "mirrored",
+      "size": 1572512,
+      "sha256": "eda74237f916142dfed002325043721409442ceaf10f422e5678270ebd29faed",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_026.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_026.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_026.jpg",
+      "status": "mirrored",
+      "size": 1510021,
+      "sha256": "65e91e8ed18898f2cb6430acca3109665c8c62f831388dcbb7b3997ce411ad51",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_027.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_027.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_027.jpg",
+      "status": "mirrored",
+      "size": 1730151,
+      "sha256": "ca57d65d829996c533884f9f74ab977573c59691a1861b10b1b5653147f7916d",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_028.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_028.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_028.jpg",
+      "status": "mirrored",
+      "size": 1550618,
+      "sha256": "bcb1c5d09988fdfe7d41584b5753a0eb4350aa0cffec2067fb67d1551abd40de",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_029.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_029.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_029.jpg",
+      "status": "mirrored",
+      "size": 1721392,
+      "sha256": "0a73aa32c47c949384bdb3b9ec1fde56a664b79f0cb56328cb5545900baf4089",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_030.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_030.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_030.jpg",
+      "status": "mirrored",
+      "size": 1510936,
+      "sha256": "84ec42b30db18976fab0c37c2d6460423add73dd10f2660506faa30077009efc",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_031.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_031.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_031.jpg",
+      "status": "mirrored",
+      "size": 1732400,
+      "sha256": "b6460223cd92e0374d6012c8e9c1ae5fbe1679cc00a39cf2c862bf0945d636f1",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_032.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_032.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_032.jpg",
+      "status": "mirrored",
+      "size": 1579117,
+      "sha256": "db5f662b1f1a0661018f7821c0a0c20cb34acc56cc1f43085c7ea99d75d845b5",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_033.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_033.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_033.jpg",
+      "status": "mirrored",
+      "size": 1673354,
+      "sha256": "4a75fda76e07f77923c70645708f4cbde4c3412862ba6e25d6055e80294c05de",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_034.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_034.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_034.jpg",
+      "status": "mirrored",
+      "size": 1628537,
+      "sha256": "3ab1d036516be2d222ebb1c4412b409acc909266eaf2259bb0acfff91e15b59b",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_035.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_035.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_035.jpg",
+      "status": "mirrored",
+      "size": 1780388,
+      "sha256": "fa13e410d772dfbd45422b57fcd7eaf2237aa6ad195994c2f08da0fed17e646d",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_036.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_036.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_036.jpg",
+      "status": "mirrored",
+      "size": 1618678,
+      "sha256": "e472ed868ddc336eac63c55d2004fcba49215bfa9cda551e01e1d575dc209e42",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_037.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_037.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_037.jpg",
+      "status": "mirrored",
+      "size": 1724613,
+      "sha256": "c908e580ee394d40ee6cb7202e1f079110b2646c6a83bc9a573671d64e3f3fe1",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_038.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_038.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_038.jpg",
+      "status": "mirrored",
+      "size": 1612640,
+      "sha256": "6fa5346a6e30f20df5d402129c18fcc784c1f90685f7ba2833a717ab995fbcbc",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_039.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_039.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_039.jpg",
+      "status": "mirrored",
+      "size": 1695237,
+      "sha256": "05a0a6c3015f1b4df8961041114ff1c4324a73c481f61bf88db1e706823a9d7e",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_040.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_040.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_040.jpg",
+      "status": "mirrored",
+      "size": 1588836,
+      "sha256": "e2f1d778b71a7574190ec76e29521e0fb2bedb243ffb1d6387d33d2d7d72f436",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_041.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_041.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_041.jpg",
+      "status": "mirrored",
+      "size": 1636622,
+      "sha256": "f77c5e8c808d1f1a50251ba0a0828b3f23440a2aeeda11e49b94bd8cf2a15876",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_042.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_042.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_042.jpg",
+      "status": "mirrored",
+      "size": 1599195,
+      "sha256": "031ed31bbe10fa30947633342e971b4f9c81b5c0ac9d98eb324f16f1c37a60c2",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_043.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_043.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_043.jpg",
+      "status": "mirrored",
+      "size": 1614811,
+      "sha256": "3333ad85b6b3a7ab267f77561193d83df668f764e4279013267653370a625367",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_044.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_044.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_044.jpg",
+      "status": "mirrored",
+      "size": 1521942,
+      "sha256": "c5a35f12d1407c13380b0bac0ecb7d6fa68ac56d902f9b41648ad3fa16d28b92",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_045.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_045.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_045.jpg",
+      "status": "mirrored",
+      "size": 1585270,
+      "sha256": "69ed4cdc690a8ed9a698d4c0c97b0246ed19161bad6a5765d7d9e906f7939b86",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_046.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_046.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_046.jpg",
+      "status": "mirrored",
+      "size": 1537842,
+      "sha256": "d8c58255b8ff4e992d25b2d1a4a696b02a742d589a760e0d657f7e9303606c30",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_047.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_047.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_047.jpg",
+      "status": "mirrored",
+      "size": 1636185,
+      "sha256": "42437e6edf6947120341b8688462b6a1db2143bc794887f38ccc570fc1487c2c",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_048.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_048.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_048.jpg",
+      "status": "mirrored",
+      "size": 1541698,
+      "sha256": "4c5c0aec19a4e80a723980fc29c0c6896af55af8cb10cade3ca39cf2094dc0a3",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_049.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_049.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_049.jpg",
+      "status": "mirrored",
+      "size": 1659143,
+      "sha256": "551e7fe9f85356f95f147a0767b272b3ae2ff834b63d1b6872dcee7333324181",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_050.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_050.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_050.jpg",
+      "status": "mirrored",
+      "size": 1537899,
+      "sha256": "b75bc4b8ae5994d1ec4dd3fe8f8c21d5f41cc20206d0331f2364495f9c920930",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_051.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_051.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_051.jpg",
+      "status": "mirrored",
+      "size": 1689018,
+      "sha256": "773ad20eabb29f35d1f91f2f3d76b85adb1705f221932e32af65aecad589d050",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_052.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_052.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_052.jpg",
+      "status": "mirrored",
+      "size": 1530174,
+      "sha256": "171a551246a486ccd898980cde6c69308aae96e9530316936b6450739498a481",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_053.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_053.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_053.jpg",
+      "status": "mirrored",
+      "size": 1553582,
+      "sha256": "c985a3fa83111ef05d0e674cebdac188ecd03abe54c68648cdcf35784f07d31a",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_054.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_054.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_054.jpg",
+      "status": "mirrored",
+      "size": 1536028,
+      "sha256": "3af30c602444069af6e6d2a112ec4ef74bef18a861452d69fc085660ccea1190",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_055.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_055.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_055.jpg",
+      "status": "mirrored",
+      "size": 1666992,
+      "sha256": "44f1bf6fdbfa0c347d7200e9e4528051343ea65fb62894c4f6bad75fd705a038",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_056.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_056.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_056.jpg",
+      "status": "mirrored",
+      "size": 1519944,
+      "sha256": "70daadc964daa70192f9f7144b79cb2b2e99d646938f4ffc261d731c5f949b4d",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_057.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_057.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_057.jpg",
+      "status": "mirrored",
+      "size": 1657925,
+      "sha256": "3ae4049695125bd671f7719d3fdffb84fa855b3bef8dfabc833e2248ed84fd9d",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_058.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_058.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_058.jpg",
+      "status": "mirrored",
+      "size": 1562907,
+      "sha256": "64117d0e72dd157963ae74ac163f360f291757e898c224b23b8b81f46c37431d",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_059.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_059.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_059.jpg",
+      "status": "mirrored",
+      "size": 1602101,
+      "sha256": "eba5b3d0563f6903056b1fd4586bd8ae076fbe952bc3a5c472fca8170da57c01",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_060.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_060.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_060.jpg",
+      "status": "mirrored",
+      "size": 1556851,
+      "sha256": "26f1d9aa51e316fbfb64969e912ab4382d852d663343cfab57bae379e4e9a557",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_061.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_061.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_061.jpg",
+      "status": "mirrored",
+      "size": 1608219,
+      "sha256": "560915a887376fca31700b61593b49d32b7a118f80d7f23532242ba1f23beed1",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_062.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_062.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_062.jpg",
+      "status": "mirrored",
+      "size": 1599202,
+      "sha256": "2562a67623273e3ebe0c8130d1850a7cde395882b83c3029f57279d0697afa55",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_063.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_063.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_063.jpg",
+      "status": "mirrored",
+      "size": 1652262,
+      "sha256": "9bb4b256abcf255d267b30418c1e0329f5748f44581df3614325b67bb509c04a",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_064.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_064.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_064.jpg",
+      "status": "mirrored",
+      "size": 1589242,
+      "sha256": "f9cafc3f47a541bdad72ecaeb722de01a127fc1f16677ebc78c64062d3709359",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_065.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_065.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_065.jpg",
+      "status": "mirrored",
+      "size": 1727192,
+      "sha256": "0321a3d73ee32c090d27aca948cffa64e59df29492bc7bee1c8905097fb40684",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_066.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_066.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_066.jpg",
+      "status": "mirrored",
+      "size": 1669521,
+      "sha256": "b325fd855a65bff5e2905b51dda0fffcf5ab2dc7038cd5762abaa4f5e8ae8b5e",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_067.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_067.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_067.jpg",
+      "status": "mirrored",
+      "size": 1635319,
+      "sha256": "4d842ca12e800badb57009190195680f13df00a20e440abef2bfe34704848692",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_068.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_068.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_068.jpg",
+      "status": "mirrored",
+      "size": 1633097,
+      "sha256": "504c5125a5b48881ccc4de97ff14c7760e0c867c4a4ae58d7ce15690b625aaea",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_069.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_069.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_069.jpg",
+      "status": "mirrored",
+      "size": 1755540,
+      "sha256": "e605ddcfa03bc49d3c7a1301779635a164b7275e200f9e1d86e0796f2dfac009",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_070.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_070.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_070.jpg",
+      "status": "mirrored",
+      "size": 1674333,
+      "sha256": "9c388ef763bd56c90ab22db81f796fdf980485da5b62020a85da0f2b811e471a",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_071.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_071.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_071.jpg",
+      "status": "mirrored",
+      "size": 1709577,
+      "sha256": "11ff95d48f9020717a057388cec448ecb054ad608e8754a7fb811976d0354d63",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_072.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_072.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_072.jpg",
+      "status": "mirrored",
+      "size": 1632572,
+      "sha256": "85c359eaeb85a51590c54e7b378699bde8ad90a3345b3a6e52c9b644e5371599",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_073.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_073.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_073.jpg",
+      "status": "mirrored",
+      "size": 1748349,
+      "sha256": "bfe8a623007db792f711fce0f31db201a02be875162492a1eed2780c39b588a6",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_074.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_074.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_074.jpg",
+      "status": "mirrored",
+      "size": 1611256,
+      "sha256": "cbf145c342c1ee311bae2b83c00fdcb040028d0edccba1a7f4873d068d85f433",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_075.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_075.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_075.jpg",
+      "status": "mirrored",
+      "size": 1698874,
+      "sha256": "08185232c4c57ec61b93750035f73d632203d84d4b4f34615326215633a6abea",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_076.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_076.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_076.jpg",
+      "status": "mirrored",
+      "size": 1643653,
+      "sha256": "a7cab39281faa23efc9914c51b59cbca69206dac7f44d36eb0a090f66b7d96ca",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_077.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_077.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_077.jpg",
+      "status": "mirrored",
+      "size": 1679226,
+      "sha256": "643d201b77a175622f78d6bdf3a5caa921355edfe264efa6e71950b09167905d",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_078.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_078.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_078.jpg",
+      "status": "mirrored",
+      "size": 1552912,
+      "sha256": "049b0ca0e6a02bfcd47fdc8dc0e5834c2497aa9f79ca479d3bbe4af4101e6843",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_079.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_079.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_079.jpg",
+      "status": "mirrored",
+      "size": 1657098,
+      "sha256": "1716157b9c57eaa48ed39586a624cba59d43c41163f28176cfff90a37175140c",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_080.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_080.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_080.jpg",
+      "status": "mirrored",
+      "size": 1668809,
+      "sha256": "a355d71e37c382bb2e8e4af975f5934cd57b5d2f35b7466de99de247b7f3292f",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_081.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_081.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_081.jpg",
+      "status": "mirrored",
+      "size": 1557303,
+      "sha256": "5206a3bbbf63a87d121082378eb3afc95dda5aa223aee031ee245f47944635b7",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_082.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_082.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_082.jpg",
+      "status": "mirrored",
+      "size": 1587502,
+      "sha256": "db804c8d95179ef2fb8844435dbd389686425827ab8d2b14d32808c161cfa3a6",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_083.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_083.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_083.jpg",
+      "status": "mirrored",
+      "size": 1521402,
+      "sha256": "0f83d27d4818afd68dd9ec0d3b2f96a20563f7dbf26ed1ef595a44453178c988",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_084.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_084.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_084.jpg",
+      "status": "mirrored",
+      "size": 1501770,
+      "sha256": "f49d77e6b3b9d2fadbda0f80d6f2171d8e5848160f2473cf734162adc0f24ece",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_085.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_085.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_085.jpg",
+      "status": "mirrored",
+      "size": 1668653,
+      "sha256": "0ffbcb3f280b85bc59005688bafc0c05d857a5026f6b2ccd6cd00212b6096f19",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_086.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_086.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_086.jpg",
+      "status": "mirrored",
+      "size": 1520435,
+      "sha256": "3c24b7d41670d11308979361b62284d12f66218b536591091ac8eda5e54d658f",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_087.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_087.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_087.jpg",
+      "status": "mirrored",
+      "size": 1647394,
+      "sha256": "1b98925389b136b3ff30190a2f3559a1ef3d9005f42f0b32db6461029658eff7",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_088.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_088.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_088.jpg",
+      "status": "mirrored",
+      "size": 1546234,
+      "sha256": "0fa977e7ce8b2b2ffdceef4e8beb346faa64b49a07a021876d4cb3c040e8512b",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_089.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_089.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_089.jpg",
+      "status": "mirrored",
+      "size": 1647603,
+      "sha256": "247bc61cdb47507bca1f65f18f5a3a0a23230978db8972a5d081da41eb988584",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_090.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_090.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_090.jpg",
+      "status": "mirrored",
+      "size": 1499578,
+      "sha256": "c4d0ca8097de0f1b02daadab1198612f1944c56ba5cd71c3860b706a1a4bc9df",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_091.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_091.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_091.jpg",
+      "status": "mirrored",
+      "size": 1670543,
+      "sha256": "8ea64e21cab0a10d5dc38327a8a030e6f7bf986142664c691cf81c06578776e7",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_092.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_092.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_092.jpg",
+      "status": "mirrored",
+      "size": 1643768,
+      "sha256": "271a76d4da597a79cf1d48bfa47f32577d673e3fb06403e1d975966ca921c8be",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_093.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_093.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_093.jpg",
+      "status": "mirrored",
+      "size": 1731637,
+      "sha256": "4b51d59665353abf3ad139916de98ace81df8e2708d9b9027b963eb132027abf",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_094.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_094.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_094.jpg",
+      "status": "mirrored",
+      "size": 1546288,
+      "sha256": "74dedff146a6b3cc666906012c83c62d919fff9ae37290c2815498ea9787c040",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_095.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_095.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_095.jpg",
+      "status": "mirrored",
+      "size": 1668724,
+      "sha256": "a3334aa20d2409931ca65ab136cfe2f0d043a6cd7c7a7e93d845beeb18a07408",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_096.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_096.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_096.jpg",
+      "status": "mirrored",
+      "size": 1568657,
+      "sha256": "b184e0fced4c22d6d39ba8e672baf11f26c36341031c3d8a9c147b30bf99e54b",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_097.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_097.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_097.jpg",
+      "status": "mirrored",
+      "size": 1664074,
+      "sha256": "bb55e8939619acc0dd7cbb6275692c12f5273780090ea69cf0810df3948da3b0",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_098.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_098.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_098.jpg",
+      "status": "mirrored",
+      "size": 1648434,
+      "sha256": "4ceefa242405682b1172109fa3e5d38fe236ac2bf0650f4b75bee2e39328bc19",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_099.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_099.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_099.jpg",
+      "status": "mirrored",
+      "size": 1712951,
+      "sha256": "08fa20a57c27b3a3b3b86a0f4f06ebbb301c729320a05ed53440efdf07839e23",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_100.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_100.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_100.jpg",
+      "status": "mirrored",
+      "size": 1656725,
+      "sha256": "d3ef43208066d0e43dfb218de10d4392792182f04ee4411f9e17e5392888b6e3",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_101.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_101.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_101.jpg",
+      "status": "mirrored",
+      "size": 1643255,
+      "sha256": "346869015a997f81aaff4ec711802e38801d42dd84dc9a717c005ba8598b15be",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_102.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_102.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_102.jpg",
+      "status": "mirrored",
+      "size": 1653018,
+      "sha256": "ef8b7689175d62bc6cca38c88edbb184c0e9d9d342da93229644c8568d278ecd",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_103.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_103.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_103.jpg",
+      "status": "mirrored",
+      "size": 1713148,
+      "sha256": "5811367f36102f905104c9c70210336d578be17914417562389903cb20edd052",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_104.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_104.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_104.jpg",
+      "status": "mirrored",
+      "size": 1666064,
+      "sha256": "f1d6a4a31dc207d356a935ecfa6a4f4e88ef19fabdc396c09daca708ee4baf8a",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_105.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_105.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_105.jpg",
+      "status": "mirrored",
+      "size": 1612125,
+      "sha256": "0ebe2a123d29cc16355075a5882ef1cb8c5f1703a03c2f3173d15c1ed6c969df",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_106.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_106.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_106.jpg",
+      "status": "mirrored",
+      "size": 1582214,
+      "sha256": "8dde04ae183074975037ec33b5b8b4e48c82d184a48a2b3da7092fcbb0e777c4",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_107.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_107.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_107.jpg",
+      "status": "mirrored",
+      "size": 1662723,
+      "sha256": "5ff7d5be411a5e6c5bdd8a4baa2ef6b6aa74f7de139f9b12e509a9cdabe90310",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_108.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_108.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_108.jpg",
+      "status": "mirrored",
+      "size": 1607921,
+      "sha256": "4b053fb08849a9ced8b4765ef2cf7a24c222897fd186e3e57a5754fc74bf3f2f",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_109.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_109.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_109.jpg",
+      "status": "mirrored",
+      "size": 1606877,
+      "sha256": "ba00c1fefd60f6bee6470b41dd533ea44503b54475cc3d3409ae62a4732f35ea",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_110.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_110.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_110.jpg",
+      "status": "mirrored",
+      "size": 1534464,
+      "sha256": "ecb1cc498e6babcaac86f3ed1fbe62cfaecf48b4b522393415b4e5c65d45ffe2",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_111.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_111.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_111.jpg",
+      "status": "mirrored",
+      "size": 1401609,
+      "sha256": "4d9fd92f847e65f26751c18ad5f00869939da69aea59eda271fe2b88a1432503",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_112.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_112.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_112.jpg",
+      "status": "mirrored",
+      "size": 1212683,
+      "sha256": "708111197dde5e5ee3d61464bac8f3b3e827af4402d1133dce3828bcec84097f",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_113.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_113.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_113.jpg",
+      "status": "mirrored",
+      "size": 4502693,
+      "sha256": "4c076b0455558882c8b123acc220bc399eaa3f4c81c1125079724ead0a0a43d8",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_114.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_114.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_114.jpg",
+      "status": "mirrored",
+      "size": 4447247,
+      "sha256": "55174591766409d8d138c7a56fdbb70eb7b04b8b17319c6a80b331ba48207cc5",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_115.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_115.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_115.jpg",
+      "status": "mirrored",
+      "size": 4816909,
+      "sha256": "1d76835bef74ab078f10ec54e9c1aaf6e98b4098578e904f850d0090fb737e00",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_116.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_116.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_116.jpg",
+      "status": "mirrored",
+      "size": 4899800,
+      "sha256": "40d24187731ab270510d622a923c1f40700cfd34413ec591059f235ae2bbc4e0",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_117.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_117.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_117.jpg",
+      "status": "mirrored",
+      "size": 5038572,
+      "sha256": "4e477e430786ba0b439913dc08dc9fe93de9b3f024a532f473d37df0ead3b16f",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_118.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_118.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_118.jpg",
+      "status": "mirrored",
+      "size": 5018300,
+      "sha256": "39e121dcf00dab41bdc786f1f81ba9b79230f30eb3683e30828872130cecb20c",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_119.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_119.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_119.jpg",
+      "status": "mirrored",
+      "size": 4682335,
+      "sha256": "66a900f6b421794794a9eaf3d1fa27fcf6d6ff03e8ac590d5bb07fffaab63172",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_120.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_120.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_120.jpg",
+      "status": "mirrored",
+      "size": 4748363,
+      "sha256": "70c7eb05946d2f1fa40bc37b55df95deff40e96fe4275b80ad3553d301a36f7f",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_121.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_121.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_121.jpg",
+      "status": "mirrored",
+      "size": 4791837,
+      "sha256": "183d871f7bf715e607361366f176082938b02425f7726be4071c7b4aa57e9a2a",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_122.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_122.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_122.jpg",
+      "status": "mirrored",
+      "size": 4836364,
+      "sha256": "e7b467ea91ecec4ebc962b5657248b996e1625c0187630eb09aa560b316c5233",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_123.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_123.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_123.jpg",
+      "status": "mirrored",
+      "size": 4749731,
+      "sha256": "6bf262a75d8bd2eb4e7f165c430da2f66d081e8efda24b87c124d66a7a64b917",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_124.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_124.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_124.jpg",
+      "status": "mirrored",
+      "size": 4685819,
+      "sha256": "d1db0723679b9462978d799504ee5866a1fe9ec44ff912ea2e7f3ca7ec2532b1",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_125.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_125.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_125.jpg",
+      "status": "mirrored",
+      "size": 4745157,
+      "sha256": "4e8adc606abe142d12d4158f3f7aa1c0bb39aa366b11d64ae2cccd1774777fba",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_126.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_126.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_126.jpg",
+      "status": "mirrored",
+      "size": 4783008,
+      "sha256": "286d04d42b8c4f83d034fdb64cd996b8ceaf7e4514bde50995cf339d9fce663c",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_127.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_127.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_127.jpg",
+      "status": "mirrored",
+      "size": 4822418,
+      "sha256": "7ffbcdd8ec7f82cd1c1dd46542059fb0c2de6fc20974359b36e3a2f8ece42883",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_128.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_128.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_128.jpg",
+      "status": "mirrored",
+      "size": 4776326,
+      "sha256": "26cf026ba89d9879086986480c19c8db915e4ec2aa1621fca7a87e06f56b1fd9",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_129.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_129.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_129.jpg",
+      "status": "mirrored",
+      "size": 4589397,
+      "sha256": "4c769fe0d4ecfb80a162779e3159a51f505283be0a0c6fa7897dc5845913b5e7",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_130.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_130.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_130.jpg",
+      "status": "mirrored",
+      "size": 4644288,
+      "sha256": "6bcf4f78e3bf2bbfe2606215c39ed6befa7a3ab373a41a588a87a95fb7778d8b",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_131.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_131.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_131.jpg",
+      "status": "mirrored",
+      "size": 4783804,
+      "sha256": "748026bbf7678f9cf4b54acf8f51a84a1dd9f366477fe9c9b5b0433b5f173cca",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_132.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_132.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_132.jpg",
+      "status": "mirrored",
+      "size": 4743306,
+      "sha256": "bc4f65e025bb4e025aa3f6932a3cd2cc321d058f6808e48495a3a77bcad3024e",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_133.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_133.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_133.jpg",
+      "status": "mirrored",
+      "size": 4739712,
+      "sha256": "6a2c7969bc8e6171dc4df69e9c7368225bb6c8c3d24bc7f063064f7023747f97",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_134.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_134.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_134.jpg",
+      "status": "mirrored",
+      "size": 4686588,
+      "sha256": "f257bf461b6b51d63990cd75bce2fdb6266f8b02a6349597631152cdf81427fb",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_135.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_135.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_135.jpg",
+      "status": "mirrored",
+      "size": 4722588,
+      "sha256": "03d0bc30b86615485a1c4811b57778ccb45679f78422b7650abeaeeb5247d2a2",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_136.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_136.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_136.jpg",
+      "status": "mirrored",
+      "size": 4755512,
+      "sha256": "f1bf8382c226901323217ef7412d4a44ead727a6696789a11cf3e1acf56b5cb6",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_137.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_137.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_137.jpg",
+      "status": "mirrored",
+      "size": 4841250,
+      "sha256": "7de2057fb9f25ddfba86cb92f6181e3bb5b75a908d1167aee92bc75a6ad9a607",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_138.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_138.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_138.jpg",
+      "status": "mirrored",
+      "size": 4991211,
+      "sha256": "7b260756475353213cc27645ece5fef670f8cfa19efbfe2c2a3598b302c0481e",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_139.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_139.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_139.jpg",
+      "status": "mirrored",
+      "size": 4954576,
+      "sha256": "011e6b51743da19b9900d7de12094db79e07ccce5601956aeb5bb15b08e2d4f4",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_140.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_140.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_140.jpg",
+      "status": "mirrored",
+      "size": 5012851,
+      "sha256": "9a9ca6a377a656cf332a3d57dd8934d2fe39cae69a3a463995d0f5b282878437",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_141.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_141.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_141.jpg",
+      "status": "mirrored",
+      "size": 4955532,
+      "sha256": "16127cea374a9a530ce0b2378f9e0e27499c7b9da493e4608fb54ce7e3733156",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_142.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_142.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_142.jpg",
+      "status": "mirrored",
+      "size": 4918827,
+      "sha256": "8956839c4fe400ec435d6ab13bcea122c0c66d71b60272bb97226cfadb9027d6",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_143.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_143.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_143.jpg",
+      "status": "mirrored",
+      "size": 5070572,
+      "sha256": "05359c43340b77fd447c594366c5c65ef35c8ff52a132816cd85f1652c725ad5",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_144.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_144.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_144.jpg",
+      "status": "mirrored",
+      "size": 4951447,
+      "sha256": "2e8acf0736616770ea2fb1efc689bf0ef3d7ac1e46af8129b50b80ff4327a57c",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_145.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_145.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_145.jpg",
+      "status": "mirrored",
+      "size": 4835722,
+      "sha256": "45f4a88267f11785af0668dc2139033bca72731670b88fd2f78b7026fbe83718",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_146.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_146.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_146.jpg",
+      "status": "mirrored",
+      "size": 4803951,
+      "sha256": "402ff150720895e510c7d5dec984e43ae8be0bb85b60390ffa2f7b2ccf1d5aac",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_147.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_147.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_147.jpg",
+      "status": "mirrored",
+      "size": 4876627,
+      "sha256": "315455305cf64e5852b6c9f814e2b575a9bf841b7b25fa4d64588850bcc212ca",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_148.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_148.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_148.jpg",
+      "status": "mirrored",
+      "size": 4956602,
+      "sha256": "0a3859eac868ea9d1361e220986946c2afff9daf530ea7db626970766386f51c",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_149.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_149.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_149.jpg",
+      "status": "mirrored",
+      "size": 4899513,
+      "sha256": "73861a0b3f321adf63ae53d655230f5bacd6845ac6ec4d59926a4ad88115b4cf",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_150.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_150.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_150.jpg",
+      "status": "mirrored",
+      "size": 4961371,
+      "sha256": "cae51fede1128de9715ba552ae40b810698d11bddbd4101539a16baa1b0d79bf",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_151.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_151.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_151.jpg",
+      "status": "mirrored",
+      "size": 4860431,
+      "sha256": "33ef8329c4e756d069cd69d9dd5399977be85f2118c0ae78e7c44810c43f2a2f",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_152.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_152.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_152.jpg",
+      "status": "mirrored",
+      "size": 4852984,
+      "sha256": "65c1d58a2d7ef10e74483ddf9fa456a25eec7113207513fe405276e52c9b9ad1",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_153.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_153.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_153.jpg",
+      "status": "mirrored",
+      "size": 4942921,
+      "sha256": "2e49a029aae0566e7666e613dbb06e58fa90ca7dac5046b2d4cae217f2dd4d31",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_154.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_154.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_154.jpg",
+      "status": "mirrored",
+      "size": 4885547,
+      "sha256": "b9716c80fb1d50efda5c25f651bbfe5bb01054d936e32ed9c464f8872bcddb7e",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_155.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_155.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_155.jpg",
+      "status": "mirrored",
+      "size": 4849900,
+      "sha256": "cfe6ba85167157cd46b12fd64dc56b731cc00995beaf00114c1d0698ed26e8bf",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_156.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_156.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_156.jpg",
+      "status": "mirrored",
+      "size": 4813881,
+      "sha256": "4344d4d7a961419012f0f4d6d4f6fd7f620274d1286e802082e7c1331f6edb19",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_157.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_157.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_157.jpg",
+      "status": "mirrored",
+      "size": 4881407,
+      "sha256": "1afa0c0ad0e921e2719b8c3dbc73df8f169cc9fe97475429a46e3b840ad506d1",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_158.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_158.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_158.jpg",
+      "status": "mirrored",
+      "size": 4823173,
+      "sha256": "b80f425d90b69657af56aba5a8a35e1883a90aba2c1b11acab4ac20f757055d1",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_159.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_159.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_159.jpg",
+      "status": "mirrored",
+      "size": 4460954,
+      "sha256": "f7e4c15200ed191660ba2601a797c68997a0fd926fb86f9b15735ed1790f4a71",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_160.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_160.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_160.jpg",
+      "status": "mirrored",
+      "size": 3118105,
+      "sha256": "b2cd90c63c4a5f444b245ea52ed385723d4c18cdea45615606c8aa41696d5beb",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_161.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_161.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_161.jpg",
+      "status": "mirrored",
+      "size": 3160197,
+      "sha256": "11ca0230fa5708f8182e67d4bb7aca080bb5c382c28b3e5abf4171c80be2adf9",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_162.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_162.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_162.jpg",
+      "status": "mirrored",
+      "size": 665976,
+      "sha256": "8df948839721434e8f6bf32d97a0f9e4878b7eaf67421785b445195090781bc0",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_163.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_163.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_163.jpg",
+      "status": "mirrored",
+      "size": 643174,
+      "sha256": "a9abab3e4601678270b9d8a57b46432a6758362ffe1ae6116d8fd7c851271235",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_164.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P66_Bodmer/P66_164.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P66/images/csntm/P66_164.jpg",
+      "status": "mirrored",
+      "size": 1022426,
+      "sha256": "5835ee0a2e9119c99bf75944e78e84cde82c2ae29e1b829bb8c2fbf05dda3424",
+      "error": null
+    }
+  ]
+}
