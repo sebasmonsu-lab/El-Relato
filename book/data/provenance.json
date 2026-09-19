@@ -1,0 +1,27 @@
+{
+  "book_structure_source": {
+    "file": "El Relato - Listado de referencias.xlsx",
+    "sha256": "7fc20bc121d09805097194c6645a72cc86038b6be4cc854d67192a877a4a6d5b",
+    "role": "authoritative editorial order and references",
+    "counts": {
+      "chapters": 6,
+      "scenes": 120,
+      "units": 4123
+    }
+  },
+  "segmentation_helper": {
+    "file": "El Relato.docx",
+    "sha256": "4de39b95792d5aae0bb7ff4088c650fcefb5031842b33ff8df0f1fa2c9b403ff",
+    "role": "used only to derive relative word-count weights for a/b/c micro-segmentation; Spanish text is not imported into the Greek edition"
+  },
+  "greek_source": {
+    "repository_path": "data/normalized/sblgnt/",
+    "edition_id": "edition:sblgnt:2010",
+    "role": "Greek source corpus; build reads repository-normalized SBLGNT tokens and verses"
+  },
+  "generation_policy": {
+    "parallel_references": "preserve every component as a witness; first reference component is primary for editorial unit text",
+    "microsegments": "split Greek token sequence proportionally to editorial fragment weights, adjusting boundaries toward Greek punctuation",
+    "transparency": "heuristic microsegments are explicitly marked; full verses and ranges are exact materializations from source corpus"
+  }
+}
