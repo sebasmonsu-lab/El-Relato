@@ -51,16 +51,20 @@ def main():
         current = None
         current_tokens = []
         last_token = None
+        pending_prefix = ""
+        double_bracket = False
 
         def flush():
-            nonlocal current, current_tokens, last_token
+            nonlocal current, current_tokens, last_token, pending_prefix
             if current is None:
                 return
             book, chapter, verse = current
             slug = BOOK_SLUG[book]
             passage_id = f"passage:{slug}:{chapter}:{verse}"
             visible = " ".join(
-                t["surface"] + ((t["punctuation_after"] or "").rstrip())
+                ((t["prefix_before"] or "").lstrip()) +
+                t["surface"] +
+                ((t["punctuation_after"] or "").rstrip())
                 for t in current_tokens
             )
             passages.append({
@@ -98,6 +102,7 @@ def main():
                 book, chapter, verse = current
                 slug = BOOK_SLUG[book]
                 pos = len(current_tokens) + 1
+                status = "double-bracketed" if (double_bracket or "⟦" in pending_prefix) else "main"
                 token = {
                     "id": f"token:sblgnt:{slug}:{chapter}:{verse}:{pos}",
                     "edition_id": EDITION_ID,
@@ -113,14 +118,23 @@ def main():
                     "strong_id": None,
                     "morphology_code": None,
                     "punctuation_after": None,
+                    "prefix_before": pending_prefix or None,
+                    "textual_status": status,
                     "source_ref": SOURCE_ID,
                 }
                 current_tokens.append(token)
                 tokens.append(token)
                 per_book_tokens[book] += 1
                 last_token = token
+                if "⟦" in pending_prefix:
+                    double_bracket = True
+                pending_prefix = ""
+            elif elem.tag == "prefix" and current is not None:
+                pending_prefix += elem.text or ""
             elif elem.tag == "suffix" and current is not None and last_token is not None:
                 last_token["punctuation_after"] = elem.text or None
+                if "⟧" in (elem.text or ""):
+                    double_bracket = False
 
         flush()
 
