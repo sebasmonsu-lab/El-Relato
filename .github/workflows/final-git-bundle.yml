@@ -1,0 +1,36 @@
+name: Final Git bundle snapshot
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/final-git-bundle.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  bundle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          lfs: false
+      - name: Create final Git-only bundle
+        shell: bash
+        run: |
+          mkdir -p build/final-bundle
+          git bundle create build/final-bundle/el-relato-final.bundle --all
+          sha256sum build/final-bundle/el-relato-final.bundle > build/final-bundle/el-relato-final.bundle.sha256
+          git rev-parse HEAD > build/final-bundle/HEAD.txt
+          git bundle verify build/final-bundle/el-relato-final.bundle
+      - name: Upload final Git bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-final-git-bundle
+          path: build/final-bundle/
+          retention-days: 7
+          compression-level: 0
