@@ -34,3 +34,9 @@ La prueba:
 ## Copia independiente
 
 Un artifact de GitHub Actions **no cuenta como backup independiente de GitHub**. El bundle debe copiarse además a almacenamiento fuera de GitHub (GitLab, almacenamiento de objetos, NAS o cold storage). Esa capa se considera completa únicamente después de una restauración probada desde ese destino.
+
+## Cierre operativo 2026-09-19
+
+Para el cierre de la versión interna se genera un snapshot completo restaurable del repositorio actual mediante Git bundle + archivo de objetos Git LFS fragmentado. El snapshot se valida antes de su transferencia a almacenamiento independiente fuera de GitHub.
+
+La copia externa debe registrar el commit cubierto, hashes, nombres de partes y ubicación de restauración.
