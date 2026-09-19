@@ -1,6 +1,6 @@
 # El-Relato — Audit Report
 
-Generated: 2026-09-19T05:02:59+00:00
+Generated: 2026-09-19T05:04:19+00:00
 
 **Overall: PASS_WITH_BLOCKERS**
 
@@ -297,8 +297,8 @@ Incomplete fallbacks: P137
 Sources without license registry entries: ['src:sinaiticus:itsee-v195']
 ~~~json
 {
-  "sources": 16,
-  "license_entries": 15
+  "sources": 19,
+  "license_entries": 18
 }
 ~~~
 
