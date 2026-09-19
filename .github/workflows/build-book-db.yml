@@ -46,10 +46,13 @@ jobs:
           python - <<'PY'
           import sqlite3
           db = sqlite3.connect("book/el-relato-book.sqlite")
-          expected = {"chapters": 6, "scenes": 120, "units": 4123, "unit_texts": 4123, "unit_witnesses": 5381}
+          expected = {"chapters": 6, "scenes": 120, "units": 4123, "unit_witnesses": 5381}
           for table, n in expected.items():
               got = db.execute(f"select count(*) from {table}").fetchone()[0]
               assert got == n, (table, got, n)
+          baseline = "edition:el-relato:grc-sblgnt-2010:v1"
+          baseline_texts = db.execute("select count(*) from unit_texts where edition_id=?", (baseline,)).fetchone()[0]
+          assert baseline_texts == 4123, baseline_texts
           stats = dict(db.execute("select metric, value from build_stats"))
           unresolved = int(stats.get("unresolved_witnesses", "0"))
           missing = db.execute("select count(*) from unit_texts where text is null or trim(text)='' ").fetchone()[0]
