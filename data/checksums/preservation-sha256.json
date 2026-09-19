@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T03:53:04+00:00",
+  "generated_at": "2026-09-19T03:53:39+00:00",
   "algorithm": "sha256",
   "files": [
     {
@@ -96,6 +96,11 @@
       "path": "sources/lexicons/STEPBible/PROVENANCE.md",
       "sha256": "991b088b7614c92ad2975fe317c68a840845bffafdb78db8f63265402dd32022",
       "size": 1274
+    },
+    {
+      "path": "sources/lexicons/StrongOriginal/PROVENANCE.md",
+      "sha256": "ca1511a71ee3047ef7b95d7818fd980d1d96b3afaafaf52a6ebddae7dcc03fee",
+      "size": 908
     },
     {
       "path": "sources/manuscripts/README.md",
