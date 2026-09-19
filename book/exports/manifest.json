@@ -1,7 +1,7 @@
 {
   "book_id": "book:el-relato",
   "database": "book/el-relato-book.sqlite",
-  "generated_at": "2026-09-19T13:42:43+00:00",
+  "generated_at": "2026-09-19T13:44:12+00:00",
   "schema_version": "1",
   "source_edition": "edition:el-relato:grc-sblgnt-2010:v1",
   "chapters": 6,
