@@ -6,6 +6,7 @@ on:
     paths:
       - "web/**"
       - "scripts/build_web.py"
+      - "scripts/build_translation_alignment.py"
       - "scripts/build_query_db.py"
       - "book/**"
       - "data/normalized/**"
@@ -28,37 +29,81 @@ jobs:
       - uses: actions/checkout@v4
         with:
           lfs: false
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
+
+      - name: Cache multilingual alignment model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-mbert-simalign-v1
+
+      - name: Install translation alignment dependencies
+        run: python -m pip install "simalign==0.4"
+
       - name: Build SOURCE query database
         run: python scripts/build_query_db.py --output build/el-relato.sqlite
+
+      - name: Build translation-to-Greek token alignment
+        env:
+          TOKENIZERS_PARALLELISM: "false"
+        run: |
+          python scripts/build_translation_alignment.py \
+            --output build/translation-alignments.jsonl \
+            --summary build/translation-alignments-summary.json
+
       - name: Build static research site
         run: python scripts/build_web.py --output build/site
-      - name: Validate W1
+
+      - name: Validate W1 plus translation alignment
         run: |
           python - <<'PY'
           import json
+          import re
           from pathlib import Path
-          root=Path("build/site")
-          m=json.loads((root/"manifest.json").read_text())
+
+          root = Path("build/site")
+          m = json.loads((root / "manifest.json").read_text())
           assert m["chapters"] == 6, m
           assert m["scenes"] == 120, m
           assert m["units"] == 4123, m
           assert len(m["editions"]) >= 1, m
           assert m["source_tokens"] > 64000, m
-          assert (root/"editions/index.html").exists()
-          import re
+          assert (root / "editions/index.html").exists()
+
           for e in m["editions"]:
-              slug=re.sub(r"[^A-Za-z0-9._-]+","-",e["edition_id"]).strip("-").lower()
-              assert (root/"editions"/slug/"scene/1.html").exists(), e
-              assert (root/"editions"/slug/"scene/120.html").exists(), e
-          assert (root/"source/matthew/1/1.html").exists()
-          assert (root/"source/john/21/25.html").exists()
-          token_pages=list((root/"token").glob("*.html"))
+              slug = re.sub(r"[^A-Za-z0-9._-]+", "-", e["edition_id"]).strip("-").lower()
+              assert (root / "editions" / slug / "scene/1.html").exists(), e
+              assert (root / "editions" / slug / "scene/120.html").exists(), e
+
+          assert (root / "source/matthew/1/1.html").exists()
+          assert (root / "source/john/21/25.html").exists()
+
+          token_pages = list((root / "token").glob("*.html"))
           assert len(token_pages) > 64000, len(token_pages)
-          print("W1 PASS", m)
+
+          translated = [
+              e for e in m["editions"]
+              if (e.get("language_code") or "").lower() not in {"grc", "el", "gr"}
+          ]
+          if translated:
+              a = m["translation_alignment"]
+              assert a["units"] > 0, a
+              assert a["target_tokens"] > 0, a
+              assert a["aligned_target_tokens"] > 0, a
+              alignment_pages = list((root / "alignment").glob("*/*/*.html"))
+              assert alignment_pages, a
+              first_slug = re.sub(r"[^A-Za-z0-9._-]+", "-", translated[0]["edition_id"]).strip("-").lower()
+              scene1 = (root / "editions" / first_slug / "scene/1.html").read_text()
+              assert "trans-token" in scene1, "scene 1 has no clickable translated tokens"
+              assert "Capa griega subyacente" in scene1, "scene 1 has no Greek layer"
+
+          print("W1 + ALIGNMENT PASS", m)
           PY
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: build/site
