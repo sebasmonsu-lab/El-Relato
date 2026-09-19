@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-19T06:10:23+00:00",
+  "generated_at": "2026-09-19T06:22:13+00:00",
   "overall": "PASS_WITH_BLOCKERS",
   "counts": {
-    "pass": 23,
-    "warn": 4,
+    "pass": 24,
+    "warn": 3,
     "fail": 0
   },
   "checks": [
@@ -498,25 +498,206 @@
       "title": "Git + LFS backup/restore procedure",
       "detail": "Offline restore from Git bundle + LFS archive is tested in CI.",
       "metrics": {
-        "tested_at": "2026-09-19T05:41:00+00:00",
-        "head": "38874cbb48f9c66fca4814f27bff8536c85c333e",
+        "tested_at": "2026-09-19T06:11:13+00:00",
+        "head": "f0fd659c5afd0ead48efb7c1178aeb14df59327c",
         "restore_test": "PASS",
         "git_fsck": "PASS",
         "git_lfs_fsck": "PASS",
         "repository_validation": "PASS",
         "query_database_rebuild": "PASS",
         "app_self_test": "PASS",
-        "bundle_bytes": 22546564,
+        "bundle_bytes": 24261524,
         "lfs_archive_bytes": 2434508800,
         "lfs_tracked_entries": 924
       }
     },
     {
       "id": "backup:independent",
-      "status": "WARN",
+      "status": "PASS",
       "title": "Independent off-GitHub backup",
-      "detail": "A second storage destination and recorded copy are still required.",
-      "metrics": {}
+      "detail": null,
+      "metrics": {
+        "created_at": "2026-09-19",
+        "storage_provider": "Google Drive",
+        "storage_folder_id": "1XKgK2DT0WqvWYfpcYzirByIzUnOrr1g9",
+        "storage_folder_url": "https://drive.google.com/drive/folders/1XKgK2DT0WqvWYfpcYzirByIzUnOrr1g9",
+        "source_workflow_run_id": 35425809599,
+        "source_head": "f0fd659c5afd0ead48efb7c1178aeb14df59327c",
+        "restore_test": "PASS",
+        "git_fsck": "PASS",
+        "git_lfs_fsck": "PASS",
+        "repository_validation": "PASS",
+        "query_database_rebuild": "PASS",
+        "app_self_test": "PASS",
+        "lfs_parts": 26,
+        "files_verified_in_drive": 27,
+        "verified": true,
+        "note": "The independently stored snapshot consists of the Git bundle metadata artifact plus all 26 Git LFS archive chunks. A final post-closure Git-only bundle is generated separately to cover the small metadata commits made after this snapshot.",
+        "files": [
+          {
+            "name": "el-relato-backup-bundle.zip",
+            "drive_file_id": "1XVZ2JCg8trMQ24z_GHKDxOkxwmm91kDg",
+            "size_bytes": 24265844,
+            "url": "https://drive.google.com/file/d/1XVZ2JCg8trMQ24z_GHKDxOkxwmm91kDg/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-00.zip",
+            "drive_file_id": "1pSNO5fZROz7dj4YBhJF8Tkrzs44U27YA",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/1pSNO5fZROz7dj4YBhJF8Tkrzs44U27YA/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-01.zip",
+            "drive_file_id": "1WjeN3ckig3Ajouhf84LaOUnyxsXnpLv-",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/1WjeN3ckig3Ajouhf84LaOUnyxsXnpLv-/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-02.zip",
+            "drive_file_id": "1jliotsj14pwDUtL_-E7hecUE07uv3ZaU",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/1jliotsj14pwDUtL_-E7hecUE07uv3ZaU/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-03.zip",
+            "drive_file_id": "1Hj9FukpfJw3CCoQHzWU_bR_Oj1mXLP2c",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/1Hj9FukpfJw3CCoQHzWU_bR_Oj1mXLP2c/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-04.zip",
+            "drive_file_id": "1xqtrorc8n-WmhIi4ydfA4382pJ_93_hc",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/1xqtrorc8n-WmhIi4ydfA4382pJ_93_hc/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-05.zip",
+            "drive_file_id": "1fxyBuXUkO0VhdNW0A6s6iJ1brDVqHctV",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/1fxyBuXUkO0VhdNW0A6s6iJ1brDVqHctV/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-06.zip",
+            "drive_file_id": "1koNCcMt1xRLuznbOGhc4UJgWbH15ILDm",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/1koNCcMt1xRLuznbOGhc4UJgWbH15ILDm/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-07.zip",
+            "drive_file_id": "1aTvz5FziUFYPGHl7S4XGjCLwhNQ5Blhf",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/1aTvz5FziUFYPGHl7S4XGjCLwhNQ5Blhf/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-08.zip",
+            "drive_file_id": "1aDNuT-oOuyqYuz9hcx5YGvbY8j6q6p0H",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/1aDNuT-oOuyqYuz9hcx5YGvbY8j6q6p0H/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-09.zip",
+            "drive_file_id": "1iA9AbzlsOQDh9YmjgWANa3t9h8ZXlLdp",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/1iA9AbzlsOQDh9YmjgWANa3t9h8ZXlLdp/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-10.zip",
+            "drive_file_id": "1_9664B-kYyIUBxSb5FljOSEE0hV-CXDn",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/1_9664B-kYyIUBxSb5FljOSEE0hV-CXDn/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-11.zip",
+            "drive_file_id": "1h3qCbrFhB_2fmFDOIIIPBjjaCL3w6mxo",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/1h3qCbrFhB_2fmFDOIIIPBjjaCL3w6mxo/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-12.zip",
+            "drive_file_id": "1QGdBBs6sx9dzsfoquvYeP9h_K7egrHlc",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/1QGdBBs6sx9dzsfoquvYeP9h_K7egrHlc/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-13.zip",
+            "drive_file_id": "1Z1aw7i9qwEJc-Th_kxE9DdLFVBIICTcG",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/1Z1aw7i9qwEJc-Th_kxE9DdLFVBIICTcG/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-14.zip",
+            "drive_file_id": "16oGtaNOM3iOaWmJEsXEB5TsdICCl25NI",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/16oGtaNOM3iOaWmJEsXEB5TsdICCl25NI/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-15.zip",
+            "drive_file_id": "1xB2TF-W_I4HXC3euRCgfmamflkIDXwX8",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/1xB2TF-W_I4HXC3euRCgfmamflkIDXwX8/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-16.zip",
+            "drive_file_id": "1lkke9NtIuV5I3-1FC6wLI3d888eWEUmR",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/1lkke9NtIuV5I3-1FC6wLI3d888eWEUmR/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-17.zip",
+            "drive_file_id": "1Ft5YHLRBCfw-vQpSd-CH0COgpR5MHYhU",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/1Ft5YHLRBCfw-vQpSd-CH0COgpR5MHYhU/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-18.zip",
+            "drive_file_id": "1GdS5qNejYFS6ce-rHJ_xrJkq3m1huuq_",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/1GdS5qNejYFS6ce-rHJ_xrJkq3m1huuq_/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-19.zip",
+            "drive_file_id": "1cWasOUvLWsdtJytdjrskLyWFq3TSFbpj",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/1cWasOUvLWsdtJytdjrskLyWFq3TSFbpj/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-20.zip",
+            "drive_file_id": "1TlAoC-rH2yMMprGTsb-yKX-SVWSzxMNW",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/1TlAoC-rH2yMMprGTsb-yKX-SVWSzxMNW/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-21.zip",
+            "drive_file_id": "1VXdmAKeYgX5waeiz-4nfmh1evDS31Tjq",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/1VXdmAKeYgX5waeiz-4nfmh1evDS31Tjq/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-22.zip",
+            "drive_file_id": "18uXwghwOC8QBo6Ki3xmsk0saCjNDROdU",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/18uXwghwOC8QBo6Ki3xmsk0saCjNDROdU/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-23.zip",
+            "drive_file_id": "1OVE1prHxnn6O6eJhAWn-iqG01szjMhZo",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/1OVE1prHxnn6O6eJhAWn-iqG01szjMhZo/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-24.zip",
+            "drive_file_id": "1KvZ9J4i6cFMWRRs-qq4IXvOluysD78eW",
+            "size_bytes": 94372004,
+            "url": "https://drive.google.com/file/d/1KvZ9J4i6cFMWRRs-qq4IXvOluysD78eW/view?usp=drivesdk"
+          },
+          {
+            "name": "el-relato-lfs-part-25.zip",
+            "drive_file_id": "1bQWlkuY-LJXfDItPe5_kL4ka0hJ7F8LY",
+            "size_bytes": 75212964,
+            "url": "https://drive.google.com/file/d/1bQWlkuY-LJXfDItPe5_kL4ka0hJ7F8LY/view?usp=drivesdk"
+          }
+        ]
+      }
     }
   ]
 }
