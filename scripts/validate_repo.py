@@ -42,6 +42,7 @@ schema_map = {
     "passages.jsonl": "passage.schema.json",
     "editions.jsonl": "edition.schema.json",
     "edition-verses.jsonl": "edition-verse.schema.json",
+    "sbl-tagnt-links.jsonl": "sbl-tagnt-link.schema.json",
 }
 
 normalized = ROOT / "data" / "normalized"
