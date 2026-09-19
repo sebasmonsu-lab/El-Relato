@@ -36,6 +36,8 @@ schema_map = {
     "lexemes.jsonl": "lexeme.schema.json",
     "morphology.jsonl": "morphology.schema.json",
     "variants.jsonl": "variant.schema.json",
+    "strong-entries.jsonl": "strong-entry.schema.json",
+    "tagnt-rows.jsonl": "tagnt-row.schema.json",
 }
 
 normalized = ROOT / "data" / "normalized"
