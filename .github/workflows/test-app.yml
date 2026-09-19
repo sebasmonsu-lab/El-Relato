@@ -1,0 +1,29 @@
+name: Test El-Relato research interface
+
+on:
+  push:
+    paths:
+      - "app/**"
+      - "scripts/build_query_db.py"
+      - "data/normalized/**"
+      - ".github/workflows/test-app.yml"
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build DB
+        run: python scripts/build_query_db.py --output build/el-relato.sqlite
+      - name: Self-test UI query layer
+        run: python app/el_relato.py --db build/el-relato.sqlite --self-test
