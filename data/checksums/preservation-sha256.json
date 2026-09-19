@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T03:48:32+00:00",
+  "generated_at": "2026-09-19T03:53:04+00:00",
   "algorithm": "sha256",
   "files": [
     {
@@ -76,6 +76,16 @@
       "path": "vendor/STEPBible-Data/README.md",
       "sha256": "261d5157c0ffeadeedad3f734db945a4c3642e3e4ce5fa28002985b6c52437b1",
       "size": 14495
+    },
+    {
+      "path": "vendor/StrongGreekOriginal/README.md",
+      "sha256": "62cbf4dd5b1a631e38fd6663e5d774c29261f1cb39c1110cd48a608a0afd2365",
+      "size": 2556
+    },
+    {
+      "path": "vendor/StrongGreekOriginal/strongsgreek.xml",
+      "sha256": "91474213b208a4e487d35f85c10e5c90737acc69082dad15dec5431406003545",
+      "size": 2369537
     },
     {
       "path": "sources/critical-texts/SBLGNT/PROVENANCE.md",

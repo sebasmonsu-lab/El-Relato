@@ -13,6 +13,8 @@ fe1b5a4c15db71e7e30f33fb67966ca93baffae377085ece0b88f66316729638  vendor/SBLGNT/
 5f0416f7617019a6082285214903bde569a980d5fd3b88b8d7020d944e94de82  vendor/STEPBible-Data/Morphology codes/TEGMC - Translators Expansion of Greek Morphhology Codes - STEPBible.org CC BY.txt
 1179cc0de292f5ee4cbfbc5fd06331c0f1dc623e4fca93e38fbeecf5906f36d9  vendor/STEPBible-Data/Older Formats/TAGNT Mat-Jhn - Translators Amalgamated Greek NT - STEPBible.org CC-BY.txt
 261d5157c0ffeadeedad3f734db945a4c3642e3e4ce5fa28002985b6c52437b1  vendor/STEPBible-Data/README.md
+62cbf4dd5b1a631e38fd6663e5d774c29261f1cb39c1110cd48a608a0afd2365  vendor/StrongGreekOriginal/README.md
+91474213b208a4e487d35f85c10e5c90737acc69082dad15dec5431406003545  vendor/StrongGreekOriginal/strongsgreek.xml
 8db5422c272db8ec248052019e14f6477b727e2730de6bcaa687a8141b15aedd  sources/critical-texts/SBLGNT/PROVENANCE.md
 991b088b7614c92ad2975fe317c68a840845bffafdb78db8f63265402dd32022  sources/lexicons/STEPBible/PROVENANCE.md
 279853f040af4fe57a803fc9e9cd3f4461c7b5b1e4a907f1fafd2779354eca49  sources/manuscripts/README.md
