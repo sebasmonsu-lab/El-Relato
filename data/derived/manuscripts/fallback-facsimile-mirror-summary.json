@@ -1,0 +1,1691 @@
+{
+  "P66": {
+    "source": "Bodmer Lab",
+    "files": [
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_002.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/001.jpg",
+        "size": 8918564,
+        "sha256": "578235077308d26c2a072a3b5dfbf317801b5c7e871bfd1037504b0c6dae4695",
+        "label": "002",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_002.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_002.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_003.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/002.jpg",
+        "size": 5499403,
+        "sha256": "59f31a5b984aa7144417320e293d17eee1306c0ceef5d50ffe9460d41b1206f2",
+        "label": "003",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_003.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_003.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_004.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/003.jpg",
+        "size": 3677932,
+        "sha256": "493665d09fccc1843b9cdd95b7a1c3bcb4a9c1a6e70b2640d94ee831dc1f1e9c",
+        "label": "004",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_004.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_004.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_005.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/004.jpg",
+        "size": 5328515,
+        "sha256": "3dc3a2b644c37c4b85bc73eeecf7e06807b44e4d74ec821bfdf5b237db422eb8",
+        "label": "005",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_005.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_005.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_006.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/005.jpg",
+        "size": 4982391,
+        "sha256": "fbc28203c77a61f3b36418ad9dd41c1c26444c645673a6a14b8966797fb90166",
+        "label": "006",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_006.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_006.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_007.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/006.jpg",
+        "size": 4196034,
+        "sha256": "71f467df27c8e85996f0fee69d23e1c016841bd46d26a9ae2f0c902d304d6d2a",
+        "label": "007",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_007.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_007.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_008.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/007.jpg",
+        "size": 8565565,
+        "sha256": "208813a6341440fd77b9d1b38c3e4fde2dceed7c489641763a7f092e26e4ee03",
+        "label": "008",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_008.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_008.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_009.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/008.jpg",
+        "size": 2968663,
+        "sha256": "ff5d2b88b1a501ecb7f23cc0b0b158bbc1a8ab6eedd89a5a9c28392cbdbe7cff",
+        "label": "009",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_009.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_009.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_010.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/009.jpg",
+        "size": 2718903,
+        "sha256": "7669f195475c7469f0c95ba459429b84a0f5aebe9fe968b20441fd4a3321592e",
+        "label": "010",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_010.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_010.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_011.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/010.jpg",
+        "size": 2980238,
+        "sha256": "b75738ba271e058e5a142ecdef62c266f081cb5e2e77c9c5d3072150458e0cb3",
+        "label": "011",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_011.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_011.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_012.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/011.jpg",
+        "size": 2611793,
+        "sha256": "1dfd4005ca667b530510e4e004858e3755ed51d0bc3764d0c0e592d0b51b1007",
+        "label": "012",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_012.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_012.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_013.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/012.jpg",
+        "size": 2890413,
+        "sha256": "a5d57c88eea5d242f0721ef9c47342d748a8219bf1c6f0d7bf469be96be783a2",
+        "label": "013",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_013.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_013.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_014.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/013.jpg",
+        "size": 2492500,
+        "sha256": "904440f0278207aeec515674f0e8f824f2c905c32c556db4d5f2d9cffb3993a4",
+        "label": "014",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_014.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_014.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_015.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/014.jpg",
+        "size": 3004375,
+        "sha256": "e32a1c58de509d4661f67e82916c02d52a30571a145d8ca8d9c2dfa94dbe4350",
+        "label": "015",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_015.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_015.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_016.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/015.jpg",
+        "size": 2654929,
+        "sha256": "6346669abb75b26286f76d86084de1dfd812b5c591f228597ac6e09170bad219",
+        "label": "016",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_016.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_016.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_017.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/016.jpg",
+        "size": 2844066,
+        "sha256": "ae1657cfc51f654e17b35773bbf5868cb437f77584be3580f0b05c87ca3b5113",
+        "label": "017",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_017.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_017.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_018.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/017.jpg",
+        "size": 2571399,
+        "sha256": "ca87e7b364176f193ea485e18da919671196e12a92d19d6a01cdbcf8c8666f9a",
+        "label": "018",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_018.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_018.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_019.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/018.jpg",
+        "size": 2865209,
+        "sha256": "2269ba33c8aa495054e02eae34fe9940dbc224beaef78be027103a4dbe257ef0",
+        "label": "019",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_019.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_019.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_020.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/019.jpg",
+        "size": 2522990,
+        "sha256": "4a67479d68f89e23abd52a9276d0daed247fb5475ad85575f3e173f52bb797ba",
+        "label": "020",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_020.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_020.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_021.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/020.jpg",
+        "size": 2812861,
+        "sha256": "e220a9c1c019224c7da1a4c983c78e78dd00a7abc082bb8159bdc28718bb92c4",
+        "label": "021",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_021.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_021.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_022.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/021.jpg",
+        "size": 2536622,
+        "sha256": "babf0f8899dc57abd3339007ba013e6fb4fb20b0e98d291c037e6cd0fce7551e",
+        "label": "022",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_022.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_022.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_023.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/022.jpg",
+        "size": 2991819,
+        "sha256": "e62c5f578906e94403be20dd119a35dcef907552bdd1a58e38dd853e5c58c8eb",
+        "label": "023",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_023.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_023.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_024.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/023.jpg",
+        "size": 2626675,
+        "sha256": "026f98117fb4ee889df690ff4b528218f8ad78d19ab857940e43b387f29275ad",
+        "label": "024",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_024.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_024.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_025.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/024.jpg",
+        "size": 2812266,
+        "sha256": "60b921179e5f79671173b2e607972099bfb36bbb19018eb5e958be0b4b936540",
+        "label": "025",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_025.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_025.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_026.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/025.jpg",
+        "size": 2631423,
+        "sha256": "c8b13ceb11b78845223cb75397ee0dcb0701f93cb80b8998b9f744fc98c8e2e7",
+        "label": "026",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_026.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_026.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_027.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/026.jpg",
+        "size": 3062543,
+        "sha256": "f38aab0ab3d14ae8685d55b03cd83c67a94e062a2ed9d096b0de2f88fe0f7f6f",
+        "label": "027",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_027.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_027.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_028.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/027.jpg",
+        "size": 2714571,
+        "sha256": "817228d40c364ca7ad754db44cf0caf41c4a952dbe79728f2ad34b7fde6be863",
+        "label": "028",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_028.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_028.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_029.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/028.jpg",
+        "size": 3044173,
+        "sha256": "2a5fd6b51f059edd84a400a2fcc610fe4384f598192af447fa70910cb90128d3",
+        "label": "029",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_029.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_029.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_030.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/029.jpg",
+        "size": 2633217,
+        "sha256": "f7f7e40c413ba97e63b0f1dcbb11c84ae9bb5f54fb3f3ba0ed787b0f7177ed43",
+        "label": "030",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_030.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_030.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_031.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/030.jpg",
+        "size": 3101698,
+        "sha256": "6cf8a97eadd90f7ccdcd5ac84e0c6d88bcb23f4c025cda4a1c82022a3cdf97f6",
+        "label": "031",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_031.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_031.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_032.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/031.jpg",
+        "size": 2768412,
+        "sha256": "6f59b865e1b5dcb9f5803d20d5a7a48895b622a51783dfd07491ec160ad6f16f",
+        "label": "032",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_032.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_032.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_033.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/032.jpg",
+        "size": 3003971,
+        "sha256": "45ed7207f7854f92eb5c7aa22a4f9fb5291a7d6f0e4cd049300b5a9794b59f1a",
+        "label": "033",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_033.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_033.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_034.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/033.jpg",
+        "size": 2956329,
+        "sha256": "a4de2ff0a003654b4cc9bf62476abff00aff7626c538489becdcee751c05f087",
+        "label": "034",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_034.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_034.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_035.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/034.jpg",
+        "size": 3281581,
+        "sha256": "f2bbaa7bf8076d85eb9f72db7cc4867765f2adacd34f1f0e14f94f1eff7d8eed",
+        "label": "035",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_035.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_035.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_036.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/035.jpg",
+        "size": 2892463,
+        "sha256": "744d744d6da01ca0827bbdab15f7eef2ccb2a39bb293f1fcbecd13b7b34e7a3c",
+        "label": "036",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_036.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_036.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_037.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/036.jpg",
+        "size": 3095841,
+        "sha256": "7d2bbd39bcdbd89b82b4eca3b9607e792f345901cb932cac8fc1da6b416e0010",
+        "label": "037",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_037.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_037.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_038.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/037.jpg",
+        "size": 2826916,
+        "sha256": "5e9a116bdf30c39cca097e60f64a04bda25fcf506ed0ebb9507318136ce1d0d4",
+        "label": "038",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_038.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_038.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_039.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/038.jpg",
+        "size": 3065036,
+        "sha256": "6fd4c75028c69e44d62d84419e2886cf39f87ba83d84052b1b5b1ec9f4339748",
+        "label": "039",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_039.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_039.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_040.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/039.jpg",
+        "size": 2765163,
+        "sha256": "3b969cd989905585baed54e1b7120e3f739fd3d3da82dae3c59760731cb05660",
+        "label": "040",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_040.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_040.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_041.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/040.jpg",
+        "size": 2963765,
+        "sha256": "bd5eec687fa89550fa2ce240e60e99436040af985d10cdeb081dcc61a8468ef8",
+        "label": "041",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_041.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_041.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_042.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/041.jpg",
+        "size": 2811484,
+        "sha256": "015670161c4515cba62d4cc4c5e0eff7d16bbb829a5d75a9ffc924d951e4dd9d",
+        "label": "042",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_042.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_042.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_043.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/042.jpg",
+        "size": 2934145,
+        "sha256": "c4e7b8de2ac809490fddf9116f17f50e9dc470952851ba6b9bef537aecc083c2",
+        "label": "043",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_043.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_043.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_044.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/043.jpg",
+        "size": 2693782,
+        "sha256": "43d65706999fc9456f4adf709d3929d90b46e7e572095d97ef77f9d26c07067e",
+        "label": "044",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_044.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_044.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_045.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/044.jpg",
+        "size": 2864102,
+        "sha256": "a10187097a23f9728d483093fc16fb62df0d78feb6afbe3afc9eba9e2925115b",
+        "label": "045",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_045.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_045.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_046.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/045.jpg",
+        "size": 2716631,
+        "sha256": "fd45706336d26926db7b37746310bf7579e6c15975b25d3f833754462c9bcadd",
+        "label": "046",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_046.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_046.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_047.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/046.jpg",
+        "size": 2961164,
+        "sha256": "a224305f084a4e0b5176605b89a2fd63d433dfa780e35ee40199dc442ffa3499",
+        "label": "047",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_047.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_047.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_048.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/047.jpg",
+        "size": 2725509,
+        "sha256": "a97b7ced7abea65f35a9bb655ee6ddfe008e30d4cf8b87b649a5a8e236a8e618",
+        "label": "048",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_048.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_048.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_049.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/048.jpg",
+        "size": 3001787,
+        "sha256": "6f44a0cede0d2562676c1146704b744d6fa135a457be8a88942cbfe4a5213364",
+        "label": "049",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_049.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_049.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_050.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/049.jpg",
+        "size": 2762718,
+        "sha256": "17012b44a067b6eca017e83be71fabc7750adb2fb35ecb4d34184d9bbcd6d2d9",
+        "label": "050",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_050.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_050.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_051.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/050.jpg",
+        "size": 3054642,
+        "sha256": "d505ac90e7e3876b19c547a927dd8de349c2f0ddf3f202f6dde52ce004a350e6",
+        "label": "051",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_051.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_051.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_052.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/051.jpg",
+        "size": 2706343,
+        "sha256": "ddfe338e500261fbebd3e9886901fe037f155cfffcbd5f3e5fa7e4a477eee7ef",
+        "label": "052",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_052.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_052.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_053.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/052.jpg",
+        "size": 2804868,
+        "sha256": "33152a42ed9d4f80d153a8e6ab3b4c342a644ecde305ed246e305c8e46477eaf",
+        "label": "053",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_053.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_053.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_054.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/053.jpg",
+        "size": 2721684,
+        "sha256": "32b71d4f131ebd57ed1947fcb2c0f53ab87f1ed6868a55555c18724d2896dc03",
+        "label": "054",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_054.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_054.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_055.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/054.jpg",
+        "size": 2995657,
+        "sha256": "5abdf98d602faaba89339cd833efffd7d3f40104a26519f6b0f6d9363b3f2737",
+        "label": "055",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_055.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_055.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_056.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/055.jpg",
+        "size": 2666889,
+        "sha256": "019f9ddbfcc751ab01dcdbd4be31ad22540593fdf71573d3192c9bbb076982b5",
+        "label": "056",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_056.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_056.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_057.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/056.jpg",
+        "size": 2992968,
+        "sha256": "c2cdbcceaa92b8d416ab954d9561daf655fd9d5e8be65d33f24adc1dc0c3f27b",
+        "label": "057",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_057.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_057.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_058.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/057.jpg",
+        "size": 2763073,
+        "sha256": "bb871e949d50173c5b5788c5ec978311e639c1f8b2b0c49ee5cad0bd65b63d34",
+        "label": "058",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_058.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_058.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_059.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/058.jpg",
+        "size": 2888614,
+        "sha256": "95927c1f3b0566b8ded5b0b2367c1c42f9233917963f66267b9d3d63ce6d6773",
+        "label": "059",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_059.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_059.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_060.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/059.jpg",
+        "size": 2746311,
+        "sha256": "432d77aafa163eeb033fbdf3b19d8d97cd9f4e241b170922a7a49035879205dd",
+        "label": "060",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_060.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_060.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_061.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/060.jpg",
+        "size": 2897496,
+        "sha256": "c43171124f37a74dd396408a4c727182aef768f3f38ccd7f7835c6c742e98eab",
+        "label": "061",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_061.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_061.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_062.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/061.jpg",
+        "size": 2838792,
+        "sha256": "cb0b9123cea5d346d4ed5f4524f7db6e005f0c5c62ca93f2ad22cb3b99753120",
+        "label": "062",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_062.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_062.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_063.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/062.jpg",
+        "size": 2987571,
+        "sha256": "f1b1612dbaef894c461911312dbe069407d04201f739b0b8b8fdb8f9b68c4376",
+        "label": "063",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_063.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_063.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_064.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/063.jpg",
+        "size": 2806050,
+        "sha256": "87342818ab24ceaa38265839d97f6a582ec382b699eb6e3c1f51d21d556efd0a",
+        "label": "064",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_064.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_064.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_065.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/064.jpg",
+        "size": 3103273,
+        "sha256": "ee64887c140f64cde1f881ed9b9ea2d7f9a88400e0fd20b4eb7d7c0ccd437e19",
+        "label": "065",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_065.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_065.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_066.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/065.jpg",
+        "size": 2937752,
+        "sha256": "5fbde1507f5d425c26623d0b2ff78d88e065a670875427d7083fcd71d2ce01ce",
+        "label": "066",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_066.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_066.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_067.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/066.jpg",
+        "size": 2961540,
+        "sha256": "aadd1cbfb3e459506bb073cccedcb0a64346b0f5f339b97b68141cca1704b5bb",
+        "label": "067",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_067.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_067.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_068.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/067.jpg",
+        "size": 2883149,
+        "sha256": "80c58f241f14519fad039efb917f7ea5982133d84775c3b2c48eaf44d69d848b",
+        "label": "068",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_068.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_068.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_069.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/068.jpg",
+        "size": 3138286,
+        "sha256": "06010fd72c9e52e1f4b284c5327a67cba8c61371636cf18d35131f0d6370dfdf",
+        "label": "069",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_069.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_069.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_070.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/069.jpg",
+        "size": 2939441,
+        "sha256": "3ab3d327da8a06bf6563f5bc49f38b3b212329ccf44bab769fc04dbc6258c275",
+        "label": "070",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_070.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_070.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_071.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/070.jpg",
+        "size": 3058832,
+        "sha256": "29d447d2c6b2406cb58fd8fb93a51c5e8e9dd3b77939ad73c3887e8092b3997a",
+        "label": "071",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_071.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_071.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_072.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/071.jpg",
+        "size": 2871952,
+        "sha256": "c3130bc230afb1fc901d4b439edb86e4d1953422acf78cb94ebc223a59cfb552",
+        "label": "072",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_072.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_072.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_073.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/072.jpg",
+        "size": 3105557,
+        "sha256": "9f8f94099978860504d7f892e17521e88e163db7a16382a5a875f68e2b40f671",
+        "label": "073",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_073.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_073.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_074.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/073.jpg",
+        "size": 2795779,
+        "sha256": "c9406026f75182f94913a078501eed306b30ebb8ee0f4469c6903e0cc19432a2",
+        "label": "074",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_074.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_074.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_075.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/074.jpg",
+        "size": 3028499,
+        "sha256": "34523d81ddba67ce21e430ca42a1bb9428caecf37cc3f121b014e196118648e4",
+        "label": "075",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_075.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_075.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_076.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/075.jpg",
+        "size": 2851172,
+        "sha256": "7e6dd8bcb6192ecde11e0869dc41c08293ae184c493b142dbf52db4f50cb3301",
+        "label": "076",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_076.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_076.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_077.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/076.jpg",
+        "size": 3019041,
+        "sha256": "4f88591d7c58ddb54e312bdad513f17caf0e35914225424d9a2ff0e1b9bb5547",
+        "label": "077",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_077.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_077.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_078.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/077.jpg",
+        "size": 2710089,
+        "sha256": "4c22b340d1d713386359a8f8256a5f814003a9a9edbd6d09c4144abcf9cb5388",
+        "label": "078",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_078.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_078.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_079.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/078.jpg",
+        "size": 2979895,
+        "sha256": "bf7eae9b1b96d0fec7ff615639cfdf5e589a7bd0cada2505128ae86af8c98ff0",
+        "label": "079",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_079.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_079.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_080.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/079.jpg",
+        "size": 2931758,
+        "sha256": "bf7bfdbc1de022aab800bb3edfec4391b8319dce76a08d2250a8e0b4da238ee4",
+        "label": "080",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_080.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_080.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_081.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/080.jpg",
+        "size": 2796857,
+        "sha256": "a3a98b807cb85ca024c9b862a7329e62347738134d3a8424806027cb39b54b0e",
+        "label": "081",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_081.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_081.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_082.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/081.jpg",
+        "size": 2773891,
+        "sha256": "3e33b4f6cc58684d578b06f77d99995551140ff98df3b83bb0d8e7b0b9e377d9",
+        "label": "082",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_082.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_082.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_083.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/082.jpg",
+        "size": 2718669,
+        "sha256": "205e792a38320db0388777316e00fd3c6d3c70879e3a28e3b7a9fb405be95711",
+        "label": "083",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_083.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_083.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_084.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/083.jpg",
+        "size": 2636581,
+        "sha256": "837c381512e4d4a95b04c20d184b5df0b76ef88ca82e68c6306fc746da2291ee",
+        "label": "084",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_084.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_084.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_085.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/084.jpg",
+        "size": 2967414,
+        "sha256": "f2502db43b7ee8132cfc2287b3000faeeed7a0804646b1779c0316f42c230a11",
+        "label": "085",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_085.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_085.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_086.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/085.jpg",
+        "size": 2637773,
+        "sha256": "56411bbea32063249efaa0c642384fd02a870583cb12d814137a39b61f01868e",
+        "label": "086",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_086.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_086.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_087.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/086.jpg",
+        "size": 2925317,
+        "sha256": "48ce57fb640a52f5027e66959901ca4c27320e88185bc8ac1e05e3c963aeeea8",
+        "label": "087",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_087.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_087.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_088.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/087.jpg",
+        "size": 2688136,
+        "sha256": "c4350988e3c5523f125096ff154bef87b8e7c9dd7f8d78d5b878708e314373ae",
+        "label": "088",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_088.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_088.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_089.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/088.jpg",
+        "size": 2961867,
+        "sha256": "b8c1224e86064461d201cf330b1a7a15ac2bbb130b7a646cc28bf04e5699758d",
+        "label": "089",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_089.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_089.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_090.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/089.jpg",
+        "size": 2621384,
+        "sha256": "ea0344551769e493c093feb3230554d3727e62a63ea072fe9637f78f82f5926f",
+        "label": "090",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_090.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_090.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_091.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/090.jpg",
+        "size": 2968533,
+        "sha256": "4f27ba2f6f1bb42a33236ee38e6662b52b4c9aa0f491a1f148afa2df1d842811",
+        "label": "091",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_091.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_091.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_092.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/091.jpg",
+        "size": 2901491,
+        "sha256": "fde072e36d76d6b9fd440b4926c41560112ab350ed66e7690143b9b6b8baae80",
+        "label": "092",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_092.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_092.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_093.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/092.jpg",
+        "size": 3080337,
+        "sha256": "218e79a7de491cdf4860f540c8172e66471a0b63e35befd374196b99eec4f5c1",
+        "label": "093",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_093.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_093.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_094.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/093.jpg",
+        "size": 2690902,
+        "sha256": "b9235beb9290aa997a6ae48be63c8f537048b0d68d7003a51988bab032c4a802",
+        "label": "094",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_094.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_094.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_095.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/094.jpg",
+        "size": 2976429,
+        "sha256": "103f7c97def93f3fd8e709ef7393ea4f7cc9b966cf019f7eab69b69c4379cb45",
+        "label": "095",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_095.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_095.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_096.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/095.jpg",
+        "size": 2732525,
+        "sha256": "f6f5cfaa12b47f68ec030e8dbf0711191d27b9048a8554176b6ce433f5108bea",
+        "label": "096",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_096.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_096.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_097.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/096.jpg",
+        "size": 2962249,
+        "sha256": "76ef4d33a71af014793aba1b66dbfa0a2b7e041f29058cae71527cc72a517b6a",
+        "label": "097",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_097.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_097.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_098.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/097.jpg",
+        "size": 2917190,
+        "sha256": "e2f30c685cd5ea25ff0f39d9ceedec539693ad4be1d30c2ff5a7848bcbb06171",
+        "label": "098",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_098.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_098.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_099.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/098.jpg",
+        "size": 3065186,
+        "sha256": "293928239cd9fe1e755f9541bde040db756891f0937237cd657aac1e1cd3ed86",
+        "label": "099",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_099.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_099.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_100.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/099.jpg",
+        "size": 2892737,
+        "sha256": "ffad90eff52258c6f58b169e2ad08b0ba4d692940f59583db5a8305328368ad3",
+        "label": "100",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_100.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_100.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_101.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/100.jpg",
+        "size": 2932755,
+        "sha256": "979789405e289be5ce73e73c6f2067af6b71550ff38c474d2ce4f88c02d6eaba",
+        "label": "101",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_101.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_101.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_102.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/101.jpg",
+        "size": 2870337,
+        "sha256": "b33ea8a319c41d2bf57bb19a21698f0e76eeca58f2a9d21f57353f638c5537bf",
+        "label": "102",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_102.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_102.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_103.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/102.jpg",
+        "size": 3064260,
+        "sha256": "ec47ba7fb6462f5205fcdb8a3462cff15bcd2ff5335baea99ed74d7a1bb41008",
+        "label": "103",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_103.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_103.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_104.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/103.jpg",
+        "size": 2920519,
+        "sha256": "c478c3b207ff3ec655e503634748077959885ac7c4b96c9618e9c65c3893abd5",
+        "label": "104",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_104.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_104.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_105.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/104.jpg",
+        "size": 2887358,
+        "sha256": "80d260f25602d90c8aa27069abbab28477389442ad7a76b6a1866defc6329562",
+        "label": "105",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_105.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_105.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_106.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/105.jpg",
+        "size": 2752667,
+        "sha256": "26d69365f18c568883d35b0120c7382022c526c75bf677eee8c21f74c501d85c",
+        "label": "106",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_106.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_106.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_107.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/106.jpg",
+        "size": 2963244,
+        "sha256": "de5962ba3fc1c4d11b0d29a288b5cd3b17e05ae6aa8ae16a10c5b1f9cb4af2a8",
+        "label": "107",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_107.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_107.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_108.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/107.jpg",
+        "size": 2823144,
+        "sha256": "6fed964d081ca10a02bb39f2a4423a93d21c02df1e0200759ea6ba8ac54d3904",
+        "label": "108",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_108.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_108.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_109.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/108.jpg",
+        "size": 2872525,
+        "sha256": "90205f73a39df7c32daf19e841092a3177c5ca027ae8666d2ef648fc83bc6fc2",
+        "label": "109",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_109.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_109.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_110.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/109.jpg",
+        "size": 2679667,
+        "sha256": "f70a02399873bcf563eb185828a5263f34713544ce16d8af815326a3058f280d",
+        "label": "110",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_110.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_110.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_111.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/110.jpg",
+        "size": 2549499,
+        "sha256": "920b340345041f309b845f3d36ecbcd6fa533874c5a0f59426714d769a0fa8cc",
+        "label": "111",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_111.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_111.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_112.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/111.jpg",
+        "size": 2098693,
+        "sha256": "632318e03d253faee49c9d2774861e8b5bcbd8f9d387cb081886cf8e3a52a93d",
+        "label": "112",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_112.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_112.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_113.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/112.jpg",
+        "size": 9613551,
+        "sha256": "34d81aef3c1ac3e1837673ec6dd91fe4859e4ec42f505dd67c2d89dcb3b949d9",
+        "label": "113",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_113.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_113.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_114.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/113.jpg",
+        "size": 9476102,
+        "sha256": "a54d1233b4865f0af90ac8ad3bc22a9d729de3d5d539e0cdafe48db1048f912d",
+        "label": "114",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_114.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_114.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_115.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/114.jpg",
+        "size": 10143939,
+        "sha256": "367d5258d32960b19f424a02467846b93b896b0eda5a0e9c386515527e1cd577",
+        "label": "115",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_115.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_115.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_116.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/115.jpg",
+        "size": 10373262,
+        "sha256": "2bb1b2fc9691e0bce99b6e3bb59ee0af5015502e64aa2d1d25ff21052588830d",
+        "label": "116",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_116.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_116.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_117.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/116.jpg",
+        "size": 10557508,
+        "sha256": "d1d4d164ae864f66a47a5b47199c2135480e0b7e13b40fa5c202c0b5d550f6b2",
+        "label": "117",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_117.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_117.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_118.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/117.jpg",
+        "size": 10577652,
+        "sha256": "b83738e846682352e8885fc6980539cf496be5dc69d738bde467f20fbbc3b42b",
+        "label": "118",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_118.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_118.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_119.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/118.jpg",
+        "size": 9885705,
+        "sha256": "fec9c3dabc44b25ce2f89da90caa81cc3dd1989536c314bcec2613763e9bda62",
+        "label": "119",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_119.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_119.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_120.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/119.jpg",
+        "size": 10071603,
+        "sha256": "266758f8b287008fb65dbbb8c0b5a2b154c45c6c04c8c5f976305750f2eb64f6",
+        "label": "120",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_120.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_120.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_121.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/120.jpg",
+        "size": 10120896,
+        "sha256": "bea7d9ce6a14b3b92d0e82826304c72b84fe9e2830a820b9f1c024cd4fa6db92",
+        "label": "121",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_121.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_121.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_122.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/121.jpg",
+        "size": 10239088,
+        "sha256": "511e9d9eab72e8f3acd26b750d81c529e9edc047047d48ce8ac28c9150e17569",
+        "label": "122",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_122.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_122.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_123.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/122.jpg",
+        "size": 10044560,
+        "sha256": "4ca0794a768e9cb3681e9deddc62bf36206813efdf1a5d621776562fafa724c4",
+        "label": "123",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_123.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_123.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_124.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/123.jpg",
+        "size": 9952113,
+        "sha256": "5a4ca85c90ae7e985c5e26cda5e349c2685d0b066213727d8f6286d5e98b99de",
+        "label": "124",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_124.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_124.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_125.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/124.jpg",
+        "size": 10069994,
+        "sha256": "fa246af73d26c362b4dd2b27672fbfcfa5075d750f980de4a2fdce7f25955b28",
+        "label": "125",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_125.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_125.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_126.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/125.jpg",
+        "size": 10118346,
+        "sha256": "a4e1b7f36001e85af223592caad4d039a599bb7aab207060e060f37397a50b10",
+        "label": "126",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_126.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_126.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_127.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/126.jpg",
+        "size": 10203571,
+        "sha256": "34df0ec4b0ad01b137e93e6def71caff5b154ebf143a129f1d730973e0cde65e",
+        "label": "127",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_127.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_127.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_128.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/127.jpg",
+        "size": 10133029,
+        "sha256": "e7c1506fb2992ec4413678f6b673934de81d68bf3886afb87b9136190f55c9ed",
+        "label": "128",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_128.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_128.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_129.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/128.jpg",
+        "size": 9789980,
+        "sha256": "95ff9444a1a705d2925d78252e18a36eb9c5332c71f846eb6111d6e0ac97616b",
+        "label": "129",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_129.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_129.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_130.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/129.jpg",
+        "size": 9849363,
+        "sha256": "a96d46801a7aa46b23c4b2527eddf772b264a3dfb6cbb498ddf3ac9088212ccb",
+        "label": "130",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_130.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_130.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_131.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/130.jpg",
+        "size": 10187713,
+        "sha256": "07e630ef011e5fc6c0d042603a243bf4322d626c4fdbad0aed192d5346a97962",
+        "label": "131",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_131.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_131.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_132.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/131.jpg",
+        "size": 10042053,
+        "sha256": "827cba71b85b8770cca19fb8d49a1fd81b9c397917321b3a7dabbc8537474223",
+        "label": "132",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_132.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_132.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_133.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/132.jpg",
+        "size": 10038599,
+        "sha256": "7225753a2b990d4e9ba05699e061fe0330da5ad645ea760f774b7527f865b9f7",
+        "label": "133",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_133.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_133.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_134.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/133.jpg",
+        "size": 9972203,
+        "sha256": "7629df07265e3a2098ffe81f4ad991d22fa0526f1721ad04662ab5fc459a1826",
+        "label": "134",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_134.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_134.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_135.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/134.jpg",
+        "size": 10057876,
+        "sha256": "db00382a1e4340507180bed1d712f41fb9875bd513a3b7f1daa18780152f8805",
+        "label": "135",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_135.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_135.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_136.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/135.jpg",
+        "size": 10034823,
+        "sha256": "5051f35b0c6a4d8a5342d5d12e9aa84f7cbc0447359ba5edde0bfd21a3a2f3be",
+        "label": "136",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_136.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_136.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_137.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/136.jpg",
+        "size": 10253794,
+        "sha256": "e77b4ac62aa7eb7acc3e23659896aaac987a2a96c1c20b34f6c126a482797a89",
+        "label": "137",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_137.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_137.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_138.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/137.jpg",
+        "size": 10521509,
+        "sha256": "2765690df1a9bef5a98f43a7cfa36cd0ec96e4e1547e2dd049facee2e5035510",
+        "label": "138",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_138.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_138.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_139.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/138.jpg",
+        "size": 10453700,
+        "sha256": "724407def109704d14166ae7e1807f4d3ea3d7bb34ae7f8eac8b6ef038151efd",
+        "label": "139",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_139.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_139.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_140.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/139.jpg",
+        "size": 10559623,
+        "sha256": "da76dccfbbc09ce79b08878d2e5ec3014b1ed661a3d2ea4127ca3919fdc8df2d",
+        "label": "140",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_140.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_140.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_141.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/140.jpg",
+        "size": 10438329,
+        "sha256": "bb0b91fda5ae52c266fe771d6036a22f6c2640f0a548497ecdff9cc38a7792e9",
+        "label": "141",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_141.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_141.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_142.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/141.jpg",
+        "size": 10409309,
+        "sha256": "78b97ef50cc2409addaf3f662b7cad1eeb39ce7a53156989adcd2d776f12e8e1",
+        "label": "142",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_142.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_142.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_143.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/142.jpg",
+        "size": 10601627,
+        "sha256": "f72fdefc79a69a21803442856215b295f98ad8b67e526edf0b367a5eb91e2d14",
+        "label": "143",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_143.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_143.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_144.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/143.jpg",
+        "size": 10417263,
+        "sha256": "b4706b52c28c34b1632ce186ec3d9e5b45b1c7003c543833c3a77594068dbaa2",
+        "label": "144",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_144.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_144.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_145.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/144.jpg",
+        "size": 10214005,
+        "sha256": "f770e25b9546b06e76d0ab256249bb6da7af01787bfe530391ad2366941d9548",
+        "label": "145",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_145.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_145.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_146.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/145.jpg",
+        "size": 10160047,
+        "sha256": "1f71ab74dd55e34b42e5611a1473a8f04f96f08ee44199d3d7ba8a23dd9cc54e",
+        "label": "146",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_146.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_146.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_147.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/146.jpg",
+        "size": 10293387,
+        "sha256": "2fee956e3b2b9e612b61022e8068c9d24dffdfd68194017e9ac82b7d27026c43",
+        "label": "147",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_147.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_147.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_148.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/147.jpg",
+        "size": 10392177,
+        "sha256": "e9ddd85a1d6dc68324e2ba84a576c1ac6ea8cd1e5c83b825fec993989af9cbf0",
+        "label": "148",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_148.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_148.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_149.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/148.jpg",
+        "size": 10354291,
+        "sha256": "690232cbdc1be07431a31771ef119def325ea707c072a71a26700c8bbc59c097",
+        "label": "149",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_149.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_149.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_150.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/149.jpg",
+        "size": 10452877,
+        "sha256": "1ebf69002f8f65cc8dcaf14d0666341fc3ccdd30c891367904e82338611765c3",
+        "label": "150",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_150.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_150.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_151.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/150.jpg",
+        "size": 10260317,
+        "sha256": "3a01d9dab05f9781cdac02a2c8c7c1385e336ef1cde253897c78b9d08a5b078c",
+        "label": "151",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_151.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_151.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_152.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/151.jpg",
+        "size": 10276792,
+        "sha256": "ffb02a986b92f4fa955f48a6ca203b7a5388ab6ee8a807cb89df91bbe2e15dd4",
+        "label": "152",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_152.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_152.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_153.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/152.jpg",
+        "size": 10433291,
+        "sha256": "ba311b0b740698935586c48640e6e9544794461ddcada079765792e14ef405b5",
+        "label": "153",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_153.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_153.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_154.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/153.jpg",
+        "size": 10347159,
+        "sha256": "702a3dff73e866666b73490fc4dba4ff1f5db3bd2ef2d6e1928b7790b38d5cb7",
+        "label": "154",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_154.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_154.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_155.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/154.jpg",
+        "size": 10224619,
+        "sha256": "9363bea74a060139d8d382d6f3152303c88715368308938affbb2f639b1ac87b",
+        "label": "155",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_155.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_155.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_156.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/155.jpg",
+        "size": 10188005,
+        "sha256": "28f84a055d568dd726e849b49b5c29e75818dd4f8ee08284937ee877f40139bb",
+        "label": "156",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_156.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_156.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_157.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/156.jpg",
+        "size": 10341822,
+        "sha256": "cd469df1f109c5e90eb8fa2a5bc292ea3d142bc4f286603ad230bbbdec1f8a96",
+        "label": "157",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_157.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_157.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_158.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/157.jpg",
+        "size": 10200301,
+        "sha256": "545df0c8f2cb025838e8e466da51091c84250fa3fa692549e8c87f94495822f4",
+        "label": "158",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_158.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_158.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_159.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/158.jpg",
+        "size": 9555995,
+        "sha256": "96fbc26452fc79751ade4e5a3ca71bc35e73562a3ab4b88a894c04b0d576117f",
+        "label": "159",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_159.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_159.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_160.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/159.jpg",
+        "size": 6974388,
+        "sha256": "69d377a454874628a5334bac67ed220f621a904468628d073276e0466d0c37fe",
+        "label": "160",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_160.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_160.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_161.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/160.jpg",
+        "size": 7109754,
+        "sha256": "966cf40438df2ad3d6640e5cd36247b8c9e09c6bc6511033472a2c2ba09f0bcf",
+        "label": "161",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_161.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_161.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_162.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/161.jpg",
+        "size": 1444332,
+        "sha256": "f30432a8ab3dbcc586be34ba011539109a2b6fb25e177ef01d671a5534e7ec4d",
+        "label": "162",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_162.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_162.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_163.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/162.jpg",
+        "size": 1286172,
+        "sha256": "c804682945c68839dd9691e406a164a0f0208ad0edb9af9d6bc6669fc577ad82",
+        "label": "163",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_163.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_163.jpg"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_164.jpg/full/pct:100/0/default.jpg",
+        "path": "sources/manuscripts/P66/images/bodmer/163.jpg",
+        "size": 2249894,
+        "sha256": "d31c2c735e2bff9b7cc36603fc5d1f9a7feda9c3f769401f1304232960418b11",
+        "label": "164",
+        "canvas_id": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_164.jpg#canvas",
+        "image_service": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_164.jpg"
+      }
+    ],
+    "manifest_url": "https://bodmerlab.unige.ch/constellations/papyri/manifest/1072205287",
+    "manifest_sha256": "f484f3235d0f89fdeb0650f609814b8e23707ee637a7a9f7bbba72e63ada1212",
+    "canvas_count": 163,
+    "mirrored_or_present": 163,
+    "failed": 0,
+    "total_bytes": 835837966,
+    "complete": true
+  },
+  "P104": {
+    "source": "Oxford/Wikimedia archival copy",
+    "files": [
+      {
+        "status": "mirrored",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Oxford%2C_Sackler_Library_Ms_LXIV_4404_%28Papyrus_104%29_recto_Matt_21%2C_34-37.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "path": "sources/manuscripts/P104/images/oxford-commons/recto.jpg",
+        "size": 4636031,
+        "sha256": "fa6258d7999483d80f5d65fd7a07273b9ee270911610be6385c3616ab50a8ae1",
+        "side": "recto",
+        "described_source": "https://portal.sds.ox.ac.uk/articles/online_resource/P_Oxy_LXIV_4404_Matthew_XXI_34-37_43_and_45_/21178702",
+        "license": "Public Domain / Public Domain Mark as described by Wikimedia Commons"
+      },
+      {
+        "status": "mirrored",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Oxford%2C_Sackler_Library_Ms_LXIV_4404_%28Papyrus_104%29_verso_Matt_21%2C_43-45.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "path": "sources/manuscripts/P104/images/oxford-commons/verso.jpg",
+        "size": 4641332,
+        "sha256": "22ad84fd54c07eaf622eb6eb6849578289661d06e4a5faaa6fc104ecd0a5dfe1",
+        "side": "verso",
+        "described_source": "https://portal.sds.ox.ac.uk/articles/online_resource/P_Oxy_LXIV_4404_Matthew_XXI_34-37_43_and_45_/21178702",
+        "license": "Public Domain / Public Domain Mark as described by Wikimedia Commons"
+      }
+    ],
+    "mirrored_or_present": 2,
+    "failed": 0,
+    "total_bytes": 9277363,
+    "complete": true
+  },
+  "P137": {
+    "source": "Egypt Exploration Society",
+    "files": [
+      {
+        "status": "failed",
+        "url": "https://www.ees.ac.uk/static/5f06544239c2a2f77ad812ed57681219/opengraphimage_83f4e8796336604b59d7216d0ecd81a5_4a7c7e45a350/POxy-LXXXIII-5345.jpg",
+        "path": "sources/manuscripts/P137/images/ees/POxy-LXXXIII-5345.jpg",
+        "size": null,
+        "sha256": null,
+        "error": "RuntimeError: too small: 6859",
+        "source_page": "https://www.ees.ac.uk/resource/p-oxy-lxxxiii-5345.html"
+      }
+    ],
+    "mirrored_or_present": 0,
+    "failed": 1,
+    "total_bytes": 0,
+    "complete": false
+  }
+}
