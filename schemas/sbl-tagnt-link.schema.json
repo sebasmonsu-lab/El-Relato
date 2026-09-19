@@ -18,7 +18,8 @@
     "morphology_code",
     "lemma",
     "tbesg_entry_ids",
-    "strong_original_id"
+    "strong_original_id",
+    "textual_status"
   ],
   "properties": {
     "id": {
@@ -64,7 +65,8 @@
     "match_method": {
       "enum": [
         "normalized-exact",
-        "positional-replace"
+        "positional-replace",
+        "double-bracketed-exact"
       ]
     },
     "normalized_equal": {
@@ -129,6 +131,12 @@
         "null"
       ],
       "pattern": "^strong-original:G[0-9]{4}$"
+    },
+    "textual_status": {
+      "enum": [
+        "main",
+        "double-bracketed"
+      ]
     }
   },
   "additionalProperties": false
