@@ -44,7 +44,7 @@ def is_sbl_row(row) -> bool:
 def morphology_parts(code: str | None):
     if not code:
         return []
-    return [x.strip() for x in re.split(r"\\s*\\+\\s*", code) if x.strip()]
+    return [x.strip() for x in re.split(r"\s*\+\s*", code) if x.strip()]
 
 
 def strong_base(s: str | None):
