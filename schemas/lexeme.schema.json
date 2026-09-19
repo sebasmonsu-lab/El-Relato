@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://el-relato.local/schemas/lexeme.schema.json",
+  "title": "Lexeme",
+  "type": "object",
+  "required": [
+    "id",
+    "language",
+    "lemma"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^lexeme:"
+    },
+    "language": {
+      "const": "grc"
+    },
+    "lemma": {
+      "type": "string",
+      "minLength": 1
+    },
+    "transliteration": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "strong_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^strong:G"
+      },
+      "uniqueItems": true
+    },
+    "glosses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source_id",
+          "text"
+        ],
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "pattern": "^src:"
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
