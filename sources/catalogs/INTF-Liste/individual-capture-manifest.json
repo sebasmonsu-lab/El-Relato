@@ -1,0 +1,4339 @@
+{
+  "api": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/",
+  "captured_at": "2026-09-19T05:57:41+00:00",
+  "strategy": "individual deterministic docID requests; no broad Liste search",
+  "target_ranges": [
+    "10001-10200 papyrus namespace",
+    "20001-20350 majuscule namespace"
+  ],
+  "results": [
+    {
+      "docID": 10001,
+      "status": "ok",
+      "bytes": 220,
+      "sha256": "de2150b4d1b2607cbf946d198fb798b5b95b2eb7c481ddb3c4ee22602247ec29",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10001&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10001.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10002,
+      "status": "ok",
+      "bytes": 221,
+      "sha256": "ac996322289de821f2d059e23a4fb78eeef5ebce9dc652848075b22ec0bdef0a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10002&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10002.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10003,
+      "status": "ok",
+      "bytes": 223,
+      "sha256": "95cc558ab99d85134f005b2cde1551de42efab3e2b268000e76012eac9a8863a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10003&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10003.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10004,
+      "status": "ok",
+      "bytes": 220,
+      "sha256": "d7616b939b996879019261735e53ae8058c45d97896b1d91ada5189b2904a002",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10004&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10004.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10005,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10006,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10007,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10008,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10009,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10010,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10011,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10012,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10013,
+      "status": "ok",
+      "bytes": 226,
+      "sha256": "e40364dcd6778f01ac3afb5a688ad00dec2e4a9de927d0ee89314c730d82a629",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10013&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10013.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10014,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "b4b5ce2100be30a1a20ec9e97401191733647e1a1a67cfc0bccb205a95b4ae61",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10014&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10014.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10015,
+      "status": "ok",
+      "bytes": 221,
+      "sha256": "078394bacad436f71a4aeb8a33ab976f4af91ecd437582f2e98e638dc7909fa4",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10015&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10015.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10016,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10017,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10018,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=8)"
+    },
+    {
+      "docID": 10019,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10020,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=8)"
+    },
+    {
+      "docID": 10021,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=8)"
+    },
+    {
+      "docID": 10022,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10023,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10024,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10025,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10026,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10027,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10028,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10029,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10030,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10031,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10032,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10033,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10034,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10035,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10036,
+      "status": "ok",
+      "bytes": 221,
+      "sha256": "a2020c9bd08c8db4de17f40dfa338a1c7a43bc42a534d3fd92ee0047632c4e14",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10036&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10036.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10037,
+      "status": "ok",
+      "bytes": 222,
+      "sha256": "c1be9d4a9be70201b2d75309cfc3827e49fc09185228f24f5aa0e79b0deecea5",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10037&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10037.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10038,
+      "status": "ok",
+      "bytes": 225,
+      "sha256": "3e596d2283f073e968c42cd45aea5c9234061e235575724a118d7ffc017162a9",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10038&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10038.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10039,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10040,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10041,
+      "status": "ok",
+      "bytes": 226,
+      "sha256": "fe090e14cfbd4a802067a109f8e051362197c50e80aa154d2d99139e6ec87ed8",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10041&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10041.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10042,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10043,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10044,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10045,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10046,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10047,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10048,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10049,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=8)"
+    },
+    {
+      "docID": 10050,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=8)"
+    },
+    {
+      "docID": 10051,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10052,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10053,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10054,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10055,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10056,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10057,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10058,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10059,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10060,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10061,
+      "status": "ok",
+      "bytes": 228,
+      "sha256": "e9d4e1896b050cd531e7ad9bcdfee109fb7af0f3fec5fdfcc6613c08f64881a2",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10061&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10061.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10062,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10063,
+      "status": "ok",
+      "bytes": 225,
+      "sha256": "4ad040a6af5ca7d4edbc3e84c731254064a4368d8d76490f40a107ce9c56a9b7",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10063&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10063.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10064,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10065,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10066,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10067,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10068,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10069,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10070,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10071,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10072,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10073,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10074,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10075,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=8)"
+    },
+    {
+      "docID": 10076,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10077,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10078,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10079,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10080,
+      "status": "ok",
+      "bytes": 222,
+      "sha256": "aaef7f1254d469871ee2389984998032ec367f27d8dd9dba3deb9b648c2368fa",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10080&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10080.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10081,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10082,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10083,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10084,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10085,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10086,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10087,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10088,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=8)"
+    },
+    {
+      "docID": 10089,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10090,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10091,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10092,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10093,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10094,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10095,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10096,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10097,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10098,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10099,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10100,
+      "status": "ok",
+      "bytes": 227,
+      "sha256": "958fe241ee11672f7abca50825b88a52bfd386fa34617fd854e8a46f8f24cdf3",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10100&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10100.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10101,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10102,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10103,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10104,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10105,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10106,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10107,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10108,
+      "status": "ok",
+      "bytes": 224,
+      "sha256": "433bfa74267aef55959436a552e2e24c7fbeaf5b691463ca46c57224cc8a6bb5",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10108&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10108.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10109,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10110,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10111,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10112,
+      "status": "ok",
+      "bytes": 222,
+      "sha256": "48fa249972c0190b3c250d5f32147678804d0aa2d4abd4106c79a608ccec8ee5",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10112&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10112.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10113,
+      "status": "ok",
+      "bytes": 224,
+      "sha256": "75933f1b3512d670c5d7730ddde57f978fbe90db1d85a181d642db1e9691b03b",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10113&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10113.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10114,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10115,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10116,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10117,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10118,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10119,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10120,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10121,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10122,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10123,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10124,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10125,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10126,
+      "status": "ok",
+      "bytes": 223,
+      "sha256": "1fd7a85cfe84e8f19c9415a6efb292ba5ed7d036ff4ff61c39a0802a7e2b5681",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10126&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10126.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10127,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10128,
+      "status": "ok",
+      "bytes": 228,
+      "sha256": "e524330edb59f9ca9229aed7eb566c8e702aa76ef79905e6076f350573b5e2c5",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10128&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10128.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10129,
+      "status": "ok",
+      "bytes": 223,
+      "sha256": "2220bcffb55ee600fdc79317619d550e356649be48f2b97ebc11701a01ded12b",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10129&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10129.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10130,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10131,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10132,
+      "status": "ok",
+      "bytes": 229,
+      "sha256": "f4ef60aa3f2ed7f5b2aed7f99e71b6c6ce85fc9b1958cd5ce1f13e0d00e0eaf2",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10132&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10132.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10133,
+      "status": "ok",
+      "bytes": 226,
+      "sha256": "a7e27eaac76bb0676bdae0407fa346d545e03ff902f7085e935992e4f82aa091",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10133&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10133.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10134,
+      "status": "ok",
+      "bytes": 229,
+      "sha256": "a1e951e69910630c777e52a800d17c84ab3d14c031e2cb32687ee82334145320",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10134&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10134.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10135,
+      "status": "ok",
+      "bytes": 227,
+      "sha256": "92818e0627fc1f7e6b515bfaefaaa21a8bbc7f847c2a2511a484dc560a80a9dd",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10135&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10135.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10136,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10137,
+      "status": "ok",
+      "bytes": 227,
+      "sha256": "9900b476ee73e82e33acf5c1cf89b52a2ee29f359012a1037f5d931b5945db46",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10137&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10137.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10138,
+      "status": "ok",
+      "bytes": 224,
+      "sha256": "08f8a450ec16f99b9307dfb4ba1b2adbdb10d674c5af409177ab547551496176",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10138&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10138.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10139,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10140,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10141,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10142,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10143,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10143&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10143.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10144,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10145,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10146,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10146&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10146.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10147,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10147&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10147.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10148,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10148&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10148.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10149,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10149&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10149.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10150,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10151,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10152,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10152&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10152.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10153,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10154,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10155,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10156,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10157,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10157&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10157.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10158,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10158&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10158.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10159,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10160,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10161,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10162,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10162&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10162.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10163,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10164,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10164&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10164.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10165,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10166,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10166&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10166.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10167,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10168,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10169,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10170,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10171,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10172,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10172&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10172.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10173,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10174,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10175,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10175&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10175.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10176,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10176&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10176.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10177,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10178,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10179,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10180,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10180&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10180.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10181,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10181&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10181.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10182,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10183,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10184,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10184&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10184.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10185,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10185&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10185.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10186,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10186&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10186.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10187,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10187&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10187.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10188,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10189,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10189&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10189.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10190,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10190&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10190.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10191,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10191&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10191.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10192,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10192&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10192.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10193,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10193&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10193.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10194,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10194&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10194.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10195,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10195&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10195.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10196,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10196&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10196.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10197,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10197&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10197.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 10198,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10199,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 10200,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10200&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/10200.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20001,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 20002,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 20003,
+      "status": "ok",
+      "bytes": 215,
+      "sha256": "ed7d90afd4e091b0443fbe72c6f4e0ca1577b4a7da36f06e8639fdd2dcc8205b",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20003&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20003.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20004,
+      "status": "ok",
+      "bytes": 214,
+      "sha256": "cda30f96667d1f51397917bef999cec19cede7029766bd906fd714cc1d65b07f",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20004&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20004.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20005,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 20006,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 20007,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "a75e07b281413641f502a9637597f31882621c3d51199a52d8e80aa99ad09565",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20007&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20007.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20008,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "4c1c6cc4461e79f3094df8f100f57527c0ff1911c47d46036647355dd65bb131",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20008&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20008.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20009,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 20010,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 20011,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 20012,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "ac5208ca422873c08e98317556b1f5f1a6b7070484589a02a57a1a2a8465146e",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20012&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20012.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20013,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 20014,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 20015,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "ebcd5093f5e2afd00c8b6ddf355966ff10f05de3dcf9a4c01d2ffaa0002d8355",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20015&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20015.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20016,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "80770a822b945cf2b83e522badec3aff3063e0071d9b0f4476b70adc7f8a2a4d",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20016&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20016.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20017,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "7cf7f6346bfe4bd241990d86f9225a45434f469635c46041b8721fadf3cd498d",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20017&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20017.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20018,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "8199a9cd1ef5e22b93744b845c279241e485ff6308a02106dba3cec6aa9e322c",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20018&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20018.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20019,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "18158c4f78b4a2ca6fa6a30c43bbc3f846133a3bb0af41d580deb95840a9d300",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20019&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20019.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20020,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "1da439858d16912bd58caab2550eedd9d3d0dd3cb8f10d3a57ace2eebdda1873",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20020&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20020.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20021,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "8749b82a6e687bbd43d64c5f2eb2440851b6987e97be849dae00b011940b3e2c",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20021&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20021.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20022,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "3369b2143f8dce5987ef7fc16a7b016cb55e8c493fd15501ee057136fe72b522",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20022&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20022.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20023,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "60d847c76d752d7675dd88c7e77a510cb28c26c2c4ee4c0a84e1ff5fd562a5a8",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20023&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20023.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20024,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "70c7c2eefa44ee5dac7dc1aec314ae066725187ad42c4ec8b03abe311bb21f2a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20024&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20024.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20025,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "d68c0c13b9bd1003c0e2b1881b540da2d7fb4f13185eccdf4e04d13c06195ec6",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20025&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20025.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20026,
+      "status": "ok",
+      "bytes": 215,
+      "sha256": "1861af757d7858a4b9d9851174f70dd0711e8e4a7889cb166bc5d74bf453cdab",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20026&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20026.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20027,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "4efb710060981b98686379fc86e39a869281098c619aad4e8e1352ccee6a72c7",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20027&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20027.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20028,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 20029,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 20030,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 20031,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "d57ff318563a1bcc2a3b6d017116dcdd8135d27d28654f30f805c43efd37ec8e",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20031&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20031.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20032,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "7d9c7d510b387d68451a7c1d67a894b085fe7bb30ed2a36e843478e5d2bba1ee",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20032&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20032.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20033,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "ffd688cba99a4b8d3fb7b2d1434b21158afe3ee469a8681e725fc41fa537fb8d",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20033&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20033.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20034,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "cf49f1bbab05409e77b5272cd84c05531770540569dd38d3858a6abde226a140",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20034&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20034.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20035,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 20036,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "217eb7a01894fc456d853b76b654b0f60b16cb0fe1a3c36c2f546a49e9c17d67",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20036&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20036.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20037,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "13a37cfe6b5a2d68837a5fa8263058a4570994dd0ca1af85bd8b3bc06e1c492f",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20037&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20037.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20038,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "d4a3ff135922b4c7473bad980f963ba2a7a862de6d6244289e6d50616af5bd15",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20038&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20038.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20039,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "318bb40114b33499de1ee8a56c101faa7c4c9c1f8bc52e74be45efde445169cc",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20039&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20039.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20040,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "fe9c2e58808d1a67986cc108479bc1152cc8f2acf8d4d43c632f19fe10f9d6a4",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20040&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20040.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20041,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "9b54efa948a1799fc065bf10cd58a018a5ec582f7d336e8b6fefd921e3843221",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20041&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20041.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20042,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "0c48b37b9cbb488dd03925fee1122a038763eb3ad2d38018d2bdbefd32553a9d",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20042&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20042.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20043,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "a9bade16904939705d0121f8495e687db0d8914547c6f04539e14baf7bcbb7d2",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20043&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20043.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20044,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "8f35610098dcfb7b5b4a52c5aef4f105596307a8a4e63764d367ee2ecb3fb423",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20044&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20044.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20045,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "6722e264a4caf7e3700e2d0a502489c71b2daf9294c62fdc700f572c40377e5e",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20045&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20045.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20046,
+      "status": "error",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='ntvmr.uni-muenster.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "docID": 20047,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "b9bc9d00fe1eb52bc500d5cb946f437443f39d7ad50f4651fd8350d02664ecab",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20047&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20047.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20048,
+      "status": "ok",
+      "bytes": 215,
+      "sha256": "670598348cb0173748b2ffa66fc97f2a2b44ee31e2b0a6a4ab54cea9e7aadf32",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20048&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20048.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20049,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "744e8c87fddb8a1d2685e09c80a5f01be3ff1d561fef140b1517cabef4ef16f7",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20049&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20049.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20050,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "feb8ec7ca22696119f374592e9fc835255066ec4c9245e5d96cdf64f55bf68cf",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20050&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20050.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20051,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "98c91c9794d2ca85f9fec7e3e49a712bc4121b0432e90493ba6131cd6ea466d2",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20051&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20051.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20052,
+      "status": "ok",
+      "bytes": 214,
+      "sha256": "3894a1df36beabd6ef84cf04b4406cba82a5b24b21d52cb5a9946b6535f76727",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20052&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20052.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20053,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "9e7bbca7266ed7bbdcaf28a0057ded732c7f1749e6c8a55d92878f1390228418",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20053&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20053.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20054,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "47a38f9861868a58612887061d8bb4c7ee6a956532b60e8e2945ef83509f5d0a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20054&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20054.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20055,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "8e552fa80dfbf46fd30507a05a488a6d24976e10c7eb84ffd93e67e661aa5df3",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20055&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20055.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20056,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "de1ff2f88fd8f2b8e53f9e0e1475513ecda823f5e1c71611023417a7a4d66ab6",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20056&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20056.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20057,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "1c7ef390d450109057eca6994699f56d21bb7c70145cec6dec0b7b5cf088773a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20057&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20057.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20058,
+      "status": "ok",
+      "bytes": 215,
+      "sha256": "9ca70bd591ea4ce58e2fc4dbe6805cd76282909259046a81c3191e935f825ed8",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20058&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20058.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20059,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "f886d320862414228dfef74a747e9820d87c3cfb9f6bd31ac1c4e032fcbb1c8e",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20059&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20059.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20060,
+      "status": "ok",
+      "bytes": 215,
+      "sha256": "245a71f2b6fb6b7d900b9316764454e232ceab22b98016d744ec23da7545e79b",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20060&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20060.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20061,
+      "status": "ok",
+      "bytes": 214,
+      "sha256": "6882ecd54ee1be1c1728c3b86886c5500ed6b18597017eee51678bab0cc76610",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20061&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20061.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20062,
+      "status": "ok",
+      "bytes": 214,
+      "sha256": "f9e31cabaf84e9e59ea0c030b02d75c0839814bfb6d1b8e13a4eb0b918b99f32",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20062&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20062.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20063,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "fbdf4bba65a1d833d76800cdd1239b26484f9b0b5272938da80a45c72beac2e7",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20063&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20063.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20064,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "2c6082a638edc813b6c4e9af1024609c6802ec8213e880635bf681c8f8793a5e",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20064&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20064.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20065,
+      "status": "ok",
+      "bytes": 215,
+      "sha256": "556ccfb0a034674c85d9e59f90618efd3d660488baf783b1cd6bec11baf52975",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20065&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20065.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20066,
+      "status": "ok",
+      "bytes": 215,
+      "sha256": "b0db0a1f78b355ce7f826a2708b71aa902071088d2a9f512e1076996cd865890",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20066&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20066.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20067,
+      "status": "ok",
+      "bytes": 215,
+      "sha256": "9dee905b085291fe24b9fc07d198f798420ae918c8d22f16cbe7cf91b27d706d",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20067&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20067.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20068,
+      "status": "ok",
+      "bytes": 214,
+      "sha256": "255aef6a0991d17e09bf4a56a9e25913b06fbdd4fab82ad1892b43b3971d50e5",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20068&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20068.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20069,
+      "status": "ok",
+      "bytes": 214,
+      "sha256": "eb173699167145399a46063c7ff6408fed358ad83ac9bd70151555a93777c43f",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20069&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20069.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20070,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "7317a6cb40d83414a0d367d4d98b188546ede863fca1cf57b68f9a46d986d038",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20070&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20070.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20071,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "28ba9c31061eb4db1e52ade9e09777e3f2d2a163fcb0e67f7ae8eab68c1d680f",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20071&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20071.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20072,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "a0819d2def1ccd40537db113478e073ef87fea25365ecd800e96f88deb012fe1",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20072&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20072.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20073,
+      "status": "ok",
+      "bytes": 215,
+      "sha256": "39c89188c45bb1151f9f1e33bfde545f8420b47f67241d11f1f449355c485f9e",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20073&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20073.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20074,
+      "status": "ok",
+      "bytes": 211,
+      "sha256": "264c95c8359b822be075f1e40466b9cd46ed5145837868377eb5348345e02004",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20074&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20074.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20075,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "cf18327d0ff4a1f515d577972008da885f77f48483fc0b21d555f040a9ae6f7d",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20075&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20075.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20076,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "c1c487414547df542d3fe0894074ab27bd314dfed64a91817c5fbd0005303d12",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20076&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20076.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20077,
+      "status": "ok",
+      "bytes": 214,
+      "sha256": "6e7486b7c36bb7ed0fa679dfe6da693907afa1706896fe5666b69ddc038a5892",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20077&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20077.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20078,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "ea5c290c9445ac3467ff7f6d62d25ced5075297c7c3c723bb50ed4e24ae084db",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20078&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20078.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20079,
+      "status": "ok",
+      "bytes": 215,
+      "sha256": "c3ee4a93c519ce7e9383194f0e0cf439f2a0db5e862c9819d9856f1bc034c8b2",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20079&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20079.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20080,
+      "status": "ok",
+      "bytes": 215,
+      "sha256": "f93227b78790fc38638685e077ed57abe8655c77f367b39e07ac8f8e90f6e8ec",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20080&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20080.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20081,
+      "status": "ok",
+      "bytes": 211,
+      "sha256": "bf6f8d409cae2d06ff2fde640b40e8fe08abfc946c9afa8430e472cb12727a71",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20081&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20081.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20082,
+      "status": "ok",
+      "bytes": 215,
+      "sha256": "507fcf3d4ddb9ca8fbbe66f5a0cf0d91036563d384f5de4b020411ae1683d36f",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20082&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20082.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20083,
+      "status": "ok",
+      "bytes": 220,
+      "sha256": "163a5ce6eacde77c50357d6cdc10df145f5d5b54eca9e19317c5f72008d7a3f5",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20083&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20083.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20084,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "d55e3be7628846cd3e95e175bcdf33db52c9b82893a70a82442320ebadb79e22",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20084&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20084.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20085,
+      "status": "ok",
+      "bytes": 215,
+      "sha256": "35a3dd86aa9917cc0c641c6992bb06eb28fe0a0ca0b0d2d001a31929488c9bf5",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20085&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20085.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20086,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "74c31a72ab7f3cd7a18e918e5fbb12d9e32a649fda33eae89ff60d4da0339cdd",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20086&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20086.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20087,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "215c51d4b20819b8d792b2c91bc9dad53dbe77204b80df6eaaea7fc38abc3d27",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20087&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20087.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20088,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "6248eaf7e6ac71f18d7fd74c09ca7e8d4a913391287fe358b1e323f7a53bdb4f",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20088&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20088.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20089,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "a61bfa98a7aabf93d945e0e0a6e66ae1c1f7468463d7b05b90d60974fdc662da",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20089&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20089.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20090,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "b94b8e0596603a122cdb4cebd0e27372a290e0e0a6d71d47d58a3b2ac21381ac",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20090&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20090.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20091,
+      "status": "ok",
+      "bytes": 215,
+      "sha256": "ceeffcc480effe2149b42413269894ec2ddfc2c91fd84cb1b360165647e10cfa",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20091&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20091.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20092,
+      "status": "ok",
+      "bytes": 211,
+      "sha256": "517b4ee669aff950fe7cbc3f1c3c51da65114e9134eee694b7a1119aa1939209",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20092&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20092.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20093,
+      "status": "ok",
+      "bytes": 215,
+      "sha256": "5d8cfd93d46e2efa5e86b3807d2d6846f8c2d40d2ce2380d7390d622da2cb7b1",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20093&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20093.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20094,
+      "status": "ok",
+      "bytes": 215,
+      "sha256": "10049d72172f36591062399d28284979e4ff6495e6ed37d2cd5bd9a93f390ed1",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20094&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20094.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20095,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "98daeac3cedf17c4d77d0ab9ea642dad1e8ebf9064ad41f57a35ffd5537aa151",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20095&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20095.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20096,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "b5f1a9ae16e59b3dd51d9439d505878c2272961c54ce66169855ad22f36984a5",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20096&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20096.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20097,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "f403cb0ef5996dd7ec6f88416c9ae6cf6cc5ec07008b6986fe89b365c5a77682",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20097&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20097.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20098,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "98cc51f3fc125d3d36dba2e4dcb8b7518acf973b2cf542561c8d215fc6e93aaf",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20098&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20098.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20099,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "30db38b7e627ce7790c0d39d62681b7fcbfde13d948a686b8426e1407a765b2e",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20099&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20099.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20100,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "73ebd04763af9ca30b8fa71c49cfb785907b669bcd473cbc735df8058485a927",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20100&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20100.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20101,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "987cf8d822c3097ea0b8e64b150f2c7f5f63b32856557ec6b111b347a7261f8a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20101&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20101.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20102,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "3cf7577d0c9204727526caefdab68cf666b2423a63a1c927ed8f77a4d47f11a5",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20102&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20102.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20103,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "613590324f019a4acc01548bcf60e3a0bec9d22ee7b8b6bcb3a075518b1b5336",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20103&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20103.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20104,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "1d0f6605daf3cfbbecc3e80ef39bb6fca3a1a9a330d31bccdfbc126f488e91bd",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20104&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20104.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20105,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "a20577f9ac6ababe2c06e080eba997d1ab30427c2527f8abcf82ca4c0a25457b",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20105&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20105.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20106,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "2f4365161317050b1e98278c2e9fecfa057b687b5a3bdb832289cffa89f0c3cf",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20106&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20106.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20107,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "43c803e672cb73768c90b070f6765a2d02aeb7bc0456f98d7c4e63c68d33cff2",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20107&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20107.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20108,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "f7ee43f0323d45c86ea59a7710078490851f891fe3e407d9cf177bb3f7638b25",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20108&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20108.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20109,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "c70a24b5783bec0d3b8126930faac3cca6ce9fe9b0d18f2c1231eefab4c8768f",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20109&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20109.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20110,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "ae63e744116fb62314141a7714054805b9b2d147f6235213394f7ee0b476bf0e",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20110&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20110.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20111,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "63001bd91d43d58e979cffa9b017d051283c63d3491b7da231b71081a8552d8c",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20111&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20111.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20112,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "4567fa56200be7bec3d6f9f220e9fb54864287e8253fe282ba7d28ac8c994c6d",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20112&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20112.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20113,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "353e358809327ed006334f936cd3b7f0750949340b20897555bb1d60cd71444c",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20113&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20113.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20114,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "6edf8e729989acd74ccf4b798f77840c247d1a32f95920a999b37a3efe8bfb8c",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20114&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20114.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20115,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "7028b2edaad1e2c6a09110331a00e1b381d0e9f6b86fae5b9914ebed71a85b1b",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20115&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20115.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20116,
+      "status": "ok",
+      "bytes": 220,
+      "sha256": "ce1323cce7c8710b69252ae7c7b2ac89dc66cfa19bc0dcdb02e4f118d2d1144c",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20116&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20116.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20117,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "dae5f3bcad5a8f86f79a7cd7578a0a9d5a149a1ee508fcfafadff366a15d5624",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20117&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20117.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20118,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "3d99f00ca4e49492d7b7aff6a6a1aa6e68dc96deb701a5b3defc09a66b8b436b",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20118&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20118.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20119,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "64c8e0c422f842421399b4b6a1bbae8f8e8a0a339291d9d267d27b17d8d9a3d8",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20119&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20119.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20120,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "6a1e407641a175b0aece72963bc269964c94183d03377e00a3ecb882711d127e",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20120&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20120.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20121,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "baef3f28b3864f5bbfc1ba4364482cae296ff15ee20b4fbdc15d4c3c4eef02d4",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20121&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20121.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20122,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "e48d3234820191cef670c5585a64c672e5f2dc933e92945ab4cd6758ea7f835b",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20122&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20122.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20123,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "db0cf271468bf175e95208a7f02fbbc013966673b05860f5918914e277f10a2d",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20123&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20123.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20124,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "95b28985145201f4cc8e14d163ad28cb1394ec8944af9c329b32587dfef95abb",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20124&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20124.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20125,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "4d29764e85fc0f5a1101d0410f40dc88117b2a34f040d475cecde89a421090e7",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20125&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20125.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20126,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "56fcab122d159044beffdb163581af104985df8ea07e06110c8889bc572ea1e7",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20126&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20126.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20127,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "74990baca4afef722ad77397fbc11e3ccdef75d7241a486d96cb3a30dcf5818b",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20127&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20127.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20128,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "810a287609eac033c067941071f6134747ecb7a5f48b25070d5df1ba6076cb22",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20128&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20128.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20129,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "9d5faddbd9303b7274865e5585c96783ccae86891c999e5bb9386fb1fefd763c",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20129&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20129.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20130,
+      "status": "ok",
+      "bytes": 220,
+      "sha256": "0509035af6ddcc697f52e348a00ba400af74b004794d28d96922f939ee00ecba",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20130&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20130.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20131,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "d1218494ecde18bc2eb73088455d48600997ba7d1485dae3c6d94ff51709dcde",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20131&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20131.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20132,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "0bd0bbf0b2c5b6261d9707927b4cb0bb7cc1c95b16dd6afbf01405f7d7a89f30",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20132&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20132.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20133,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "8abfe6561012031d5d9191f1f302283b119f45bdcc212ce5e6d002122c9f3994",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20133&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20133.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20134,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "292d1bd38f0b73ca1dd400788be64e387aa27f41cd76269cdc3fc1b606781db4",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20134&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20134.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20135,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "ebe996daa3cbfe41ba199c2fdfa5521473ff8428034ef2ce14ad2041f3d7d515",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20135&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20135.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20136,
+      "status": "ok",
+      "bytes": 221,
+      "sha256": "96f5d5624d62249fefdb0d6040f2f74f2c18d9752829c02efe51f9df5ef08e8c",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20136&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20136.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20137,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "6b67347000ddd9153c823b0e5f96a041e4ac08ef5f27f4c1126fe00bb2251c6b",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20137&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20137.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20138,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "c0f9788fb0fd2989794a9ced9ecfca627e3ac8d8037d777426c648db30643ec3",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20138&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20138.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20139,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "67a5feb5a486308d54a31b3af9c7edf6990127f156ec6d466a67f68ac1995fb7",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20139&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20139.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20140,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "d05ffe262470ba99149c5b42e71a17906f8b73d694c6ba6b2159d11f06afce6d",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20140&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20140.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20141,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "f856c17d3cc097062ee1c117cda4ce015826529b3fbaf2fb7a4f1516e8a9f314",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20141&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20141.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20142,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "d541f00f3ed409a8197358d49beb39f9be2d9c127a7cac674e28d2f975f90fe0",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20142&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20142.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20143,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "98fee379cadd0c224eb67373984fd80ab1cea28df5bd24f9f22632bb4cfd8a06",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20143&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20143.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20144,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "3e8408438ba2c7a0def112a569dfac7282f8881a33b139c581af567225b0c1df",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20144&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20144.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20145,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "436d63235e7d81e0b8699467531f37995f3d25762bc51065986abea7b2d4a068",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20145&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20145.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20146,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "b8778d56c05c386028e29f49dc626c2a5d25912ad60a8f0d788f169d5670a597",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20146&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20146.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20147,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "19314c07768eab467cdcaa935425c3536cf687e4b6ce74bd41844bd6ee7e642b",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20147&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20147.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20148,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "e3b2ce7fd9d14d78ba6f6ac2ba2e307b0dc80b7348686ebbff17ad99987b606b",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20148&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20148.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20149,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "093db3e0a60729029398c13484b38681c12ab22ff1da49ac3f595b2420e17fcb",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20149&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20149.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20150,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "d84a35c6324aa46edfd3145cd752bf7d7f2f22391d86d983e6c824c28332597a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20150&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20150.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20151,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "501c9defc3d4c10c571085f1cc066cca3cb7580828546ea58944b020310cfe3f",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20151&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20151.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20152,
+      "status": "ok",
+      "bytes": 215,
+      "sha256": "248cf4134dd2030cdf419d1b7cb4b9e0536a367cfd77a49ec21f47f045d83677",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20152&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20152.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20153,
+      "status": "ok",
+      "bytes": 215,
+      "sha256": "b065c6bb60226d444cf9f12f8c6fbabefbee0b474a472613f2e1f37d191d300b",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20153&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20153.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20154,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "fb43c950d734330c29334758a89af58e16b8488a44bc3b2cca524d05947ecabf",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20154&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20154.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20155,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "5a65698411c53659541d622a164aaa0c8149088d2d7993ded60a906741ef2169",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20155&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20155.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20156,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "c2539f6b99696c468b12cafd8eff6e99e8eb203f7f1dd68d01ecdef7fce8485d",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20156&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20156.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20157,
+      "status": "ok",
+      "bytes": 223,
+      "sha256": "425355648506c9d45cc36a458374c5e051b4133152583c79133c372aefe824e1",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20157&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20157.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20158,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "1c5ed9b00a77d1660b5f36f4bd3ac9530550474f283b08d0db81277e80abb315",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20158&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20158.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20159,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "fb0613c4a8d53764885a412d3bcb86e64f130cf35e26748252500355cd62dd40",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20159&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20159.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20160,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "9583e368d3c2a1e9e5c164abdcefd6f8a09b81c3c222bfb93852ad6c839afe0f",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20160&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20160.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20161,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "9b4502e712f3c379513fcf350c221aa12f5bfb357e07e18ad9345a8b34dbe22d",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20161&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20161.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20162,
+      "status": "ok",
+      "bytes": 221,
+      "sha256": "f6f8b3f10161c2022526adb65318cb1858f8ef61fc2196dc85d131cf176454b9",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20162&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20162.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20163,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "6e147ef5a4f561d856785da1d2eb7afe75be7ffefa18dfa5b8fa8c03965ef22e",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20163&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20163.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20164,
+      "status": "ok",
+      "bytes": 223,
+      "sha256": "7c955d45456d560ba9bd143486cc39e34d0e27156a26fc969936c7fc7dab3039",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20164&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20164.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20165,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "5904a6bcc09d82bdc9a72acacb94c3f52e23465c8f51ec6f938af3e6d998a095",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20165&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20165.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20166,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "040f76dbf3645b758491cdab47262b1eaf1da0d78f0c66d21be161e2ddc1bcf8",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20166&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20166.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20167,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "343d1a4f1359cca5473d1b4b965623b074466fd33da9f64b06a858813a7f9d68",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20167&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20167.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20168,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "99574c17e1c240967c0d86d377027ca1c0d37ce33366c1062fcd887f45b3eeec",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20168&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20168.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20169,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "b3e1d8125b12a486b8108186aa80bf9781c8b1aa19bb5e7cbf400c613d30a61b",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20169&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20169.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20170,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "cfcfe7f90de35af6b66647bf0cbadea603a0b06cd373656b1f90dbed23275fd6",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20170&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20170.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20171,
+      "status": "ok",
+      "bytes": 221,
+      "sha256": "78e5d6c91aa1be7f6507744f43a64bd054a12d2ee147b1652fd8e77b84a98d80",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20171&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20171.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20172,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "0baf922fd5dda1542c15eed33166c930b72051d60847ea782883332c9d8648e7",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20172&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20172.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20173,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "ba6781dbdc110a77c1aaecb6507136828ad34ceab159bf5bc25218b37de50827",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20173&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20173.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20174,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "cd440557ee5a6f23895bf1b9ffbd4e4107f4fc40c9544747e28e93fa6c11491a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20174&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20174.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20175,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "7486c699d503aa60eae6f7dc1b80164f115f15b53e6d83540a9e152040e33733",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20175&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20175.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20176,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "849415877c74314ff56657f848f5ed47c96eb9ca0ac800bfeded953749e3bcc9",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20176&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20176.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20177,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "969f92b58e39fbe9654b36ba1fcd32436a85d0896f1acaee88a77e29bc2ca7d1",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20177&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20177.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20178,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "deae818e57d37e94b22a0c0422e0b154add402a50475cce2d67b6d5321260387",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20178&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20178.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20179,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "864052256214615ed0087b6ab693d7fcef41a090c278afff3464006e9d2f16a3",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20179&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20179.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20180,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "5a9b54819c21cd6411ff0d351029f041f427fc8c082037cec822f440b92b56e2",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20180&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20180.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20181,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "d0641e84d0a12db5764f2fcc12e16fbb397a3cb3cf2a5d01f8dbfa14fb62f571",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20181&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20181.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20182,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "89addb1620352a6cceac47bdac9f463ebd1a19f1064b1296049e76f150f65399",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20182&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20182.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20183,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "2feee8e31e775cfad4f6d43cbe29c251d3b537d0e0e785b05354b76ed538d626",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20183&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20183.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20184,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "dfe893f447aacc40f74e0c30cf8f8ca80601351ec53c9854a72ea05754a5a5ec",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20184&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20184.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20185,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "95d1031261aca08dd96e48ba591124fec0f7cbbb3744e4bf1327ee97b4c33037",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20185&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20185.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20186,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "579980672e5e91f958cf8f68a8a5196d34ae96cf6af2c375ac88cd8414aead84",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20186&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20186.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20187,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "308b6e69c7ba8bb4588d73eadd9f784f78b619becf6d83916c571705c37ed682",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20187&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20187.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20188,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "5d9002c5832f57759eae66b3c96093bae3f9b87cd7c9876f0fd41fe159c8c5f3",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20188&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20188.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20189,
+      "status": "ok",
+      "bytes": 221,
+      "sha256": "c4ceff9e219a4636f50103f4204d314916fabeadf0bc8b68349aabae45b0a7a9",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20189&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20189.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20190,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "ebc29b0eabfac330281c48dd4959698e39901c382c4de4a765afdf81f5e5c274",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20190&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20190.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20191,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "ef84e44dec809de41e461ac21e06145193b39d696c2e5ec1a94f238f40d48c55",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20191&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20191.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20192,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "61b327920eadf6f2eea875b013cc9a6bd4f36127928d186b9a7374f4636312e1",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20192&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20192.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20193,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "ac26138feb7372f9b4fb5b24b1a393706d7294c54743d8a47659429b4e44f526",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20193&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20193.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20194,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "5fb5c388598c7c2e58064d3fac20965e1b54fd40e03bf3c21bf318684b25fc0f",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20194&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20194.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20195,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "ce1e1dd23f7a9f7a3221b108a6cbcaffa72b22df5d6aec1cf5bfa087869e24d2",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20195&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20195.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20196,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "eec09b718c844f5357c758b749f9462d0ee591cc314e42c791f35642bd6b1604",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20196&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20196.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20197,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "52185f1c6165238683969e0d35dd9e6cf93b15d082c418000045d8e8ca534ee7",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20197&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20197.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20198,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "09cf399055ed94ae7c29f74a7d50ccd7beeb2d47a820bbf4489427057db4293b",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20198&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20198.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20199,
+      "status": "ok",
+      "bytes": 221,
+      "sha256": "0d8f3200e5cda88e133728fd205c79b47c9f79c12c84d5b3dfd882cd53093868",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20199&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20199.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20200,
+      "status": "ok",
+      "bytes": 220,
+      "sha256": "6bb838102ff07bf83a8ef911dfb6645bf4c9235ff7dd4dad5154ea61d7b15fbe",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20200&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20200.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20201,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "21b598341ba8ede8eece6a94ae82fb65c26aa6c0cdbbb9393553769a0d232d88",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20201&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20201.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20202,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "b378e3ff3c42065af24b7888faa2b303ef1cd1894fb801380ef29d808f93cc68",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20202&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20202.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20203,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "285ff978610848add8a3c2306ed6832e00598255a96ee25878724586a062d709",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20203&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20203.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20204,
+      "status": "ok",
+      "bytes": 220,
+      "sha256": "73a415ba970720026f5c8be59af5d55b77dccc7a51760dafea716a357edd5ba5",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20204&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20204.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20205,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "95d9c2c995d20d33839ea3045e62126ea0e31fcda80b9b5d8ff21084a2748bb0",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20205&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20205.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20206,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "a2bb1faa5cdcd86fe6264ddc2075498cec2785171a9f26a0a0cfd51d6d8211a6",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20206&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20206.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20207,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "08428344f79277860a38ee5618a74517b54b1b48b39a3b5bf3475595aad80bbc",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20207&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20207.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20208,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "364f35f35f75bc90ce8643fcc5fb0da88ee9b375317ab98db8eb5f150e73858b",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20208&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20208.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20209,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "897f5ecd5d52112b454ace90f9c1286c9f382b5d5eed6d6f711ca6087d6815ed",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20209&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20209.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20210,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "e35bcc67d9818c673d6b172eec4b09443b6c9315406b25c01bd3f2a1182a7b39",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20210&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20210.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20211,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "6d2048111e07fb4797b705e4aafe265777716de222eb512b087c3394508921d1",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20211&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20211.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20212,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "7c1e6b85c8ef5c7a7ad8f644222b523b27bd2c3cc6b9801f2dc0ae59e881c349",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20212&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20212.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20213,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "b3f6b800dd1e72ba489ddc74072582065b1575f789af058c640295bb8640d8d2",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20213&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20213.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20214,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "6064093e9c4c0d8e7585872f473fcaf7fb966af868d85aa75cada0ee3c11ce3f",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20214&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20214.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20215,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "2c3cb136068deffecf38641aaf860420ef3fe0d04db0749d98cdb8a0f03bbf0b",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20215&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20215.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20216,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "4dcfc1922e729a8ef0868d67df881722524b5f07b12814b893db16bb966a2e69",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20216&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20216.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20217,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "c213518a6c01133b8524b6021f3f321b8302a0bb12aac25883981a40b1c8f613",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20217&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20217.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20218,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "cb75c233af6e3b432f2521f8ce72c31519c9f68070a4643e4812f2a509fcf01f",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20218&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20218.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20219,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "e0a646223b074025634d0f378b5816f57d216a49883479a07313ac16d829314a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20219&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20219.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20220,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "ffdce5f6e08501346575148e3c2dfd4ca844e448231c1138e178c4ba96fa46a2",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20220&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20220.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20221,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "12f8968568a258d1827f8507d4c18d9691e95928a6d2b5c73fa9761013876650",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20221&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20221.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20222,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "202af0781089a30fd109839a6e57951cc2850e1d11c9b20e3f1d5fa32a77fc32",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20222&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20222.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20223,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "9a1eed6ac678885a14d980a30d7219e51bfd2a7986029e1f9b5012fa4e4a9fc4",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20223&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20223.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20224,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "c2f27b304bf91db654ba0a3de25011263abed5fbc1c6e78e004649b0516eb829",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20224&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20224.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20225,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "de6ba2fae878215a4c77da8610c7bfe6fa3cd44751fba51eb21ab8e6aa06d867",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20225&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20225.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20226,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "ab65eb475dd11b724b875f975e20629fcff170b9289bb3b2e7a1a6f7e5a09f83",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20226&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20226.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20227,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "c0dcfe3fa695a927b9c1f65f183673c4eb20cca2b489708a9891e6d7798b9e10",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20227&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20227.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20228,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "7d23db5dd4231830623a405f500427b48c711edf82c4ca9cf76453a730c7acf3",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20228&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20228.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20229,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "e773fd6e1fd41c7e00397734668e09b08f6f2c7bd3fa19b5755af37359db11fb",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20229&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20229.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20230,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "d7f34c14f75521ac0866efcfa16003cdb531de2f588d1f8bb7776fb1c78aa0b5",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20230&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20230.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20231,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "62a88bc2a1222b383633524f758f10d7b0bda9908fb4ddbdaa30fcb5a8f78b77",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20231&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20231.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20232,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "f312f32185a1d44953f85b1a2e0e9e8ec8a3fb34083b6b7e52149aa4e7745f26",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20232&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20232.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20233,
+      "status": "ok",
+      "bytes": 221,
+      "sha256": "c9c7719e5c5bf3c6feeb107cade6e76d843f70b9d8cc98b03c2a147f8345a241",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20233&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20233.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20234,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "f1dad6f429f5aa5ebdd474e0f891fb0e1bc1dc34349cf6e041ee17d583e694c6",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20234&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20234.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20235,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "56deca31aad10f5fa46b51e6748e8ed5564bc69805b535632131686dc722b3b2",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20235&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20235.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20236,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "9051b6bdd4242061ee46724918ff1d7089f97fd962746b490efccc46b929e591",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20236&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20236.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20237,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "933bf738c2a14edc392bf1b8e819add1e78ad4de2d179b15c1e09068736683dc",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20237&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20237.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20238,
+      "status": "ok",
+      "bytes": 221,
+      "sha256": "9f2ba04954815f741bee677daf79407d4a53c5eefc204390a752044a1f6ec86d",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20238&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20238.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20239,
+      "status": "ok",
+      "bytes": 225,
+      "sha256": "38d97664b5e9222ac6d84247021ef02e722e31df5e63f4d2ba7f08ae61761ae0",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20239&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20239.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20240,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "fcd9883e65e8919e5b161d31b0e7c9ddf93dfd5dab1fb4806fc4cd647caf73dd",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20240&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20240.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20241,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "7dd73eb2ad9f2b2a8c4d4b8fd4a19e8f4882914ab20df39975e4e468d2f2fe11",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20241&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20241.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20242,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "056eacdcbacdf033eea9a5e1a748472667914781a0055e6348f6117c52af06d5",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20242&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20242.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20243,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "2e45a5aeed5be7b869ef3906308658b870319ac67cc2131965c80b0ba2180285",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20243&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20243.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20244,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "376a87a6ab7b982426a14e3b889fb7a67a390cb47beb1d2fa07b6bc05bc3e8c6",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20244&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20244.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20245,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "1964588b5d6095e624e0493f780d13bdd0c0650f994499e6ef0df755d0b6b4ea",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20245&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20245.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20246,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "2f42f958bd90150b55adee86e40d8784857b114a7c0a2c5b52bc543cd044aebe",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20246&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20246.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20247,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "49bf00df770f671cfd1abb8ee38d0b30269e140efe7bff12ec6fe9cb69b6f273",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20247&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20247.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20248,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "5b7fd9b230fffb80b8c2a6c5bdb663a8a13a3a640f02d5855b63488d844fb515",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20248&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20248.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20249,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "a671a4ce16072223dab8323bb0ab64518477776527484c7183a8d1b1c2f668b7",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20249&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20249.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20250,
+      "status": "ok",
+      "bytes": 220,
+      "sha256": "84fc173487544764a154766a8d62abbad83b2e0df1485c574a4623bc90ce0090",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20250&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20250.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20251,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "e0a604254d218e84aa9e1ad810ccd48d56a7ccf55b0398e95322c3c5dcf7f9f2",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20251&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20251.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20252,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "d0baa4294facf7c7cdb308eb6f3d6d68a629d1822ccd8084e5467d2518ec1090",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20252&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20252.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20253,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "39f02ff1e9fc7c07d3b80e95f7414f3427e3fdc74dedc2a2de0537a7899db1c0",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20253&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20253.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20254,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "c09d282ad43075d655e57acdd84eadc378697d430d8aefe4be8e3fcb8f73eb7d",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20254&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20254.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20255,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "5582a01b8959bca762eb5f58949343347235b38c3d6029809e7c5fe3a0ecae08",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20255&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20255.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20256,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "0fa1cff7afe02ddd4b9937ee7705be3a5fb3e7c4c2154dc8f85ad74c55c37a06",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20256&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20256.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20257,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "80e548a472084e503f69d0e8c2c9e1a021959d0caa19fc8c5d7ac7c120c879ea",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20257&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20257.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20258,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "584910e178cf108a49fdb7c7d20089e613bc85ffa000e62b4cb413d2bbf7309d",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20258&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20258.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20259,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "0276704cced8eafa49e6591154b470e2cf3815e27822a57983b880ac20fd6a05",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20259&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20259.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20260,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "155c54d502323d6df50b7e1775dfb35142deb091563fd8c2c4d9a2cf2769e045",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20260&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20260.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20261,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "9f6c066200d729edae9a56a281842ce3175c41b4254858a92395d73bfd52d74e",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20261&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20261.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20262,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "b127c3af183935e2db899abd2895e34eb8df8516516174f355417e390d442f18",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20262&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20262.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20263,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "238b6c6ec598681d5ffbe5691f2ac1835d8daae63b04cfba3bc7953dd4a02f58",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20263&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20263.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20264,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "ef5aac1cbe5608e9453b4d0ff4463b32d9cafa5eb3ed5f9160b558db93935eab",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20264&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20264.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20265,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "e0e53629039c0ef538cb3157f80a66daf6b61c78612e6b71a4c99758b285eff1",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20265&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20265.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20266,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "3ec1cdbf53283576e60ec021d6341f8f2626dc151d23f0699035df27062289b3",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20266&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20266.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20267,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "e416de21f03fb8a50e5a053887f22509c914fc0bf244bc33cdce60412ed9c2e7",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20267&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20267.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20268,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "0b3fe857f0a28b30357ad50e6718407422ca980e48b10aceb0230aee7beca5cb",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20268&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20268.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20269,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "18f8d4c245447db2ac3e76a930c901350186017bb1bb8dc508ea04068da8d47d",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20269&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20269.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20270,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "87e990f61042982a1b3f2a28c9c000d35a5ee31c3efb7b12afd192f1f14d7f6e",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20270&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20270.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20271,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "776c8190dce555d08d70c9bbf70f13c8da4b9ad809509be6f44658fb1f965b6c",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20271&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20271.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20272,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "d5897329d94263a0b1fc8b167060baf731634a5f204017a505b0b2537fc91bf1",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20272&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20272.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20273,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "3062b38771f55a93089a9783aa29188e36f4902f40ee49747e6ddcd990639140",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20273&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20273.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20274,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "8cca8f91f50f0e8fbc258825b24744dd0b4a233f8cff0490b822795a9464f2f0",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20274&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20274.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20275,
+      "status": "ok",
+      "bytes": 220,
+      "sha256": "fce7b824408ab4c99c06cb22964bcb9e98a9ecdde42f71b65df9e9e2a90f4b4d",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20275&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20275.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20276,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "cfb88d2ac9c19b407b9d9599f88708417bbcc6c9c180f0e3c77869ba4d5f3ce6",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20276&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20276.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20277,
+      "status": "ok",
+      "bytes": 223,
+      "sha256": "0943a9883553d084d1f184386cba40dabece50f67dbd1eee330e350f4a6ce2c2",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20277&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20277.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20278,
+      "status": "ok",
+      "bytes": 223,
+      "sha256": "38dcfab3b7f90e8e2b63ff423bd2e7d660a7c514c4b010d68b98f7a15bf73e2b",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20278&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20278.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20279,
+      "status": "ok",
+      "bytes": 223,
+      "sha256": "fc7fa73ea5baa4fd20b9dbcb40de369a51c3ff3b1e7c6d868eb476c166bbfb9f",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20279&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20279.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20280,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "a82423cff7e00e406c5b98f7ade067c2bed01e79158a9e2fc419faf4174b3fde",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20280&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20280.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20281,
+      "status": "ok",
+      "bytes": 224,
+      "sha256": "3669f2061f885fa85c1f56fbaf677b28168c23970cd47730d1e4b9c71ea4772e",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20281&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20281.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20282,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "b698ee092ba04c3b4db60473600925263910be5081020601730a9090f4cc4d4b",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20282&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20282.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20283,
+      "status": "ok",
+      "bytes": 222,
+      "sha256": "82435fcce38a4ba58deb93da537162361b3242e91a6734f4c606c6adc8bf74a8",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20283&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20283.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20284,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "0a1956d1038930201318e6eb5a08d0fe8223c8d53e2727ad85da69d4229b28ff",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20284&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20284.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20285,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "87f569155ee77ff97293e6ad83c90a1cbf0c355dc2d5ed4b1af227c2c7cdcd0e",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20285&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20285.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20286,
+      "status": "ok",
+      "bytes": 220,
+      "sha256": "3ab0b06e77b438c482cf6aac99820b8f28109f9f362bb682d53cfc7d8efa3d0c",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20286&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20286.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20287,
+      "status": "ok",
+      "bytes": 222,
+      "sha256": "880f161e685dbd2402aeda60301d07113453a79d6298c1ec3f644e3ea9af28ae",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20287&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20287.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20288,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "d2fae05f7b61f5cf1d5a30e4f6928f49cb700a87cace57113bf1b682aed2d0d6",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20288&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20288.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20289,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "07bad81f5e84349a7bc6ed6a222836b9c8b8cfbea36d6aa6b624da5f2c501694",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20289&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20289.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20290,
+      "status": "ok",
+      "bytes": 222,
+      "sha256": "34d9068aeccb2ffbb0ecea232d6405f8a74a04d6603010624648bad76b8ca311",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20290&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20290.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20291,
+      "status": "ok",
+      "bytes": 223,
+      "sha256": "08ea316f1b2d94973a5385566212ea3165d3de8333918a5a23e5682276f59037",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20291&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20291.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20292,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "436e28a58903f42fcd9ef8cef2bc4b84c5f96cd295a5d8033e071a8f8ff01819",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20292&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20292.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20293,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "64c5303febf85e687c46ed92fc7d07967508e4a3b99d6407d5fb1683aa3957d1",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20293&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20293.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20294,
+      "status": "ok",
+      "bytes": 222,
+      "sha256": "101be37171f9994b5b028ea14a6cb2187d1ae5624101d47832a55faca095854d",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20294&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20294.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20295,
+      "status": "ok",
+      "bytes": 221,
+      "sha256": "1b311e47c7e9970ccccb5e35e11c9fc8b0fa834b21818efc4b34392c94f894c2",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20295&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20295.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20296,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "1bfeb1325463b0ff2bb570e37b15b992a3a347c9f849f4078419bd67fe201630",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20296&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20296.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20297,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "9d33827acedd204fb70a386ef012c37b5b75e2f6e4ada299309ec28ba7633d2b",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20297&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20297.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20298,
+      "status": "ok",
+      "bytes": 224,
+      "sha256": "3c1a99c7e1bee69556b72c668b62eaeb8edac32c5998b996708115b86cab8d74",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20298&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20298.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20299,
+      "status": "ok",
+      "bytes": 223,
+      "sha256": "0ec3ed99a269a129267aa16fd36dfea23fd0b38fdb0fc069c3948381816530f2",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20299&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20299.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20300,
+      "status": "ok",
+      "bytes": 221,
+      "sha256": "67741df0189507cd868c0f653f9ceae23ae56adc9833cbf2e7c9cd6cc32e81cd",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20300&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20300.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20301,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "b24b2b7e273a7588fe74f4d5263e0309d7110667f9991c1ddbb0d9ac0f0d62f7",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20301&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20301.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20302,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "a90e94712c28d00785053ad7a3de25b68fd537a3b14caf648793d7a4715a122c",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20302&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20302.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20303,
+      "status": "ok",
+      "bytes": 222,
+      "sha256": "ec3ad713195e05ab085038d14b9098d98f6da39ab4c6da100eb79873dace7a85",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20303&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20303.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20304,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "5f93c4bf96cf4fe5c5a2547c85a87b6fbd2bbabed0b06cab55c1c5fc81575108",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20304&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20304.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20305,
+      "status": "ok",
+      "bytes": 215,
+      "sha256": "dc6aaf3bf0a6eb19f99e9fc0d6f0e19cd716eec7f07065e643e8d642af2bacc0",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20305&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20305.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20306,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "d389393b25ead7894edba2399e950ab24a9c47c19332f39d54bd3567d6d4d278",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20306&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20306.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20307,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "5fa4c24178f53f6cea0bd67400027805fab2ab5cdb842ccfd5955145613b0357",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20307&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20307.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20308,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "e08e9cafe7e342bcbd9222699ed6d75817b1d1bbf70b14570a298446bf14128c",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20308&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20308.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20309,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "1c4fcd0ce272619b97700f15bb133462361d307b62b3365d8eb58c93c7359865",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20309&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20309.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20310,
+      "status": "ok",
+      "bytes": 213,
+      "sha256": "11870ccd09de510c94e509a1f56f9e985af91968b9a30a573918624ec54437a7",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20310&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20310.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20311,
+      "status": "ok",
+      "bytes": 222,
+      "sha256": "2ff9c66ae9397e12ef4d5809b05c65fb195b7511b0509288143e922f66425f4d",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20311&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20311.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20312,
+      "status": "ok",
+      "bytes": 221,
+      "sha256": "d5a232aa23197c9e75cba339b2e0cc45293a3ace3676efca9bc767cd0bb273dc",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20312&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20312.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20313,
+      "status": "ok",
+      "bytes": 216,
+      "sha256": "e99d41152a7985eabeacd9bdc9faa12cb601d9dd1fccfce6b332ca4bd12cb2e1",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20313&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20313.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20314,
+      "status": "ok",
+      "bytes": 221,
+      "sha256": "38bfa4c52a7fb18426294a6805704c4104d647ed8c9ad9982a9236051fedbb5f",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20314&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20314.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20315,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "43349f61d73366d681546b8f8cc6edfa86be90fbca2300fcb4689357817097a7",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20315&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20315.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20316,
+      "status": "ok",
+      "bytes": 222,
+      "sha256": "7c22bd811e17a88898d415d3748a2634a2b81da5624d535f7db5ade18cf252e9",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20316&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20316.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20317,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "a4c508181bca984835349934647f8357b15b52767e5965016b42c4469fd15e5c",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20317&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20317.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20318,
+      "status": "ok",
+      "bytes": 226,
+      "sha256": "2c4e676095b564d39f7b98f198ef6a99bf1a90db6db06809eaffad0a8a85a3f5",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20318&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20318.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20319,
+      "status": "ok",
+      "bytes": 221,
+      "sha256": "e2dd4f79db54c8af609ffafe4a00bbab993e4ba9498cf2d9ebd58f1a0469bf2c",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20319&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20319.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20320,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "42cd2a89b4eba6527470a7767108e2aa3880bf67ed84069124141f295f075cb8",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20320&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20320.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20321,
+      "status": "ok",
+      "bytes": 217,
+      "sha256": "e7f493f032e4cfe0ec7a3e747ce49bace3e32b001ed1fc5b93d0d6d2c9596525",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20321&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20321.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20322,
+      "status": "ok",
+      "bytes": 223,
+      "sha256": "9a580a968aca48213fd2ff8734b47cf258c173fdac1823fc944c1d966f839126",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20322&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20322.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20323,
+      "status": "ok",
+      "bytes": 221,
+      "sha256": "465ce496d960602ba509cf285f2a8c9ed477aef76b1339e4b38822484d3a6f31",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20323&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20323.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20324,
+      "status": "ok",
+      "bytes": 218,
+      "sha256": "1f8cb5d0e7fe11bec1bdd5281330721531f0464eebac1d263116ab70424cf521",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20324&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20324.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20325,
+      "status": "ok",
+      "bytes": 226,
+      "sha256": "aff6bd7ae9fcdfd8838fe4a07944787691cdf893e2f78dec991905eb01e52012",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20325&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20325.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20326,
+      "status": "ok",
+      "bytes": 219,
+      "sha256": "86f727474deac280171ff99d7afdddb6c639a65e4e906dc2bb4cc97142e1c343",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20326&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20326.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20327,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20327&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20327.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20328,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20328&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20328.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20329,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20329&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20329.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20330,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20330&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20330.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20331,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20331&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20331.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20332,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20332&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20332.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20333,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20333&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20333.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20334,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20334&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20334.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20335,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20335&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20335.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20336,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20336&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20336.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20337,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20337&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20337.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20338,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20338&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20338.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20339,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20339&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20339.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20340,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20340&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20340.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20341,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20341&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20341.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20342,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20342&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20342.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20343,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20343&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20343.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20344,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20344&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20344.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20345,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20345&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20345.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20346,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20346&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20346.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20347,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20347&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20347.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20348,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20348&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20348.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20349,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20349&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20349.json",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "docID": 20350,
+      "status": "ok",
+      "bytes": 69,
+      "sha256": "95eeb1e39c5edfd3a988cd4d5175b8e385057b709714cb7da61fc70a4a5f7f4a",
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=20350&detail=document&format=json&limit=10",
+      "path": "sources/catalogs/INTF-Liste/individual/20350.json",
+      "content_type": "application/json;charset=UTF-8"
+    }
+  ],
+  "summary": {
+    "targets": 550,
+    "ok_or_cached": 393,
+    "errors": 157,
+    "nontrivial_responses": 393
+  }
+}
