@@ -1,0 +1,44 @@
+name: Harvest INTF Liste by individual docID
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+on:
+  push:
+    paths:
+      - "scripts/harvest_intf_individual.py"
+      - ".github/workflows/harvest-intf-individual.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --disable-pip-version-check requests
+      - name: Harvest small deterministic requests
+        run: python scripts/harvest_intf_individual.py
+      - name: Commit raw Liste records and error manifest
+        if: always()
+        shell: bash
+        run: |
+          git config user.name "El-Relato Bot"
+          git config user.email "el-relato-bot@users.noreply.github.com"
+          git add sources/catalogs/INTF-Liste/individual sources/catalogs/INTF-Liste/individual-capture-manifest.json || true
+          if git diff --cached --quiet; then
+            echo "No INTF individual capture changes."
+          else
+            git commit -m "Capture INTF Liste records by individual docID"
+            bash scripts/push_generated_commit.sh
+          fi
