@@ -47,6 +47,10 @@ jobs:
           assert scalar("select count(*) from manuscript_images") >= 372
           assert scalar("select count(*) from witness_attestations") >= 623
           assert scalar("select count(*) from transcriptions") >= 3745
+          # IGNTP papyrus transcriptions are included automatically when normalized.
+          igntp_exists = __import__("pathlib").Path("data/normalized/transcriptions/igntp-papyri.jsonl").exists()
+          if igntp_exists:
+              assert scalar("select count(*) from transcriptions where manuscript_id in ('ms:ga:p52','ms:ga:p66','ms:ga:p75')") > 500
           assert scalar("select count(*) from passage_evidence where passage_id='passage:john:18:37' and manuscript_id='ms:ga:p52'") == 1
           assert scalar("select count(*) from verse_transcriptions where book='John' and chapter=1 and verse=1 and manuscript_id='ms:ga:01'") == 1
           print("QUERY DATABASE ACCEPTANCE OK")
