@@ -37,6 +37,7 @@ schema_map = {
     "morphology.jsonl": "morphology.schema.json",
     "variants.jsonl": "variant.schema.json",
     "strong-entries.jsonl": "strong-entry.schema.json",
+    "strong-original-entries.jsonl": "strong-original-entry.schema.json",
     "tagnt-rows.jsonl": "tagnt-row.schema.json",
     "passages.jsonl": "passage.schema.json",
     "editions.jsonl": "edition.schema.json",
