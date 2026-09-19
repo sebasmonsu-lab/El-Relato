@@ -1,0 +1,73 @@
+{
+  "project": "El-Relato",
+  "repository": "sebasmonsu-lab/El-Relato",
+  "visibility": "private",
+  "capture_started": "2026-09-19",
+  "scope": [
+    "Matthew",
+    "Mark",
+    "Luke",
+    "John"
+  ],
+  "sources": [
+    {
+      "id": "SBLGNT",
+      "category": "critical_text",
+      "local_path": "vendor/SBLGNT",
+      "upstream": "https://github.com/Faithlife/SBLGNT",
+      "status": "mirrored_gospels"
+    },
+    {
+      "id": "STEPBible-Data",
+      "category": "lexicon_morphology_strong",
+      "local_path": "vendor/STEPBible-Data",
+      "upstream": "https://github.com/STEPBible/STEPBible-Data",
+      "status": "in_progress"
+    },
+    {
+      "id": "P4",
+      "category": "manuscript",
+      "status": "registry_pending"
+    },
+    {
+      "id": "P45",
+      "category": "manuscript",
+      "status": "registry_pending"
+    },
+    {
+      "id": "P52",
+      "category": "manuscript",
+      "status": "registry_pending"
+    },
+    {
+      "id": "P66",
+      "category": "manuscript",
+      "status": "registry_pending"
+    },
+    {
+      "id": "P75",
+      "category": "manuscript",
+      "status": "registry_pending"
+    },
+    {
+      "id": "P104",
+      "category": "manuscript",
+      "status": "registry_pending"
+    },
+    {
+      "id": "P137",
+      "category": "manuscript",
+      "status": "registry_pending"
+    },
+    {
+      "id": "Vaticanus",
+      "category": "manuscript",
+      "status": "registry_pending"
+    },
+    {
+      "id": "Sinaiticus",
+      "category": "manuscript",
+      "status": "registry_pending"
+    }
+  ]
+}
