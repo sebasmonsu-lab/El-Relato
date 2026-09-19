@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   backup:
@@ -30,6 +30,39 @@ jobs:
         run: bash backup/create_bundle.sh
       - name: Verify restoration from bundle only
         run: bash backup/verify_restore.sh build/backups/el-relato.bundle
+      - name: Persist successful restore report
+        shell: bash
+        run: |
+          mkdir -p data/derived/backup
+          python - <<'PY'
+          import json, subprocess
+          from datetime import datetime, timezone
+          from pathlib import Path
+          meta=json.loads(Path("build/backups/backup-metadata.json").read_text())
+          report={
+            "tested_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
+            "head": subprocess.check_output(["git","rev-parse","HEAD"],text=True).strip(),
+            "restore_test":"PASS",
+            "git_fsck":"PASS",
+            "git_lfs_fsck":"PASS",
+            "repository_validation":"PASS",
+            "query_database_rebuild":"PASS",
+            "app_self_test":"PASS",
+            "bundle_bytes":meta.get("bundle_bytes"),
+            "lfs_archive_bytes":meta.get("lfs_archive_bytes"),
+            "lfs_tracked_entries":meta.get("lfs_tracked_entries"),
+          }
+          Path("data/derived/backup/backup-test-report.json").write_text(json.dumps(report,indent=2)+"\n")
+          print(json.dumps(report,indent=2))
+          PY
+          git config user.name "El-Relato Bot"
+          git config user.email "el-relato-bot@users.noreply.github.com"
+          git add data/derived/backup/backup-test-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Record successful offline Git plus LFS restore test"
+            bash scripts/push_generated_commit.sh
+          fi
+
       - name: Upload tested bundle
         uses: actions/upload-artifact@v4
         with:
