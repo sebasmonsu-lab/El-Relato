@@ -1,0 +1,757 @@
+{
+  "targets": [
+    {
+      "name": "P66-bodmer",
+      "pages": [
+        {
+          "url": "https://bodmerlab.unige.ch/constellations/papyri/barcode/1072205287",
+          "status": 200,
+          "bytes": 39563,
+          "sha256": "c49e2d0439ff2fcfa98c5bda77ca49a6b541963411e8b91ea0190cf7279e18ac",
+          "local_path": "sources/manuscripts/fallback-discovery/P66-bodmer/page-1.html"
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/constellations/papyri/mirador/1072205287",
+          "status": 200,
+          "bytes": 19680,
+          "sha256": "62a35785d7636241c65c2bceba1c84a518af52c5c91f2b95501a949859a74de5",
+          "local_path": "sources/manuscripts/fallback-discovery/P66-bodmer/page-2.html"
+        }
+      ],
+      "candidate_links": [
+        {
+          "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_011.jpg/full/pct:100/0/default.jpg",
+          "score": 19
+        },
+        {
+          "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_011.jpg/full/pct:2/0/default.jpg",
+          "score": 19
+        },
+        {
+          "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_011.jpg/full/pct:60/0/default.jpg",
+          "score": 19
+        },
+        {
+          "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_011.jpg/full/pct:90/0/default.jpg",
+          "score": 19
+        },
+        {
+          "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_123.jpg/full/pct:100/0/default.jpg",
+          "score": 19
+        },
+        {
+          "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_123.jpg/full/pct:2/0/default.jpg",
+          "score": 19
+        },
+        {
+          "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_123.jpg/full/pct:60/0/default.jpg",
+          "score": 19
+        },
+        {
+          "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_123.jpg/full/pct:90/0/default.jpg",
+          "score": 19
+        },
+        {
+          "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_143.jpg/full/pct:100/0/default.jpg",
+          "score": 19
+        },
+        {
+          "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_143.jpg/full/pct:2/0/default.jpg",
+          "score": 19
+        },
+        {
+          "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_143.jpg/full/pct:60/0/default.jpg",
+          "score": 19
+        },
+        {
+          "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_143.jpg/full/pct:90/0/default.jpg",
+          "score": 19
+        },
+        {
+          "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_146.jpg/full/pct:100/0/default.jpg",
+          "score": 19
+        },
+        {
+          "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_146.jpg/full/pct:2/0/default.jpg",
+          "score": 19
+        },
+        {
+          "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_146.jpg/full/pct:60/0/default.jpg",
+          "score": 19
+        },
+        {
+          "url": "https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_146.jpg/full/pct:90/0/default.jpg",
+          "score": 19
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/assets/Mirador/downloadMenu.min.css",
+          "score": 13
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/assets/Mirador/downloadMenu.min.js",
+          "score": 13
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/assets/Mirador/imageCropper.css",
+          "score": 10
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/assets/Mirador/imageCropper.js",
+          "score": 10
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/assets/Mirador/mirador-combined.min.css?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e",
+          "score": 10
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/assets/Mirador/mirador.min.js?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e",
+          "score": 10
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/constellations/mirador",
+          "score": 10
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/constellations/papyri/mirador/1072205287",
+          "score": 10
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/fr/constellations/papyri/mirador/1072205287?page=25",
+          "score": 10
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/fr/constellations/papyri/mirador/1072205287?page=81",
+          "score": 10
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/files/2315/2457/6373/Logo_Fondation_ELSchmidheiny.png",
+          "score": 9
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/files/2615/5560/0212/Bateau_BL_144px.png",
+          "score": 9
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/files/5415/2457/6373/FMB-logo-complet.png",
+          "score": 9
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/files/6615/2457/6374/UNIGE-logo_blanc.png",
+          "score": 9
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/files/8015/5560/0443/Bateau_BL_16px.png.ico",
+          "score": 9
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/files/9115/5560/0290/Bateau_BL_57px.png",
+          "score": 9
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/images/martin-bodmer-logo.png",
+          "score": 9
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/images/universite-geneve-logo.png",
+          "score": 9
+        },
+        {
+          "url": "http://fondationbodmer.ch",
+          "score": 4
+        },
+        {
+          "url": "http://fondationbodmer.ch/",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.tumblr.com",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/ ",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/about/the-bodmer-lab",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/about/the-bodmer-lab#Betting-on-world-literature",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/about/the-bodmer-lab#Bodmer-Lab-Scientific-Committee",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/about/the-bodmer-lab#Partners",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/about/the-bodmer-lab#Team",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/about/the-bodmer-lab#The-Bodmer-Lab",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/blocks/bodmerlab_api_book_slider/view.css?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/files/cache/css/bodmerlab/main.css?ts=1789793721",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/assets/slick/slick-theme.css",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/assets/slick/slick.css",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/assets/slick/slick.js",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/css/bootstrap-modified.css",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/css/bootstrap-slider.min.css",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/css/custom-theme.css",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/css/jquery.fancybox.min.css",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/css/select2.min.css",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/images/bodmer-lab-logo.svg",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/images/menu_burger.svg",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/images/nav_up.svg",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/images/social_icons/facebook_icon.svg",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/images/social_icons/instagram_icon.svg",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/images/social_icons/tumblr_icon.svg",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/images/social_icons/twitter_icon.svg",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/js/bootstrap-slider.min.js",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/js/bootstrap-tab.js",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/js/jquery.fancybox.min.js",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/js/main.js",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/js/masonry.pkgd.min.js",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/application/themes/bodmerlab/js/select2.full.min.js",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/concrete/blocks/autonav/templates/responsive_header_navigation/view.css?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/concrete/blocks/autonav/templates/responsive_header_navigation/view.js?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/concrete/blocks/image/view.js?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/concrete/css/font-awesome.css?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/concrete/css/responsive-slides.css?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/concrete/js/ie/html5-shiv.js?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/concrete/js/ie/respond.js?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/concrete/js/jquery.js?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/concrete/js/picturefill.js?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/concrete/js/responsive-slides.js?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/constellations",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/constellations/autographes",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/constellations/barcode",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/constellations/de-bry",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/constellations/didactique-de-la-litterature",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/constellations/early-modern-english-books",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/constellations/fables-esopiques",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/constellations/faust",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/constellations/litterature-mondiale",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/constellations/menandre",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/constellations/papyri",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/constellations/papyri/barcode/1072205287",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/constellations/papyri/barcode/1072205287#bookmark",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/constellations/papyri/barcode/1072205287#link",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/constellations/rabelais",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/fr/about",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/fr/actualites",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/fr/constellations",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/fr/images",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/fr/realisations",
+          "score": 4
+        },
+        {
+          "url": "https://bodmerlab.unige.ch/illustrations",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "name": "P104-csntm",
+      "pages": [
+        {
+          "url": "https://manuscripts.csntm.org/manuscript/View/GA_P104",
+          "status": 200,
+          "bytes": 29938,
+          "sha256": "2a1fc6d762811f98ce208b7335f77e1eaf531a6859ad265050b92893c8b91d1a",
+          "local_path": "sources/manuscripts/fallback-discovery/P104-csntm/page-1.html"
+        }
+      ],
+      "candidate_links": [
+        {
+          "url": "https://images.csntm.org/IIIFServer.ashx/GA_P104/P104_0001a.jpg/full/100,/0/native.jpg",
+          "score": 15
+        },
+        {
+          "url": "https://images.csntm.org/IIIFServer.ashx/GA_P104/P104_0001b.jpg/full/100,/0/native.jpg",
+          "score": 15
+        },
+        {
+          "url": "http://163.1.169.40/cgi-bin/library?e=q-000-00---0POxy--00-0-0--0prompt-10---4----ded--0-1l--1-en-50---20-about-4404--00031-001-1-0utfZz-8-00&a=d&c=POxy&cl=search&d=HASHae2a957099737f1fbfe28a",
+          "score": 8
+        },
+        {
+          "url": "https://manuscripts.csntm.org/Content/Images/ImageWatermark2b.jpg",
+          "score": 5
+        },
+        {
+          "url": "https://new.csntm.org/wp-content/uploads/2021/02/CSNTM-footerlogo-300x62.png",
+          "score": 5
+        },
+        {
+          "url": "https://new.csntm.org/wp-content/uploads/2021/02/CSNTM-footerlogo.png",
+          "score": 5
+        },
+        {
+          "url": "https://new.csntm.org/wp-content/uploads/2021/02/NEW-Donate-100x100.jpg?crop=1",
+          "score": 5
+        },
+        {
+          "url": "https://new.csntm.org/wp-content/uploads/2021/02/NEW-Donate-1024x1024.jpg",
+          "score": 5
+        },
+        {
+          "url": "https://new.csntm.org/wp-content/uploads/2021/02/NEW-Donate-1200x1200.jpg?crop=1",
+          "score": 5
+        },
+        {
+          "url": "https://new.csntm.org/wp-content/uploads/2021/02/NEW-Donate-150x150.jpg?crop=1",
+          "score": 5
+        },
+        {
+          "url": "https://new.csntm.org/wp-content/uploads/2021/02/NEW-Donate-1536x1536.jpg",
+          "score": 5
+        },
+        {
+          "url": "https://new.csntm.org/wp-content/uploads/2021/02/NEW-Donate-200x200.jpg?crop=1",
+          "score": 5
+        },
+        {
+          "url": "https://new.csntm.org/wp-content/uploads/2021/02/NEW-Donate-2048x2048.jpg",
+          "score": 5
+        },
+        {
+          "url": "https://new.csntm.org/wp-content/uploads/2021/02/NEW-Donate-300x300.jpg?crop=1",
+          "score": 5
+        },
+        {
+          "url": "https://new.csntm.org/wp-content/uploads/2021/02/NEW-Donate-400x400.jpg?crop=1",
+          "score": 5
+        },
+        {
+          "url": "https://new.csntm.org/wp-content/uploads/2021/02/NEW-Donate-768x768.jpg",
+          "score": 5
+        },
+        {
+          "url": "https://new.csntm.org/wp-content/uploads/2021/02/NEW-Donate-800x800.jpg?crop=1",
+          "score": 5
+        },
+        {
+          "url": "https://new.csntm.org/wp-content/uploads/2021/02/NEW-Donate.jpg",
+          "score": 5
+        },
+        {
+          "url": "https://new.csntm.org/wp-content/uploads/2021/02/infoatcsntm-300x52.png",
+          "score": 5
+        },
+        {
+          "url": "https://new.csntm.org/wp-content/uploads/2021/02/infoatcsntm-600x105.png",
+          "score": 5
+        },
+        {
+          "url": "https://new.csntm.org/wp-content/uploads/2021/02/infoatcsntm.png",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "name": "P137-ees",
+      "pages": [
+        {
+          "url": "https://www.ees.ac.uk/resource/p-oxy-lxxxiii-5345.html",
+          "status": 200,
+          "bytes": 56961,
+          "sha256": "a506e5c0a129275e8af0c9db5d8bbbc8bd8894b6b03db8c53c23d8d098302648",
+          "local_path": "sources/manuscripts/fallback-discovery/P137-ees/page-1.html"
+        }
+      ],
+      "candidate_links": [
+        {
+          "url": "https://www.ees.ac.uk/static/5f06544239c2a2f77ad812ed57681219/opengraphimage_83f4e8796336604b59d7216d0ecd81a5_4a7c7e45a350/POxy-LXXXIII-5345.jpg",
+          "score": 13
+        },
+        {
+          "url": "https://www.ees.ac.uk/resource/p-oxy-lxxxiii-5345.html",
+          "score": 8
+        },
+        {
+          "url": "https://www.ees.ac.uk/resource/p-oxy-lxxxiii-5345.html#contents",
+          "score": 8
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/05e095bb-740d-4b3c-9529e5c28699516f/200x74_highestquality__4a7c7e45a350/EESLOGOWHITE.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/25ff4a3f-4b69-42f5-8165719eded0fde0/resourcegridlistingimage481_14e6874ce34be97772f6319c879e8a93_15757150a679/LogoAway-with-the-PharaohsPodcastrectangle-no-words.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/25ff4a3f-4b69-42f5-8165719eded0fde0/resourcegridlistingimage576_b58ed5ba24d88ce91e2e2527e4909e46_15757150a679/LogoAway-with-the-PharaohsPodcastrectangle-no-words.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/25ff4a3f-4b69-42f5-8165719eded0fde0/resourcegridlistingimage768_a1700d4b24d502cf3fc659ed39aa8e8a_15757150a679/LogoAway-with-the-PharaohsPodcastrectangle-no-words.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/25ff4a3f-4b69-42f5-8165719eded0fde0/resourcegridlistingimage992_78d5ef0710777426d9a12c477196c33e_15757150a679/LogoAway-with-the-PharaohsPodcastrectangle-no-words.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/25ff4a3f-4b69-42f5-8165719eded0fde0/resourcegridlistingimagedefault_4d12532919c64e60a22baf03232bbf94_15757150a679/LogoAway-with-the-PharaohsPodcastrectangle-no-words.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/31e2a8e9-ab37-444f-84d7e17090b61ce0/megamenuimage_a1148e265142707eacf0ce7677a0ab20_4a7c7e45a350/Hatshepsut-Deir-el-Bahari.jpg",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/5a2851e4-24d6-4258-aaf90df4f7efa439/38968bf9-f612-42b3-a8ae680697b4f55a/megamenuimage_a1148e265142707eacf0ce7677a0ab20_4a7c7e45a350/SBEESDoughtyMews01Elevation.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/5d947390-464f-4b38-b99c02e15a10308a/logo.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/5df18983-5ae0-4678-8a694db5a29070bd/megamenuimage_a1148e265142707eacf0ce7677a0ab20_49ea84f9c2ba/LogoAway-with-the-PharaohsPodcast.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/92a083d4-90dd-4883-926917de176e7cea/eventgridlistingimage481_14e6874ce34be97772f6319c879e8a93_4a7c7e45a350/Charioteers-papyrusPAnt-inv66.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/92a083d4-90dd-4883-926917de176e7cea/eventgridlistingimage576_b58ed5ba24d88ce91e2e2527e4909e46_4a7c7e45a350/Charioteers-papyrusPAnt-inv66.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/92a083d4-90dd-4883-926917de176e7cea/eventgridlistingimage768_a1700d4b24d502cf3fc659ed39aa8e8a_4a7c7e45a350/Charioteers-papyrusPAnt-inv66.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/92a083d4-90dd-4883-926917de176e7cea/eventgridlistingimage992_78d5ef0710777426d9a12c477196c33e_4a7c7e45a350/Charioteers-papyrusPAnt-inv66.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/92a083d4-90dd-4883-926917de176e7cea/eventgridlistingimagedefault_4d12532919c64e60a22baf03232bbf94_4a7c7e45a350/Charioteers-papyrusPAnt-inv66.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/99210a7c-41a1-40a2-92321d3d1d15b9fd/eventgridlistingimage481_14e6874ce34be97772f6319c879e8a93_97363e54570c/ClaytonIntermediate-Ancient-Egyptian-HieroglyphsIntef-banner.jpg",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/99210a7c-41a1-40a2-92321d3d1d15b9fd/eventgridlistingimage576_b58ed5ba24d88ce91e2e2527e4909e46_97363e54570c/ClaytonIntermediate-Ancient-Egyptian-HieroglyphsIntef-banner.jpg",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/99210a7c-41a1-40a2-92321d3d1d15b9fd/eventgridlistingimage768_a1700d4b24d502cf3fc659ed39aa8e8a_97363e54570c/ClaytonIntermediate-Ancient-Egyptian-HieroglyphsIntef-banner.jpg",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/99210a7c-41a1-40a2-92321d3d1d15b9fd/eventgridlistingimage992_78d5ef0710777426d9a12c477196c33e_97363e54570c/ClaytonIntermediate-Ancient-Egyptian-HieroglyphsIntef-banner.jpg",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/99210a7c-41a1-40a2-92321d3d1d15b9fd/eventgridlistingimagedefault_4d12532919c64e60a22baf03232bbf94_97363e54570c/ClaytonIntermediate-Ancient-Egyptian-HieroglyphsIntef-banner.jpg",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/9991e68b-208d-489e-b4328b90df80a679/megamenuimage_a1148e265142707eacf0ce7677a0ab20_4a7c7e45a350/Golden-mask-cushionredbubble.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/a3c1de81-0711-4afb-831fb6486f6f181a/resourcegridlistingimage481_14e6874ce34be97772f6319c879e8a93_4a7c7e45a350/EA-68-Cover-Image.jpg",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/a3c1de81-0711-4afb-831fb6486f6f181a/resourcegridlistingimage576_b58ed5ba24d88ce91e2e2527e4909e46_4a7c7e45a350/EA-68-Cover-Image.jpg",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/a3c1de81-0711-4afb-831fb6486f6f181a/resourcegridlistingimage768_a1700d4b24d502cf3fc659ed39aa8e8a_4a7c7e45a350/EA-68-Cover-Image.jpg",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/a3c1de81-0711-4afb-831fb6486f6f181a/resourcegridlistingimage992_78d5ef0710777426d9a12c477196c33e_4a7c7e45a350/EA-68-Cover-Image.jpg",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/a3c1de81-0711-4afb-831fb6486f6f181a/resourcegridlistingimagedefault_4d12532919c64e60a22baf03232bbf94_4a7c7e45a350/EA-68-Cover-Image.jpg",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/c2d2ce42-f80f-4f4d-998206e712910dab/megamenuimage_a1148e265142707eacf0ce7677a0ab20_4a7c7e45a350/Scrivens5-Unsolved-Mysteries-of-Ancient-EgyptAlexander-Cleopatra-image-much-of-ancient-Alexandria-now-lies-beneath-the-waves.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/c90390d0-3a2c-442b-9ad4832e47c69903/eventgridlistingimage481_14e6874ce34be97772f6319c879e8a93_e1258af1e63b/EESART224Howard-Carter.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/c90390d0-3a2c-442b-9ad4832e47c69903/eventgridlistingimage576_b58ed5ba24d88ce91e2e2527e4909e46_e1258af1e63b/EESART224Howard-Carter.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/c90390d0-3a2c-442b-9ad4832e47c69903/eventgridlistingimage768_a1700d4b24d502cf3fc659ed39aa8e8a_e1258af1e63b/EESART224Howard-Carter.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/c90390d0-3a2c-442b-9ad4832e47c69903/eventgridlistingimage992_78d5ef0710777426d9a12c477196c33e_e1258af1e63b/EESART224Howard-Carter.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/c90390d0-3a2c-442b-9ad4832e47c69903/eventgridlistingimagedefault_4d12532919c64e60a22baf03232bbf94_e1258af1e63b/EESART224Howard-Carter.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/f8436f4a-0e1c-4869-936e7a008d1a68e4/resourcegridlistingimage481_14e6874ce34be97772f6319c879e8a93_4a7c7e45a350/ancient-egypt-in-50-discoveries-cover-mockup-1.jpg",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/f8436f4a-0e1c-4869-936e7a008d1a68e4/resourcegridlistingimage576_b58ed5ba24d88ce91e2e2527e4909e46_4a7c7e45a350/ancient-egypt-in-50-discoveries-cover-mockup-1.jpg",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/f8436f4a-0e1c-4869-936e7a008d1a68e4/resourcegridlistingimage768_a1700d4b24d502cf3fc659ed39aa8e8a_4a7c7e45a350/ancient-egypt-in-50-discoveries-cover-mockup-1.jpg",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/f8436f4a-0e1c-4869-936e7a008d1a68e4/resourcegridlistingimage992_78d5ef0710777426d9a12c477196c33e_4a7c7e45a350/ancient-egypt-in-50-discoveries-cover-mockup-1.jpg",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/f8436f4a-0e1c-4869-936e7a008d1a68e4/resourcegridlistingimagedefault_4d12532919c64e60a22baf03232bbf94_4a7c7e45a350/ancient-egypt-in-50-discoveries-cover-mockup-1.jpg",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/f874aeb8-331d-4f6e-ba6d2b368414d280/androidicon192x192_877a388629461d4b81d721e52fadde6d_f719d893132e/EESLogoNo-text.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/f874aeb8-331d-4f6e-ba6d2b368414d280/appleicon114x114_1d70768b500e347f3657cd3fade540d4_f719d893132e/EESLogoNo-text.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/f874aeb8-331d-4f6e-ba6d2b368414d280/appleicon120x120_3a3f20ea56b5e710a1d7ed87d86fa963_f719d893132e/EESLogoNo-text.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/f874aeb8-331d-4f6e-ba6d2b368414d280/appleicon144x144_b39373a30d83393fb3d1948ebe6cc213_f719d893132e/EESLogoNo-text.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/f874aeb8-331d-4f6e-ba6d2b368414d280/appleicon152x152_c50f7eb6e01ade1906990f6a6bce7dda_f719d893132e/EESLogoNo-text.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/f874aeb8-331d-4f6e-ba6d2b368414d280/appleicon180x180_8df0bf26b8a250cc8fbb2ce7250b345f_f719d893132e/EESLogoNo-text.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/f874aeb8-331d-4f6e-ba6d2b368414d280/appleicon57x57_25141e84cd1b90a445af81fee03764a7_f719d893132e/EESLogoNo-text.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/f874aeb8-331d-4f6e-ba6d2b368414d280/appleicon60x60_4f9b46c1587c4ff92d1c1bcf2de8a7a0_f719d893132e/EESLogoNo-text.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/f874aeb8-331d-4f6e-ba6d2b368414d280/appleicon72x72_f1d015d12e1c3cfe0c14073e3aaef5ba_f719d893132e/EESLogoNo-text.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/f874aeb8-331d-4f6e-ba6d2b368414d280/appleicon76x76_1742e12e0d246b72e5fdb08471a37c70_f719d893132e/EESLogoNo-text.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/f874aeb8-331d-4f6e-ba6d2b368414d280/favicon16x16_79bde5164a1b118f7128689f21e7e7ab_f719d893132e/EESLogoNo-text.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/f874aeb8-331d-4f6e-ba6d2b368414d280/favicon32x32_05d796d9a0317934898fb9de93f854b3_f719d893132e/EESLogoNo-text.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.ees.ac.uk/static/f874aeb8-331d-4f6e-ba6d2b368414d280/favicon96x96_f639c2d3f9803c9d58c0b22c9390a368_f719d893132e/EESLogoNo-text.png",
+          "score": 5
+        },
+        {
+          "url": "https://www.bloomsbury.com/uk/oxyrhynchus-papyri-vol-lxxxiii-9780856982316/",
+          "score": 4
+        },
+        {
+          "url": "https://www.ees.ac.uk/resource/ees-oxyrhynchus-papyri-assignment-policy.html",
+          "score": 4
+        }
+      ]
+    }
+  ]
+}

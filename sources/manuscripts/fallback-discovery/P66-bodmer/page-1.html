@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="/application/themes/bodmerlab/css/bootstrap-modified.css">
+    <link rel="stylesheet" type="text/css" href="/application/themes/bodmerlab/css/bootstrap-slider.min.css">
+    <link rel="stylesheet" type="text/css" href="/application/themes/bodmerlab/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="/application/themes/bodmerlab/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="/application/themes/bodmerlab/assets/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="/application/themes/bodmerlab/assets/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="/application/files/cache/css/bodmerlab/main.css?ts=1789793721" rel="stylesheet" type="text/css" media="all">    <link rel="stylesheet" type="text/css" href="/application/themes/bodmerlab/css/custom-theme.css">
+    
+<title>Barcode :: bodmerlab</title>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="robots" content="noindex"/>
+<meta name="generator" content="concrete5"/>
+<meta name="msapplication-TileImage" content="https://bodmerlab.unige.ch/application/files/2615/5560/0212/Bateau_BL_144px.png"/>
+<link rel="shortcut icon" href="https://bodmerlab.unige.ch/application/files/8015/5560/0443/Bateau_BL_16px.png.ico" type="image/x-icon"/>
+<link rel="icon" href="https://bodmerlab.unige.ch/application/files/8015/5560/0443/Bateau_BL_16px.png.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" href="https://bodmerlab.unige.ch/application/files/9115/5560/0290/Bateau_BL_57px.png"/>
+<link rel="canonical" href="https://bodmerlab.unige.ch/constellations/barcode">
+<script type="text/javascript">
+    var CCM_DISPATCHER_FILENAME = "/index.php";
+    var CCM_CID = 499;
+    var CCM_EDIT_MODE = false;
+    var CCM_ARRANGE_MODE = false;
+    var CCM_IMAGE_PATH = "/concrete/images";
+    var CCM_TOOLS_PATH = "/index.php/tools/required";
+    var CCM_APPLICATION_URL = "https://bodmerlab.unige.ch";
+    var CCM_REL = "";
+    var CCM_ACTIVE_LOCALE = "en_US";
+</script>
+
+<style type="text/css" data-area-style-area-handle="Global - Footer Top - Column 4" data-block-style-block-id="2872" data-style-set="553">.ccm-custom-style-container.ccm-custom-style-globalfootertopcolumn4-2872{font-size:20px}.ccm-custom-style-container.ccm-custom-style-globalfootertopcolumn4-2872 a{color:rgb(232, 98, 8) !important}</style>
+<script type="text/javascript" src="/concrete/js/jquery.js?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e"></script>
+<link href="/concrete/css/responsive-slides.css?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e" rel="stylesheet" type="text/css" media="all">
+<link href="/application/blocks/bodmerlab_api_book_slider/view.css?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e" rel="stylesheet" type="text/css" media="all">
+<link href="/concrete/css/font-awesome.css?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e" rel="stylesheet" type="text/css" media="all">
+<!--[if lt IE 9]><script type="text/javascript" src="/concrete/js/ie/html5-shiv.js?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/concrete/js/ie/respond.js?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e"></script><![endif]-->
+<link href="/concrete/blocks/autonav/templates/responsive_header_navigation/view.css?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e" rel="stylesheet" type="text/css" media="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="/application/themes/bodmerlab/js/bootstrap-tab.js"></script>
+    <script type="text/javascript" src="/application/themes/bodmerlab/js/bootstrap-slider.min.js"></script>
+    <script type="text/javascript" src="/application/themes/bodmerlab/js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="/application/themes/bodmerlab/js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="/application/themes/bodmerlab/js/select2.full.min.js"></script>
+    <script type="text/javascript" src="/application/themes/bodmerlab/assets/slick/slick.js"></script>
+    <script>
+        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement('style')
+            msViewportStyle.appendChild(
+                document.createTextNode(
+                    '@-ms-viewport{width:auto!important}'
+                )
+            )
+            document.querySelector('head').appendChild(msViewportStyle)
+        }
+    </script>
+</head>
+<body>
+
+<div class="ccm-page ccm-page-id-499">
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-xs-8 logo">
+                <a href="https://bodmerlab.unige.ch/ " title="bodmerlab">
+                    <embed  src="/application/themes/bodmerlab/images/bodmer-lab-logo.svg" height="48" alt="Bodmer Lab">
+                </a>
+            </div>
+            <div class="col-sm-9 col-xs-4 nav-container">
+                <div class="partners-logos">
+                    <a href="http://fondationbodmer.ch/" target="_blank" title="Fondation Martin Bodmer">
+                        <img src="/application/themes/bodmerlab/images/martin-bodmer-logo.png" alt="Fondation Martin Bodmer">
+                    </a>
+                    <a href="https://www.unige.ch/" target="_blank" title="Université de Genéve">
+                        <img src="/application/themes/bodmerlab/images/universite-geneve-logo.png" alt="Université de Genéve">
+                    </a>
+                </div>
+                
+
+    
+<nav class="ccm-responsive-navigation original"><ul><li class="nav-path-selected"><a href="https://bodmerlab.unige.ch/constellations" target="_self" class="nav-path-selected">Constellations</a><ul><li class=""><a href="https://bodmerlab.unige.ch/constellations/autographes" target="_self" class="">Autographs</a></li><li class=""><a href="https://bodmerlab.unige.ch/constellations/faust" target="_self" class="">Faust</a></li><li class=""><a href="https://bodmerlab.unige.ch/constellations/early-modern-english-books" target="_self" class="">Early Modern English Books</a></li><li class=""><a href="https://bodmerlab.unige.ch/constellations/de-bry" target="_self" class="">The De Bry Collection</a></li><li class=""><a href="https://bodmerlab.unige.ch/constellations/rabelais" target="_self" class="">Rabelais</a></li><li class=""><a href="https://bodmerlab.unige.ch/constellations/litterature-mondiale" target="_self" class="">World Literature</a></li><li class=""><a href="https://bodmerlab.unige.ch/constellations/papyri" target="_self" class="">Bodmer Papyri</a></li><li class=""><a href="https://bodmerlab.unige.ch/constellations/menandre" target="_self" class="">Menander Codex</a></li><li class=""><a href="https://bodmerlab.unige.ch/constellations/fables-esopiques" target="_self" class="">Aesopian Fables</a></li><li class=""><a href="https://bodmerlab.unige.ch/constellations/didactique-de-la-litterature" target="_self" class="">The Didactics of Literature</a></li></ul></li><li class=""><a href="https://bodmerlab.unige.ch/illustrations" target="_self" class="">Illustrations</a></li><li class=""><a href="https://bodmerlab.unige.ch/outputs" target="_self" class="">Outputs</a><ul><li class=""><a href="/outputs#declensions" target="_self" class="">Declensions</a></li><li class=""><a href="https://bodmerlab.unige.ch/outputs/video" target="_self" class="">Videos</a></li><li class=""><a href="https://bodmerlab.unige.ch/outputs/publications" target="_self" class="">Research publications</a></li><li class=""><a href="https://bodmerlab.unige.ch/outputs/numerisations" target="_self" class="">Digitisations</a></li><li class=""><a href="/news/actualites/les-residences-du-bodmer-lab-20192020" target="_blank" class="">Residences</a></li></ul></li><li class=""><a href="https://bodmerlab.unige.ch/news" target="_self" class="">News</a><ul><li class=""><a href="https://bodmerlab.unige.ch/news/actualites" target="_self" class="">News</a></li><li class=""><a href="https://bodmerlab.unige.ch/news-1/events" target="_self" class="">Events</a></li><li class=""><a href="https://bodmerlab.unige.ch/news-1/press-releases" target="_self" class="">Press releases</a></li><li class=""><a href="https://bodmerlab.unige.ch/news/revue-de-presse" target="_self" class="">Press review</a></li></ul></li><li class=""><a href="https://bodmerlab.unige.ch/about/the-bodmer-lab" target="_self" class="">About</a><ul><li class=""><a href="/about/the-bodmer-lab#The-Bodmer-Lab" target="_self" class="">The Bodmer Lab</a></li><li class=""><a href="/about/the-bodmer-lab#Betting-on-world-literature" target="_self" class="">Betting on world literature</a></li><li class=""><a href="/about/the-bodmer-lab#Team" target="_self" class="">Team</a></li><li class=""><a href="/about/the-bodmer-lab#Partners" target="_self" class="">Partners</a></li><li class=""><a href="/about/the-bodmer-lab#Bodmer-Lab-Scientific-Committee" target="_self" class="">Bodmer Lab Scientific Committee</a></li></ul></li></ul></nav><div class="ccm-responsive-menu-launch"><i></i></div>
+
+
+        <div class="ccm-custom-style-container ccm-custom-style-headernavigation-3331"
+            style="position:absolute; top:-30px; right:10px"        >
+    
+<div class="ccm-block-switch-language">
+    <nav>
+        <ul>
+                            <li>
+                    <a href="https://bodmerlab.unige.ch/constellations/barcode"
+                       title="English"
+                       class="ccm-block-switch-language-active">
+                            EN                    </a>
+                </li>
+                            <li>
+                    <a href="https://bodmerlab.unige.ch/constellations/barcode"
+                       title="French"
+                       class="">
+                            FR                    </a>
+                </li>
+                    </ul>
+    </nav>
+</div>
+
+    </div>
+                <div id="ccm-account-menu-container"></div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    
+
+    
+<div class="slider-container">
+    <div class="slider-for">
+        <div class="slide slide--first">
+                        <a class="image-container" style="background-image: url('https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_011.jpg/full/pct:60/0/default.jpg')">
+            </a>
+                        <article class="slide__content">
+                <header>
+                    <a href="#">
+                        Papyri                    </a>
+                    <h1>
+                        PB 2                    </h1>
+                                    </header>
+            </article>
+        </div>
+                    <div class="slide">
+                <a data-fancybox="group" class="image-container"
+                   style="background-image: url('https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_011.jpg/full/pct:60/0/default.jpg')"
+                    href="https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_011.jpg/full/pct:90/0/default.jpg"
+                    data-caption="<a href='https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_011.jpg/full/pct:100/0/default.jpg' download target='_blank'>
+                    Download</a>">
+                </a>
+            </div>
+                    <div class="slide">
+                <a data-fancybox="group" class="image-container"
+                   style="background-image: url('https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_123.jpg/full/pct:60/0/default.jpg')"
+                    href="https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_123.jpg/full/pct:90/0/default.jpg"
+                    data-caption="<a href='https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_123.jpg/full/pct:100/0/default.jpg' download target='_blank'>
+                    Download</a>">
+                </a>
+            </div>
+                    <div class="slide">
+                <a data-fancybox="group" class="image-container"
+                   style="background-image: url('https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_143.jpg/full/pct:60/0/default.jpg')"
+                    href="https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_143.jpg/full/pct:90/0/default.jpg"
+                    data-caption="<a href='https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_143.jpg/full/pct:100/0/default.jpg' download target='_blank'>
+                    Download</a>">
+                </a>
+            </div>
+                    <div class="slide">
+                <a data-fancybox="group" class="image-container"
+                   style="background-image: url('https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_146.jpg/full/pct:60/0/default.jpg')"
+                    href="https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_146.jpg/full/pct:90/0/default.jpg"
+                    data-caption="<a href='https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_146.jpg/full/pct:100/0/default.jpg' download target='_blank'>
+                    Download</a>">
+                </a>
+            </div>
+            </div>
+    <div class="slider-nav-container">
+        <div class="container">
+            <div class="slider-action toggle-nav pull-left">
+                <p></p><icon></icon>
+            </div>
+        </div>
+        <div class="slider-bottom">
+            <div class="slider slider-nav">
+                                <div class="img slider-nav--first" style="background-image: url('https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_011.jpg/full/pct:2/0/default.jpg')"></div>
+                                                    <div class="img" style="background-image: url('https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_011.jpg/full/pct:2/0/default.jpg')"></div>
+                                    <div class="img" style="background-image: url('https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_123.jpg/full/pct:2/0/default.jpg')"></div>
+                                    <div class="img" style="background-image: url('https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_143.jpg/full/pct:2/0/default.jpg')"></div>
+                                    <div class="img" style="background-image: url('https://iiif.hedera.unige.ch/iiif/2/bodmerlab/1072205287/1072205287_146.jpg/full/pct:2/0/default.jpg')"></div>
+                            </div>
+            <div class="open-book">
+                <div class="nav-last-page">
+                    <a href="/constellations/papyri/mirador/1072205287" title="Open Document">
+                        <p>Open Document</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    $.fn.animateRotate = function(startangle, angle, duration, easing, complete) {
+        return this.each(function() {
+            var $elem = $(this);
+
+            $({deg: startangle}).animate({deg: angle}, {
+                duration: duration,
+                easing: easing,
+                step: function(now) {
+                    $elem.css({
+                        transform: 'rotate(' + now + 'deg)'
+                    });
+                },
+                complete: complete || $.noop
+            });
+        });
+    };
+
+    $(function () {
+        $(".toggle-nav").click(function (item) {
+            if($('.slider-nav').is(':visible')){
+                $(".toggle-nav icon").animateRotate(0,180,"fast");
+            }else{
+                $(".toggle-nav icon").animateRotate(180,0,"fast");
+            }
+            $( ".slider-nav" ).slideToggle( "fast" );
+        });
+
+        $(".toggle-reader, .close-overlay").click(function () {
+            $(".book-overlay-wrapper").fadeToggle();
+        });
+
+        $('.slider-for').slick({
+            fade: true,
+            asNavFor: '.slider-nav',
+            slidesToShow: 1,
+            centerMode: true,
+            arrows: true
+        });
+
+        $('.slider-nav').slick({
+            infinite: false,
+            asNavFor: '.slider-for',
+            dots: false,
+            focusOnSelect: true,
+            centerMode: true,
+            arrows: false,
+            variableWidth: true,
+            // slidesToShow: 10,
+
+        });
+    });
+
+
+</script>
+<div class="container container-book">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="book-parent-title">
+                                <span>Constellation</span>
+                <a title="Papyri" href="/constellations/papyri">
+                    Papyri                </a>
+                            </h2>
+            <h1 class="book-title">PB 2</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            <div class="book-actions">
+                <!--<a href="#bookmark"
+                   class="bookmark-hook"
+                   data-bookmark-name=""
+                   data-bookmark-constellation=""
+                   data-bookmark-type=""
+                   data-bookmark-barcode=""
+                   data-bookmark-url="">
+                    <icon class="i-bookmark-empty-red "></icon>
+                </a>-->
+                <a href="#link" class="copy-link tooltip-container" onclick="copyLink()">
+                    <input type="hidden" id="pageUrl" value="bodmerlab.unige.ch/constellations/papyri/barcode/1072205287">
+                    <span class="tooltiptext" id="myTooltip" style="min-width: 150px">
+                        Copy to clipboard                    </span>
+                    <icon class="i-link-red"></icon>
+                </a>
+                <a href="mailto:bodmerlab@unige.ch?Subject=Anonyme 1072205287" class="tooltip-container">
+                    <icon class="i-email-red"></icon>
+                    <span class="tooltiptext">
+                        Vous avez une remarque ou une suggestion à nous transmettre? Envoyez nous en courriel en cliquant ici                    </span>
+                </a>
+                <a id="download" href="javascript:;" class="tooltip-container">
+                    <span class="tooltiptext">
+                        La fonction permettant de télécharger l'ouvrage sera disponible prochainement                    </span>
+                    <icon class="i-download-red"></icon>
+                </a>
+                <span class="action-text">Open in: </span>
+                <a href="/constellations/papyri/mirador/1072205287" title="Open in Mirador" class="action-open">Mirador</a>
+            </div>
+                            <div class="book-description">
+                    Papyrus codex containing the Gospel According to John in Greek.<br>Description: The remains of this codex consist of 75 identifiable papyrus folios and numerous fragments. The original codex would have contained a complete copy of the Gospel according to John. The first four quires and most of the fifth quire (containing John 1:1-14:26) are conserved as an intact book block. The remaining folios (containing portions of John 14:29-21:9) have been conserved between glass plates. The latter are illustrated here with color images, while the leaves still in the book block are illustrated with photographic plates published in 1962. The bulk of P.Bodmer 2 arrived in Geneva in 1955 (Nongbri, “The  Limits,” 2, note 4).</br>                </div>
+                    </div>
+        <div class="col-xs-12 col-md-6 right-container">
+            <div class="book-data">
+                                <table>
+                                            <tr>
+                            <td><span>Author:</span></td>
+                            <td>Anonyme</td>
+                        </tr>
+                                            <tr>
+                            <td><span>Title:</span></td>
+                            <td>PB 2</td>
+                        </tr>
+                                            <tr>
+                            <td><span>Language:</span></td>
+                            <td>
+                            Ancient Greek (to 1453)                            </td>
+                        </tr>
+                                            <tr>
+                            <td><span>No of scans:</span></td>
+                            <td>163</td>
+                        </tr>
+                                            <tr>
+                            <td><span>Type:</span></td>
+                            <td>Manuscript</td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="book-full-data">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#" title="Show more" class="toggle-information-box pull-right">
+                    Show more                    <icon class="i-arrow-down-gray"></icon>
+                </a>
+            </div>
+        </div>
+        <div id="dataContainer" class="collapse">
+
+            <div class="meta-data-container">
+                <div>
+                    <h6>Document</h6>
+                    <ul>
+                        <li><strong>Authors</strong><span>Anonyme</span></li>                                                                        <li><strong>Title</strong><span>PB 2</span></li>                                                                                                <li><strong>Varying form of Title</strong><span>P66</span></li>                                                <li><strong>Copyists</strong><span>The whole book was copied in a single hand that has been described as “a rudimentary form of Coptic Uncial” and a “unimodular Alexandrian majuscule” (Nongbri, “The Limits,” 12 and Orsini, “I papiri Bodmer,” 77).</span></li>                        <li><strong>Event Date Place</strong><span>early 2nd cent. (Hunger, “Zur Datierung,” by palaeography); ca. 200 (Martin, <i>Papyrus Bodmer II</i>, by palaeography); 3rd cent. (Turner, <i>Typology</i>, by palaeography); 3rd to 4th cent. (Orsini, “I papiri Bodmer,” by palaeography); 4th cent. (Nongbri, “The Limits,” by palaeography, codicology, and provenance)</span></li>                        <li><strong>Language(s)</strong><span>grc</span></li>                    </ul>
+                </div>
+                <div>
+                    <h6>Publication, distribution</h6>
+                    <ul>
+                                                                                                                    </ul>
+                </div>
+                <div>
+                    <h6>Edition</h6>
+                    <ul>
+                                                                                                                    </ul>
+                </div>
+                <div>
+                    <h6>Description material</h6>
+                    <ul>
+                        <li><strong>Type</strong><span>Manuscript</span></li>                                                <li><strong>Volume</strong><span><br>Dimensions: The width of the page is 14.2 cm. The height of the page is 16.2 cm. The ratio of the page (width/height) is 0.877. The writing is in a single column. The width of the written area is about 11 cm. The height of the written area varies from about 10 cm to about 13.5 cm. There are 14-25 lines per page (there are generally more lines per page in the early part of the codex). There are 75 extant folia.
+<br>Quires: According to the most plausible published reconstruction, the codex originally consisted of 8 quires of differing sizes: 4 sheets, 5 sheets, 6 sheets, 4 sheets, 9 sheets, 4 sheets, 4 sheets, and 4 sheets (Kasser, reported in Turner, <i>Typology</i>, 70), but the arrangement of the last leaves is subject to doubt. The remnants of quires signatures are visible in the upper right corners of <a href="https://bodmerlab.unige.ch/fr/constellations/papyri/mirador/1072205287?page=25">page 17</a> and <a href="https://bodmerlab.unige.ch/fr/constellations/papyri/mirador/1072205287?page=81">page 77</a>. Turner reports that the quires are arranged with facing pages having fibers aligned, horizontal fibers (→) facing horizontal and vertical fibers (↓) facing vertical. Vertical fibers are found on the first recto (outermost sheet) of each quire (Turner, <i>Typology</i>, 67). This pattern breaks down in the final quires of the book (see the fiber directions reported in Martin and Barns, <i>Papyrus Bodmer II</i>).
+<br>Cover: No cover is preserved.</br></span></li>                                                                        <li><strong>Binding</strong><span>Binding: Berthe van Regemorter pointed out that the codex shows evidence of two distinct bindings. The quires have four sewing stations, and the first binding appears to have been a link-stitch at two independent pairs of sewing stations. A second binding (also a link-stitch) used a single thread through the central two of the four sewing stations. Kasser reports that parchment stays are present in the central folds of the first five quires.</span></li>                        <li><strong>Physical Medium</strong><span>Papyrus, soot-based black ink</span></li>                                            </ul>
+                </div>
+                <div>
+                    <h6>Remarques</h6>
+                    <ul>
+                        <li><strong>General Notes</strong><span>Paratextual features: The title is written at the top of the first extant page (the meaning of the forked <i>paragraphos</i> mark in the title is not clear). The last page of the text is not preserved, so it is unclear whether or not an end title was present. Textual divisions are marked by <i>ekthesis</i>. Page numbers appear in the upper corners of the outer margins of each page. The copyist seems to have numbered pages 1-99, while page numbers above 100 appear to have been written in a different hand. Corrections are present throughout. Nearly all can be attributed to the copyist of the manuscript (see Royse, <i>Scribal Habits</i>, 399-544). The placement of corrections in the upper and lower margins is noted with pairs of curved arrows (↓↑).<br>Decorations: The beginning title occupies a single line at the top of the first page and is framed by horizontal lines. It contains a forked <i>paragraphos</i>: ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ >— ⲕⲁⲧⲁ ⲓⲱⲁⲛⲛⲏⲛ.<br>Other holding institutions: Chester Beatty Library, Ac. 2555; Cologne, <a href="https://papyri.uni-koeln.de/stueck/tm61627">P.Köln V 214</a></span></li>                        <li><strong>Abstract</strong><span>Papyrus codex containing the Gospel According to John in Greek.<br>Description: The remains of this codex consist of 75 identifiable papyrus folios and numerous fragments. The original codex would have contained a complete copy of the Gospel according to John. The first four quires and most of the fifth quire (containing John 1:1-14:26) are conserved as an intact book block. The remaining folios (containing portions of John 14:29-21:9) have been conserved between glass plates. The latter are illustrated here with color images, while the leaves still in the book block are illustrated with photographic plates published in 1962. The bulk of P.Bodmer 2 arrived in Geneva in 1955 (Nongbri, “The  Limits,” 2, note 4).</br></span></li>                                                <li><strong>Bibliography</strong><span><br>LDAB number <a href="https://www.trismegistos.org/ldab/text.php?quick=2777">2777</a>
+<br>TM number: <a href="https://www.trismegistos.org/tm/detail.php?tm=61627">61627</a>
+<br>Digital text: <a href="http://www.iohannes.com/transcriptions/?witness=P66&language=greek">iohannes.com</a></br>
+<br>Editio princeps:
+<br>Martin, Victor. <i>Papyrus Bodmer II</i>. Cologny-Geneva: Bibliotheca Bodmeriana, 1956.
+<br>Martin, Victor. <i>Papyrus Bodmer II, Supplément</i>. Cologny-Geneva: Bibliotheca Bodmeriana, 1958.
+<br>Martin, Victor and J.W.B. Barns. <i>Papyrus Bodmer II, Supplément, Nouvelle édition augmentée et corrigée</i>. Cologny-Geneva: Bibliotheca Bodmeriana, 1962.
+<br>Gronewald, M. Pages 73-76 in <i>Kölner Papyri</i>, vol. 5. Opladen. Westdeutscher Verlag, 1985.</br>
+<br>Additional bibliography:
+<br>Hunger, Herbert. “Zur Datierung des Papyrus Bodmer II (P66),” <i>Anzeiger der Österreichischen Akademie der Wissenschaften philosophisch-historische Klasse</i> 97 (1961): 12-23.
+<br>Nongbri, Brent. “<a href="http://doi.org/10.5169/seals-389733">The Limits of Palaeographic Dating of Literary Papyri: Some Observations on the Date and Provenance of P.Bodmer II (P66)</a>” <i>Museum Helveticum</i> 71 (2014): 1-35.
+<br>Orsini, Pasquale. “I papiri Bodmer: scritture e libri.” <i>Adamantius</i> 21 (2015): 60-78.
+<br>Royse, James R. <i>Scribal Habits in Early Greek New Testament Papyri</i>. Leiden: Brill, 2008.
+<br>Turner, Eric G. <i>The Typology of the Early Codex</i>. Philadelphia: University of Pennsylvania Press, 1977.</br></span></li>                                                                    </ul>
+                </div>
+                <div>
+                    <h6>Identification</h6>
+                    <ul>
+                        <li><strong>Constellation</strong><span>Papyri</span></li>                        <li><strong>PID</strong><span>3694</span></li>                        <li><strong>Shelf Mark</strong><span>PB 2</span></li>                                            </ul>
+                </div>
+            </div>
+            <a href="javascript:;" title="Show more" class="toggle-information-box pull-right">
+                Show more                <icon class="i-arrow-down-gray"></icon>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+<script>
+  /*
+    Because it is a static page, we need to set manually the FR related URL
+    on the Language switcher
+  */
+        $('.ccm-block-switch-language a[title="English"]').attr('href', '/constellations/papyri/barcode/1072205287');
+    $('.ccm-block-switch-language a[title="French"]').attr('href', '/fr/constellations/papyri/barcode/1072205287');
+    
+    $(".bookmark-hook").click(function(){
+        var currentButton = $(this);
+        $.ajax({
+            type: "POST",
+            url: '/account/bookmark',
+            data: {
+                name: $(this).data('bookmarkName'),
+                constellation: $(this).data('bookmarkConstellation'),
+                type: $(this).data('bookmarkType'),
+                uniqueId: $(this).data('bookmarkUniqueid'),
+                barcode: $(this).data('bookmarkBarcode'),
+                url: $(this).data('bookmarkUrl')
+            },
+            success: function (response, textStatus, xhr) {
+                console.log('success!',response);
+            },
+            dataType: 'json'
+        })
+    });
+
+    function copyLink() {
+        var element = $("#pageUrl");
+
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val(element.val()).select();
+        document.execCommand("copy");
+        $temp.remove();
+
+        $('#myTooltip').html("Copied!")
+    }
+    $(".copy-link").mouseout(function () {
+        $('#myTooltip').html("Copy to clipboard")
+    })
+
+    $('.toggle-description').click(function () {
+        if($('#dataContainer').hasClass('collapse')){
+            $('.toggle-description').html("Show more");
+        }else{
+            $('.toggle-description').html("Show less");
+        }
+        $('#description').toggleClass('show-less')
+    });
+
+    $('.toggle-information-box').click(function (e) {
+        e.preventDefault();
+
+        if($('#dataContainer').hasClass('collapse')){
+            $('.toggle-information-box').html('Show less <icon class="i-arrow-up-gray"></icon>');
+        }else{
+            $('.toggle-information-box').html('Show more<icon class="i-arrow-down-gray"></icon>');
+        }
+        $('#dataContainer').toggleClass('collapse')
+    });
+
+    if($("#facts-counter").length){
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = $(".facts-list li");
+            if(x.length){
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length}
+                $("#facts-counter").text(slideIndex + "/" + x.length);
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex-1].style.display = "block";
+            }else{
+                $('.slide.next, .slide.previous').hide()
+            }
+        }
+    }
+    $('button[data-toggle="collapse"]').click(function () {
+        $('#demo').toggle()
+    });
+</script>
+</main>
+
+
+<footer id="footer-main">
+    <section class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 column-1">
+                    <div class="logo">
+                        <a href="https://bodmerlab.unige.ch/ " title="bodmerlab">
+                            <embed  src="/application/themes/bodmerlab/images/bodmer-lab-logo.svg" height="48" alt="bodmerlab">
+                        </a>
+                    </div>
+                    
+
+    
+<div id="ccm-block-social-links3270" class="ccm-block-social-links">
+    <ul class="list-inline">
+            <li>
+            <a target="_blank" href="https://twitter.com/bodmerlab">
+                <img class='svg-icon' src='/application/themes/bodmerlab/images/social_icons/twitter_icon.svg'/>                <span class="social-tooltip">
+                    Follow us on twitter                </span>
+            </a>
+        </li>
+            <li>
+            <a target="_blank" href="https://www.instagram.com/bodmerlab">
+                <img class='svg-icon' src='/application/themes/bodmerlab/images/social_icons/instagram_icon.svg'/>                <span class="social-tooltip">
+                    Follow us on instagram                </span>
+            </a>
+        </li>
+            <li>
+            <a target="_blank" href="https://bodmerlab.tumblr.com">
+                <img class='svg-icon' src='/application/themes/bodmerlab/images/social_icons/tumblr_icon.svg'/>                <span class="social-tooltip">
+                    Follow us on tumblr                </span>
+            </a>
+        </li>
+            <li>
+            <a target="_blank" href="https://www.facebook.com/BodmerLab/">
+                <img class='svg-icon' src='/application/themes/bodmerlab/images/social_icons/facebook_icon.svg'/>                <span class="social-tooltip">
+                    Follow us on facebook                </span>
+            </a>
+        </li>
+        </ul>
+</div>
+                    <div class="mobile-footer-menu-trigger">
+                        <embed  src="/application/themes/bodmerlab/images/menu_burger.svg" height="48" alt="bodmerlab">
+                        <embed  src="/application/themes/bodmerlab/images/nav_up.svg" height="48" alt="bodmerlab">
+                    </div>
+                </div>
+                <div class="col-md-3 column-2">
+                    
+
+    <ul class="nav-footer"><li class=""><h4><a href="https://bodmerlab.unige.ch/fr/constellations" target="_self" class="">Constellations</a></h4></li><li class=""><h4><a href="https://bodmerlab.unige.ch/fr/images" target="_self" class="">Illustrations</a></h4></li><li class=""><h4><a href="https://bodmerlab.unige.ch/fr/realisations" target="_self" class="">R&eacute;alisations</a></h4></li><li class=""><h4><a href="https://bodmerlab.unige.ch/fr/actualites" target="_self" class="">Actualit&eacute;s</a></h4></li><li class=""><h4><a href="https://bodmerlab.unige.ch/fr/about" target="_self" class="">&Agrave; propos</a></h4></li></ul>
+                </div>
+                <div class="col-md-3 column-3">
+                    
+
+    <h4>Contact</h4>
+
+<p>Bodmer Lab<br />
+<br />
+Universit&eacute; de Gen&egrave;ve<br />
+Facult&eacute; des lettres<br />
+rue De-Candolle 5<br />
+1211 Gen&egrave;ve 4</p>
+
+<p>bodmerlab(a)unige.ch</p>
+
+                </div>
+                <div class="col-md-3 column-4">
+                    
+
+        <div class="ccm-custom-style-container ccm-custom-style-globalfootertopcolumn4-2872"
+            >
+    <p><b>Conditions d&#39;usage</b><br />
+Sauf indication contraire, les contenus de ce site sont publi&eacute;s sous une licence <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Creative commons CC-BY-NC, 4.0.</a></p>
+
+    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 hidden-xs copyright">
+                <p>
+                  <b>Bodmer Lab, 2026.</b>
+                <p>
+            </div>
+
+            <div class="col-md-9 references">
+                
+
+    <a href="#" ><picture><!--[if IE 9]><video style='display: none;'><![endif]--><!--[if IE 9]></video><![endif]--><img src="/application/files/2315/2457/6373/Logo_Fondation_ELSchmidheiny.png" alt="" class="ccm-image-block img-responsive bID-916"></picture></a>
+
+
+    <a href="http://fondationbodmer.ch" target="_blank" rel="noopener noreferrer"><picture><!--[if IE 9]><video style='display: none;'><![endif]--><!--[if IE 9]></video><![endif]--><img src="/application/files/5415/2457/6373/FMB-logo-complet.png" alt="" class="ccm-image-block img-responsive bID-2377"></picture></a>
+
+
+    <a href="http://unige.ch/" target="_blank" rel="noopener noreferrer"><picture><!--[if IE 9]><video style='display: none;'><![endif]--><!--[if IE 9]></video><![endif]--><img src="/application/files/6615/2457/6374/UNIGE-logo_blanc.png" alt="" class="ccm-image-block img-responsive bID-2376"></picture></a>
+            </div>
+        </div>
+    </div>
+    </section>
+    </footer>
+
+<script>
+    jQuery(document).ready(function(){
+
+        jQuery('.mobile-footer-menu-trigger').on('click', function(){
+
+            jQuery(this).toggleClass('active');
+            jQuery('#footer-main .nav-footer').slideToggle();
+
+        });
+
+    });
+</script>
+
+
+</div>
+
+<script type="text/javascript" src="/concrete/js/responsive-slides.js?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e"></script>
+<script type="text/javascript" src="/concrete/js/picturefill.js?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e"></script>
+<script type="text/javascript" src="/concrete/blocks/autonav/templates/responsive_header_navigation/view.js?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e"></script>
+<script type="text/javascript" src="/concrete/blocks/image/view.js?ccm_nocache=1023248beb8c0c1d55458c259ba56e5c93dd374e"></script>
+
+
+<script type="text/javascript" src="/application/themes/bodmerlab/js/main.js"></script>
+
+</body>
+</html>
