@@ -9,7 +9,7 @@ BOOK=ROOT/"book"; DATA=BOOK/"data"; OUT=BOOK/"el-relato-book.sqlite"
 VERSES=ROOT/"data/normalized/sblgnt/edition-verses.jsonl"
 TOKENS=ROOT/"data/normalized/sblgnt/tokens.jsonl"
 TAGNT=ROOT/"data/normalized/stepbible/tagnt-rows.jsonl"
-SRC="edition:sblgnt:2010"; TAGNT_SRC="src:stepbible:tagnt-mat-jhn"; EDITION="edition:el-relato:grc-sblgnt-2010:v1"
+SRC="edition:sblgnt:2010"; TAGNT_SRC="edition:tagnt:tr-selection"; EDITION="edition:el-relato:grc-sblgnt-2010:v1"
 BOOKS={"Mt":("Matthew","matthew"),"Mc":("Mark","mark"),"L":("Luke","luke"),"J":("John","john")}
 RX=re.compile(r"^(Mt|Mc|L|J)(\d+):(\d+)([a-z])?(?:-(\d+))?$")
 
@@ -61,7 +61,10 @@ token_map=defaultdict(list)
 for r in jsonl(TOKENS):token_map[(r["book"],int(r["chapter"]),int(r["verse"]))].append(r)
 for k in token_map:token_map[k].sort(key=lambda x:int(x["position"]))
 tagnt_map=defaultdict(list)
-for r in jsonl(TAGNT):tagnt_map[(r["book"],int(r["chapter"]),int(r["verse"]))].append(r)
+for r in jsonl(TAGNT):
+    editions=set(x for x in re.split(r"[+ ;]+",r.get("editions") or "") if x)
+    if "TR" in editions:
+        tagnt_map[(r["book"],int(r["chapter"]),int(r["verse"]))].append(r)
 for k in tagnt_map:tagnt_map[k].sort(key=lambda x:int(x["row_position"]))
 
 weights=defaultdict(lambda:defaultdict(list))
@@ -95,9 +98,10 @@ def piece(comp):
             key=(name,c,x); texts.append(verse_text[key]); tids += [t["id"] for t in token_map.get(key,[])]
         return " ".join(texts).strip(),pids,tids,"ok",1.0,"exact-source-range",SRC
 
-    # SBLGNT intentionally omits a small set of later textual additions.
+    # SBLGNT intentionally omits a small set of traditionally numbered readings.
     # If any verse in the requested range is absent, materialize the whole
-    # witness from TAGNT so a single witness never silently mixes editions.
+    # witness from the Textus Receptus selection in TAGNT so a single witness
+    # never silently mixes printed editions.
     texts=[]; tids=[]; tpids=[]
     for x in range(v,e+1):
         rows=tagnt_map.get((name,c,x),[])
@@ -105,7 +109,7 @@ def piece(comp):
         greek=" ".join((r.get("greek") or "").strip() for r in rows if (r.get("greek") or "").strip()).strip()
         if not greek:return None,tpids,tids,"missing-source",0.0,"missing-source",TAGNT_SRC
         texts.append(greek); tids += [r["id"] for r in rows]; tpids.append(f"tagnt-ref:{slug}:{c}:{x}")
-    return " ".join(texts).strip(),tpids,tids,"ok",1.0,"exact-tagnt-fallback",TAGNT_SRC
+    return " ".join(texts).strip(),tpids,tids,"ok",1.0,"tagnt-tr-fallback",TAGNT_SRC
 
 if OUT.exists():OUT.unlink()
 db=sqlite3.connect(OUT); db.execute("PRAGMA foreign_keys=ON")
@@ -114,15 +118,15 @@ prov=json.loads((DATA/"provenance.json").read_text()); now=datetime.now(timezone
 meta={"book_id":"book:el-relato","title":"El Relato","schema_version":"1","book_database_version":"1","created_at":now,
       "structure_units":"4123","structure_scenes":"120","structure_chapters":"6","greek_source_edition":SRC,
       "primary_reference_policy":"first-reference-component","microsegment_policy":"editorial-fragment-weight + Greek punctuation; heuristic V1",
-      "fallback_source_policy":"SBLGNT primary; exact TAGNT fallback only when the requested SBLGNT verse is absent",
+      "fallback_source_policy":"SBLGNT primary; exact TAGNT Textus Receptus word-selection only when the requested SBLGNT verse is absent",
       "structure_source_sha256":prov["book_structure_source"]["sha256"],"segmentation_helper_sha256":prov["segmentation_helper"]["sha256"]}
 db.executemany("insert into metadata values (?,?)",meta.items())
 db.executemany("insert into chapters values (?,?,?)",[(x["chapter_number"],int(x["chapter_order"]),x["title"]) for x in chapters])
 db.executemany("insert into scenes values (?,?,?,?)",[(int(x["scene_number"]),x["chapter_number"],int(x["scene_order_in_chapter"]),x["title"]) for x in scenes])
 db.executemany("insert into units values (?,?,?,?,?,?,?,?)",[(u["unit_id"],u["chapter_number"],u["scene_number"],u["scene_order"],u["global_order"],u["reference"],u["weight"],u["reference"].split(";")[0]) for u in units])
 db.execute("insert into source_editions values (?,?,?,?,?,?)",(SRC,"SBL Greek New Testament","2010","grc","data/normalized/sblgnt/","Primary Greek source."))
-db.execute("insert into source_editions values (?,?,?,?,?,?)",(TAGNT_SRC,"STEPBible TAGNT Mat-Jhn",None,"grc","data/normalized/stepbible/tagnt-rows.jsonl","Fallback only for requested verses absent from SBLGNT; never silently mixed within one witness."))
-db.execute("insert into editions values (?,?,?,?,?,?,?,?,?,?,?)",(EDITION,"book:el-relato","grc",None,"El Relato — Griego fuente (SBLGNT 2010 + TAGNT fallback) — V1","source-derived-master","1","First reference is primary; parallels retained; SBLGNT primary; TAGNT fallback for SBL-omitted verses; microsegments heuristic V1.",SRC,"draft-source-derived",now))
+db.execute("insert into source_editions values (?,?,?,?,?,?)",(TAGNT_SRC,"STEPBible TAGNT — Textus Receptus word-selection","TR selection","grc","data/normalized/stepbible/tagnt-rows.jsonl","Fallback only for requested verses absent from SBLGNT; rows are filtered to edition token TR."))
+db.execute("insert into editions values (?,?,?,?,?,?,?,?,?,?,?)",(EDITION,"book:el-relato","grc",None,"El Relato — Griego fuente (SBLGNT 2010 + TAGNT/TR fallback) — V1","source-derived-master","1","First reference is primary; parallels retained; SBLGNT primary; TAGNT Textus Receptus word-selection fallback for SBL-omitted verses; microsegments heuristic V1.",SRC,"draft-source-derived",now))
 
 stats=defaultdict(int)
 for u in units:
@@ -130,7 +134,9 @@ for u in units:
     for j,comp in enumerate([x.strip() for x in u["reference"].split(";") if x.strip()],1):
         b,name,slug,c,v,e,s=parse(comp); text,pids,tids,status,conf,method,source_id=piece(comp)
         wid=f'{u["unit_id"]}:w{j}'; stats["witnesses"]+=1
-        stats["heuristic_segment_witness_materializations" if method.startswith("segmented-") else ("tagnt_fallback_witness_materializations" if method=="exact-tagnt-fallback" else "exact_witness_materializations")] += (status=="ok")
+        stats["heuristic_segment_witness_materializations" if method.startswith("segmented-") else ("tagnt_tr_fallback_witness_materializations" if method=="tagnt-tr-fallback" else "exact_witness_materializations")] += (status=="ok")
+        if method=="tagnt-tr-fallback" and status=="ok":
+            print("TEXTUAL_FALLBACK", comp, "source=TAGNT/TR", text)
         if status!="ok":
             stats["unresolved_witnesses"]+=1
             db.execute("insert into validation_issues(severity,code,unit_id,reference_component,message) values (?,?,?,?,?)",
