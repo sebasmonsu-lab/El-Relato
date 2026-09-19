@@ -118,6 +118,11 @@
       "source_id": "src:vatlib:p75-facsimile",
       "status": "declared_by_owner",
       "evidence_path": null
+    },
+    {
+      "source_id": "src:el-relato:transcription-comparison",
+      "status": "derived_from_registered_sources",
+      "evidence_path": "docs/METHODOLOGY_MANUSCRIPT_VARIANTS.md"
     }
   ]
 }
