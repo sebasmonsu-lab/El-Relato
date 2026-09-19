@@ -6,6 +6,8 @@ on:
     paths:
       - "web/**"
       - "scripts/build_web.py"
+      - "scripts/build_gospel_reader.py"
+      - "sources/gospel-editions/**"
       - "scripts/build_translation_alignment.py"
       - "scripts/build_query_db.py"
       - "book/**"
@@ -57,6 +59,9 @@ jobs:
       - name: Build static research site
         run: python scripts/build_web.py --output build/site
 
+      - name: Build canonical Gospel reader
+        run: python scripts/build_gospel_reader.py --site build/site --query-db build/el-relato.sqlite
+
       - name: Validate W1 plus translation alignment
         run: |
           python - <<'PY'
@@ -80,6 +85,12 @@ jobs:
 
           assert (root / "source/matthew/1/1.html").exists()
           assert (root / "source/john/21/25.html").exists()
+          assert len(m.get("gospel_editions", [])) >= 1, m
+          greek_gospel = next(e for e in m["gospel_editions"] if e["language_code"] == "grc")
+          gslug = re.sub(r"[^A-Za-z0-9._-]+", "-", greek_gospel["edition_id"]).strip("-").lower()
+          assert (root / "gospels/index.html").exists()
+          assert (root / "gospels" / gslug / "matthew/1/index.html").exists()
+          assert (root / "gospels" / gslug / "john/21/index.html").exists()
 
           token_pages = list((root / "token").glob("*.html"))
           assert len(token_pages) > 64000, len(token_pages)

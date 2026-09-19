@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://el-relato.local/schemas/gospel-source-edition.schema.json",
+  "title": "GospelSourceEdition",
+  "type": "object",
+  "required": [
+    "edition_id",
+    "title",
+    "language_code",
+    "version",
+    "status",
+    "kind",
+    "materialization",
+    "publication"
+  ],
+  "properties": {
+    "edition_id": {
+      "type": "string",
+      "pattern": "^edition:gospels:"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "language_code": {
+      "type": "string",
+      "minLength": 2
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "canonical-source",
+        "consolidated",
+        "published"
+      ]
+    },
+    "kind": {
+      "enum": [
+        "greek-source",
+        "translation"
+      ]
+    },
+    "base_edition_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^edition:gospels:"
+    },
+    "materialization": {
+      "enum": [
+        "query-db",
+        "verses-jsonl"
+      ]
+    },
+    "publication": {
+      "enum": [
+        "public",
+        "metadata-only",
+        "private"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

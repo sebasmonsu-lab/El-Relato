@@ -1,0 +1,12 @@
+{
+  "edition_id": "edition:gospels:grc-sblgnt-2010:v1",
+  "title": "Evangelios — Griego (SBLGNT 2010)",
+  "language_code": "grc",
+  "version": "1",
+  "status": "canonical-source",
+  "kind": "greek-source",
+  "base_edition_id": null,
+  "materialization": "query-db",
+  "publication": "public",
+  "notes": "Edición de lectura canónica materializada desde SOURCE normalizado. No es un facsímil ni un manuscrito original."
+}

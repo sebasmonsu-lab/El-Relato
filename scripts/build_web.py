@@ -70,7 +70,8 @@ def page(root, title, body):
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
         f"<title>{esc(title)} · El Relato</title><style>{CSS}</style></head><body>"
         f'<header><a href="{root}index.html"><strong>El Relato</strong></a><nav>'
-        f'<a href="{root}editions/index.html">Ediciones</a>'
+        f'<a href="{root}editions/index.html">El Relato</a>'
+        f'<a href="{root}gospels/index.html">Evangelios</a>'
         f'<a href="{root}source/index.html">Fuentes</a>'
         f'<a href="{root}about.html">Método</a></nav></header><main>{body}</main></body></html>'
     )
@@ -244,8 +245,10 @@ def build(out):
                 '<section class="hero"><h1>El Relato</h1>'
                 '<p>Libro multilingüe y herramienta de investigación trazable de los cuatro Evangelios.</p></section>'
                 f'<h2>Ediciones disponibles</h2><div class="grid">{edcards}</div>'
+                '<a class="card" href="gospels/index.html"><h2>Leer los Evangelios</h2>'
+                '<p>Mateo, Marcos, Lucas y Juan en orden canónico y por idioma.</p></a>'
                 '<a class="card" href="source/index.html"><h2>Explorar SOURCE</h2>'
-                '<p>Mateo, Marcos, Lucas y Juan palabra por palabra.</p></a>',
+                '<p>Capa técnica: griego, tokens, Strong, lema y morfología.</p></a>',
             ),
         )
         write(
