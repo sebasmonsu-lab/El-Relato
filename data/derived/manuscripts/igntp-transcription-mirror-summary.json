@@ -1,0 +1,66 @@
+{
+  "source": "International Greek New Testament Project / University of Birmingham ePapers",
+  "license_note": "CC BY-NC-SA as specified in transcription headers and repository records",
+  "items": [
+    {
+      "manuscript": "P52",
+      "xml_url": "https://epapers.bham.ac.uk/id/eprint/1754/7/04_P52.xml",
+      "record_url": "https://epapers.bham.ac.uk/id/eprint/1754/",
+      "xml": {
+        "local_path": "sources/manuscripts/P52/transcription/raw/igntp/04_P52.xml",
+        "resolved_url": "https://epapers.bham.ac.uk/id/eprint/1754/7/04_P52.xml",
+        "bytes": 9624,
+        "sha256": "d5b63a0c5732d489d1f9bfc89c2847914f269874a2bf275a0834d98954e8d5d2",
+        "content_type": "text/xml"
+      },
+      "record": {
+        "local_path": "sources/manuscripts/P52/transcription/raw/igntp/repository-record.html",
+        "resolved_url": "https://epapers.bham.ac.uk/id/eprint/1754/",
+        "bytes": 21661,
+        "sha256": "8ccc2eaf4cb6ed5ac5d9aadeb0971c68aa48b26747540fc4ed19dea311b8bca4",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "complete": true
+    },
+    {
+      "manuscript": "P66",
+      "xml_url": "https://epapers.bham.ac.uk/id/eprint/1759/10/04_P66.xml",
+      "record_url": "https://epapers.bham.ac.uk/id/eprint/1759/",
+      "xml": {
+        "local_path": "sources/manuscripts/P66/transcription/raw/igntp/04_P66.xml",
+        "resolved_url": "https://epapers.bham.ac.uk/id/eprint/1759/10/04_P66.xml",
+        "bytes": 613348,
+        "sha256": "efcb80f651e168895b0adc001d35ea195b598aa02b5106220f7ea28fa046cc55",
+        "content_type": "text/xml"
+      },
+      "record": {
+        "local_path": "sources/manuscripts/P66/transcription/raw/igntp/repository-record.html",
+        "resolved_url": "https://epapers.bham.ac.uk/id/eprint/1759/",
+        "bytes": 21645,
+        "sha256": "bb553284b99e1b9330e1de1b2c6a89336580fba9bbeaff8330314bdb04491170",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "complete": true
+    },
+    {
+      "manuscript": "P75",
+      "xml_url": "https://epapers.bham.ac.uk/id/eprint/1742/10/04_P75.xml",
+      "record_url": "https://epapers.bham.ac.uk/id/eprint/1742/",
+      "xml": {
+        "local_path": "sources/manuscripts/P75/transcription/raw/igntp/04_P75.xml",
+        "resolved_url": "https://epapers.bham.ac.uk/id/eprint/1742/10/04_P75.xml",
+        "bytes": 453114,
+        "sha256": "29c81917d78fedc538f2030d0f91cae12030c18e66c9ea53aacb835162b5dbbc",
+        "content_type": "text/xml"
+      },
+      "record": {
+        "local_path": "sources/manuscripts/P75/transcription/raw/igntp/repository-record.html",
+        "resolved_url": "https://epapers.bham.ac.uk/id/eprint/1742/",
+        "bytes": 21627,
+        "sha256": "745f470e68e6269a0a89fe52f7ebb4b45ab4b336f9e2e119638db96237efa047",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "complete": true
+    }
+  ]
+}
