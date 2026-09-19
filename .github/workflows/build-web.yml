@@ -45,7 +45,8 @@ jobs:
           assert m["chapters"] == 6, m
           assert m["scenes"] == 120, m
           assert m["units"] == 4123, m
-          assert len(m["editions"]) >= 1, m\n          assert m["source_tokens"] > 64000, m
+          assert len(m["editions"]) >= 1, m
+          assert m["source_tokens"] > 64000, m
           assert (root/"editions/index.html").exists()
           import re
           for e in m["editions"]:
