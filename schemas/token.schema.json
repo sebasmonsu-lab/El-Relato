@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://el-relato.local/schemas/token.schema.json",
+  "title": "GospelToken",
+  "type": "object",
+  "required": [
+    "id",
+    "edition_id",
+    "book",
+    "chapter",
+    "verse",
+    "position",
+    "surface"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^token:"
+    },
+    "edition_id": {
+      "type": "string",
+      "pattern": "^edition:"
+    },
+    "book": {
+      "enum": [
+        "Matthew",
+        "Mark",
+        "Luke",
+        "John"
+      ]
+    },
+    "chapter": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "verse": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "position": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "surface": {
+      "type": "string",
+      "minLength": 1
+    },
+    "normalized": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lemma_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^lexeme:"
+    },
+    "lemma": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "transliteration": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "strong_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^strong:G[0-9A-Za-z]+$"
+    },
+    "morphology_code": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "punctuation_after": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^src:"
+    }
+  },
+  "additionalProperties": false
+}
