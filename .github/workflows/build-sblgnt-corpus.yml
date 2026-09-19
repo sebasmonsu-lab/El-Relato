@@ -1,0 +1,44 @@
+name: Build SBLGNT Gospel corpus
+
+on:
+  push:
+    paths:
+      - "scripts/parse_sblgnt.py"
+      - "vendor/SBLGNT/**"
+      - "schemas/edition-verse.schema.json"
+      - ".github/workflows/build-sblgnt-corpus.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Parse SBLGNT XML
+        run: python scripts/parse_sblgnt.py
+
+      - name: Install validation dependency
+        run: python -m pip install --disable-pip-version-check jsonschema
+
+      - name: Validate generated corpus
+        run: python scripts/validate_repo.py
+
+      - name: Commit corpus
+        shell: bash
+        run: |
+          git config user.name "El-Relato Bot"
+          git config user.email "el-relato-bot@users.noreply.github.com"
+          git add data/normalized/editions.jsonl data/normalized/passages.jsonl data/normalized/sblgnt data/derived/sblgnt
+          if git diff --cached --quiet; then
+            echo "No SBLGNT corpus changes."
+          else
+            git commit -m "Build structured SBLGNT Gospel corpus"
+            git push
+          fi
