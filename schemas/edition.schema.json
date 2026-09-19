@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://el-relato.local/schemas/edition.schema.json",
+  "title": "TextEdition",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "source_id"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^edition:"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^src:"
+    },
+    "language": {
+      "type": "string"
+    },
+    "local_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
