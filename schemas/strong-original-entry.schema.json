@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://el-relato.local/schemas/strong-original-entry.schema.json",
+  "title": "StrongOriginalGreekEntry",
+  "type": "object",
+  "required": [
+    "id",
+    "source_id",
+    "strong_id",
+    "number",
+    "lemma",
+    "transliteration",
+    "strongs_definition"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^strong-original:G[0-9]{4}$"
+    },
+    "source_id": {
+      "const": "src:morphgnt:strongs-greek-xml"
+    },
+    "strong_id": {
+      "type": "string",
+      "pattern": "^G[0-9]{4}$"
+    },
+    "number": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5624
+    },
+    "lemma": {
+      "type": "string"
+    },
+    "beta_code": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "transliteration": {
+      "type": "string"
+    },
+    "pronunciation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "derivation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "strongs_definition": {
+      "type": "string"
+    },
+    "kjv_definition": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "cross_references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "language",
+          "strong_id"
+        ],
+        "properties": {
+          "language": {
+            "enum": [
+              "GREEK",
+              "HEBREW"
+            ]
+          },
+          "strong_id": {
+            "type": "string",
+            "pattern": "^[GH][0-9]{4,5}$"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
