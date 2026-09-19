@@ -1,0 +1,24 @@
+name: Copilot translation smoke test
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/copilot-smoke.yml"
+permissions:
+  contents: read
+  copilot-requests: write
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+      - run: npm install -g @github/copilot
+      - name: Test default model
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          timeout 90s copilot -s --no-ask-user -p 'Return exactly this JSON and nothing else: {"ok":true}'
