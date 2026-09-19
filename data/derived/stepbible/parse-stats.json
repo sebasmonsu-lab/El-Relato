@@ -1,0 +1,27 @@
+{
+  "TBESG": {
+    "entries": 11035,
+    "unique_eStrong": 10847,
+    "with_dStrong": 11035
+  },
+  "TAGNT": {
+    "rows": 66926,
+    "rows_by_book": {
+      "Matthew": 18887,
+      "Mark": 11845,
+      "Luke": 20120,
+      "John": 16074
+    },
+    "rows_marked_SBL_by_book": {
+      "Matthew": 18307,
+      "Mark": 11102,
+      "Luke": 19412,
+      "John": 15413
+    },
+    "unique_references": 3779
+  },
+  "TEGMC": {
+    "full_morphology_codes": 1644,
+    "unique_codes": 1644
+  }
+}
