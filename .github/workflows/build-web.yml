@@ -1,0 +1,70 @@
+name: Build El Relato Web
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "web/**"
+      - "scripts/build_web.py"
+      - "scripts/build_query_db.py"
+      - "book/**"
+      - "data/normalized/**"
+      - ".github/workflows/build-web.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: el-relato-web
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build SOURCE query database
+        run: python scripts/build_query_db.py --output build/el-relato.sqlite
+      - name: Build static research site
+        run: python scripts/build_web.py --output build/site
+      - name: Validate W1
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path("build/site")
+          m=json.loads((root/"manifest.json").read_text())
+          assert m["chapters"] == 6, m
+          assert m["scenes"] == 120, m
+          assert m["units"] == 4123, m
+          assert m["source_tokens"] > 64000, m
+          assert (root/"edition/scene/1.html").exists()
+          assert (root/"edition/scene/120.html").exists()
+          assert (root/"source/matthew/1/1.html").exists()
+          assert (root/"source/john/21/25.html").exists()
+          token_pages=list((root/"token").glob("*.html"))
+          assert len(token_pages) > 64000, len(token_pages)
+          print("W1 PASS", m)
+          PY
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/site
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    environment:
+      name: github-pages
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
