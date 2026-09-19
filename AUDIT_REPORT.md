@@ -1,12 +1,12 @@
 # El-Relato — Audit Report
 
-Generated: 2026-09-19T05:13:57+00:00
+Generated: 2026-09-19T05:28:15+00:00
 
-**Overall: FAIL**
+**Overall: PASS_WITH_BLOCKERS**
 
-- PASS: 20
-- WARN / BLOCKED: 5
-- FAIL: 1
+- PASS: 22
+- WARN / BLOCKED: 4
+- FAIL: 0
 
 ## Checks
 
@@ -386,7 +386,7 @@ Raw scholarly TEI is preserved and a diplomatic verse-level view is regenerated 
 }
 ~~~
 
-### ❌ query:db — Integrated reproducible SQLite query layer
+### ✅ query:db — Integrated reproducible SQLite query layer
 ~~~json
 {
   "tokens": 64686,
@@ -397,10 +397,10 @@ Raw scholarly TEI is preserved and a diplomatic verse-level view is regenerated 
   "edition_apparatus_units": 3672,
   "manuscripts": 9,
   "facsimiles": 269,
-  "manuscript_images": 372,
-  "witness_attestations": 623,
+  "manuscript_images": 645,
+  "witness_attestations": 5834,
   "transcription_units": 5206,
-  "database_bytes": 36106240
+  "database_bytes": 37838848
 }
 ~~~
 
@@ -409,8 +409,23 @@ Raw scholarly TEI is preserved and a diplomatic verse-level view is regenerated 
 ### ⚠️ blocker:intf — INTF/NTVMR exhaustive catalogue harvest remains blocked
 The nucleus is preserved, but the declared exhaustive scope (all Gospel papyri + majuscules through s. V) is not yet certified complete.
 
-### ⚠️ backup:procedure — Git + LFS backup/restore procedure
-Backup scripts exist but no persisted successful restore report is present.
+### ✅ backup:procedure — Git + LFS backup/restore procedure
+Offline restore from Git bundle + LFS archive is tested in CI.
+~~~json
+{
+  "tested_at": "2026-09-19T05:15:52+00:00",
+  "head": "e34d9bc72b4e068b32bae2e08d52faef310f359c",
+  "restore_test": "PASS",
+  "git_fsck": "PASS",
+  "git_lfs_fsck": "PASS",
+  "repository_validation": "PASS",
+  "query_database_rebuild": "PASS",
+  "app_self_test": "PASS",
+  "bundle_bytes": 22507469,
+  "lfs_archive_bytes": 2434508800,
+  "lfs_tracked_entries": 924
+}
+~~~
 
 ### ⚠️ backup:independent — Independent off-GitHub backup
 A second storage destination and recorded copy are still required.

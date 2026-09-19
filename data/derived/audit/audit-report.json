@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-19T05:13:57+00:00",
-  "overall": "FAIL",
+  "generated_at": "2026-09-19T05:28:15+00:00",
+  "overall": "PASS_WITH_BLOCKERS",
   "counts": {
-    "pass": 20,
-    "warn": 5,
-    "fail": 1
+    "pass": 22,
+    "warn": 4,
+    "fail": 0
   },
   "checks": [
     {
@@ -440,7 +440,7 @@
     },
     {
       "id": "query:db",
-      "status": "FAIL",
+      "status": "PASS",
       "title": "Integrated reproducible SQLite query layer",
       "detail": null,
       "metrics": {
@@ -452,10 +452,10 @@
         "edition_apparatus_units": 3672,
         "manuscripts": 9,
         "facsimiles": 269,
-        "manuscript_images": 372,
-        "witness_attestations": 623,
+        "manuscript_images": 645,
+        "witness_attestations": 5834,
         "transcription_units": 5206,
-        "database_bytes": 36106240
+        "database_bytes": 37838848
       }
     },
     {
@@ -474,10 +474,22 @@
     },
     {
       "id": "backup:procedure",
-      "status": "WARN",
+      "status": "PASS",
       "title": "Git + LFS backup/restore procedure",
-      "detail": "Backup scripts exist but no persisted successful restore report is present.",
-      "metrics": {}
+      "detail": "Offline restore from Git bundle + LFS archive is tested in CI.",
+      "metrics": {
+        "tested_at": "2026-09-19T05:15:52+00:00",
+        "head": "e34d9bc72b4e068b32bae2e08d52faef310f359c",
+        "restore_test": "PASS",
+        "git_fsck": "PASS",
+        "git_lfs_fsck": "PASS",
+        "repository_validation": "PASS",
+        "query_database_rebuild": "PASS",
+        "app_self_test": "PASS",
+        "bundle_bytes": 22507469,
+        "lfs_archive_bytes": 2434508800,
+        "lfs_tracked_entries": 924
+      }
     },
     {
       "id": "backup:independent",
