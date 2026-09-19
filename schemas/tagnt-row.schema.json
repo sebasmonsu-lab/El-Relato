@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://el-relato.local/schemas/tagnt-row.schema.json",
+  "title": "TAGNTRow",
+  "type": "object",
+  "required": [
+    "id",
+    "source_id",
+    "reference",
+    "book",
+    "chapter",
+    "verse",
+    "row_position",
+    "greek",
+    "strongs",
+    "grammar",
+    "editions"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^tagnt:"
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^src:"
+    },
+    "reference": {
+      "type": "string"
+    },
+    "book": {
+      "enum": [
+        "Matthew",
+        "Mark",
+        "Luke",
+        "John"
+      ]
+    },
+    "chapter": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "verse": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "row_position": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "word_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "greek": {
+      "type": "string"
+    },
+    "english_translation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "strongs": {
+      "type": "string"
+    },
+    "grammar": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dictionary_form": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gloss": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "editions": {
+      "type": "string"
+    },
+    "spelling_variants": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "meaning_variants": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "spanish_translation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sub_meaning": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "super_meaning": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "conjoin_word": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "extra_columns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}
