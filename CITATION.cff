@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use El-Relato, cite the repository snapshot or internal release and the underlying primary/critical sources relevant to the claim."
+title: "El-Relato"
+type: dataset
+authors:
+  - family-names: Monsú
+    given-names: Sebastián
+repository-code: "https://github.com/sebasmonsu-lab/El-Relato"
+abstract: "Private, provenance-preserving research corpus for the four canonical Gospels, linking critical Greek text, lexical/morphological resources, manuscript facsimiles, scholarly transcriptions, edition apparatus and reproducible query data."
+keywords:
+  - New Testament
+  - Gospels
+  - Greek
+  - textual criticism
+  - manuscripts
+  - Strong
+  - morphology
+  - provenance
+license: NOASSERTION
+date-released: 2026-09-19
