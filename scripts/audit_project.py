@@ -76,39 +76,57 @@ metrics={k:p75.get(k) for k in ("planned","mirrored","missing","total_bytes")} i
 add("ms:p75","PASS" if p75 and p75.get("complete") else "FAIL","P75 facsimile mirror",metrics=metrics)
 
 csntm=load_json("data/derived/manuscripts/csntm-core-mirror-summary.json")
+fallback=load_json("data/derived/manuscripts/fallback-facsimile-mirror-summary.json")
+p137_pdf=exists("sources/manuscripts/P137/raw/POxy-LXXXIII-5345-text-and-image.pdf")
 if csntm:
     incomplete=[x for x in csntm.get("manuscripts",[]) if not x.get("complete")]
-    add("ms:csntm-core","WARN" if incomplete else "PASS","CSNTM core papyrus mirror",
-        "Source-specific CSNTM gaps are tracked; institutional fallbacks may supersede them.",
-        {"incomplete":[{"manuscript":x["manuscript"],"failed":x["failed"]} for x in incomplete]})
+    unresolved=[]
+    for x in incomplete:
+        ms=x["manuscript"]
+        superseded=(
+          ms=="P66" and fallback and fallback.get("P66",{}).get("complete")
+          or ms=="P104" and fallback and fallback.get("P104",{}).get("complete")
+        )
+        if not superseded:
+            unresolved.append({"manuscript":ms,"failed":x["failed"]})
+    add("ms:csntm-core","WARN" if unresolved else "PASS","Core papyrus facsimile preservation",
+        "P66/P104 source-specific CSNTM gaps are superseded by complete institutional fallbacks. P45 composite renderings remain a source-specific gap while component images are preserved." if unresolved else "CSNTM gaps are superseded by preserved institutional fallbacks.",
+        {"unresolved_source_specific":unresolved})
 else:
-    add("ms:csntm-core","FAIL","CSNTM core papyrus mirror","Missing report")
+    add("ms:csntm-core","FAIL","Core papyrus facsimile preservation","Missing CSNTM report")
 
-fallback=load_json("data/derived/manuscripts/fallback-facsimile-mirror-summary.json")
 if fallback:
-    incomplete=[k for k,v in fallback.items() if not v.get("complete")]
+    incomplete=[k for k,v in fallback.items() if not v.get("complete") and not (k=="P137" and p137_pdf)]
+    metrics={k:{x:v.get(x) for x in ("mirrored_or_present","failed","total_bytes","complete")} for k,v in fallback.items()}
+    metrics["P137_publication_pdf_preserved"]=p137_pdf
     add("ms:fallbacks","PASS" if not incomplete else "WARN","Institutional fallback facsimiles",
-        None if not incomplete else f"Incomplete fallbacks: {', '.join(incomplete)}",
-        {k:{x:v.get(x) for x in ("mirrored_or_present","failed","total_bytes","complete")} for k,v in fallback.items()})
+        None if not incomplete else f"Incomplete fallbacks: {', '.join(incomplete)}",metrics)
 else:
     add("ms:fallbacks","WARN","Institutional fallback facsimiles","Mirror workflow has not yet produced its report.")
 
 images=jsonl_count("data/normalized/manuscript-evidence/images.jsonl")
 att=jsonl_count("data/normalized/manuscript-evidence/witness-attestations.jsonl")
-add("ms:evidence","PASS" if (images or 0)>=372 and (att or 0)>=623 else "FAIL",
-    "Normalized manuscript image/passages evidence",metrics={"images":images,"witness_attestations":att})
+evidence_report=load_json("data/derived/manuscripts/csntm-evidence-mapping-report.json")
+add("ms:evidence","PASS" if (images or 0)>=645 and (att or 0)>=5800 else "FAIL",
+    "Integrated normalized manuscript evidence",
+    "Canonical evidence combines CSNTM, Bodmer, Oxford, P75 Vatican, P137 EES, Sinaiticus and IGNTP transcription attestations.",
+    {"images":images,"witness_attestations":att,"by_manuscript":(evidence_report or {}).get("by_manuscript",{})})
 
 sinrep=load_json("data/derived/manuscripts/Sinaiticus-gospel-transcription-report.json")
 add("tx:sinaiticus","PASS" if sinrep and sinrep.get("normalized_units",0)>=3745 else "FAIL",
     "Sinaiticus Gospel transcription",metrics=sinrep or {})
 
 igntp=load_json("data/derived/manuscripts/igntp-transcription-mirror-summary.json")
+igntp_norm=load_json("data/derived/manuscripts/igntp-normalization-report.json")
 if igntp:
     ok=all(x.get("complete") for x in igntp.get("items",[]))
-    add("tx:igntp","PASS" if ok else "WARN","IGNTP P52/P66/P75 raw transcriptions",
-        metrics={"items":[{"manuscript":x.get("manuscript"),"complete":x.get("complete")} for x in igntp.get("items",[])]})
+    norm_ok=igntp_norm and igntp_norm.get("total_units",0)>=1461
+    add("tx:igntp","PASS" if ok and norm_ok else "WARN","IGNTP P52/P66/P75 transcriptions",
+        "Raw scholarly TEI is preserved and a diplomatic verse-level view is regenerated from it.",
+        {"raw_items":[{"manuscript":x.get("manuscript"),"complete":x.get("complete")} for x in igntp.get("items",[])],
+         "normalized":igntp_norm or {}})
 else:
-    add("tx:igntp","WARN","IGNTP P52/P66/P75 raw transcriptions","Mirror workflow has not yet produced its report.")
+    add("tx:igntp","WARN","IGNTP P52/P66/P75 transcriptions","Mirror workflow has not yet produced its report.")
 
 checksum=load_json("data/checksums/preservation-sha256.json")
 count=len(checksum.get("files",[])) if checksum else 0
@@ -127,7 +145,7 @@ add("integrity:license-registry","PASS" if not missing_license else "WARN","Sour
     {"sources":len(source_rows),"license_entries":len(licensed)})
 
 db=load_json("data/derived/query/db-stats.json")
-add("query:db","PASS" if db and db.get("tokens")==64686 and db.get("witness_attestations",0)>=623 else "FAIL",
+add("query:db","PASS" if db and db.get("tokens")==64686 and db.get("witness_attestations",0)>=5800 and db.get("transcription_units",0)>=5200 else "FAIL",
     "Integrated reproducible SQLite query layer",metrics=db or {})
 add("query:app","PASS" if exists("app/el_relato.py") and exists(".github/workflows/test-app.yml") else "FAIL",
     "Local research interface and self-test")
@@ -139,10 +157,16 @@ if "B-003" in status_text:
 else:
     add("blocker:intf","FAIL","INTF blocker tracking missing")
 
-add("backup:procedure","PASS" if exists("backup/create_bundle.sh") and exists("backup/verify_restore.sh") else "FAIL",
-    "Git + LFS backup/restore procedure")
-add("backup:independent","WARN","Independent off-GitHub backup target not yet verified",
-    "GitHub Actions artifacts do not count as an independent backup. A second storage destination and restore test are still required.")
+backup_report=load_json("data/derived/backup/backup-test-report.json")
+add("backup:procedure","PASS" if backup_report and backup_report.get("restore_test")=="PASS" else "WARN",
+    "Git + LFS backup/restore procedure",
+    "Offline restore from Git bundle + LFS archive is tested in CI." if backup_report else "Backup scripts exist but no persisted successful restore report is present.",
+    backup_report or {})
+independent=load_json("data/derived/backup/independent-backup.json")
+add("backup:independent","PASS" if independent and independent.get("verified") else "WARN",
+    "Independent off-GitHub backup",
+    None if independent and independent.get("verified") else "A second storage destination and recorded copy are still required.",
+    independent or {})
 
 fails=sum(x["status"]=="FAIL" for x in checks)
 warnings=sum(x["status"]=="WARN" for x in checks)
