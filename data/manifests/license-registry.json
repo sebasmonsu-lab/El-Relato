@@ -103,6 +103,16 @@
       "source_id": "src:ees:p137-edition-pdf",
       "status": "declared_by_owner",
       "evidence_path": null
+    },
+    {
+      "source_id": "src:bodmer:p66-facsimile",
+      "status": "public_license",
+      "evidence_path": "sources/manuscripts/fallback-discovery/P66-bodmer/page-1.html"
+    },
+    {
+      "source_id": "src:oxford:p104-facsimile",
+      "status": "public_license",
+      "evidence_path": "data/derived/manuscripts/fallback-facsimile-mirror-summary.json"
     }
   ]
 }
