@@ -94,7 +94,7 @@ jobs:
               assert a["target_tokens"] > 0, a
               assert a["aligned_target_tokens"] > 0, a
               alignment_pages = list((root / "alignment").glob("*/*/*.html"))
-              assert alignment_pages, a
+              assert len(alignment_pages) == a["target_tokens"], (len(alignment_pages), a)
               first_slug = re.sub(r"[^A-Za-z0-9._-]+", "-", translated[0]["edition_id"]).strip("-").lower()
               scene1 = (root / "editions" / first_slug / "scene/1.html").read_text()
               assert "trans-token" in scene1, "scene 1 has no clickable translated tokens"
