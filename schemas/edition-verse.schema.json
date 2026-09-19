@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://el-relato.local/schemas/edition-verse.schema.json",
+  "title": "EditionVerse",
+  "type": "object",
+  "required": [
+    "id",
+    "edition_id",
+    "passage_id",
+    "book",
+    "chapter",
+    "verse",
+    "text",
+    "token_count"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^edition-verse:"
+    },
+    "edition_id": {
+      "type": "string",
+      "pattern": "^edition:"
+    },
+    "passage_id": {
+      "type": "string",
+      "pattern": "^passage:"
+    },
+    "book": {
+      "enum": [
+        "Matthew",
+        "Mark",
+        "Luke",
+        "John"
+      ]
+    },
+    "chapter": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "verse": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "text": {
+      "type": "string"
+    },
+    "token_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "source_ref": {
+      "type": "string",
+      "pattern": "^src:"
+    }
+  },
+  "additionalProperties": false
+}
