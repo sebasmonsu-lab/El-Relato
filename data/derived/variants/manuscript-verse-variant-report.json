@@ -1,0 +1,16 @@
+{
+  "transcription_units_loaded": 5206,
+  "passages_with_two_or_more_witnesses": 857,
+  "comparable_passages_after_lacuna_filter": 790,
+  "identical_comparable_passages": 13,
+  "variant_units": 777,
+  "transcription_units_excluded_for_lacuna_in_overlap": 114,
+  "variant_pairs": {
+    "ms:ga:01|ms:ga:p66": 715,
+    "ms:ga:01|ms:ga:p75": 604,
+    "ms:ga:p66|ms:ga:p75": 493,
+    "ms:ga:01|ms:ga:p52": 1
+  },
+  "granularity": "verse-level",
+  "exhaustive": false
+}
