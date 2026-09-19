@@ -1,0 +1,115 @@
+{
+  "project": "El-Relato",
+  "captured": "2026-09-19",
+  "witnesses": [
+    {
+      "id": "P4",
+      "ga": "𝔓4",
+      "gospels": [
+        "Luke"
+      ],
+      "century": "III",
+      "primary_url": "https://manuscripts.csntm.org/manuscript/View/GA_P4",
+      "institution": "Bibliothèque nationale de France / CSNTM access",
+      "status": "source_registered"
+    },
+    {
+      "id": "P45",
+      "ga": "𝔓45",
+      "gospels": [
+        "Matthew",
+        "Mark",
+        "Luke",
+        "John"
+      ],
+      "century": "III",
+      "primary_url": "https://manuscripts.csntm.org/manuscript/View/GA_P45",
+      "institution": "Chester Beatty / CSNTM access",
+      "status": "source_registered"
+    },
+    {
+      "id": "P52",
+      "ga": "𝔓52",
+      "gospels": [
+        "John"
+      ],
+      "century": "II",
+      "primary_url": "https://manuscripts.csntm.org/manuscript/View/GA_P52",
+      "institution": "John Rylands Library / University of Manchester",
+      "status": "source_registered"
+    },
+    {
+      "id": "P66",
+      "ga": "𝔓66",
+      "gospels": [
+        "John"
+      ],
+      "century": "II–III",
+      "primary_url": "https://manuscripts.csntm.org/Manuscript/Group/GA_P66_Bodmer",
+      "institution": "Fondation Martin Bodmer / CSNTM access",
+      "status": "source_registered"
+    },
+    {
+      "id": "P75",
+      "ga": "𝔓75",
+      "gospels": [
+        "Luke",
+        "John"
+      ],
+      "century": "III",
+      "primary_url": "https://manuscripts.csntm.org/manuscript/View/GA_P75",
+      "institution": "Biblioteca Apostolica Vaticana / CSNTM access",
+      "status": "source_registered"
+    },
+    {
+      "id": "P104",
+      "ga": "𝔓104",
+      "gospels": [
+        "Matthew"
+      ],
+      "century": "II",
+      "primary_url": "https://manuscripts.csntm.org/manuscript/View/GA_P104",
+      "institution": "Sackler Library, Oxford / CSNTM access",
+      "status": "source_registered"
+    },
+    {
+      "id": "P137",
+      "ga": "𝔓137",
+      "gospels": [
+        "Mark"
+      ],
+      "century": "II–III",
+      "primary_url": "https://www.ees.ac.uk/resource/p-oxy-lxxxiii-5345.html",
+      "institution": "Egypt Exploration Society / Oxyrhynchus Papyri",
+      "status": "source_registered"
+    },
+    {
+      "id": "Sinaiticus",
+      "ga": "ℵ / 01",
+      "gospels": [
+        "Matthew",
+        "Mark",
+        "Luke",
+        "John"
+      ],
+      "century": "IV",
+      "primary_url": "https://codexsinaiticus.org/",
+      "institution": "Codex Sinaiticus Project",
+      "status": "source_registered"
+    },
+    {
+      "id": "Vaticanus",
+      "ga": "B / 03",
+      "gospels": [
+        "Matthew",
+        "Mark",
+        "Luke",
+        "John"
+      ],
+      "century": "IV",
+      "primary_url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209",
+      "institution": "Biblioteca Apostolica Vaticana",
+      "status": "source_registered"
+    }
+  ]
+}
