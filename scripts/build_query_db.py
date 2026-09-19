@@ -159,15 +159,16 @@ def main():
       id TEXT PRIMARY KEY,
       manuscript_id TEXT NOT NULL,
       source_id TEXT,
-      image_name TEXT,
+      folio TEXT,
+      page_label TEXT,
+      side TEXT,
       local_path TEXT,
       upstream_url TEXT,
       sha256 TEXT,
-      size INTEGER,
-      book TEXT,
-      chapter INTEGER,
-      verse_start INTEGER,
-      verse_end INTEGER,
+      mime_type TEXT,
+      width INTEGER,
+      height INTEGER,
+      notes TEXT,
       metadata_json TEXT
     );
 
@@ -259,11 +260,12 @@ def main():
          x["local_path"],x.get("width"),x.get("height"),x.get("sha256"),x.get("size"),x.get("status"))
         for x in facsimiles
     ])
-    con.executemany("INSERT INTO manuscript_images VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)",[
+    con.executemany("INSERT INTO manuscript_images VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)",[
         (
-          x["id"],x["manuscript_id"],x.get("source_id"),x.get("image_name"),
-          x.get("local_path"),x.get("upstream_url"),x.get("sha256"),x.get("size"),
-          x.get("book"),x.get("chapter"),x.get("verse_start"),x.get("verse_end"),j(x)
+          x["id"],x["manuscript_id"],x.get("source_id"),x.get("folio"),
+          x.get("page_label"),x.get("side"),x.get("local_path"),x.get("upstream_url"),
+          x.get("sha256"),x.get("mime_type"),x.get("width"),x.get("height"),
+          x.get("notes"),j(x)
         )
         for x in manuscript_images
     ])
@@ -274,14 +276,22 @@ def main():
         )
         for x in witness_attestations
     ])
-    con.executemany("INSERT INTO transcriptions VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)",[
-        (
-          x["id"],x["manuscript_id"],x.get("source_id"),x.get("book"),x.get("chapter"),x.get("verse"),
-          j(x.get("passage_ids")),x.get("image_id"),x.get("layer"),x.get("format"),x.get("text"),
+    transcription_rows=[]
+    for x in sinaiticus_transcriptions:
+        book=chapter=verse=None
+        pids=x.get("passage_ids") or []
+        if pids:
+            parts=pids[0].split(":")
+            if len(parts)>=4:
+                book=parts[1].capitalize()
+                chapter=int(parts[2])
+                verse=int(parts[3])
+        transcription_rows.append((
+          x["id"],x["manuscript_id"],x.get("source_id"),book,chapter,verse,
+          j(pids),x.get("image_id"),x.get("layer"),x.get("format"),x.get("text"),
           x.get("local_path"),x.get("notes")
-        )
-        for x in sinaiticus_transcriptions
-    ])
+        ))
+    con.executemany("INSERT INTO transcriptions VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)",transcription_rows)
 
     con.executemany("INSERT INTO sources VALUES (?,?,?,?,?,?,?,?,?,?)",[
         (x["id"],x["title"],x["category"],x.get("institution"),x["upstream_url"],x.get("external_id"),
@@ -299,7 +309,7 @@ def main():
     CREATE INDEX idx_strong_ext_d ON strong_extended(d_strong_id);
     CREATE INDEX idx_strong_orig_id ON strong_original(strong_id);
     CREATE INDEX idx_ms_images_ms ON manuscript_images(manuscript_id);
-    CREATE INDEX idx_ms_images_ref ON manuscript_images(book,chapter,verse_start,verse_end);
+    CREATE INDEX idx_ms_images_label ON manuscript_images(manuscript_id,page_label);
     CREATE INDEX idx_attest_passage ON witness_attestations(passage_id);
     CREATE INDEX idx_attest_ms ON witness_attestations(manuscript_id);
     CREATE INDEX idx_tx_ref ON transcriptions(book,chapter,verse);
@@ -318,6 +328,11 @@ def main():
              m.primary_source
       FROM witness_attestations a
       LEFT JOIN manuscripts m ON m.id=a.manuscript_id;
+
+    CREATE VIEW verse_transcriptions AS
+      SELECT book,chapter,verse,manuscript_id,text,layer,source_id,id AS transcription_id
+      FROM transcriptions
+      WHERE book IS NOT NULL AND chapter IS NOT NULL AND verse IS NOT NULL;
     """)
     con.commit()
 
