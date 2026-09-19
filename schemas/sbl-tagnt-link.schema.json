@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://el-relato.local/schemas/sbl-tagnt-link.schema.json",
+  "title": "SBLGNTTokenTAGNTLink",
+  "type": "object",
+  "required": [
+    "id",
+    "token_id",
+    "tagnt_row_id",
+    "book",
+    "chapter",
+    "verse",
+    "token_position",
+    "surface_sbl",
+    "surface_tagnt",
+    "match_method",
+    "strongs",
+    "morphology_code",
+    "lemma",
+    "tbesg_entry_ids",
+    "strong_original_id"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^link:sbl-tagnt:"
+    },
+    "token_id": {
+      "type": "string",
+      "pattern": "^token:sblgnt:"
+    },
+    "tagnt_row_id": {
+      "type": "string",
+      "pattern": "^tagnt:"
+    },
+    "book": {
+      "enum": [
+        "Matthew",
+        "Mark",
+        "Luke",
+        "John"
+      ]
+    },
+    "chapter": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "verse": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "token_position": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "surface_sbl": {
+      "type": "string",
+      "minLength": 1
+    },
+    "surface_tagnt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "match_method": {
+      "enum": [
+        "normalized-exact",
+        "positional-replace"
+      ]
+    },
+    "normalized_equal": {
+      "type": "boolean"
+    },
+    "strongs": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "morphology_code": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "morphology_known": {
+      "type": "boolean"
+    },
+    "lemma": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gloss": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "spanish_translation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sub_meaning": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "editions": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tbesg_entry_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^strong-entry:"
+      },
+      "uniqueItems": true
+    },
+    "strong_original_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^strong-original:G[0-9]{4}$"
+    }
+  },
+  "additionalProperties": false
+}
