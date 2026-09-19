@@ -1,0 +1,70 @@
+name: Mirror CSNTM core papyrus facsimiles
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+on:
+  push:
+    paths:
+      - "scripts/mirror_csntm_images.py"
+      - ".github/workflows/mirror-csntm-core.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          lfs: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Setup
+        run: |
+          python -m pip install --disable-pip-version-check requests
+          git lfs install
+          git config user.name "El-Relato Bot"
+          git config user.email "el-relato-bot@users.noreply.github.com"
+      - name: Mirror manuscripts independently
+        shell: bash
+        run: |
+          for ms in P4 P45 P52 P66 P104; do
+            echo "=== $ms ==="
+            python scripts/mirror_csntm_images.py --manuscript "$ms" || true
+            git add "sources/manuscripts/$ms/images" "data/manifests/facsimiles/$ms" || true
+            if ! git diff --cached --quiet; then
+              git commit -m "Mirror $ms CSNTM facsimiles"
+              bash scripts/push_generated_commit.sh
+            fi
+          done
+      - name: Summarize without hiding partial failures
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          rows=[]
+          for ms in ["P4","P45","P52","P66","P104"]:
+              p=Path(f"data/manifests/facsimiles/{ms}/csntm-mirror.json")
+              if p.exists():
+                  x=json.loads(p.read_text())
+                  rows.append({k:x[k] for k in ["manuscript","listed_images","mirrored_or_present","failed","total_bytes","complete"]})
+              else:
+                  rows.append({"manuscript":ms,"complete":False,"error":"manifest missing"})
+          out=Path("data/derived/manuscripts/csntm-core-mirror-summary.json")
+          out.parent.mkdir(parents=True,exist_ok=True)
+          out.write_text(json.dumps({"manuscripts":rows},indent=2)+"\n")
+          print(json.dumps(rows,indent=2))
+          PY
+          git add data/derived/manuscripts/csntm-core-mirror-summary.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Audit CSNTM core papyrus mirrors"
+            bash scripts/push_generated_commit.sh
+          fi
