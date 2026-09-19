@@ -24,6 +24,7 @@ def j(value):
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument("--output",default="build/el-relato.sqlite")
+    ap.add_argument("--stats-output",default=None)
     args=ap.parse_args()
     out=ROOT/args.output
     out.parent.mkdir(parents=True,exist_ok=True)
@@ -351,6 +352,10 @@ def main():
         "database_bytes":out.stat().st_size,
     }
     con.close()
+    if args.stats_output:
+        stats_path=ROOT/args.stats_output
+        stats_path.parent.mkdir(parents=True,exist_ok=True)
+        stats_path.write_text(json.dumps(stats,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(json.dumps(stats,ensure_ascii=False,indent=2))
 
 
