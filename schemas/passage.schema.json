@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://el-relato.local/schemas/passage.schema.json",
+  "title": "Passage",
+  "type": "object",
+  "required": [
+    "id",
+    "book",
+    "chapter",
+    "verse_start",
+    "verse_end"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^passage:"
+    },
+    "book": {
+      "enum": [
+        "Matthew",
+        "Mark",
+        "Luke",
+        "John"
+      ]
+    },
+    "chapter": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "verse_start": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "verse_end": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "osis_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
