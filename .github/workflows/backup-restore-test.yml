@@ -1,0 +1,42 @@
+name: Backup and restore test
+
+on:
+  push:
+    paths:
+      - "backup/**"
+      - "scripts/validate_repo.py"
+      - "scripts/build_query_db.py"
+      - "app/**"
+      - ".github/workflows/backup-restore-test.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Create complete Git bundle
+        run: bash backup/create_bundle.sh
+      - name: Verify restoration from bundle only
+        run: bash backup/verify_restore.sh build/backups/el-relato.bundle
+      - name: Upload tested bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: el-relato-tested-git-bundle
+          path: |
+            build/backups/el-relato.bundle
+            build/backups/el-relato.bundle.sha256
+            build/backups/backup-metadata.json
+          retention-days: 7
+          compression-level: 0
