@@ -1,12 +1,12 @@
 # El-Relato — Audit Report
 
-Generated: 2026-09-19T05:09:30+00:00
+Generated: 2026-09-19T05:13:20+00:00
 
-**Overall: PASS_WITH_BLOCKERS**
+**Overall: FAIL**
 
-- PASS: 21
+- PASS: 20
 - WARN / BLOCKED: 5
-- FAIL: 0
+- FAIL: 1
 
 ## Checks
 
@@ -168,29 +168,20 @@ These are not silently imputed; see data/derived/alignment/sbl-tagnt-unmatched.j
 }
 ~~~
 
-### ⚠️ ms:csntm-core — CSNTM core papyrus mirror
-Source-specific CSNTM gaps are tracked; institutional fallbacks may supersede them.
+### ⚠️ ms:csntm-core — Core papyrus facsimile preservation
+P66/P104 source-specific CSNTM gaps are superseded by complete institutional fallbacks. P45 composite renderings remain a source-specific gap while component images are preserved.
 ~~~json
 {
-  "incomplete": [
+  "unresolved_source_specific": [
     {
       "manuscript": "P45",
-      "failed": 2
-    },
-    {
-      "manuscript": "P66",
-      "failed": 17
-    },
-    {
-      "manuscript": "P104",
       "failed": 2
     }
   ]
 }
 ~~~
 
-### ⚠️ ms:fallbacks — Institutional fallback facsimiles
-Incomplete fallbacks: P137
+### ✅ ms:fallbacks — Institutional fallback facsimiles
 ~~~json
 {
   "P66": {
@@ -210,15 +201,73 @@ Incomplete fallbacks: P137
     "failed": 1,
     "total_bytes": 0,
     "complete": false
-  }
+  },
+  "P137_publication_pdf_preserved": true
 }
 ~~~
 
-### ✅ ms:evidence — Normalized manuscript image/passages evidence
+### ✅ ms:evidence — Integrated normalized manuscript evidence
+Canonical evidence combines CSNTM, Bodmer, Oxford, P75 Vatican, P137 EES, Sinaiticus and IGNTP transcription attestations.
 ~~~json
 {
-  "images": 372,
-  "witness_attestations": 623
+  "images": 645,
+  "witness_attestations": 5834,
+  "by_manuscript": {
+    "p4": {
+      "images": 10,
+      "attestations": 94,
+      "attestations_with_images": 94,
+      "attestations_with_transcriptions": 0
+    },
+    "p45": {
+      "images": 215,
+      "attestations": 521,
+      "attestations_with_images": 521,
+      "attestations_with_transcriptions": 0
+    },
+    "p52": {
+      "images": 2,
+      "attestations": 5,
+      "attestations_with_images": 5,
+      "attestations_with_transcriptions": 5
+    },
+    "p66": {
+      "images": 308,
+      "attestations": 830,
+      "attestations_with_images": 3,
+      "attestations_with_transcriptions": 830
+    },
+    "p75": {
+      "images": 108,
+      "attestations": 626,
+      "attestations_with_images": 0,
+      "attestations_with_transcriptions": 626
+    },
+    "p104": {
+      "images": 2,
+      "attestations": 7,
+      "attestations_with_images": 7,
+      "attestations_with_transcriptions": 0
+    },
+    "p137": {
+      "images": 0,
+      "attestations": 6,
+      "attestations_with_images": 0,
+      "attestations_with_transcriptions": 0
+    },
+    "01": {
+      "images": 0,
+      "attestations": 3745,
+      "attestations_with_images": 0,
+      "attestations_with_transcriptions": 3745
+    },
+    "03": {
+      "images": 0,
+      "attestations": 0,
+      "attestations_with_images": 0,
+      "attestations_with_transcriptions": 0
+    }
+  }
 }
 ~~~
 
@@ -265,10 +314,11 @@ Incomplete fallbacks: P137
 }
 ~~~
 
-### ✅ tx:igntp — IGNTP P52/P66/P75 raw transcriptions
+### ✅ tx:igntp — IGNTP P52/P66/P75 transcriptions
+Raw scholarly TEI is preserved and a diplomatic verse-level view is regenerated from it.
 ~~~json
 {
-  "items": [
+  "raw_items": [
     {
       "manuscript": "P52",
       "complete": true
@@ -281,7 +331,42 @@ Incomplete fallbacks: P137
       "manuscript": "P75",
       "complete": true
     }
-  ]
+  ],
+  "normalized": {
+    "manuscripts": {
+      "P52": {
+        "normalized_units": 5,
+        "features": {
+          "gap": 8,
+          "supplied": 71,
+          "unclear": 12,
+          "apparatus": 0,
+          "nomina_sacra": 2
+        }
+      },
+      "P66": {
+        "normalized_units": 830,
+        "features": {
+          "gap": 179,
+          "supplied": 2515,
+          "unclear": 1108,
+          "apparatus": 440,
+          "nomina_sacra": 557
+        }
+      },
+      "P75": {
+        "normalized_units": 626,
+        "features": {
+          "gap": 20,
+          "supplied": 2637,
+          "unclear": 2147,
+          "apparatus": 51,
+          "nomina_sacra": 345
+        }
+      }
+    },
+    "total_units": 1461
+  }
 }
 ~~~
 
@@ -301,7 +386,7 @@ Incomplete fallbacks: P137
 }
 ~~~
 
-### ✅ query:db — Integrated reproducible SQLite query layer
+### ❌ query:db — Integrated reproducible SQLite query layer
 ~~~json
 {
   "tokens": 64686,
@@ -324,7 +409,8 @@ Incomplete fallbacks: P137
 ### ⚠️ blocker:intf — INTF/NTVMR exhaustive catalogue harvest remains blocked
 The nucleus is preserved, but the declared exhaustive scope (all Gospel papyri + majuscules through s. V) is not yet certified complete.
 
-### ✅ backup:procedure — Git + LFS backup/restore procedure
+### ⚠️ backup:procedure — Git + LFS backup/restore procedure
+Backup scripts exist but no persisted successful restore report is present.
 
-### ⚠️ backup:independent — Independent off-GitHub backup target not yet verified
-GitHub Actions artifacts do not count as an independent backup. A second storage destination and restore test are still required.
+### ⚠️ backup:independent — Independent off-GitHub backup
+A second storage destination and recorded copy are still required.
