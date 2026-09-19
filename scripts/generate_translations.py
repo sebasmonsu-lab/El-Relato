@@ -103,17 +103,21 @@ def call_model(token: str, models: list[str], target, kind: str, batch):
     )
     last = None
     for model in models:
-        for attempt in range(3):
+        for attempt in range(2):
             env = os.environ.copy()
             env["GITHUB_TOKEN"] = token
             try:
+                cmd = ["copilot", "-s", "--no-ask-user"]
+                if model != "auto":
+                    cmd += ["--model", model]
+                cmd += ["-p", prompt]
                 p = subprocess.run(
-                    ["copilot", "-s", "--no-ask-user", "--model", model, "-p", prompt],
-                    cwd=ROOT, env=env, text=True, capture_output=True, timeout=180,
+                    cmd,
+                    cwd=ROOT, env=env, text=True, capture_output=True, timeout=90,
                 )
             except subprocess.TimeoutExpired as e:
                 last = f"timeout model={model}: {e}"
-                continue
+                break
             if p.returncode != 0:
                 raw = (p.stderr or p.stdout or "")[-3000:]
                 last = f"copilot rc={p.returncode} model={model}: {raw}"
@@ -121,12 +125,12 @@ def call_model(token: str, models: list[str], target, kind: str, batch):
                 if any(x in low for x in ("not available", "unsupported model", "unknown model", "model_not_available")):
                     break
                 if any(x in low for x in ("rate limit", "too many requests", "credit", "quota")):
-                    if attempt < 2:
-                        time.sleep(20 * (attempt + 1))
+                    if attempt < 1:
+                        time.sleep(20)
                         continue
                     break
-                if attempt < 2:
-                    time.sleep(5 * (attempt + 1))
+                if attempt < 1:
+                    time.sleep(5)
                     continue
                 break
             try:
@@ -144,7 +148,7 @@ def call_model(token: str, models: list[str], target, kind: str, batch):
                 return mapped, model
             except (json.JSONDecodeError, KeyError, ModelError) as e:
                 last = f"parse model={model}: {e}; stdout_tail={p.stdout[-2000:]}"
-                if attempt < 2:
+                if attempt < 1:
                     time.sleep(3)
                     continue
                 break
@@ -255,7 +259,7 @@ def main():
     a=ap.parse_args(); target=TARGETS[a.locale]
     token=os.environ.get("GITHUB_TOKEN")
     if not token: raise SystemExit("GITHUB_TOKEN required")
-    models=[x.strip() for x in os.environ.get("TRANSLATION_MODELS","auto").split(",") if x.strip()]
+    models=[x.strip() for x in os.environ.get("TRANSLATION_MODELS","claude-haiku-4.5,auto").split(",") if x.strip()]
 
     bsrc=book_source_rows(); ssrc=source_rows(); b_by={x["unit_id"]:x for x in bsrc}; s_by={x["id"]:x for x in ssrc}
     bhave=existing_book(target); shave=existing_source(target)
@@ -268,7 +272,7 @@ def main():
     for x in ssrc:
         if x["id"] not in shave: sgdict[(x["book"],x["chapter"])].append(x)
     sgroups=[sgdict[k] for k in sorted(sgdict,key=lambda k:(order[k[0]],k[1]))]
-    batches=[("book",x) for x in pack(bgroups,5000)] + [("source",x) for x in pack(sgroups,5000)]
+    batches=[("book",x) for x in bgroups] + [("source",x) for x in sgroups]
     calls=0; model_used=None; blocked=None
     for kind,batch in batches:
         if calls>=a.max_calls: break
