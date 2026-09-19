@@ -1,0 +1,17 @@
+{
+  "edition": "edition:sblgnt:2010",
+  "verses": 3768,
+  "tokens": 64686,
+  "verses_by_book": {
+    "Matthew": 1068,
+    "Mark": 673,
+    "Luke": 1149,
+    "John": 878
+  },
+  "tokens_by_book": {
+    "Matthew": 18329,
+    "Mark": 11286,
+    "Luke": 19446,
+    "John": 15625
+  }
+}
