@@ -1,4 +1,4 @@
-name: Build El Relato Book DB
+name: Build El Relato Book DB\n# Produces canonical SQLite plus inspectable JSONL exports.
 
 on:
   push:
