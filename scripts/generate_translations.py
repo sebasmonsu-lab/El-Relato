@@ -166,6 +166,18 @@ def pack(groups, max_chars=15000):
     if cur: batches.append(cur)
     return batches
 
+def micro_batches(groups, max_chars=1800):
+    out=[]
+    for group in groups:
+        cur=[]; n=0
+        for x in group:
+            xn=len(str(x.get("text") or ""))+len(str(x.get("reference_raw") or ""))+100
+            if cur and n+xn>max_chars:
+                out.append(cur); cur=[]; n=0
+            cur.append(x); n+=xn
+        if cur: out.append(cur)
+    return out
+
 def book_source_rows():
     c=ro(BOOK_DB)
     rows=[dict(r) for r in c.execute("""
@@ -259,7 +271,7 @@ def main():
     a=ap.parse_args(); target=TARGETS[a.locale]
     token=os.environ.get("GITHUB_TOKEN")
     if not token: raise SystemExit("GITHUB_TOKEN required")
-    models=[x.strip() for x in os.environ.get("TRANSLATION_MODELS","claude-haiku-4.5,auto").split(",") if x.strip()]
+    models=[x.strip() for x in os.environ.get("TRANSLATION_MODELS","auto").split(",") if x.strip()]
 
     bsrc=book_source_rows(); ssrc=source_rows(); b_by={x["unit_id"]:x for x in bsrc}; s_by={x["id"]:x for x in ssrc}
     bhave=existing_book(target); shave=existing_source(target)
@@ -272,7 +284,7 @@ def main():
     for x in ssrc:
         if x["id"] not in shave: sgdict[(x["book"],x["chapter"])].append(x)
     sgroups=[sgdict[k] for k in sorted(sgdict,key=lambda k:(order[k[0]],k[1]))]
-    batches=[("book",x) for x in bgroups] + [("source",x) for x in sgroups]
+    batches=[("book",x) for x in micro_batches(bgroups,1800)] + [("source",x) for x in micro_batches(sgroups,1800)]
     calls=0; model_used=None; blocked=None
     for kind,batch in batches:
         if calls>=a.max_calls: break
