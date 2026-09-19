@@ -1,0 +1,19 @@
+{
+  "sbl_tokens": 64686,
+  "tagnt_rows_total": 66926,
+  "tagnt_rows_marked_sbl": 64234,
+  "linked_tokens": 64199,
+  "coverage": 0.9924713230065239,
+  "unmatched_tokens": 487,
+  "methods": {
+    "normalized-exact": 63559,
+    "positional-replace": 640
+  },
+  "normalized_exact_links": 63559,
+  "positional_replace_links": 640,
+  "links_with_unknown_morphology_code": 124,
+  "links_with_strong_but_no_tbesg_entry": 0,
+  "links_with_strong_original": 64157,
+  "verses_total": 3768,
+  "verses_with_exact_sequence": 3075
+}
