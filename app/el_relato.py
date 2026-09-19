@@ -192,18 +192,22 @@ def render_passage(payload):
 
 def render_strong(payload):
     occ="".join(
-      f"<tr><td>{html.escape(x['book'])} {x['chapter']}:{x['verse']}</td><td class='greek'>{html.escape(x['surface'])}</td>"
+      f"<tr><td><a href='/passage?ref={urllib.parse.quote(str(x['book'])+' '+str(x['chapter'])+':'+str(x['verse']))}'>{html.escape(x['book'])} {x['chapter']}:{x['verse']}</a></td><td class='greek'>{html.escape(x['surface'])}</td>"
       f"<td class='greek'>{html.escape(x.get('lemma') or '')}</td><td>{html.escape(x.get('morphology_code') or '')}</td>"
       f"<td>{html.escape(x.get('gloss') or '')}</td></tr>"
       for x in payload["occurrences"]
     )
     original=payload["original"][0] if payload["original"] else {}
     definition=html.escape(original.get("strongs_definition") or "")
+    short=html.escape(brief_definition(original))
+    translit=html.escape(original.get("transliteration") or original.get("translit") or "")
     return page(payload["strong"],f"""
       <h1>{html.escape(payload['strong'])}</h1>
-      <div class="card"><b>Strong histórico:</b> <span class="greek">{html.escape(original.get('lemma') or '')}</span>
-      — {definition}</div>
-      <p>{len(payload['occurrences'])} ocurrencias enlazadas en los cuatro Evangelios.</p>
+      <div class="card"><div class="lexeme greek"><b>{html.escape(original.get('lemma') or (payload['occurrences'][0].get('lemma') if payload['occurrences'] else ''))}</b></div>
+      <div class="muted">{translit}</div><p class="summary"><b>Definición breve:</b> {short}</p>
+      <details><summary>Ver definición léxica completa</summary><p>{definition}</p></details></div>
+      <h2>Todas las apariciones en los cuatro Evangelios</h2>
+      <p><b>{len(payload['occurrences'])}</b> ocurrencias enlazadas. Cada referencia abre el versículo y su análisis palabra por palabra.</p>
       <div class="card"><table><thead><tr><th>Pasaje</th><th>Forma</th><th>Lema</th><th>Morf.</th><th>Glosa</th></tr></thead><tbody>{occ}</tbody></table></div>
       <p><a href="/">← Inicio</a></p>
     """)
@@ -256,6 +260,9 @@ def self_test(db):
     assert any(x["manuscript_id"]=="ms:ga:p52" for x in p52["evidence"])
     st=strong_payload(con,"G0746")
     assert st["occurrences"]
+    assert "/strong?id=" in render_passage(p)
+    strong_page=render_strong(st)
+    assert "Todas las apariciones" in strong_page and "/passage?ref=" in strong_page
     con.close()
     print("EL-RELATO APP SELF-TEST OK")
 
