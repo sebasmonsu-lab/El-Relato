@@ -1,0 +1,1964 @@
+{
+  "manuscript": "P45",
+  "source": "CSNTM",
+  "listed_images": 217,
+  "mirrored_or_present": 215,
+  "failed": 2,
+  "total_bytes": 491176070,
+  "complete": false,
+  "files": [
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002a_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002a_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_001-002a_k.jpg",
+      "status": "mirrored",
+      "size": 2599047,
+      "sha256": "46cd61d7f82c1e0da9db867aa39aec919eb54dc4dda70fb6b3cf09ec4b5e3917",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002a_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002a_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_001-002a_k1.jpg",
+      "status": "mirrored",
+      "size": 2416388,
+      "sha256": "e388c3359c61002a5bd34c6846025b6c63170f4c38df7f0223baea73ac6c4c93",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002a_k2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002a_k2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_001-002a_k2.jpg",
+      "status": "mirrored",
+      "size": 2744446,
+      "sha256": "0da7fe66c7548a15f2b23056d2f57cd6a6f9667917f3de68ad48641d1de73bde",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002a_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002a_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_001-002a_w.jpg",
+      "status": "mirrored",
+      "size": 1703464,
+      "sha256": "fc4cc93c730bed81ba423a4380c1625cbf017463da9d2c74f6ad89f4cf38776d",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002a_w1-2.jpg",
+      "url": null,
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_001-002a_w1-2.jpg",
+      "status": "failed",
+      "size": null,
+      "sha256": null,
+      "error": "RuntimeError: too small: 0"
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002a_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002a_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_001-002a_w1.jpg",
+      "status": "mirrored",
+      "size": 1531490,
+      "sha256": "10707e8801026f865bcdae46f9be91e126653a8ef19ce1ad19cec790a4365355",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002a_w2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002a_w2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_001-002a_w2.jpg",
+      "status": "mirrored",
+      "size": 1538295,
+      "sha256": "de6c8f254b11d85edc356e1789a2da003b0a2387482869ca19e1f6a171c4ebaa",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002b_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002b_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_001-002b_k.jpg",
+      "status": "mirrored",
+      "size": 2411994,
+      "sha256": "4f148bf0ec0526d9cadc18ef31247abae3c461a388eac270cc84482149e1280b",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002b_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002b_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_001-002b_k1.jpg",
+      "status": "mirrored",
+      "size": 2729222,
+      "sha256": "5c7170089d79b9e17b1c680343f9ae0f636c04392f9cc31c375acc9782199a36",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002b_k2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002b_k2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_001-002b_k2.jpg",
+      "status": "mirrored",
+      "size": 2764522,
+      "sha256": "7e2c7310ac2af1838b0aaaabf96bbd5197c926f801408dcfba45f3705cba4310",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002b_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002b_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_001-002b_w.jpg",
+      "status": "mirrored",
+      "size": 1694325,
+      "sha256": "7b9fa5c69fae7adc3405d70c5fc1d9774983b1641d294c81b8dff742d3cce029",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002b_w1-2.jpg",
+      "url": null,
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_001-002b_w1-2.jpg",
+      "status": "failed",
+      "size": null,
+      "sha256": null,
+      "error": "RuntimeError: too small: 0"
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002b_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002b_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_001-002b_w1.jpg",
+      "status": "mirrored",
+      "size": 1556051,
+      "sha256": "eb90c70c20406fcb7cfbfbab9e26f6ab04c7fa455006f86fc5a7bd3d491ba78c",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002b_w2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_001-002b_w2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_001-002b_w2.jpg",
+      "status": "mirrored",
+      "size": 1551678,
+      "sha256": "7a1bb9f15478d4a253d3ceabff76597d895b88e600cc8b803cd3a5f7a1c2240e",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_003-004a_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_003-004a_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_003-004a_k.jpg",
+      "status": "mirrored",
+      "size": 2424744,
+      "sha256": "0c0437a99c75619fe0806a60d441f8079c94e9c43ab655a0d6767931d33660ad",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_003-004a_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_003-004a_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_003-004a_k1.jpg",
+      "status": "mirrored",
+      "size": 2917980,
+      "sha256": "2cdc017b85e88825e3c897f85a48f3f31db5a3d0115fd2df4a386c0648e04855",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_003-004a_k2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_003-004a_k2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_003-004a_k2.jpg",
+      "status": "mirrored",
+      "size": 2802046,
+      "sha256": "c858f67afaf95f10ad1a4889d1337deda020bdebc42bcdfb12747ad21e72a496",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_003-004a_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_003-004a_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_003-004a_w.jpg",
+      "status": "mirrored",
+      "size": 1708500,
+      "sha256": "e1f7d06a1eac38191e97b23428948cff77b7a96a3f699815f992529b3f7e527f",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_003-004b_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_003-004b_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_003-004b_k.jpg",
+      "status": "mirrored",
+      "size": 2605931,
+      "sha256": "e06a112cf781ecd994fdbb7a15fdc6ec898548d75858759513d5a940f46711fd",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_003-004b_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_003-004b_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_003-004b_k1.jpg",
+      "status": "mirrored",
+      "size": 2859840,
+      "sha256": "eaa25140a4a455665808e7195f4466231427c809c00ad1c3d892fad49b08bccd",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_003-004b_k2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_003-004b_k2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_003-004b_k2.jpg",
+      "status": "mirrored",
+      "size": 2955177,
+      "sha256": "632fc8958b873bd43335f02500ff8aa67c64bcb7d93a728063910c941575ee78",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_003-004b_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_003-004b_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_003-004b_w.jpg",
+      "status": "mirrored",
+      "size": 1760894,
+      "sha256": "310c9e9e3e81a209b13120a0d781a3ecc21d9e615b7f0aa44b70c44bcc385b69",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_003a_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_003a_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_003a_w1.jpg",
+      "status": "mirrored",
+      "size": 1572283,
+      "sha256": "3f7f8d168b6f4554f765c55a5a2cef8e456d68a6ec0ee08992d0425ae62dba1d",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_003b_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_003b_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_003b_w1.jpg",
+      "status": "mirrored",
+      "size": 1534692,
+      "sha256": "f9a633feee8f06de715a32a5db4fe1bc8883971a3ef5ad18ef0c31e951aade37",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_004a_w2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_004a_w2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_004a_w2.jpg",
+      "status": "mirrored",
+      "size": 1720135,
+      "sha256": "e134e600ec1e2c0668cd0e166a50328b0a2c8999c91c6f4b39874faceb3e9beb",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_004b_w2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_004b_w2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_004b_w2.jpg",
+      "status": "mirrored",
+      "size": 1789760,
+      "sha256": "b74b3003fad790b2e9be660c9e2a7a0a25354ea253fdd66de62a1599c233ba85",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_005a_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_005a_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_005a_k.jpg",
+      "status": "mirrored",
+      "size": 2237846,
+      "sha256": "e8c709b414ab5edc1ecfaf4056f6814bc6c80f73e7a577deafdb3cd0779b170a",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_005a_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_005a_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_005a_k1.jpg",
+      "status": "mirrored",
+      "size": 2802260,
+      "sha256": "fe9c75d22f1a55e842881f8dd003ce8e063f4883d82036f6498aa8a4b36780c1",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_005a_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_005a_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_005a_w.jpg",
+      "status": "mirrored",
+      "size": 1874460,
+      "sha256": "ea1b76478c4381d1261650cccaed97f2565164e7ea5d95a5516bc5de5d90f660",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_005a_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_005a_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_005a_w1.jpg",
+      "status": "mirrored",
+      "size": 2334739,
+      "sha256": "559b36d9c04a0727ea14032c21005ea4db7a8f6d980ebd73fcf7d1b3358dc354",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_005b_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_005b_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_005b_k.jpg",
+      "status": "mirrored",
+      "size": 2443951,
+      "sha256": "ff768b1ed3790845642ebd6f3447e3add07f3df02253b1d42db920d5174d1546",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_005b_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_005b_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_005b_k1.jpg",
+      "status": "mirrored",
+      "size": 2726573,
+      "sha256": "0f0366fe254b9f70dea9d6bfeca539d7155ee52ae75052a6efd7d8ed19138736",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_005b_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_005b_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_005b_w.jpg",
+      "status": "mirrored",
+      "size": 1845712,
+      "sha256": "12d1c16accf1443a3dfa80cf3a93ade485e55ca14b46edd71ac301c92bc6f40a",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_005b_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_005b_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_005b_w1.jpg",
+      "status": "mirrored",
+      "size": 2257285,
+      "sha256": "539e34817c000889e6f36e4d33e82d42f13b1739ff36991baf213d417a297778",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_006a_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_006a_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_006a_k.jpg",
+      "status": "mirrored",
+      "size": 2625732,
+      "sha256": "062e43962f1ff20b7fb3850e46f51b6630aa9e6fcefdc364195955e46bee055a",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_006a_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_006a_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_006a_k1.jpg",
+      "status": "mirrored",
+      "size": 3479784,
+      "sha256": "498a7120d2d467f7f23b84a844c2d0f09bb434c888838c798b4e5fd546e053ca",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_006a_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_006a_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_006a_w.jpg",
+      "status": "mirrored",
+      "size": 1818973,
+      "sha256": "c75b88cbb2af09370e63edbe64dd8679c891c155a037efcfd90948a6954b66bc",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_006a_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_006a_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_006a_w1.jpg",
+      "status": "mirrored",
+      "size": 2355719,
+      "sha256": "9264f07a03e17fa4f8c25bb55440db2cd3bf9ca7a01bffe2d0435408e71844ff",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_006b_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_006b_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_006b_k.jpg",
+      "status": "mirrored",
+      "size": 2556459,
+      "sha256": "da5596e973055b2a7460f57634231a1517f487f9ac634ddf20a4e709cfe940d8",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_006b_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_006b_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_006b_k1.jpg",
+      "status": "mirrored",
+      "size": 3335489,
+      "sha256": "94c4dfdbe0c0ba2069e2c90957f7624bdc2ab94a2f74fafb0e928a3e74787abd",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_006b_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_006b_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_006b_w.jpg",
+      "status": "mirrored",
+      "size": 1818431,
+      "sha256": "74b32889e24bc5542518c4b8d5ff0fd9f600144a874f3999d4a4c5f0eb2f1e85",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_006b_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_006b_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_006b_w1.jpg",
+      "status": "mirrored",
+      "size": 2302377,
+      "sha256": "e89a354507ef67aea04c3da4883ee5404569d57a536ec96617735c7d7e99f9fe",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_007a_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_007a_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_007a_k.jpg",
+      "status": "mirrored",
+      "size": 2417629,
+      "sha256": "7911ba103e117dea9b6faf154e3c1849526501cf28da9dc75faa143c5bed843e",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_007a_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_007a_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_007a_k1.jpg",
+      "status": "mirrored",
+      "size": 2673584,
+      "sha256": "b82f968e2b667570f8e1d1a9631082b58aea9e868ac79cafc480d5c5c3e1fcc9",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_007a_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_007a_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_007a_w.jpg",
+      "status": "mirrored",
+      "size": 1873657,
+      "sha256": "b6e6ed670c39b04099ad0db978288a9a06feb2ffc51aacc86e653e9e839b1739",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_007a_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_007a_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_007a_w1.jpg",
+      "status": "mirrored",
+      "size": 2180095,
+      "sha256": "9c274d95951aa59e167bd4a2dad91e038d549b6dee50f81d41e32abf2a59b8f3",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_007b_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_007b_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_007b_k.jpg",
+      "status": "mirrored",
+      "size": 2292839,
+      "sha256": "e9aa10b21c99b7e960b6cfbb5ed0e4cd74c04aa63344d58500d72649ced11322",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_007b_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_007b_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_007b_k1.jpg",
+      "status": "mirrored",
+      "size": 2679561,
+      "sha256": "0144e4d7224d0cf7f49cc848eb7b8cbb0d9a240038cbc62f36a26c4c2e57ccf8",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_007b_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_007b_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_007b_w.jpg",
+      "status": "mirrored",
+      "size": 1863649,
+      "sha256": "becd6e43f42f556e088b21caf0791f238295a623b7b5462a91f9a2c6cda1d015",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_007b_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_007b_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_007b_w1.jpg",
+      "status": "mirrored",
+      "size": 2147752,
+      "sha256": "672f82c349d41ee797fa51351819c17ab417b316d0182668b53a6044d468643b",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_008a_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_008a_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_008a_k.jpg",
+      "status": "mirrored",
+      "size": 3045397,
+      "sha256": "d2fda8c006c13cf8ef45572725f6de97bf29f85f4f5c84b547d27d7805a6ac34",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_008a_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_008a_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_008a_k1.jpg",
+      "status": "mirrored",
+      "size": 3730491,
+      "sha256": "f4756e077d641b574d111842ba62f850dffe371063e65224cf50d92ef28ec1b5",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_008a_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_008a_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_008a_w.jpg",
+      "status": "mirrored",
+      "size": 1594527,
+      "sha256": "a00e1f72f21174b1606c3a4681c9cd8edf2ee8fc3f1b02aec773c0ce42246a59",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_008a_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_008a_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_008a_w1.jpg",
+      "status": "mirrored",
+      "size": 1250726,
+      "sha256": "d72a7c094cf093be3e4647f6983273fbf9f609225341bf1f1805f26f71406c24",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_008b_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_008b_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_008b_k.jpg",
+      "status": "mirrored",
+      "size": 3155930,
+      "sha256": "de21df7727065378e58a70815837e4dfa20fdae17fb592d4ea6d97b9ed8d8fdd",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_008b_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_008b_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_008b_k1.jpg",
+      "status": "mirrored",
+      "size": 3866125,
+      "sha256": "c1fe6dc47eaeeb35a05432674156fb2512e41ccbe425e0c849fdc5785c80928c",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_008b_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_008b_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_008b_w.jpg",
+      "status": "mirrored",
+      "size": 1597392,
+      "sha256": "c9c8fd533153fc80b15c4519d5128b0f99f293bc379071622a877f61afeb3487",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_008b_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_008b_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_008b_w1.jpg",
+      "status": "mirrored",
+      "size": 1279775,
+      "sha256": "4e1a73688652999bb94999bec6eb492017c0a2508ad2ae53c02b87669214b4f8",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_009a_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_009a_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_009a_k.jpg",
+      "status": "mirrored",
+      "size": 2698069,
+      "sha256": "631c116c015dc1eade2e63c2f0c12cbed6aafd50f0c70ff368b2067c86317be3",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_009a_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_009a_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_009a_k1.jpg",
+      "status": "mirrored",
+      "size": 2905950,
+      "sha256": "980bf1b66b00eccddc0ac81edc2396f66d4e7f53fbef624c91728146a01477f6",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_009a_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_009a_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_009a_w.jpg",
+      "status": "mirrored",
+      "size": 1601749,
+      "sha256": "e6d6b752fb51d3526100db4b00512765288cc982aafd456d56c56969ca0cea9e",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_009a_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_009a_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_009a_w1.jpg",
+      "status": "mirrored",
+      "size": 1596133,
+      "sha256": "59cf25981b2528775f3d496d29666442fc4938f7a198c745acb009ef56e592e8",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_009b_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_009b_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_009b_k.jpg",
+      "status": "mirrored",
+      "size": 2819458,
+      "sha256": "2632fa73e4c028d7a51029f2156af50ca9a111c8033f58c1b08ba0007b0a23dc",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_009b_k2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_009b_k2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_009b_k2.jpg",
+      "status": "mirrored",
+      "size": 3013453,
+      "sha256": "ec5d3e381a479ff3fbc80a60204ef75d593f875174cbac4ecb872590b7f65eea",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_009b_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_009b_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_009b_w.jpg",
+      "status": "mirrored",
+      "size": 1602029,
+      "sha256": "7064e8366bd69fab20e51b839ad52e7c3f5282482fd2564af5d50a2e160f2495",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_009b_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_009b_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_009b_w1.jpg",
+      "status": "mirrored",
+      "size": 1614688,
+      "sha256": "6a380600906977b9accf32a5a6cb08c7d030405d1a9c616ced83282f6d7a5c01",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_010a_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_010a_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_010a_k.jpg",
+      "status": "mirrored",
+      "size": 2427717,
+      "sha256": "07dde86584537a7e01603eb467df504ceb6b0c74f45616ec8dd080251a8ec53f",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_010a_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_010a_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_010a_k1.jpg",
+      "status": "mirrored",
+      "size": 2722097,
+      "sha256": "182af4c538e2050e9eb3f3c5eb6f5445ad6e78c174429a8d5cb5bc72c7871269",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_010a_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_010a_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_010a_w.jpg",
+      "status": "mirrored",
+      "size": 1877668,
+      "sha256": "4b8778687631d0f4947f0ae3fd7a26264721bfde8d61ffafa01a56b0e8156285",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_010a_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_010a_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_010a_w1.jpg",
+      "status": "mirrored",
+      "size": 1962738,
+      "sha256": "ec2eed1228c376c0f952e12c82030467d43c42cb9a42348a193055bf0564ea0f",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_010b_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_010b_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_010b_k.jpg",
+      "status": "mirrored",
+      "size": 2372206,
+      "sha256": "e9843abdd1a58d589e90da1c6104586df2fe80a264d2af3b9d1eefd46a77a470",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_010b_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_010b_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_010b_k1.jpg",
+      "status": "mirrored",
+      "size": 2627483,
+      "sha256": "8ab54e1044173fb5ed517090b493bf099062c3864ee4c2cbb9daf3569871d6ca",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_010b_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_010b_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_010b_w.jpg",
+      "status": "mirrored",
+      "size": 1974729,
+      "sha256": "dc6a5b5143c0794bc959d007c910f6c62646baf65408a70efe9ed61ef0478686",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_010b_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_010b_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_010b_w1.jpg",
+      "status": "mirrored",
+      "size": 1979795,
+      "sha256": "8a2ad56d61bfb48de9a34b0a50ba6e6aae97ea298d6cc08b6ebb60625e798c31",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012a_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012a_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_011-012a_k.jpg",
+      "status": "mirrored",
+      "size": 2754346,
+      "sha256": "534c38e87be287d2374d87fa66f50d461999b32d182824f37bf99eba45ef8886",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012a_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012a_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_011-012a_k1.jpg",
+      "status": "mirrored",
+      "size": 2824055,
+      "sha256": "39ded757c7303133f8bd1efff2faacaa4df97e593efe33cbea9f151e4f687af0",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012a_k2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012a_k2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_011-012a_k2.jpg",
+      "status": "mirrored",
+      "size": 2853347,
+      "sha256": "066b433a9257625523dd737008a489b6a9a9c63a41c40e603dbb0eed35a68462",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012a_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012a_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_011-012a_w.jpg",
+      "status": "mirrored",
+      "size": 2273067,
+      "sha256": "1f7cc8217f4ec2b849e89b7809941c8205a5d5b4161e2fbbc6fc2c14d89e7804",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012a_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012a_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_011-012a_w1.jpg",
+      "status": "mirrored",
+      "size": 2463477,
+      "sha256": "bb53ceaca46ab308529afc255280ae95e42e51ab6dfda0a883599cd59c996d4b",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012a_w2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012a_w2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_011-012a_w2.jpg",
+      "status": "mirrored",
+      "size": 2454843,
+      "sha256": "d0077b3e17153db4888df843087e0a06a163219d5a8bc833ded51b4f742e730b",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012b_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012b_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_011-012b_k.jpg",
+      "status": "mirrored",
+      "size": 2921360,
+      "sha256": "9835a6c20dc49c057b0c0e4e3995849ce780e20eb2ae69f0d71219eac7a986e2",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012b_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012b_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_011-012b_k1.jpg",
+      "status": "mirrored",
+      "size": 2673649,
+      "sha256": "d886e85ebe2cb62dfa354d0802c61b3bd6fc4513222076486a09d7be10ae8eb0",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012b_k2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012b_k2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_011-012b_k2.jpg",
+      "status": "mirrored",
+      "size": 2887620,
+      "sha256": "cfa0d2db213f1e0188b11e891c13b84a01b8989dce8c5ad22c152daae611ba53",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012b_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012b_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_011-012b_w.jpg",
+      "status": "mirrored",
+      "size": 2271744,
+      "sha256": "9d2f6d96c4a07073bf54743559c7d1827b1edf75d805b75ece9757cc55ef98e1",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012b_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012b_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_011-012b_w1.jpg",
+      "status": "mirrored",
+      "size": 2333051,
+      "sha256": "371fdb78597011bfb9f93329007a5beaea1a1f5e3ce36ff503a9dddc20f6058e",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012b_w2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_011-012b_w2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_011-012b_w2.jpg",
+      "status": "mirrored",
+      "size": 2718897,
+      "sha256": "915d0dfa81bf948f5488ee9933714eda8afc4a67b2ecc5d7ca5d483b88392a40",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014a_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014a_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_013-014a_k.jpg",
+      "status": "mirrored",
+      "size": 2776020,
+      "sha256": "2caa38c47f61179c455a203ae5222e060dba8d741052eb42dc2a7d99a7a9befc",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014a_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014a_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_013-014a_k1.jpg",
+      "status": "mirrored",
+      "size": 3141662,
+      "sha256": "8df5e96c8a86bb2d72b34f5c75931e1cf4a3a9fdf41faa8847ec4f11a4ed89ca",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014a_k2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014a_k2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_013-014a_k2.jpg",
+      "status": "mirrored",
+      "size": 2896752,
+      "sha256": "814829e92fe5dedf842c22a6fd5b8d86069496d105e8b58756169de739050a79",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014a_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014a_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_013-014a_w.jpg",
+      "status": "mirrored",
+      "size": 2005274,
+      "sha256": "380d63f3e12c432f19202ad36b9228ade67088067876b5747fb189dc7a80fe95",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014a_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014a_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_013-014a_w1.jpg",
+      "status": "mirrored",
+      "size": 2332618,
+      "sha256": "372538d8a38ba5c25da8bd0078f7c38540d867ddde1afe8878811501dffd40cb",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014a_w2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014a_w2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_013-014a_w2.jpg",
+      "status": "mirrored",
+      "size": 2310101,
+      "sha256": "de0c686a4c58b2d4b69fce3bdb4ee2aff6c45f17abaf9983731d11f56630c628",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014b_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014b_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_013-014b_k.jpg",
+      "status": "mirrored",
+      "size": 2677047,
+      "sha256": "e4ce873fb639a13b0698481d98ba3e1192c9479ad0a256555e629f8de92d93cc",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014b_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014b_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_013-014b_k1.jpg",
+      "status": "mirrored",
+      "size": 2979472,
+      "sha256": "93c49a780b0e175e4d5f1b3539841e4e473d6f1e2c5ecd718cda6c4034359701",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014b_k2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014b_k2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_013-014b_k2.jpg",
+      "status": "mirrored",
+      "size": 2835546,
+      "sha256": "da45538aa191786b4df813671af7ab13ff9b4564f8f7a38d0c776c5b26bc6172",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014b_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014b_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_013-014b_w.jpg",
+      "status": "mirrored",
+      "size": 2030483,
+      "sha256": "40fd019d730bb1296094f09fa0b8fde441cc9d5d00671d3eb1c5c14579dee69b",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014b_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014b_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_013-014b_w1.jpg",
+      "status": "mirrored",
+      "size": 2333112,
+      "sha256": "a590989990011885942cea3f98e1d8820e3d64e34bd52f61b1eee99ee32ec098",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014b_w2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_013-014b_w2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_013-014b_w2.jpg",
+      "status": "mirrored",
+      "size": 2307589,
+      "sha256": "6ce19851538cac0df8e0a6f1ba986546849eabc6907a1c9655017b630679a9e1",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_015a_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_015a_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_015a_k.jpg",
+      "status": "mirrored",
+      "size": 2576836,
+      "sha256": "4b704bb268034cd612f18ddebf0075d977f3c6ed4b6677713673a7d702221302",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_015a_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_015a_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_015a_k1.jpg",
+      "status": "mirrored",
+      "size": 2746351,
+      "sha256": "3113d544989c469532f14f9de8acc543bb7b83fb2d132e71f5b85ced85b75399",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_015a_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_015a_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_015a_w.jpg",
+      "status": "mirrored",
+      "size": 1797132,
+      "sha256": "48c589f6b4f701dc6024656ed9e5b5b362334ac1ba28d52e5912f649945a3b14",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_015a_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_015a_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_015a_w1.jpg",
+      "status": "mirrored",
+      "size": 1768517,
+      "sha256": "c55a6de80b7bae155dbc32a5fc40ea5b7e85e904bd8a285561dac6794b1806ff",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_015b_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_015b_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_015b_k.jpg",
+      "status": "mirrored",
+      "size": 2647156,
+      "sha256": "0da18c9e7524d9a7a0445f5d09839ce8d7ba5905e2f6e9165c308a97d286f90b",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_015b_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_015b_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_015b_k1.jpg",
+      "status": "mirrored",
+      "size": 2863021,
+      "sha256": "5fbd14718c48c20d7ddd30dd5a70c6b5322c342112d4bf6ad2a2a6b50e384852",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_015b_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_015b_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_015b_w.jpg",
+      "status": "mirrored",
+      "size": 1767293,
+      "sha256": "459a61456f59fdbb344741ab0d56812433e76d9454363bba44720b779ca7d8e8",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_015b_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_015b_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_015b_w1.jpg",
+      "status": "mirrored",
+      "size": 1677648,
+      "sha256": "8fefa054b4e08587eb6327277bd8fd1127bfceb3b33931961b25ceb0e98f2769",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017a_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017a_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_016-017a_k.jpg",
+      "status": "mirrored",
+      "size": 2409271,
+      "sha256": "48fc4fcbe51094dd64513282ca8846de3085d92d3b5986e5d8da67cc10f3f44c",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017a_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017a_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_016-017a_k1.jpg",
+      "status": "mirrored",
+      "size": 2168991,
+      "sha256": "b4162b0e6f2d2e29c0cda9fe010c2787b17f78df45a41ab53abcf7013f921d13",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017a_k2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017a_k2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_016-017a_k2.jpg",
+      "status": "mirrored",
+      "size": 2692300,
+      "sha256": "66a3337d81edd9d7536bb22218d815fa97054a1a842d3cccfaa389a75d2f25c9",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017a_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017a_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_016-017a_w.jpg",
+      "status": "mirrored",
+      "size": 1971933,
+      "sha256": "2f550b87eabf22df045030c621714356836927dbcca71121fe706ff1cb01d456",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017a_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017a_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_016-017a_w1.jpg",
+      "status": "mirrored",
+      "size": 2152287,
+      "sha256": "528e0924643430cd524ce4f3f3c9809025158b283dce6a7765329ae071c994ae",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017a_w2a.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017a_w2a.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_016-017a_w2a.jpg",
+      "status": "mirrored",
+      "size": 2054219,
+      "sha256": "d997cbe94d101c6dcba8cba909b951e2e13f56d109d703b82ea4d7784e473900",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017a_w2b.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017a_w2b.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_016-017a_w2b.jpg",
+      "status": "mirrored",
+      "size": 2043075,
+      "sha256": "d11e1df9e088588c9e6b5ca970d0ea21cb20be6ba6418b04ae6a181a5711a947",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017b_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017b_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_016-017b_k.jpg",
+      "status": "mirrored",
+      "size": 2343757,
+      "sha256": "60555397540ccfd8f0f599cf18a2b9a3badcdd8679421216d3ea355a1a1ae220",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017b_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017b_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_016-017b_k1.jpg",
+      "status": "mirrored",
+      "size": 2808016,
+      "sha256": "761f6094fc297fc72da0f36f12ca7a022cf80e737c69ef6e8dc8b1aaa8bce1a7",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017b_k2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017b_k2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_016-017b_k2.jpg",
+      "status": "mirrored",
+      "size": 2726382,
+      "sha256": "900b63f05f08e5d5b32114a7faae93c989c79f0fc01dfc0bccdb93610b7ead80",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017b_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017b_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_016-017b_w.jpg",
+      "status": "mirrored",
+      "size": 2066673,
+      "sha256": "f97ebb1ae95d9fa999e00b8d2b284f9742c71f87803bc126be56eb7aa715e9cf",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017b_w1a.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017b_w1a.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_016-017b_w1a.jpg",
+      "status": "mirrored",
+      "size": 2249787,
+      "sha256": "5ead4781ecb31e857fb8826e7d0ce79c24360a84559d5e1d7401da320cbc99b1",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017b_w1b.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017b_w1b.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_016-017b_w1b.jpg",
+      "status": "mirrored",
+      "size": 2248643,
+      "sha256": "ba070ede8280e41a192c7bf6d77f2efdb644c9d5d5aa06880ac2b3d1ebb77fd2",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017b_w2a.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017b_w2a.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_016-017b_w2a.jpg",
+      "status": "mirrored",
+      "size": 2120075,
+      "sha256": "1c129b73a7d615230354a837a8721a2a81ca0d9cbd68b04f6e26076ab2d3d688",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017b_w2b.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_016-017b_w2b.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_016-017b_w2b.jpg",
+      "status": "mirrored",
+      "size": 2122321,
+      "sha256": "1a01848e061852209111b7f6ef139e38158f20bf16ff891817be27cbca622e9b",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019a_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019a_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_018-019a_k.jpg",
+      "status": "mirrored",
+      "size": 2257492,
+      "sha256": "79e682fd4deb6fc021174a625ea45581e04819a7be2b8b3f0d459918b89c66ef",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019a_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019a_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_018-019a_k1.jpg",
+      "status": "mirrored",
+      "size": 2820627,
+      "sha256": "5bfc87774bbf05c7f7810f8c0273a89936d296ee1782d5def3cb580cced58c6e",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019a_k2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019a_k2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_018-019a_k2.jpg",
+      "status": "mirrored",
+      "size": 2717428,
+      "sha256": "27d6801ad3b1154ee3230438357b20a1f1eeb1466ecd3c1551ea4167a0cbdfda",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019a_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019a_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_018-019a_w.jpg",
+      "status": "mirrored",
+      "size": 1761277,
+      "sha256": "24a9812141381b52d80c945a5282140d11bcf2a05a31889befc1866ea95fe76a",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019a_w1a.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019a_w1a.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_018-019a_w1a.jpg",
+      "status": "mirrored",
+      "size": 2073418,
+      "sha256": "6ebb68ba50a3ad15bb10dfc7cb6313f57afdfc3d3ed3e7fc17fbcfd38110e29a",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019a_w1b.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019a_w1b.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_018-019a_w1b.jpg",
+      "status": "mirrored",
+      "size": 1871822,
+      "sha256": "7af4f98fe2e56d7da050fc76548aca5371c63897466a2c1a4ecff0c5b6019d11",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019b_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019b_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_018-019b_k.jpg",
+      "status": "mirrored",
+      "size": 2186913,
+      "sha256": "969b31d045661e9d70f9ca003e26f70f803bdb96e772501807453a569c3916a3",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019b_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019b_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_018-019b_k1.jpg",
+      "status": "mirrored",
+      "size": 2782351,
+      "sha256": "19da7ac2286b50c262d489076e3285c07a189d42944c667be0eb3c0e889bc481",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019b_k2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019b_k2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_018-019b_k2.jpg",
+      "status": "mirrored",
+      "size": 2905645,
+      "sha256": "7cac16dfde976dae24c6a3f8e7ddac325138c069e145ddc293ffbb2f34f76845",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019b_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019b_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_018-019b_w.jpg",
+      "status": "mirrored",
+      "size": 1761679,
+      "sha256": "2cd7a4b5b6a67e915d50e9283a57b78f590b205eaf8b859fef84356e4779f51a",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019b_w1a.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019b_w1a.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_018-019b_w1a.jpg",
+      "status": "mirrored",
+      "size": 1989695,
+      "sha256": "a0f7882a2b03b0bf7f1979609f44df42c0ef70ea78e0074482c2ddd2db00df14",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019b_w1b.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_018-019b_w1b.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_018-019b_w1b.jpg",
+      "status": "mirrored",
+      "size": 1991516,
+      "sha256": "79b192aaaced2ec08d5580621813e0cf09c553aef63acde31483c8a185af8575",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021a_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021a_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_020-021a_k.jpg",
+      "status": "mirrored",
+      "size": 2275263,
+      "sha256": "b23bbcb378e3c6396372b133019024aaef5440a75f88fa1459f4a1af24eed362",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021a_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021a_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_020-021a_k1.jpg",
+      "status": "mirrored",
+      "size": 2969021,
+      "sha256": "e277a2329d5c6e645ab16f10d657d8b9150c327635dda8fca4e64938fa05c000",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021a_k2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021a_k2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_020-021a_k2.jpg",
+      "status": "mirrored",
+      "size": 2702734,
+      "sha256": "2b064be6213845118b99282d8b46ace19364e8ace06d14ea26c5b9fb379f0130",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021a_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021a_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_020-021a_w.jpg",
+      "status": "mirrored",
+      "size": 1826090,
+      "sha256": "f01bc9749d6356f78ddbaa674e386e075dd884ab9314a4e5526b8449e3d89cf9",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021a_w1a.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021a_w1a.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_020-021a_w1a.jpg",
+      "status": "mirrored",
+      "size": 2109355,
+      "sha256": "66f8638f45117bdd40b60706cbd521e605b2101dece7a208e239c26d04508b6d",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021a_w1b.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021a_w1b.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_020-021a_w1b.jpg",
+      "status": "mirrored",
+      "size": 1947747,
+      "sha256": "ec29f8bae59ebbe5e67c8bfb0b6368d46f371d8342be828ce176c63477ff10c0",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021b_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021b_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_020-021b_k.jpg",
+      "status": "mirrored",
+      "size": 2218428,
+      "sha256": "f1e29feb3ab21077667b36080fc57fb1b54e3ba9f2f24ae30056673a0ab78af5",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021b_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021b_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_020-021b_k1.jpg",
+      "status": "mirrored",
+      "size": 2863396,
+      "sha256": "c97dc16825f100ab8d1f011b36362afbc160988069fcc6481a27516dc2f7cfa0",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021b_k2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021b_k2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_020-021b_k2.jpg",
+      "status": "mirrored",
+      "size": 2763371,
+      "sha256": "e57207ec6d7c44678639951cc6732d785d1a5a630a0e734eef98cacab148d672",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021b_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021b_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_020-021b_w.jpg",
+      "status": "mirrored",
+      "size": 1812116,
+      "sha256": "3eae138c2779f4b09108fef33a7c2fe6ed9e2c5d3207ec8736e92a67a9d12ec0",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021b_w1a.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021b_w1a.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_020-021b_w1a.jpg",
+      "status": "mirrored",
+      "size": 2024121,
+      "sha256": "79939a9305097c814c4a83da9524371402321f2d20459d66c33a70d06e58317e",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021b_w1b.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_020-021b_w1b.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_020-021b_w1b.jpg",
+      "status": "mirrored",
+      "size": 1967385,
+      "sha256": "a256eb6957f8c5605f80d5ac6c53ab3c757c0bce11690e27ea8e12112ba231b6",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_022a_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_022a_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_022a_k.jpg",
+      "status": "mirrored",
+      "size": 2315505,
+      "sha256": "8efcf7d4083568aacc50fbe386c6508337ce3bd822d725c6bdf675459ca3424a",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_022a_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_022a_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_022a_k1.jpg",
+      "status": "mirrored",
+      "size": 2794629,
+      "sha256": "5932cc5cee6469b8fc0ed7a181d77c2ad9f31e71e4a7e9ca2bd4f8f5642c1d0d",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_022a_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_022a_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_022a_w.jpg",
+      "status": "mirrored",
+      "size": 1719532,
+      "sha256": "bb9540196fd32cc05fc15e819a88afcd92912f570a51ef307c46a87eb79c901f",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_022a_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_022a_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_022a_w1.jpg",
+      "status": "mirrored",
+      "size": 1896506,
+      "sha256": "a65980eabb1fdb12be86270fbefb6b4252af5f5932dec77446a8407206a7e050",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_022b_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_022b_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_022b_k.jpg",
+      "status": "mirrored",
+      "size": 2873989,
+      "sha256": "d1985c1b7235590370d9a186df5cb1a4fec1458791e6a24c9b1d3b6c2ad77b58",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_022b_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_022b_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_022b_k1.jpg",
+      "status": "mirrored",
+      "size": 2746113,
+      "sha256": "6f3b33fac0d44c51d9bf7862b5f0b1aca0f9bebaf3cd87f07c6b1a4702e8de91",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_022b_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_022b_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_022b_w.jpg",
+      "status": "mirrored",
+      "size": 1709688,
+      "sha256": "18a88d6cb965dff78bd4098a5122d9f9e8a3b0e59c17ec85cc02bb8e10924cf0",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_022b_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_022b_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_022b_w1.jpg",
+      "status": "mirrored",
+      "size": 1865418,
+      "sha256": "78caa5e1c2055330203c2974ad5a1c6908fc758c8789886593417aa4dd3ab227",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_023a_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_023a_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_023a_k.jpg",
+      "status": "mirrored",
+      "size": 2271895,
+      "sha256": "a7b8c288038c6aaf1a8ebcf4517c8fe028db0350f091d026f76e0757cf2c601e",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_023a_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_023a_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_023a_k1.jpg",
+      "status": "mirrored",
+      "size": 2780918,
+      "sha256": "a042311b0dd7c7905645fa3a0d8ee7030090a25d07d841a13ef7b5c4d4407563",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_023a_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_023a_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_023a_w.jpg",
+      "status": "mirrored",
+      "size": 1881030,
+      "sha256": "a3f27e406475705bf204eb3f14ad2ceddba1b1995fff3110b3f0060fcf286868",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_023a_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_023a_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_023a_w1.jpg",
+      "status": "mirrored",
+      "size": 2233116,
+      "sha256": "e4e5613af17f6b4d40b9905b51821076e6ba9562e8b1af2f6c858e913e5ea5f6",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_023b_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_023b_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_023b_k.jpg",
+      "status": "mirrored",
+      "size": 2228693,
+      "sha256": "eec7241463f6af163b0841b7757b351dcb9e5086d113615b928574f1c5bd9998",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_023b_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_023b_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_023b_k1.jpg",
+      "status": "mirrored",
+      "size": 2880090,
+      "sha256": "08710e009d90db33701769b2f944f13ba01095047be241562f89475b2ea797b1",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_023b_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_023b_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_023b_w.jpg",
+      "status": "mirrored",
+      "size": 1860439,
+      "sha256": "460416565e672cff30d0a4d9b64e3718bd6acd1f75074a519ee3d4fabcdd8db0",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_023b_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_023b_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_023b_w1.jpg",
+      "status": "mirrored",
+      "size": 2175239,
+      "sha256": "b80df266f4f95fafc9ec689140ae4dc3574d8804480ecb3b5eab21cd851ead43",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_024a_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_024a_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_024a_k.jpg",
+      "status": "mirrored",
+      "size": 2331654,
+      "sha256": "8f5da3767287cbfc06e1d0e7e635f90231cedcf5ef735c4c284b2dde576c4eba",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_024a_k2.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_024a_k2.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_024a_k2.jpg",
+      "status": "mirrored",
+      "size": 2746521,
+      "sha256": "40ffce469f6f2d0f1ccd7510eae633f45f4305ec9edb7dfd5b64bf2e7a75ab30",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_024a_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_024a_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_024a_w.jpg",
+      "status": "mirrored",
+      "size": 1879426,
+      "sha256": "79b972742e49ccad7552105a6b4cf5fd1d9f3bd0fe76a5fee7dbd91aa0f8c061",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_024a_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_024a_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_024a_w1.jpg",
+      "status": "mirrored",
+      "size": 2043921,
+      "sha256": "e3c17dc4304d44602c9d786da36073cc434a99277dfd434a198950a8fd2ed2ee",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_024b_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_024b_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_024b_k.jpg",
+      "status": "mirrored",
+      "size": 2231114,
+      "sha256": "d8ef6358a279c6939a1b38fa41a495b009cc0b868d0534cc93b473c879c3e736",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_024b_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_024b_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_024b_k1.jpg",
+      "status": "mirrored",
+      "size": 2712607,
+      "sha256": "7f070cb0e653cc9fb96ded8200f47041cc0ef6c61c90d11e133ea09b392b20b4",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_024b_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_024b_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_024b_w.jpg",
+      "status": "mirrored",
+      "size": 1861216,
+      "sha256": "0129be3416abe890f5875814592b4df64f01dbc137ba60fa27eab71357c145fb",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_024b_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_024b_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_024b_w1.jpg",
+      "status": "mirrored",
+      "size": 2078854,
+      "sha256": "0be24507a43f9c3e87809dfa49a4ec500ddd656ee315023eed40299cd9b6ae58",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_025a_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_025a_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_025a_k.jpg",
+      "status": "mirrored",
+      "size": 2487627,
+      "sha256": "ed6f5d5e8c5e26d315065f126b96458fe1b7546d2d6388be44f569dd62e8eb20",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_025a_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_025a_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_025a_k1.jpg",
+      "status": "mirrored",
+      "size": 2823300,
+      "sha256": "e5a16670562c227bab1e62e816135c73cd49c598bedc9fa7f6ae1ef4f8e9d3b8",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_025a_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_025a_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_025a_w.jpg",
+      "status": "mirrored",
+      "size": 1818392,
+      "sha256": "5b0f10f932df0fdab1f20f81aef97802a4734b25ed04a0aea4e94ae84ebafae8",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_025a_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_025a_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_025a_w1.jpg",
+      "status": "mirrored",
+      "size": 2119660,
+      "sha256": "bb2b94b91173d19704ea35be1ce2e1b4ee705f802d51516cbf9b7d2a2327d184",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_025b_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_025b_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_025b_k.jpg",
+      "status": "mirrored",
+      "size": 1882565,
+      "sha256": "07becab3633950cc88655e00e6b62c3364f5f0792989f0847172fb1f9613fe80",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_025b_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_025b_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_025b_k1.jpg",
+      "status": "mirrored",
+      "size": 2955494,
+      "sha256": "b9010235a0e50a820df0945d2c96d5a8f376b68c8d5bd2796f3ff5fcc5566277",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_025b_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_025b_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_025b_w.jpg",
+      "status": "mirrored",
+      "size": 1816003,
+      "sha256": "e83b7c69cbbe7577ce773f8fe2f104c81861ae8622c3b19414e9ec11aab9aa40",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_025b_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_025b_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_025b_w1.jpg",
+      "status": "mirrored",
+      "size": 2063441,
+      "sha256": "f1a937a96e6b0c9134c5a66982740708b6db6e74f70a8cd51fc0b9201b9e693c",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_026a_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_026a_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_026a_k.jpg",
+      "status": "mirrored",
+      "size": 2424302,
+      "sha256": "46ea0a48ab48ea2447b0a4c9e89fdad778d5d658b1f7fbb0fbe9c163e32317ea",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_026a_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_026a_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_026a_k1.jpg",
+      "status": "mirrored",
+      "size": 2991649,
+      "sha256": "4381632102e610d89c76f780c0478d03f245b5421d881fa88a2bb5d8012ae983",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_026a_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_026a_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_026a_w.jpg",
+      "status": "mirrored",
+      "size": 1826916,
+      "sha256": "0861449decfc0aaee9986207eb57eae80407b1716afa7e75d8edae5506ac01b4",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_026a_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_026a_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_026a_w1.jpg",
+      "status": "mirrored",
+      "size": 2124839,
+      "sha256": "7f8b99a95b66ed5391e4064619fc343790f82173749df70f2d3dcbb7d22fe85b",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_026b_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_026b_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_026b_k.jpg",
+      "status": "mirrored",
+      "size": 2424832,
+      "sha256": "169d5df090c671ffd0d360c0233c7c6be22f5087d720bc85a260e74b3ddbf3dd",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_026b_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_026b_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_026b_k1.jpg",
+      "status": "mirrored",
+      "size": 3053374,
+      "sha256": "488905a9387f5037ff95b4f12999c3ecab77f05bf42f69a946dc8bef12aa18b9",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_026b_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_026b_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_026b_w.jpg",
+      "status": "mirrored",
+      "size": 1889087,
+      "sha256": "fc3592801d38cec796c62cc171745e7fc95299539cfe4a448eed91e2afd824b2",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_026b_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_026b_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_026b_w1.jpg",
+      "status": "mirrored",
+      "size": 2162241,
+      "sha256": "e3c1b05e125e332e612d6d9a6eb43269255f869ab71b84ac594e97d6c55c3fef",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_027a_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_027a_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_027a_k.jpg",
+      "status": "mirrored",
+      "size": 2360318,
+      "sha256": "6839b5e0e30dd8a538d540d2d7b76f752d959a0358dc4c8b518a7c20d0484e8a",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_027a_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_027a_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_027a_k1.jpg",
+      "status": "mirrored",
+      "size": 2177352,
+      "sha256": "19bc749764dc4395109163d8ac09c0e9b61df6686b5318eb789c5d55de6c319b",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_027a_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_027a_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_027a_w.jpg",
+      "status": "mirrored",
+      "size": 1833244,
+      "sha256": "d16f89535c9e1af248f487809fe387f704e34dd8aa758374276c65924cd3c640",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_027a_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_027a_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_027a_w1.jpg",
+      "status": "mirrored",
+      "size": 2098745,
+      "sha256": "d4cc874b184c7c4c8b005e3ab440f20fc3de4ba32fce0ec21b1fb7e067887bd0",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_027b_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_027b_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_027b_k.jpg",
+      "status": "mirrored",
+      "size": 2023360,
+      "sha256": "d8275d6db216f83b9732aaae905740f070db580c802ce99bab06acdda571d28f",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_027b_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_027b_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_027b_k1.jpg",
+      "status": "mirrored",
+      "size": 2234127,
+      "sha256": "197cdf597a2ae2b21985667d3eb3b11b7ef5af1b57066624fe88b1b085e8fed2",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_027b_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_027b_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_027b_w.jpg",
+      "status": "mirrored",
+      "size": 1771221,
+      "sha256": "947ffea4fa06e0c8a2f32e008969f57b689224aaa848bc5bebf09f7e549e13f0",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_027b_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_027b_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_027b_w1.jpg",
+      "status": "mirrored",
+      "size": 1983896,
+      "sha256": "552f9cc4cf81e1cac27e80bb362961984025fd8797867424d8842699b252a101",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_028a_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_028a_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_028a_k.jpg",
+      "status": "mirrored",
+      "size": 2150924,
+      "sha256": "26639ca6258f3b2ac1d651f6c070f683e84ec6dbdaf88c2e892e3e58f1166563",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_028a_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_028a_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_028a_k1.jpg",
+      "status": "mirrored",
+      "size": 2698926,
+      "sha256": "e595e4401ee911e62caf20e7f399c4252c4a8ce4e7d20372e0b69717c4014995",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_028a_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_028a_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_028a_w.jpg",
+      "status": "mirrored",
+      "size": 1797856,
+      "sha256": "93d564685d3f512e0752ede884e5458ba2a7c871e76b7940142e309d436a0bc3",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_028a_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_028a_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_028a_w1.jpg",
+      "status": "mirrored",
+      "size": 2050961,
+      "sha256": "fd911d89ee258c147356b54c29bde86f41f053a279e50947aa50941e1052e9f1",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_028b_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_028b_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_028b_k.jpg",
+      "status": "mirrored",
+      "size": 2192184,
+      "sha256": "325d009d409bff5a872d6afcbb2cf4ebfbfc6791c7f99426d7f998606af04837",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_028b_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_028b_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_028b_k1.jpg",
+      "status": "mirrored",
+      "size": 2707322,
+      "sha256": "14a20d9a85444eb8799b7161ad7655c55f74f12dca76e71f2ddb788355c65ffa",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_028b_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_028b_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_028b_w.jpg",
+      "status": "mirrored",
+      "size": 1829849,
+      "sha256": "d91472535b406da99b360a4fce40a32dcd0f3d9dc44548365af370bd529aa07e",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_028b_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_028b_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_028b_w1.jpg",
+      "status": "mirrored",
+      "size": 2180003,
+      "sha256": "8173153ad487e7bdb0397eaa3c5c420090df5a1663338e3b36767a248f58bc83",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_029a_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_029a_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_029a_k.jpg",
+      "status": "mirrored",
+      "size": 2169298,
+      "sha256": "e1a7b05bc7482d3951d9d1e40c52627a7944ebd2214b85faa79ef4be2b2c1311",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_029a_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_029a_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_029a_k1.jpg",
+      "status": "mirrored",
+      "size": 2626425,
+      "sha256": "c37d1ffaeb9cbc3582b43b2db0508767caea9f15763771cc9bffbdbc76f57e16",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_029a_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_029a_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_029a_w.jpg",
+      "status": "mirrored",
+      "size": 1865814,
+      "sha256": "05fc2c77250a8842235729fd552e36d57b6a0970c8d139dfea952fe21cf9f67c",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_029a_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_029a_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_029a_w1.jpg",
+      "status": "mirrored",
+      "size": 2104847,
+      "sha256": "04b648c30e051468f80208f76b4eb377244fcd046b91bb2e34b67066a85fec4f",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_029b_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_029b_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_029b_k.jpg",
+      "status": "mirrored",
+      "size": 2179122,
+      "sha256": "88971249be68301bd011f2652055c1ab3dea6c1268ffa3139caa723cc21d5909",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_029b_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_029b_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_029b_k1.jpg",
+      "status": "mirrored",
+      "size": 2691329,
+      "sha256": "eb579215874874dfc3c5e417d819fa15eaff51624e5f4501b6eb2b4de72868c3",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_029b_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_029b_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_029b_w.jpg",
+      "status": "mirrored",
+      "size": 1819819,
+      "sha256": "1bda61c3c066f7aec5bc1ad454396a6991479fa1c0aa5ba395ad46cdd74c0f7b",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_029b_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_029b_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_029b_w1.jpg",
+      "status": "mirrored",
+      "size": 2057033,
+      "sha256": "97bde4c258f73cb3229a9a1bb820c1576ed6465b2bf6a6267cfbe988ae8bfb4b",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_030a_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_030a_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_030a_k.jpg",
+      "status": "mirrored",
+      "size": 1851838,
+      "sha256": "0f4d093bbdc1daa2e0b278c5eb61b03e8b18ce3e7b2b194dd070ca78adf1bd0c",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_030a_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_030a_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_030a_k1.jpg",
+      "status": "mirrored",
+      "size": 2225886,
+      "sha256": "8bc47e1acd6811e2c0eead1a9400cc4f5e07836b7f4ddc9807429487bcc7cb3f",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_030a_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_030a_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_030a_w.jpg",
+      "status": "mirrored",
+      "size": 1780456,
+      "sha256": "1953d918b713cb08b4e778092546b1aa14359ee072dbde8280a9f0d96a4b9590",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_030a_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_030a_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_030a_w1.jpg",
+      "status": "mirrored",
+      "size": 2055006,
+      "sha256": "dd48a9f50ad314b9bef6d2f395df9c00aa816ecf746ca672752174969df7b62b",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_030b_k.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_030b_k.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_030b_k.jpg",
+      "status": "mirrored",
+      "size": 1853275,
+      "sha256": "a579c32a3cfed269f39058d8568e1ea080e86e089ab75a226f29782ec9c4c5a5",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_030b_k1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_030b_k1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_030b_k1.jpg",
+      "status": "mirrored",
+      "size": 2240035,
+      "sha256": "41c99815086583887db6cca993b5a71f59962b6119ffdb61f01b8f6a730a598c",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_030b_w.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_030b_w.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_030b_w.jpg",
+      "status": "mirrored",
+      "size": 1770167,
+      "sha256": "9b3b118895197b0b222be4fca8c5425a2c2d2562711825ce1214cae251241861",
+      "error": null
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_030b_w1.jpg",
+      "url": "https://images.csntm.org/IIIFServer.ashx/GA_P45/P45_030b_w1.jpg/full/full/0/native.jpg",
+      "local_path": "sources/manuscripts/P45/images/csntm/P45_030b_w1.jpg",
+      "status": "mirrored",
+      "size": 1984106,
+      "sha256": "6c7e6837474a2fe9a174f577a59a7d4bf0494a248aa56a4578c88b7d5cea0fd8",
+      "error": null
+    }
+  ]
+}
