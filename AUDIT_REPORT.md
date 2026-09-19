@@ -1,10 +1,10 @@
 # El-Relato — Audit Report
 
-Generated: 2026-09-19T06:08:50+00:00
+Generated: 2026-09-19T06:10:23+00:00
 
 **Overall: PASS_WITH_BLOCKERS**
 
-- PASS: 22
+- PASS: 23
 - WARN / BLOCKED: 4
 - FAIL: 0
 
@@ -405,6 +405,25 @@ Raw scholarly TEI is preserved and a diplomatic verse-level view is regenerated 
 ~~~
 
 ### ✅ query:app — Local research interface and self-test
+
+### ✅ book:greek-db — Canonical El-Relato Greek book database
+SBLGNT is primary; 12 numbered verses absent from its main text are materialized from the separately identified TAGNT Textus Receptus source.
+~~~json
+{
+  "table_counts": {
+    "chapters": 6,
+    "scenes": 120,
+    "units": 4123,
+    "unit_texts": 4123,
+    "unit_witnesses": 5381
+  },
+  "unresolved_witnesses": 0,
+  "tr_fallback_witness_materializations": 12,
+  "empty_primary_texts": 0,
+  "validation_errors": 0,
+  "foreign_key_errors": 0
+}
+~~~
 
 ### ⚠️ blocker:intf — INTF/NTVMR exhaustive catalogue harvest remains blocked
 The nucleus is preserved, but the declared exhaustive scope (all Gospel papyri + majuscules through s. V) is not yet certified complete.
