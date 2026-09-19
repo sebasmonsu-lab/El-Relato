@@ -19,7 +19,8 @@
     "lemma",
     "tbesg_entry_ids",
     "strong_original_id",
-    "textual_status"
+    "textual_status",
+    "morphology_components"
   ],
   "properties": {
     "id": {
@@ -137,6 +138,13 @@
         "main",
         "double-bracketed"
       ]
+    },
+    "morphology_components": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": false
     }
   },
   "additionalProperties": false
