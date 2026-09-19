@@ -46,7 +46,7 @@ class GospelRepository:
     def __init__(self, root: Path):
         self.root = root
         self.verses = root / "data/normalized/sblgnt/edition-verses.jsonl"
-        self.tokens = root / "data/normalized/sblgnt/tokens.jsonl"
+        self.tokens = root / "data/normalized/sblgnt/tokens.jsonl"\n        self.links = root / "data/normalized/links/sbl-tagnt-links.jsonl"
         self.strong = root / "data/normalized/stepbible/strong-entries.jsonl"
         self.strong_original = root / "data/normalized/strong-original/strong-original-entries.jsonl"
         self.attestations = root / "data/normalized/manuscript-evidence/witness-attestations.jsonl"
