@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Build a derived translation-to-Greek word alignment layer.
+"""Build a derived translation-to-Greek alignment layer.
 
-The canonical BOOK SQLite database is opened read-only.  The output is a
-build artifact consumed by the static web generator; it never mutates BOOK.
+The canonical BOOK SQLite is opened read-only. The output is a build artifact
+for the web layer and never mutates BOOK.
 """
 from __future__ import annotations
 
@@ -60,17 +60,17 @@ def main() -> None:
     except Exception as exc:
         raise SystemExit("SimAlign is required: pip install simalign==0.4") from exc
 
-    b = connect_ro(book_db)
-    s = connect_ro(query_db)
+    book = connect_ro(book_db)
+    source = connect_ro(query_db)
     try:
         editions = {
             r["edition_id"]: dict(r)
-            for r in b.execute("SELECT * FROM editions ORDER BY created_at, edition_id")
+            for r in book.execute("SELECT * FROM editions ORDER BY created_at, edition_id")
             if (r["language_code"] or "").lower() not in GREEK_LANGS
         }
         rows = [
             dict(r)
-            for r in b.execute(
+            for r in book.execute(
                 """
                 SELECT ut.edition_id, ut.unit_id, ut.text, ut.source_witness_id,
                        u.scene_number, u.global_order
@@ -84,38 +84,55 @@ def main() -> None:
         ]
         witnesses = {
             r["witness_id"]: dict(r)
-            for r in b.execute("SELECT * FROM unit_witnesses")
+            for r in book.execute("SELECT * FROM unit_witnesses")
         }
         first_witness = {}
-        for r in b.execute("SELECT * FROM unit_witnesses ORDER BY unit_id,witness_order"):
+        for r in book.execute("SELECT * FROM unit_witnesses ORDER BY unit_id,witness_order"):
             first_witness.setdefault(r["unit_id"], dict(r))
 
         source_tokens = {
             r["token_id"]: dict(r)
-            for r in s.execute("SELECT * FROM tokens")
+            for r in source.execute("SELECT * FROM tokens")
         }
 
         if not rows:
             out.parent.mkdir(parents=True, exist_ok=True)
             out.write_text("", encoding="utf-8")
-            summary = {"status": "PASS", "editions": [], "units": 0, "target_tokens": 0, "aligned_target_tokens": 0}
-            summary_path.write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            summary = {
+                "status": "PASS",
+                "editions": [],
+                "units": 0,
+                "target_tokens": 0,
+                "aligned_target_tokens": 0,
+                "traceable_target_tokens": 0,
+                "direct_alignment_coverage": 0.0,
+                "traceability_coverage": 0.0,
+                "coverage": 0.0,
+            }
+            summary_path.write_text(
+                json.dumps(summary, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
             print(json.dumps(summary, ensure_ascii=False, indent=2))
             return
 
-        aligner = SentenceAligner(model="bert", token_type="bpe", matching_methods="ai")
+        # m = maximum-weight matching, a = argmax intersection, i = itermax.
+        # The union improves recall while each relation records the method(s) supporting it.
+        aligner = SentenceAligner(model="bert", token_type="bpe", matching_methods="mai")
         output_rows = []
         stats = {
             "status": "PASS",
             "engine": "simalign-0.4",
             "model": "bert-base-multilingual-cased",
-            "method": "itermax-with-argmax-consensus",
+            "method": "mwmf+itermax+argmax-consensus",
             "editions": sorted(editions),
             "units": 0,
             "target_tokens": 0,
             "aligned_target_tokens": 0,
+            "traceable_target_tokens": 0,
             "high_support_tokens": 0,
             "medium_support_tokens": 0,
+            "low_support_tokens": 0,
             "unaligned_target_tokens": 0,
             "missing_source_token_ids": 0,
         }
@@ -124,50 +141,75 @@ def main() -> None:
             witness = witnesses.get(row["source_witness_id"]) or first_witness.get(row["unit_id"])
             if not witness:
                 continue
+
             raw_ids = json.loads(witness.get("source_token_ids_json") or "[]")
             src_ids = [tid for tid in raw_ids if tid in source_tokens]
             stats["missing_source_token_ids"] += len(raw_ids) - len(src_ids)
             src_words = [source_tokens[tid]["surface"] for tid in src_ids]
+
             target = lexical_tokens(row["text"])
             tgt_words = [t["surface"] for t in target]
 
-            iter_pairs = set()
-            inter_pairs = set()
+            inter_pairs: set[tuple[int, int]] = set()
+            iter_pairs: set[tuple[int, int]] = set()
+            mwmf_pairs: set[tuple[int, int]] = set()
+
             if src_words and tgt_words:
                 aligns = aligner.get_word_aligns(src_words, tgt_words)
-                iter_pairs = set(tuple(x) for x in aligns.get("itermax", []))
-                inter_pairs = set(tuple(x) for x in aligns.get("inter", []))
-                if not iter_pairs:
-                    iter_pairs = set(inter_pairs)
+                inter_pairs = {tuple(x) for x in aligns.get("inter", [])}
+                iter_pairs = {tuple(x) for x in aligns.get("itermax", [])}
+                mwmf_pairs = {tuple(x) for x in aligns.get("mwmf", [])}
 
+            direct_pairs = inter_pairs | iter_pairs | mwmf_pairs
             by_target: dict[int, list[int]] = {}
-            for si, ti in sorted(iter_pairs):
+            for si, ti in sorted(direct_pairs):
                 if 0 <= si < len(src_ids) and 0 <= ti < len(target):
                     by_target.setdefault(ti, []).append(si)
 
             aligned_count = 0
             for tok in target:
-                source_indices = by_target.get(tok["index"], [])
+                ti = tok["index"]
+                source_indices = by_target.get(ti, [])
                 tok["source_token_ids"] = [src_ids[i] for i in source_indices]
                 supports = []
+
                 for si in source_indices:
-                    methods = ["itermax"]
-                    if (si, tok["index"]) in inter_pairs:
+                    pair = (si, ti)
+                    methods = []
+                    if pair in inter_pairs:
                         methods.append("argmax-intersection")
+                    if pair in iter_pairs:
+                        methods.append("itermax")
+                    if pair in mwmf_pairs:
+                        methods.append("mwmf")
                     supports.append({"source_index": si, "methods": methods})
+
                 tok["support"] = supports
                 if source_indices:
                     aligned_count += 1
-                    high = all((si, tok["index"]) in inter_pairs for si in source_indices)
-                    tok["confidence"] = "high" if high else "medium"
-                    stats["high_support_tokens" if high else "medium_support_tokens"] += 1
+                    pairs = [(si, ti) for si in source_indices]
+                    if all(pair in inter_pairs for pair in pairs):
+                        tok["confidence"] = "high"
+                        stats["high_support_tokens"] += 1
+                    elif all(pair in (inter_pairs | iter_pairs) for pair in pairs):
+                        tok["confidence"] = "medium"
+                        stats["medium_support_tokens"] += 1
+                    else:
+                        tok["confidence"] = "low"
+                        stats["low_support_tokens"] += 1
+                    tok["trace_status"] = "direct-token-alignment"
                 else:
-                    tok["confidence"] = "unaligned"
+                    # Do not fabricate a lexical equivalence. The web still links this
+                    # Spanish token to its exact Greek source unit as contextual provenance.
+                    tok["confidence"] = "contextual"
+                    tok["trace_status"] = "source-unit-context"
 
             stats["units"] += 1
             stats["target_tokens"] += len(target)
             stats["aligned_target_tokens"] += aligned_count
+            stats["traceable_target_tokens"] += len(target)
             stats["unaligned_target_tokens"] += len(target) - aligned_count
+
             output_rows.append(
                 {
                     "edition_id": row["edition_id"],
@@ -188,18 +230,27 @@ def main() -> None:
             for item in output_rows:
                 fh.write(json.dumps(item, ensure_ascii=False, separators=(",", ":")) + "\n")
 
-        stats["coverage"] = (
+        stats["direct_alignment_coverage"] = (
             round(stats["aligned_target_tokens"] / stats["target_tokens"], 6)
-            if stats["target_tokens"] else 0.0
+            if stats["target_tokens"]
+            else 0.0
         )
+        stats["traceability_coverage"] = (
+            round(stats["traceable_target_tokens"] / stats["target_tokens"], 6)
+            if stats["target_tokens"]
+            else 0.0
+        )
+        # Backward-compatible: "coverage" means direct token alignment, not contextual trace.
+        stats["coverage"] = stats["direct_alignment_coverage"]
+
         summary_path.write_text(
             json.dumps(stats, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",
         )
         print(json.dumps(stats, ensure_ascii=False, indent=2))
     finally:
-        b.close()
-        s.close()
+        book.close()
+        source.close()
 
 
 if __name__ == "__main__":
