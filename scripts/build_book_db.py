@@ -151,5 +151,28 @@ stats.update({"chapters":6,"scenes":120,"units":4123,"primary_text_rows":4123,"s
 db.executemany("insert into build_stats values (?,?)",[(k,str(v)) for k,v in stats.items()])
 if db.execute("select count(*) from units").fetchone()[0]!=4123 or db.execute("select count(*) from unit_texts").fetchone()[0]!=4123:raise RuntimeError("Structural validation failed")
 if db.execute("pragma foreign_key_check").fetchall():raise RuntimeError("Foreign key validation failed")
-db.commit(); db.execute("vacuum"); db.close()
-print(json.dumps({"output":"book/el-relato-book.sqlite",**stats},ensure_ascii=False,indent=2))
+db.commit(); db.execute("vacuum")
+
+# Derived text exports keep the canonical SQLite inspectable through text-only clients.
+EXPORTS=BOOK/"exports"; EXPORTS.mkdir(exist_ok=True)
+def export_jsonl(path, query, columns):
+    with path.open("w",encoding="utf-8") as fh:
+        for row in db.execute(query):
+            fh.write(json.dumps(dict(zip(columns,row)),ensure_ascii=False,separators=(",",":"))+"\\n")
+
+export_jsonl(EXPORTS/"unit-texts.jsonl",
+    "select u.unit_id,u.chapter_number,u.scene_number,u.scene_order,u.global_order,u.reference_raw,ut.edition_id,ut.text,ut.source_witness_id,ut.derivation_method,ut.status from units u join unit_texts ut on ut.unit_id=u.unit_id order by u.global_order",
+    ["unit_id","chapter_number","scene_number","scene_order","global_order","reference_raw","edition_id","text","source_witness_id","derivation_method","status"])
+export_jsonl(EXPORTS/"unit-witnesses.jsonl",
+    "select u.scene_number,u.scene_order,u.global_order,w.witness_id,w.unit_id,w.witness_order,w.reference_component,w.book_code,w.chapter,w.verse_start,w.verse_end,w.segment_suffix,w.greek_text,w.source_edition_id,w.source_passage_ids_json,w.source_token_ids_json,w.derivation_method,w.confidence,w.source_status from unit_witnesses w join units u on u.unit_id=w.unit_id order by u.global_order,w.witness_order",
+    ["scene_number","scene_order","global_order","witness_id","unit_id","witness_order","reference_component","book_code","chapter","verse_start","verse_end","segment_suffix","greek_text","source_edition_id","source_passage_ids_json","source_token_ids_json","derivation_method","confidence","source_status"])
+export_jsonl(EXPORTS/"scenes.jsonl",
+    "select s.scene_number,s.chapter_number,s.title,st.edition_id,st.text from scenes s join scene_texts st on st.scene_number=s.scene_number order by s.scene_number",
+    ["scene_number","chapter_number","title","edition_id","text"])
+manifest={"book_id":"book:el-relato","database":"book/el-relato-book.sqlite","generated_at":now,
+          "schema_version":meta["schema_version"],"source_edition":EDITION,"chapters":6,"scenes":120,
+          "units":4123,"witnesses":stats["witnesses"],
+          "exports":["unit-texts.jsonl","unit-witnesses.jsonl","scenes.jsonl"]}
+(EXPORTS/"manifest.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+db.close()
+print(json.dumps({"output":"book/el-relato-book.sqlite","exports":"book/exports/",**stats},ensure_ascii=False,indent=2))
