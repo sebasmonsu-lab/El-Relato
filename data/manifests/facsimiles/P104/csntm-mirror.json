@@ -1,0 +1,29 @@
+{
+  "manuscript": "P104",
+  "source": "CSNTM",
+  "listed_images": 2,
+  "mirrored_or_present": 0,
+  "failed": 2,
+  "total_bytes": 0,
+  "complete": false,
+  "files": [
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P104/P104_0001a.jpg",
+      "url": null,
+      "local_path": "sources/manuscripts/P104/images/csntm/P104_0001a.jpg",
+      "status": "failed",
+      "size": null,
+      "sha256": null,
+      "error": "RuntimeError: too small: 0"
+    },
+    {
+      "service_base": "https://images.csntm.org/IIIFServer.ashx/GA_P104/P104_0001b.jpg",
+      "url": null,
+      "local_path": "sources/manuscripts/P104/images/csntm/P104_0001b.jpg",
+      "status": "failed",
+      "size": null,
+      "sha256": null,
+      "error": "RuntimeError: too small: 0"
+    }
+  ]
+}
