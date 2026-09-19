@@ -7,8 +7,7 @@
     "John": 773
   },
   "parse_status": {
-    "parsed": 3669,
-    "partial": 3
+    "parsed": 3672
   },
   "edition_sigla_counts": {
     "RP": 3672,
@@ -17,10 +16,9 @@
     "WH": 3648,
     "NIV": 150,
     "WHmarg": 14,
-    "Holmes": 12
-  },
-  "unknown_tail_tokens": {
+    "Holmes": 12,
     "TR": 2,
     "Greeven": 1
-  }
+  },
+  "unknown_tail_tokens": {}
 }
