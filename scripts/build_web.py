@@ -36,7 +36,7 @@ a{color:#315d85}.hero{padding:38px 0 20px}
 .token:hover{background:#e9dfca}
 .trans-token{display:inline-block;padding:0 2px;border-radius:4px;text-decoration:none;color:#183d66;border-bottom:2px solid #93aac2}
 .trans-token:hover{background:#dfeaf3}.trans-token.medium{border-bottom-style:dashed}
-.unaligned-token{border-bottom:1px dotted #b8aea0}
+.unaligned-token{border-bottom:1px dotted #9a8f80;color:#625c53}
 .ref{font-size:.9rem}.badge{display:inline-block;border:1px solid #c9c0b0;border-radius:999px;padding:2px 8px;font-size:.78rem;margin:2px}
 .unit{border-left:3px solid #d6c6a5;padding-left:14px;margin:18px 0}
 .crumbs{font-size:.9rem;margin-bottom:22px}.analysis dt{font-weight:700}.analysis dd{margin:0 0 10px}
@@ -135,7 +135,9 @@ def render_translation(root, eslug, uid, text, alignment, token_by_id):
             )
         else:
             parts.append(
-                f'<span class="unaligned-token" title="Sin alineamiento automático">{label}</span>'
+                f'<a class="trans-token unaligned-token" '
+                f'href="{root}alignment/{eslug}/{safe(uid)}/{tok["index"]}.html" '
+                f'title="Sin correspondencia léxica directa; abrir contexto griego">{label}</a>'
             )
         cursor = end
     parts.append(esc(text[cursor:]))
@@ -366,7 +368,8 @@ def build(out):
                     ),
                 )
 
-        # Static target-token pages: translated word/phrase -> one or more canonical Greek tokens.
+        # Static target-token pages: every translated lexical token gets a traceability page.
+        # A token may map to one/many Greek tokens, or explicitly to no lexical counterpart.
         for alignment in alignment_rows:
             edition = edition_by_id.get(alignment.get("edition_id"))
             unit = unit_by_id.get(alignment.get("unit_id"))
@@ -377,10 +380,10 @@ def build(out):
             if alignment.get("target_text_sha256") != hashlib.sha256(text.encode("utf-8")).hexdigest():
                 continue
             eslug = edition_slug(edition)
+            context_ids = [tid for tid in alignment.get("source_token_ids", []) if tid in token_by_id]
+            context_greek = "".join(token_span("../../../", token_by_id[tid]) for tid in context_ids)
             for target in alignment.get("target_tokens", []):
                 source_ids = [tid for tid in target.get("source_token_ids", []) if tid in token_by_id]
-                if not source_ids:
-                    continue
                 cards = []
                 for tid in source_ids:
                     token = token_by_id[tid]
@@ -398,16 +401,34 @@ def build(out):
                 back = (
                     f'../../../editions/{eslug}/scene/{unit["scene_number"]}.html#{esc(unit["unit_id"])}'
                 )
+                if source_ids:
+                    relation = (
+                        '<h2>Token(s) griego(s) alineado(s)</h2>'
+                        f'{"".join(cards)}'
+                    )
+                    status_text = "alineamiento automático contextual con la capa griega."
+                else:
+                    relation = (
+                        '<div class="card"><h2>Sin correspondencia léxica directa</h2>'
+                        '<p>El alineador no asignó esta palabra española a un token griego concreto. '
+                        'Puede ser un artículo, auxiliar, expansión gramatical u otra realización necesaria '
+                        'en español. No se fuerza una equivalencia inexistente.</p></div>'
+                    )
+                    status_text = "trazabilidad explícita sin equivalencia léxica forzada."
+
+                context = (
+                    '<h2>Unidad griega de contexto</h2>'
+                    f'<div class="card greek">{context_greek or "—"}</div>'
+                )
                 body = (
                     f'<div class="crumbs"><a href="{back}">← volver a la escena</a></div>'
                     f'<h1>{esc(target["surface"])}</h1>'
-                    f'<p><span class="badge">{esc(target.get("confidence", "medium"))}</span> '
-                    "alineamiento automático contextual con la capa griega.</p>"
-                    '<h2>Token(s) griego(s) alineado(s)</h2>'
-                    f'{"".join(cards)}'
+                    f'<p><span class="badge">{esc(target.get("confidence", "unaligned"))}</span> '
+                    f'{status_text}</p>{relation}{context}'
                     f'<p class="muted">Método: {esc(alignment.get("alignment_method"))} · '
                     f'Modelo: {esc(alignment.get("alignment_model"))}. '
-                    "Este enlace es una alineación computacional auditable; no sustituye revisión filológica humana.</p>"
+                    'Esta ficha documenta el estado computacional del vínculo con el griego; '
+                    'no sustituye revisión filológica humana.</p>'
                 )
                 write(
                     out / f'alignment/{eslug}/{safe(unit["unit_id"])}/{target["index"]}.html',
