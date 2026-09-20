@@ -1,0 +1,31 @@
+name: Export SBLGNT chapters
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/export_sblgnt_chapters.py"
+      - ".github/workflows/export-sblgnt-chapters.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/export_sblgnt_chapters.py
+      - name: Commit chapter exports
+        run: |
+          git config user.name "el-relato-source-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/normalized/sblgnt/chapters
+          git diff --cached --quiet && exit 0
+          git commit -m "data(sblgnt): export Gospel chapters for GPT translation"
+          git pull --rebase origin main
+          git push origin HEAD:main
