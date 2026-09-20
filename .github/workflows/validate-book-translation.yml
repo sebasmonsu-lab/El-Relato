@@ -1,0 +1,40 @@
+name: Validate BOOK translation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "book/translations/tk-es-419-v1/generated/**"
+      - "scripts/validate_generated_book_translation.py"
+      - ".github/workflows/validate-book-translation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: validate-book-translation
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate 120 scenes and 4,123 units
+        run: python scripts/validate_generated_book_translation.py
+      - name: Persist validation report
+        run: |
+          git config user.name "el-relato-validation-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add book/translations/tk-es-419-v1/validation-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m "validate(es-419): persist full BOOK coverage report"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
