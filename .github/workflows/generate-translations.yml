@@ -60,6 +60,7 @@ jobs:
           python scripts/generate_translations.py --locale "$LOCALE" --max-calls 35
           rc=$?
           echo "generator_rc=$rc" >> "$GITHUB_OUTPUT"
+          mkdir -p build
           test -f build/translation-status.json || echo '{"complete":false,"blocked":"generator-no-status"}' > build/translation-status.json
           cat build/translation-status.json
           exit 0
