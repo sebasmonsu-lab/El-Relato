@@ -1,0 +1,26 @@
+name: Validate Gospel translations
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "sources/gospel-editions/**/generated/**"
+      - "scripts/validate_gospel_translation_generated.py"
+      - ".github/workflows/validate-gospel-translations.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate current es-419 generated chapters
+        run: python scripts/validate_gospel_translation_generated.py --locale es-419
+      - name: Require complete Matthew es-419
+        run: python scripts/validate_gospel_translation_generated.py --locale es-419 --book Matthew --require-book-complete
