@@ -26,7 +26,7 @@ def gospel_page(site_root, title, body):
     return (
         '<!doctype html><html lang="es"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
-        f"<title>{esc(title)} · Los Evangelios</title><style>{CSS}</style></head><body>"
+        f"<title>{esc(title)} · Los Evangelios</title><style>{CSS}.reader{max-width:760px;margin:auto}.reader .unit{border:0;padding:0;margin:.25rem 0}.reader .ref{display:inline;font-size:.72rem;vertical-align:super;margin-right:.25rem}.reader .ref .badge{display:none}.reader .greek,.reader .text{display:inline;font-size:1.25rem;line-height:2}.chapter-nav{display:flex;justify-content:space-between;gap:16px;margin:24px 0}.chapter-picker{display:flex;gap:7px;flex-wrap:wrap;margin:18px 0}.chapter-picker a{display:inline-block;border:1px solid #c9c0b0;border-radius:999px;padding:5px 9px;text-decoration:none}.chapter-picker a.current{background:#211f1a;color:white}.reader-note{font-size:.88rem;color:#716c62}</style></head><body>"
         f'<header><a href="{site_root}gospels/index.html"><strong>Los Evangelios</strong></a><nav>'
         f'<a href="{site_root}gospels/index.html">Ediciones</a>'
         f'<a href="{site_root}gospels/{greek_slug}/index.html">Griego</a>'
@@ -236,11 +236,18 @@ def main():
                         encoding="utf-8",
                     )
 
+                picker = " ".join(
+                    f'<a class="{"current" if ch == chapter else ""}" href="../{ch}/index.html">{ch}</a>'
+                    for ch in chapters
+                )
                 cbody = (
-                    f'<div class="crumbs"><a href="../index.html">{BOOK_LABELS[book]}</a> / capítulo {chapter}</div>'
+                    f'<div class="reader"><div class="crumbs"><a href="../index.html">{BOOK_LABELS[book]}</a> / capítulo {chapter}</div>'
                     f'<h1>{BOOK_LABELS[book]} {chapter}</h1>'
-                    f'<p>Edición: <strong>{esc(edition["title"])}</strong> · Cambiar: {selector}</p>'
-                    f'<p>{nav}</p>{"".join(blocks)}<p>{nav}</p>'
+                    f'<p class="reader-note">Edición: <strong>{esc(edition["title"])}</strong> · Cambiar: {selector}</p>'
+                    f'<div class="chapter-picker" aria-label="Capítulos">{picker}</div>'
+                    f'<div class="chapter-nav">{nav}</div>'
+                    f'{"".join(blocks)}'
+                    f'<div class="chapter-nav">{nav}</div></div>'
                 )
                 cdir = edir / bslug / str(chapter)
                 cdir.mkdir(parents=True, exist_ok=True)
