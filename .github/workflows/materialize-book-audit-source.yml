@@ -1,0 +1,53 @@
+name: Materialize BOOK audit source
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "book/el-relato-book.sqlite"
+      - ".github/workflows/materialize-book-audit-source.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Export BOOK Greek and witnesses
+        run: |
+          python - <<'PY'
+          import sqlite3, json, pathlib
+          db = sqlite3.connect("book/el-relato-book.sqlite")
+          db.row_factory = sqlite3.Row
+          out = pathlib.Path("audit/materialized-book-greek.jsonl")
+          out.parent.mkdir(parents=True, exist_ok=True)
+          edition = "edition:el-relato:grc-sblgnt-2010:v1"
+          units = db.execute("""
+            SELECT u.unit_id,u.chapter_number,u.scene_number,u.scene_order,u.global_order,
+                   u.reference_raw,ut.text AS greek_primary,ut.derivation_method,ut.status
+            FROM units u JOIN unit_texts ut ON ut.unit_id=u.unit_id
+            WHERE ut.edition_id=? ORDER BY u.global_order
+          """,(edition,)).fetchall()
+          with out.open("w",encoding="utf-8") as f:
+            for u in units:
+              ws=[dict(r) for r in db.execute("""
+                SELECT witness_order,reference_component,book_code,chapter,verse_start,verse_end,
+                       segment_suffix,greek_text,source_edition_id,derivation_method,confidence,source_status
+                FROM unit_witnesses WHERE unit_id=? ORDER BY witness_order
+              """,(u["unit_id"],))]
+              row=dict(u); row["witnesses"]=ws
+              f.write(json.dumps(row,ensure_ascii=False,separators=(",",":"))+"\n")
+          assert len(units)==4123, len(units)
+          print("exported",len(units),"units")
+          PY
+      - name: Commit materialized source
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add audit/materialized-book-greek.jsonl
+          git diff --cached --quiet && exit 0
+          git commit -m "audit: materialize BOOK Greek and witnesses"
+          git push
