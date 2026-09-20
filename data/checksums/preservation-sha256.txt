@@ -441,6 +441,7 @@ f54eaea9b2f2c066032f978d3bac8197e3498cbbb689a64a2e4205420f80960d  sources/gospel
 6f816e138b6086b659c80a570caa1c3f64960c3295ae2ca1d12dbaf32bd04907  sources/gospel-editions/es-419-v1/generated/luke-19.jsonl
 e2ee36469c97dd7b4a847d867c7e00982b2b2b9c48250bece4fc0d7d7b11ef08  sources/gospel-editions/es-419-v1/generated/luke-20.jsonl
 31b93df57bafc3279392a6fde22f978efc189e2fea5c50947fe08f24b21e440f  sources/gospel-editions/es-419-v1/generated/luke-21.jsonl
+c2c6ce0e7bf87dc112f9e9326fd614770848f7174a4948c0420a3cab5afedab3  sources/gospel-editions/es-419-v1/generated/luke-22.jsonl
 0df4fff411a83ae9835791d2b9d805db2a1215a7f561aabbcc36e1d30a577084  sources/gospel-editions/es-419-v1/generated/mark-01.jsonl
 acd03dc405aca4397468b4e74e54555056992e20c016a7a0d86192120f5d380b  sources/gospel-editions/es-419-v1/generated/mark-02.jsonl
 52047d7d5177edf05fe7b09a7950fd822bc18cf6403c5e8585cbcce3edf25f13  sources/gospel-editions/es-419-v1/generated/mark-03.jsonl
