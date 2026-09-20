@@ -57,7 +57,7 @@ jobs:
         shell: bash
         run: |
           set +e
-          python scripts/generate_translations.py --locale "$LOCALE" --max-calls 35
+          python scripts/generate_translations.py --locale "$LOCALE" --scope gospels --max-calls 35
           rc=$?
           echo "generator_rc=$rc" >> "$GITHUB_OUTPUT"
           mkdir -p build
@@ -87,7 +87,7 @@ jobs:
           echo "blocked=$blocked" >> "$GITHUB_OUTPUT"
 
       - name: Consolidate completed BOOK edition into latest SQLite
-        if: steps.status.outputs.complete == 'true'
+        if: steps.status.outputs.complete == 'true' && false
         shell: bash
         run: |
           git pull --rebase origin main
