@@ -91,6 +91,7 @@ report={
  "empty_translations":len(empty),
  "scene_order_mismatches":len(scene_mismatch),
  "missing_unit_id_list":missing_ids,
+ "missing_source_rows":[{"unit_id":r["unit_id"],"scene_number":r["scene_number"],"scene_order":r["scene_order"],"text":r["text"]} for r in src if r["unit_id"] in set(missing_ids)],
  "extra_unit_id_list":extra_ids,
  "scene_mismatch_details":scene_mismatch,
  "models":dict(models),
