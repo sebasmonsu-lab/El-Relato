@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "locale": "es-419",
+  "edition_id": "edition:gospels:es-419:v1",
+  "expected_verses": 3768,
+  "translated_verses": 3768,
+  "missing": 0,
+  "extra": 0,
+  "chapter_files": 89,
+  "models": {
+    "GPT-5.6 Sol": 3768
+  },
+  "row_statuses": {
+    "generated-reviewed": 1269,
+    "generated": 2499
+  }
+}

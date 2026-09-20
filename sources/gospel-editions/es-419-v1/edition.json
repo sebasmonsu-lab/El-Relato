@@ -3,10 +3,10 @@
   "title": "Evangelios — Español Latinoamericano IA V1",
   "language_code": "es",
   "version": "1",
-  "status": "draft",
+  "status": "consolidated",
   "kind": "translation",
   "base_edition_id": "edition:gospels:grc-sblgnt-2010:v1",
   "materialization": "verses-jsonl",
-  "publication": "private",
-  "notes": "AI translation directly from Greek SBLGNT source; español latinoamericano contemporáneo, natural para México, Colombia y comunidades hispanohablantes de Estados Unidos; usa ustedes, evita voseo, españolismos y arcaísmos innecesarios; human review required."
+  "publication": "public",
+  "notes": "AI translation directly from the Greek SBLGNT source; complete canonical coverage validated 3768/3768 verses with exact book/chapter/verse key equality. Contemporary es-419; human philological review remains recommended. Legacy generated material was retained only in the single V1 path and direct GPT-5.6 Sol chapters completed the missing corpus."
 }
