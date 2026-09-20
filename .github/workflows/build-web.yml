@@ -91,6 +91,10 @@ jobs:
           assert (root / "gospels/index.html").exists()
           assert (root / "gospels" / gslug / "matthew/1/index.html").exists()
           assert (root / "gospels" / gslug / "john/21/index.html").exists()
+          gospel_reader = (root / "gospels" / gslug / "john/1/index.html").read_text()
+          assert 'class="reader"' in gospel_reader, "Gospel chapter is not using continuous reader UX"
+          assert 'class="chapter-picker"' in gospel_reader, "Gospel reader has no chapter picker"
+          assert 'class="token"' in gospel_reader, "Greek Gospel reader lost token navigation"
 
           token_pages = list((root / "token").glob("*.html"))
           assert len(token_pages) > 64000, len(token_pages)
