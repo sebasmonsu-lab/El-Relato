@@ -1,0 +1,57 @@
+name: Materialize review packets
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/materialize-review-packets.yml"
+      - "audit/greek/**"
+      - "book/translations/tk-es-419-v1/generated/**"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pair Greek with es-419 by scene
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          root=pathlib.Path(".")
+          out=root/"audit"/"packets"; out.mkdir(parents=True,exist_ok=True)
+          total=0
+          for scene in range(1,121):
+            gp=root/"audit"/"greek"/f"scene-{scene:03d}.jsonl"
+            tp=root/"book"/"translations"/"tk-es-419-v1"/"generated"/f"scene-{scene:03d}.jsonl"
+            gs=[json.loads(x) for x in gp.read_text(encoding="utf-8").splitlines() if x.strip()]
+            ts=[json.loads(x) for x in tp.read_text(encoding="utf-8").splitlines() if x.strip()]
+            tm={x["unit_id"]:x for x in ts}
+            assert len(gs)==len(ts),(scene,len(gs),len(ts))
+            rows=[]
+            for i,g in enumerate(gs):
+              t=tm[g["unit_id"]]
+              rows.append({
+                "unit_id":g["unit_id"],"scene_number":scene,"scene_order":g["scene_order"],
+                "reference_raw":g["reference_raw"],"greek_primary":g["greek_primary"],
+                "witnesses":g["witnesses"],"generated_es419":t["text"],
+                "generation_model":t.get("model","legacy-unattributed"),
+                "generation_status":t.get("status","legacy-unreviewed")
+              })
+            (out/f"scene-{scene:03d}.jsonl").write_text(
+              "".join(json.dumps(r,ensure_ascii=False,separators=(",",":"))+"\n" for r in rows),encoding="utf-8")
+            total+=len(rows)
+          assert total==4123,total
+          print("paired",total,"units")
+          PY
+      - name: Commit packets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add audit/packets
+          git diff --cached --quiet && exit 0
+          git commit -m "audit: materialize 120 philological review packets"
+          git push
