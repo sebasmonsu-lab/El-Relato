@@ -1,0 +1,24 @@
+name: Check BOOK consolidation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "book/translations/tk-es-419-v1/**"
+      - "scripts/consolidate_book_translation.py"
+      - ".github/workflows/check-book-consolidation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  dry-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Read-only consolidation check
+        run: python scripts/consolidate_book_translation.py
