@@ -420,6 +420,7 @@ ba3be69a821188f63fedc5df72cc4efad5b7bc1ce7d22ca43aff7b994c6d83a8  sources/catalo
 4952bd3742b15458aad00630742b04d0ed2412ea89f3b4ac1f8b6e3b1ee6fdb4  sources/critical-texts/SBLGNT/PROVENANCE.md
 a86a4d5f7a3030ac2bb517a55666c6ed3dcee82e98e85fcb88a77a7d501b2415  sources/gospel-editions/README.md
 596b1af38cb46496d7f603b45ccbc5b582f45cc21aed5f4e11db4bf8a4c58b53  sources/gospel-editions/es-419-v1/edition.json
+9f879af0ab96d3d45453ea59920caf6bbcaf795c2fe01e7754cc099dcce2af20  sources/gospel-editions/es-419-v1/generated/luke-01.jsonl
 0df4fff411a83ae9835791d2b9d805db2a1215a7f561aabbcc36e1d30a577084  sources/gospel-editions/es-419-v1/generated/mark-01.jsonl
 acd03dc405aca4397468b4e74e54555056992e20c016a7a0d86192120f5d380b  sources/gospel-editions/es-419-v1/generated/mark-02.jsonl
 52047d7d5177edf05fe7b09a7950fd822bc18cf6403c5e8585cbcce3edf25f13  sources/gospel-editions/es-419-v1/generated/mark-03.jsonl
