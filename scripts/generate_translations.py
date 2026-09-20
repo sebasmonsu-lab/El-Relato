@@ -267,7 +267,7 @@ def finalize_source(target, src_rows):
     return True
 
 def main():
-    ap=argparse.ArgumentParser(); ap.add_argument("--locale",choices=TARGETS,required=True); ap.add_argument("--max-calls",type=int,default=35)
+    ap=argparse.ArgumentParser(); ap.add_argument("--locale",choices=TARGETS,required=True); ap.add_argument("--max-calls",type=int,default=35); ap.add_argument("--scope",choices=["all","gospels","book"],default="all")
     a=ap.parse_args(); target=TARGETS[a.locale]
     token=os.environ.get("GITHUB_TOKEN")
     if not token: raise SystemExit("GITHUB_TOKEN required")
@@ -284,7 +284,7 @@ def main():
     for x in ssrc:
         if x["id"] not in shave: sgdict[(x["book"],x["chapter"])].append(x)
     sgroups=[sgdict[k] for k in sorted(sgdict,key=lambda k:(order[k[0]],k[1]))]
-    batches=[("book",x) for x in micro_batches(bgroups,1800)] + [("source",x) for x in micro_batches(sgroups,1800)]
+    batches=[]\n    if a.scope in {"gospels","all"}:\n        batches += [("source",x) for x in micro_batches(sgroups,1800)]\n    if a.scope in {"book","all"}:\n        batches += [("book",x) for x in micro_batches(bgroups,1800)]
     calls=0; model_used=None; blocked=None
     for kind,batch in batches:
         if calls>=a.max_calls: break
