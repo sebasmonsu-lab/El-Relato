@@ -421,6 +421,7 @@ ba3be69a821188f63fedc5df72cc4efad5b7bc1ce7d22ca43aff7b994c6d83a8  sources/catalo
 a86a4d5f7a3030ac2bb517a55666c6ed3dcee82e98e85fcb88a77a7d501b2415  sources/gospel-editions/README.md
 596b1af38cb46496d7f603b45ccbc5b582f45cc21aed5f4e11db4bf8a4c58b53  sources/gospel-editions/es-419-v1/edition.json
 0df4fff411a83ae9835791d2b9d805db2a1215a7f561aabbcc36e1d30a577084  sources/gospel-editions/es-419-v1/generated/mark-01.jsonl
+acd03dc405aca4397468b4e74e54555056992e20c016a7a0d86192120f5d380b  sources/gospel-editions/es-419-v1/generated/mark-02.jsonl
 197914e9c207c8a1071f4e69b23307e3eb5e0c19895656965dae2393577e02a2  sources/gospel-editions/es-419-v1/generated/matthew-01.jsonl
 4c21f95feb3ba2d9f2c4db7b49e224ead289eec450f5402f097a045b497df90b  sources/gospel-editions/es-419-v1/generated/matthew-02.jsonl
 41c46b33ef755f7a3ce52ca70e369a13cc494d1d8910ebf55db7dbb3741b3fab  sources/gospel-editions/es-419-v1/generated/matthew-03.jsonl
