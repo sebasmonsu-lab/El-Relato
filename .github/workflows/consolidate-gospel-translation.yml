@@ -1,0 +1,40 @@
+name: Consolidate Gospel translation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/consolidate_gospel_translation.py"
+      - ".github/workflows/consolidate-gospel-translation.yml"
+      - "sources/gospel-editions/es-419-v1/generated/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: consolidate-gospel-es-419
+  cancel-in-progress: true
+
+jobs:
+  consolidate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate and consolidate SOURCE es-419
+        run: python scripts/consolidate_gospel_translation.py --locale es-419
+      - name: Persist canonical SOURCE edition
+        run: |
+          git config user.name "el-relato-validator"
+          git config user.email "actions@users.noreply.github.com"
+          git add sources/gospel-editions/es-419-v1/verses.jsonl                   sources/gospel-editions/es-419-v1/edition.json                   sources/gospel-editions/es-419-v1/validation-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m "translate(es-419): consolidate canonical Gospel SOURCE"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
