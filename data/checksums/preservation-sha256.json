@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T01:49:40+00:00",
+  "generated_at": "2026-09-20T01:50:41+00:00",
   "algorithm": "sha256",
   "files": [
     {
@@ -2116,6 +2116,11 @@
       "path": "sources/gospel-editions/es-419-v1/generated/john-01.jsonl",
       "sha256": "753b7ae1d25868a4d8d97849ddec6361eee3054899fbf984d3706ce3aa002195",
       "size": 16579
+    },
+    {
+      "path": "sources/gospel-editions/es-419-v1/generated/john-02.jsonl",
+      "sha256": "2bcf90a94a60f110e66fea9a9de02bbe819d82dcce9eb6ab189d3414893a3d63",
+      "size": 8183
     },
     {
       "path": "sources/gospel-editions/es-419-v1/generated/luke-01.jsonl",
