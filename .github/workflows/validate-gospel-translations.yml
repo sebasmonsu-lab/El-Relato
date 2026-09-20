@@ -24,3 +24,5 @@ jobs:
         run: python scripts/validate_gospel_translation_generated.py --locale es-419
       - name: Require complete Matthew es-419
         run: python scripts/validate_gospel_translation_generated.py --locale es-419 --book Matthew --require-book-complete
+      - name: Require complete Mark es-419
+        run: python scripts/validate_gospel_translation_generated.py --locale es-419 --book Mark --require-book-complete
