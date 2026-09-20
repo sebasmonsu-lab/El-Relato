@@ -42,6 +42,15 @@ jobs:
           path: ~/.cache/huggingface
           key: hf-mbert-simalign-v1
 
+      - name: Cache derived translation alignment
+        id: alignment-cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            build/translation-alignments.jsonl
+            build/translation-alignments-summary.json
+          key: translation-alignment-v2-${{ hashFiles('book/el-relato-book.sqlite', 'scripts/build_translation_alignment.py', 'data/normalized/**', 'sources/gospel-editions/**') }}
+
       - name: Install translation alignment dependencies
         run: python -m pip install "simalign==0.4"
 
@@ -49,12 +58,19 @@ jobs:
         run: python scripts/build_query_db.py --output build/el-relato.sqlite
 
       - name: Build translation-to-Greek token alignment
+        if: steps.alignment-cache.outputs.cache-hit != 'true'
         env:
           TOKENIZERS_PARALLELISM: "false"
         run: |
           python scripts/build_translation_alignment.py \
             --output build/translation-alignments.jsonl \
             --summary build/translation-alignments-summary.json
+
+      - name: Verify cached translation alignment
+        if: steps.alignment-cache.outputs.cache-hit == 'true'
+        run: |
+          test -f build/translation-alignments.jsonl
+          test -f build/translation-alignments-summary.json
 
       - name: Build static research site
         run: python scripts/build_web.py --output build/site
