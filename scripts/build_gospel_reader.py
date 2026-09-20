@@ -19,6 +19,17 @@ EDITIONS_ROOT = ROOT / "sources/gospel-editions"
 PUBLIC_STATUSES = {"canonical-source", "consolidated", "published"}
 CANON = ["Matthew", "Mark", "Luke", "John"]
 GREEK_EDITION_ID = "edition:gospels:grc-sblgnt-2010:v1"
+READER_CSS = """.reader{max-width:760px;margin:auto}
+.reader .unit{border:0;padding:0;margin:.25rem 0}
+.reader .ref{display:inline;font-size:.72rem;vertical-align:super;margin-right:.25rem}
+.reader .ref .badge{display:none}
+.reader .greek,.reader .text{display:inline;font-size:1.25rem;line-height:2}
+.chapter-nav{display:flex;justify-content:space-between;gap:16px;margin:24px 0}
+.chapter-picker{display:flex;gap:7px;flex-wrap:wrap;margin:18px 0}
+.chapter-picker a{display:inline-block;border:1px solid #c9c0b0;border-radius:999px;padding:5px 9px;text-decoration:none}
+.chapter-picker a.current{background:#211f1a;color:white}
+.reader-note{font-size:.88rem;color:#716c62}
+"""
 
 
 def gospel_page(site_root, title, body):
@@ -26,7 +37,7 @@ def gospel_page(site_root, title, body):
     return (
         '<!doctype html><html lang="es"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
-        f"<title>{esc(title)} · Los Evangelios</title><style>{CSS}.reader{max-width:760px;margin:auto}.reader .unit{border:0;padding:0;margin:.25rem 0}.reader .ref{display:inline;font-size:.72rem;vertical-align:super;margin-right:.25rem}.reader .ref .badge{display:none}.reader .greek,.reader .text{display:inline;font-size:1.25rem;line-height:2}.chapter-nav{display:flex;justify-content:space-between;gap:16px;margin:24px 0}.chapter-picker{display:flex;gap:7px;flex-wrap:wrap;margin:18px 0}.chapter-picker a{display:inline-block;border:1px solid #c9c0b0;border-radius:999px;padding:5px 9px;text-decoration:none}.chapter-picker a.current{background:#211f1a;color:white}.reader-note{font-size:.88rem;color:#716c62}</style></head><body>"
+        f"<title>{esc(title)} · Los Evangelios</title><style>{CSS}{READER_CSS}</style></head><body>"
         f'<header><a href="{site_root}gospels/index.html"><strong>Los Evangelios</strong></a><nav>'
         f'<a href="{site_root}gospels/index.html">Ediciones</a>'
         f'<a href="{site_root}gospels/{greek_slug}/index.html">Griego</a>'
