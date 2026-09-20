@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       locale:
-        description: Translation target
+        description: Translation target (legacy Copilot pipeline; do not use for canonical generation)
         required: true
         default: es-419
         type: choice
@@ -13,12 +13,6 @@ on:
         description: Retry counter for provider throttling
         required: false
         default: "0"
-  push:
-    branches: [main]
-    paths:
-      - "scripts/generate_translations.py"
-      - "scripts/consolidate_book_translation.py"
-      - ".github/workflows/generate-translations.yml"
 
 permissions:
   contents: write
