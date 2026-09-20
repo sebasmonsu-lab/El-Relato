@@ -36,13 +36,27 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Detect translated BOOK editions
+        id: book-translations
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import sqlite3
+          c=sqlite3.connect("book/el-relato-book.sqlite")
+          n=c.execute("SELECT COUNT(*) FROM editions WHERE lower(language_code) NOT IN ('grc','el','gr')").fetchone()[0]
+          c.close()
+          print(f"needs_alignment={'true' if n else 'false'}")
+          print(f"translated_editions={n}")
+          PY
+
       - name: Cache multilingual alignment model
+        if: steps.book-translations.outputs.needs_alignment == 'true'
         uses: actions/cache@v4
         with:
           path: ~/.cache/huggingface
           key: hf-mbert-simalign-v1
 
       - name: Cache derived translation alignment
+        if: steps.book-translations.outputs.needs_alignment == 'true'
         id: alignment-cache
         uses: actions/cache@v4
         with:
@@ -52,13 +66,14 @@ jobs:
           key: translation-alignment-v2-${{ hashFiles('book/el-relato-book.sqlite', 'scripts/build_translation_alignment.py', 'data/normalized/**', 'sources/gospel-editions/**') }}
 
       - name: Install translation alignment dependencies
+        if: steps.book-translations.outputs.needs_alignment == 'true' && steps.alignment-cache.outputs.cache-hit != 'true'
         run: python -m pip install "simalign==0.4"
 
       - name: Build SOURCE query database
         run: python scripts/build_query_db.py --output build/el-relato.sqlite
 
       - name: Build translation-to-Greek token alignment
-        if: steps.alignment-cache.outputs.cache-hit != 'true'
+        if: steps.book-translations.outputs.needs_alignment != 'true' || steps.alignment-cache.outputs.cache-hit != 'true'
         env:
           TOKENIZERS_PARALLELISM: "false"
         run: |
@@ -67,7 +82,7 @@ jobs:
             --summary build/translation-alignments-summary.json
 
       - name: Verify cached translation alignment
-        if: steps.alignment-cache.outputs.cache-hit == 'true'
+        if: steps.book-translations.outputs.needs_alignment == 'true' && steps.alignment-cache.outputs.cache-hit == 'true'
         run: |
           test -f build/translation-alignments.jsonl
           test -f build/translation-alignments-summary.json
