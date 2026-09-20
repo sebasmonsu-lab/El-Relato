@@ -35,3 +35,9 @@ Fecha de fijación: 2026-09-20
 3. Contexto inmediato y ensamblado de El Relato.
 4. RVR1960/NVI para forma española de nombres propios y contraste de uso.
 5. Otras traducciones sólo como referencia secundaria.
+
+
+## Fallback no-SBLGNT
+- Si una unidad materializada no procede de SBLGNT sino de TAGNT/TR u otro fallback, no se incorpora automáticamente al texto principal.
+- Si la lectura no pertenece al texto SBLGNT base, se conserva la unidad por trazabilidad y se documenta como variante/nota textual.
+- Ejemplo confirmado: Jn 5:4, `edition:tagnt:tr-selection`, `tagnt-tr-fallback`: VARIANT_NOTE_ONLY para el texto principal.
