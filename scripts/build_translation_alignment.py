@@ -58,10 +58,12 @@ def main() -> None:
     book = connect_ro(book_db)
     source = connect_ro(query_db)
     try:
+        hidden_statuses = {"generated-partial", "superseded", "archived"}
         editions = {
             r["edition_id"]: dict(r)
             for r in book.execute("SELECT * FROM editions ORDER BY created_at, edition_id")
             if (r["language_code"] or "").lower() not in GREEK_LANGS
+            and (r["status"] or "").lower() not in hidden_statuses
         }
         rows = [
             dict(r)

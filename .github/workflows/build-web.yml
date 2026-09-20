@@ -42,7 +42,9 @@ jobs:
           python - <<'PY' >> "$GITHUB_OUTPUT"
           import sqlite3
           c=sqlite3.connect("book/el-relato-book.sqlite")
-          n=c.execute("SELECT COUNT(*) FROM editions WHERE lower(language_code) NOT IN ('grc','el','gr')").fetchone()[0]
+          n=c.execute("""SELECT COUNT(*) FROM editions
+                         WHERE lower(language_code) NOT IN ('grc','el','gr')
+                           AND lower(status) NOT IN ('generated-partial','superseded','archived')""").fetchone()[0]
           c.close()
           print(f"needs_alignment={'true' if n else 'false'}")
           print(f"translated_editions={n}")

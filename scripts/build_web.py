@@ -173,7 +173,13 @@ def build(out):
         chapters = q(book, "select * from chapters order by chapter_order")
         scenes = q(book, "select * from scenes order by scene_number")
         units = q(book, "select * from units order by global_order")
-        editions = q(book, "select * from editions order by created_at, edition_id")
+        all_editions = q(book, "select * from editions order by created_at, edition_id")
+        hidden_statuses = {"generated-partial", "superseded", "archived"}
+        editions = [
+            e for e in all_editions
+            if (e["language_code"] or "").lower() in GREEK_LANGS
+            or (e.get("status") or "").lower() not in hidden_statuses
+        ]
         edition_by_id = {e["edition_id"]: e for e in editions}
 
         all_texts = q(book, "select * from unit_texts")
