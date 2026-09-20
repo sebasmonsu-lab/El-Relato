@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 import json
+import sqlite3
 from collections import Counter
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-SRC=ROOT/"book/translations/_source-export"
+DB=ROOT/"book/el-relato-book.sqlite"
 GEN=ROOT/"book/translations/tk-es-419-v1/generated"
 REPORT=ROOT/"book/translations/tk-es-419-v1/validation-report.json"
 
@@ -20,14 +21,27 @@ def rows(path):
     return out
 
 expected_files=[f"scene-{i:03d}.jsonl" for i in range(1,121)]
-src_files=sorted(p.name for p in SRC.glob("scene-*.jsonl"))
 gen_files=sorted(p.name for p in GEN.glob("scene-*.jsonl"))
 missing_files=sorted(set(expected_files)-set(gen_files))
 extra_files=sorted(set(gen_files)-set(expected_files))
-if src_files != expected_files:
-    raise SystemExit(f"SOURCE export file coverage mismatch: {len(src_files)}")
 if missing_files or extra_files:
     raise SystemExit(f"generated scene coverage mismatch missing={missing_files} extra={extra_files}")
+
+c=sqlite3.connect(f"file:{DB.as_posix()}?mode=ro",uri=True)
+c.row_factory=sqlite3.Row
+try:
+    src=[dict(r) for r in c.execute("""
+      SELECT u.unit_id,u.scene_number,u.scene_order,u.global_order,ut.text
+      FROM units u JOIN unit_texts ut ON ut.unit_id=u.unit_id
+      WHERE ut.edition_id='edition:el-relato:grc-sblgnt-2010:v1'
+      ORDER BY u.global_order
+    """)]
+finally:
+    c.close()
+if len(src)!=4123:
+    raise SystemExit(f"BOOK Greek baseline coverage mismatch: {len(src)}")
+src_by_scene={}
+for r in src: src_by_scene.setdefault(int(r["scene_number"]),[]).append(r)
 
 src_ids=[]
 gen_ids=[]
@@ -36,21 +50,22 @@ statuses=Counter()
 scene_reports=[]
 empty=[]
 scene_mismatch=[]
-for name in expected_files:
-    s=rows(SRC/name)
-    g=rows(GEN/name)
-    sids=[r["unit_id"] for r in s]
-    gids=[r["unit_id"] for r in g]
+for scene in range(1,121):
+    name=f"scene-{scene:03d}.jsonl"
+    srows=src_by_scene.get(scene,[])
+    grows=rows(GEN/name)
+    sids=[r["unit_id"] for r in srows]
+    gids=[r["unit_id"] for r in grows]
     src_ids.extend(sids); gen_ids.extend(gids)
     if sids != gids:
         scene_mismatch.append({"scene":name,"source_count":len(sids),"generated_count":len(gids),
                                "missing":sorted(set(sids)-set(gids))[:20],
                                "extra":sorted(set(gids)-set(sids))[:20]})
-    for r in g:
+    for r in grows:
         if not str(r.get("text") or "").strip(): empty.append(r.get("unit_id"))
         models[str(r.get("model") or "legacy-unattributed")]+=1
         statuses[str(r.get("status") or "legacy-unreviewed")]+=1
-    scene_reports.append({"scene":int(name[6:9]),"units":len(g)})
+    scene_reports.append({"scene":scene,"units":len(grows)})
 
 src_dups=[k for k,v in Counter(src_ids).items() if v>1]
 gen_dups=[k for k,v in Counter(gen_ids).items() if v>1]
