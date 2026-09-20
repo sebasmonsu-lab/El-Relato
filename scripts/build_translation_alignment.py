@@ -55,11 +55,6 @@ def main() -> None:
     if not query_db.exists():
         raise SystemExit(f"Missing SOURCE query DB: {query_db}")
 
-    try:
-        from simalign import SentenceAligner
-    except Exception as exc:
-        raise SystemExit("SimAlign is required: pip install simalign==0.4") from exc
-
     book = connect_ro(book_db)
     source = connect_ro(query_db)
     try:
@@ -115,6 +110,11 @@ def main() -> None:
             )
             print(json.dumps(summary, ensure_ascii=False, indent=2))
             return
+
+        try:
+            from simalign import SentenceAligner
+        except Exception as exc:
+            raise SystemExit("SimAlign is required only when translated BOOK editions exist: pip install simalign==0.4") from exc
 
         # m = maximum-weight matching, a = argmax intersection, i = itermax.
         # The union improves recall while each relation records the method(s) supporting it.
