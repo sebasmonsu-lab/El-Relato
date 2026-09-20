@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "edition_id": "edition:el-relato:tk-es-419:v1",
+  "baseline_edition_id": "edition:el-relato:grc-sblgnt-2010:v1",
+  "locale": "es-419",
+  "scene_files_expected": 120,
+  "scene_files_present": 120,
+  "source_units": 4123,
+  "translated_units": 4123,
+  "expected_units": 4123,
+  "missing_unit_ids": 0,
+  "extra_unit_ids": 0,
+  "duplicate_source_ids": 0,
+  "duplicate_translation_ids": 0,
+  "empty_translations": 0,
+  "scene_order_mismatches": 0,
+  "missing_unit_id_list": [],
+  "missing_source_rows": [],
+  "extra_unit_id_list": [],
+  "scene_mismatch_details": [],
+  "models": {
+    "legacy-unattributed": 1692,
+    "GPT-5.6 Sol": 2431
+  },
+  "row_statuses": {
+    "legacy-unreviewed": 1692,
+    "generated-reviewed": 2431
+  },
+  "provenance_note": "Rows without model/status are retained legacy output and are not relabeled. Structural validation does not imply full philological review.",
+  "human_review_required": true
+}
