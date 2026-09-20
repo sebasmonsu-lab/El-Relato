@@ -8,9 +8,23 @@
   "locale": "es-419",
   "title": "El Relato — Español Latinoamericano IA V1",
   "version": "1",
-  "status": "generating",
-  "provider": "GitHub Copilot CLI",
-  "model_name": "auto",
+  "status": "generated-full",
+  "provider": "mixed-validated",
+  "model_name": "mixed",
   "units_expected": 4123,
-  "review_required": true
+  "review_required": true,
+  "units_generated": 4123,
+  "validation_status": "PASS",
+  "validation_report": "book/translations/tk-es-419-v1/validation-report.json",
+  "provenance": {
+    "legacy-unattributed": {
+      "units": 1692,
+      "disposition": "retained; structurally validated; not relabeled; philological review still required"
+    },
+    "GPT-5.6 Sol": {
+      "units": 2431,
+      "disposition": "generated/reviewed directly from Greek source"
+    }
+  },
+  "notes": "Complete es-419 BOOK coverage. No GitHub Copilot model attribution is asserted for legacy rows. Canonical Greek baseline remains edition:el-relato:grc-sblgnt-2010:v1."
 }
