@@ -78,6 +78,11 @@ def main() -> int:
 
     con = connect(db, args.apply)
     try:
+        existing_editions = [
+            dict(r) for r in con.execute(
+                "SELECT edition_id, language_code, locale, title, status FROM editions ORDER BY created_at, edition_id"
+            )
+        ]
         units = [dict(r) for r in con.execute(
             "SELECT unit_id, global_order FROM units ORDER BY global_order"
         )]
@@ -146,6 +151,7 @@ def main() -> int:
             "policy_sha256": policy_sha,
             "run_id": run_id,
             "write_enabled": bool(args.apply),
+            "existing_editions": existing_editions,
         }
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         if not args.apply:
