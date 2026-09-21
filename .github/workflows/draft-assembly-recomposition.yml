@@ -1,0 +1,43 @@
+name: Draft assembly recomposition
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/draft-assembly-recomposition.yml"
+permissions:
+  contents: write
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Draft compact assembly spans
+        run: |
+          python - <<'PY'
+          import json,pathlib,re
+          src=[json.loads(x) for x in pathlib.Path("audit/final-assembly-groups.jsonl").read_text(encoding="utf-8").splitlines() if x.strip()]
+          out=[]
+          for g in src:
+            seg=[s.strip() for s in g["reviewed_segments"] if s is not None and s.strip()]
+            txt=" ".join(seg)
+            txt=re.sub(r"\s+([,.;:?!»])",r"\1",txt)
+            txt=re.sub(r"([«¿¡])\s+",r"\1",txt)
+            action="SPECIAL_GENEALOGY_LAYOUT" if g["scene"]==2 else "RECOMPOSE_BOOK_SPAN"
+            out.append({
+              "group_id":g["group_id"],"scene":g["scene"],"unit_ids":g["unit_ids"],
+              "references":g["references"],"issues":g["issues"],"action":action,
+              "draft_text":txt
+            })
+          pathlib.Path("audit/final-assembly-drafts.jsonl").write_text(
+            "".join(json.dumps(r,ensure_ascii=False,separators=(",",":"))+"\n" for r in out),encoding="utf-8")
+          print("groups",len(out))
+          PY
+      - name: Commit drafts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add audit/final-assembly-drafts.jsonl
+          git diff --cached --quiet && exit 0
+          git commit -m "audit: draft 60 assembly recompositions"
+          git push
