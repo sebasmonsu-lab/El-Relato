@@ -427,6 +427,7 @@ be95ad63b876d6bee983b63d7e5065195230bc902a727fa67bc5c9cdb80f4c3b  sources/gospel
 7917c8d83e3f81ead1acac0f957346efe4983787de2409ba08bc94a24627548f  sources/gospel-editions/en-v1/generated/matthew-05.jsonl
 4a38c19be660b5e06ae5a2ba44382dad4bf2bda56ab5244af6b82ac45f573711  sources/gospel-editions/en-v1/generated/matthew-06.jsonl
 8a607cc6bcc817662f18ef2d11ad08055ff96777dd5f6bbf140cfcceb855b5a1  sources/gospel-editions/en-v1/generated/matthew-07.jsonl
+16580df2790dd00834f3af74e2d18a4bdd862677a2e828b4c2e2f3879b36d57f  sources/gospel-editions/en-v1/generated/matthew-08.jsonl
 a445506bab4d1111d9ea4450cfe37ce25bd47dc664379b5fadb5b872a96d68ef  sources/gospel-editions/es-419-v1/edition.json
 753b7ae1d25868a4d8d97849ddec6361eee3054899fbf984d3706ce3aa002195  sources/gospel-editions/es-419-v1/generated/john-01.jsonl
 2bcf90a94a60f110e66fea9a9de02bbe819d82dcce9eb6ab189d3414893a3d63  sources/gospel-editions/es-419-v1/generated/john-02.jsonl
