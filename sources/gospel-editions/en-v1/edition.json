@@ -1,0 +1,12 @@
+{
+  "edition_id": "edition:gospels:en:v1",
+  "title": "The Gospels — Contemporary English AI V1",
+  "language_code": "en",
+  "version": "1",
+  "status": "draft",
+  "kind": "translation",
+  "base_edition_id": "edition:gospels:grc-sblgnt-2010:v1",
+  "materialization": "verses-jsonl",
+  "publication": "private",
+  "notes": "Direct GPT-5.6 Sol translation from the Greek SBLGNT source. No GitHub LLM used. Canonical publication only after 3768/3768 verse coverage validation."
+}
