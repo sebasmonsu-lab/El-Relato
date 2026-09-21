@@ -1,0 +1,98 @@
+name: Build reviewed BOOK render
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/build-reviewed-book-render.yml"
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build 1-to-1 reviewed translation and render plan
+        run: |
+          python - <<'PY'
+          import json,pathlib,collections,shutil
+          reviewed=[json.loads(x) for x in pathlib.Path("audit/final-reviewed-4123.jsonl").read_text(encoding="utf-8").splitlines() if x.strip()]
+          resolutions=[json.loads(x) for x in pathlib.Path("audit/final-assembly-resolutions.jsonl").read_text(encoding="utf-8").splitlines() if x.strip()]
+          drops=[json.loads(x) for x in pathlib.Path("audit/final-assembly-duplicate-resolutions.jsonl").read_text(encoding="utf-8").splitlines() if x.strip()]
+          packets={}
+          unit_packet={}
+          for s in range(1,121):
+            ps=[json.loads(x) for x in pathlib.Path(f"audit/packets/scene-{s:03d}.jsonl").read_text(encoding="utf-8").splitlines() if x.strip()]
+            packets[s]=ps
+            for p in ps: unit_packet[p["unit_id"]]=p
+          rev={r["unit_id"]:r for r in reviewed}
+          drop_ids={d["unit_id"] for d in drops}
+          group_by_first={}; group_members=set()
+          for g in resolutions:
+            ids=g["unit_ids"]
+            group_by_first[ids[0]]=g
+            group_members.update(ids)
+          assembly_ids={r["unit_id"] for r in reviewed if r["review_status"]=="ASSEMBLY_REVIEW_REQUIRED"}
+          assert len(reviewed)==4123 and len(rev)==4123
+          assert len(drop_ids)==458, len(drop_ids)
+          assert len(group_members)==383, len(group_members)
+          assert drop_ids.isdisjoint(group_members)
+          assert drop_ids|group_members==assembly_ids, (len(drop_ids|group_members),len(assembly_ids))
+          reviewed_root=pathlib.Path("book/translations/tk-es-419-v1/reviewed")
+          render_root=pathlib.Path("book/render/tk-es-419-v1")
+          reviewed_root.mkdir(parents=True,exist_ok=True);render_root.mkdir(parents=True,exist_ok=True)
+          total_reviewed=0; render_covered=set();render_objects=0
+          for s in range(1,121):
+            ps=packets[s]
+            # 1:1 reviewed layer
+            rr=[]
+            for p in ps:
+              r=rev[p["unit_id"]]
+              rr.append({
+                "unit_id":p["unit_id"],"text":r["reviewed_es419"],
+                "decision":r["decision"],"issues":r["issues"],
+                "review_status":"MODEL_PHILOLOGICALLY_REVIEWED",
+                "model":"GPT-5.6 Sol","source_edition":"edition:el-relato:grc-sblgnt-2010:v1"
+              })
+            (reviewed_root/f"scene-{s:03d}.jsonl").write_text("".join(json.dumps(x,ensure_ascii=False,separators=(",",":"))+"\n" for x in rr),encoding="utf-8")
+            total_reviewed+=len(rr)
+            # BOOK render plan
+            objs=[]; consumed=set()
+            for p in ps:
+              uid=p["unit_id"]
+              if uid in consumed or uid in drop_ids: continue
+              if uid in group_by_first:
+                g=group_by_first[uid]; consumed.update(g["unit_ids"]);render_covered.update(g["unit_ids"])
+                if g["action"]=="SPECIAL_GENEALOGY_LAYOUT":
+                  objs.append({"type":"special_layout","scene":s,"unit_ids":g["unit_ids"],"references":g["references"],"layout_spec":g["layout_spec"]})
+                else:
+                  objs.append({"type":"span","scene":s,"unit_ids":g["unit_ids"],"references":g["references"],"text":g["final_text"]})
+              elif uid in group_members:
+                continue
+              else:
+                r=rev[uid]
+                objs.append({"type":"unit","scene":s,"unit_ids":[uid],"references":[p["reference_raw"]],"text":r["reviewed_es419"]})
+                render_covered.add(uid)
+            (render_root/f"scene-{s:03d}.jsonl").write_text("".join(json.dumps(x,ensure_ascii=False,separators=(",",":"))+"\n" for x in objs),encoding="utf-8")
+            render_objects+=len(objs)
+          assert total_reviewed==4123,total_reviewed
+          assert len(render_covered)==4123-len(drop_ids),(len(render_covered),4123-len(drop_ids))
+          assert set(rev)==render_covered|drop_ids
+          summary={
+            "scenes":120,"reviewed_units":4123,"render_objects":render_objects,
+            "rendered_unit_ids":len(render_covered),"suppressed_exact_duplicate_unit_ids":len(drop_ids),
+            "assembly_spans":len(resolutions)-1,"special_layouts":1,
+            "coverage_validation":"PASS"
+          }
+          pathlib.Path("book/render/tk-es-419-v1/summary.json").write_text(json.dumps(summary,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+          pathlib.Path("book/render/tk-es-419-v1/suppressed-duplicates.jsonl").write_text("".join(json.dumps(x,ensure_ascii=False,separators=(",",":"))+"\n" for x in drops),encoding="utf-8")
+          print(summary)
+          PY
+      - name: Commit reviewed layer and render
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add book/translations/tk-es-419-v1/reviewed book/render/tk-es-419-v1
+          git diff --cached --quiet && exit 0
+          git commit -m "book: build fully reviewed es-419 layer and render plan"
+          git push
