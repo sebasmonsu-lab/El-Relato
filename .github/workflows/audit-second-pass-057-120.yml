@@ -44,7 +44,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add audit/second-pass-057-120.jsonl
+          git add audit/second-pass-057-120*.jsonl audit/second-pass-057-120-summary.csv
           git diff --cached --quiet && exit 0
           git commit -m "audit: second-pass risk index scenes 057-120"
           git push
