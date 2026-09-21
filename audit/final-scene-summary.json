@@ -1,0 +1,842 @@
+[
+  {
+    "scene": 1,
+    "units": 22,
+    "keep": 14,
+    "revise": 8,
+    "assembly": 0
+  },
+  {
+    "scene": 2,
+    "units": 124,
+    "keep": 1,
+    "revise": 1,
+    "assembly": 122
+  },
+  {
+    "scene": 3,
+    "units": 21,
+    "keep": 5,
+    "revise": 16,
+    "assembly": 0
+  },
+  {
+    "scene": 4,
+    "units": 31,
+    "keep": 7,
+    "revise": 24,
+    "assembly": 0
+  },
+  {
+    "scene": 5,
+    "units": 25,
+    "keep": 8,
+    "revise": 17,
+    "assembly": 0
+  },
+  {
+    "scene": 6,
+    "units": 16,
+    "keep": 7,
+    "revise": 9,
+    "assembly": 0
+  },
+  {
+    "scene": 7,
+    "units": 31,
+    "keep": 15,
+    "revise": 16,
+    "assembly": 0
+  },
+  {
+    "scene": 8,
+    "units": 28,
+    "keep": 10,
+    "revise": 18,
+    "assembly": 0
+  },
+  {
+    "scene": 9,
+    "units": 12,
+    "keep": 6,
+    "revise": 6,
+    "assembly": 0
+  },
+  {
+    "scene": 10,
+    "units": 39,
+    "keep": 23,
+    "revise": 11,
+    "assembly": 5
+  },
+  {
+    "scene": 11,
+    "units": 18,
+    "keep": 0,
+    "revise": 2,
+    "assembly": 16
+  },
+  {
+    "scene": 12,
+    "units": 32,
+    "keep": 15,
+    "revise": 11,
+    "assembly": 6
+  },
+  {
+    "scene": 13,
+    "units": 35,
+    "keep": 8,
+    "revise": 25,
+    "assembly": 2
+  },
+  {
+    "scene": 14,
+    "units": 58,
+    "keep": 0,
+    "revise": 0,
+    "assembly": 58
+  },
+  {
+    "scene": 15,
+    "units": 13,
+    "keep": 6,
+    "revise": 7,
+    "assembly": 0
+  },
+  {
+    "scene": 16,
+    "units": 21,
+    "keep": 9,
+    "revise": 12,
+    "assembly": 0
+  },
+  {
+    "scene": 17,
+    "units": 15,
+    "keep": 3,
+    "revise": 12,
+    "assembly": 0
+  },
+  {
+    "scene": 18,
+    "units": 8,
+    "keep": 3,
+    "revise": 3,
+    "assembly": 2
+  },
+  {
+    "scene": 19,
+    "units": 45,
+    "keep": 21,
+    "revise": 19,
+    "assembly": 5
+  },
+  {
+    "scene": 20,
+    "units": 16,
+    "keep": 7,
+    "revise": 1,
+    "assembly": 8
+  },
+  {
+    "scene": 21,
+    "units": 16,
+    "keep": 4,
+    "revise": 6,
+    "assembly": 6
+  },
+  {
+    "scene": 22,
+    "units": 36,
+    "keep": 8,
+    "revise": 17,
+    "assembly": 11
+  },
+  {
+    "scene": 23,
+    "units": 9,
+    "keep": 1,
+    "revise": 4,
+    "assembly": 4
+  },
+  {
+    "scene": 24,
+    "units": 16,
+    "keep": 7,
+    "revise": 6,
+    "assembly": 3
+  },
+  {
+    "scene": 25,
+    "units": 15,
+    "keep": 10,
+    "revise": 0,
+    "assembly": 5
+  },
+  {
+    "scene": 26,
+    "units": 26,
+    "keep": 1,
+    "revise": 1,
+    "assembly": 24
+  },
+  {
+    "scene": 27,
+    "units": 52,
+    "keep": 12,
+    "revise": 15,
+    "assembly": 25
+  },
+  {
+    "scene": 28,
+    "units": 17,
+    "keep": 5,
+    "revise": 6,
+    "assembly": 6
+  },
+  {
+    "scene": 29,
+    "units": 14,
+    "keep": 1,
+    "revise": 0,
+    "assembly": 13
+  },
+  {
+    "scene": 30,
+    "units": 48,
+    "keep": 31,
+    "revise": 14,
+    "assembly": 3
+  },
+  {
+    "scene": 31,
+    "units": 12,
+    "keep": 8,
+    "revise": 2,
+    "assembly": 2
+  },
+  {
+    "scene": 32,
+    "units": 28,
+    "keep": 8,
+    "revise": 8,
+    "assembly": 12
+  },
+  {
+    "scene": 33,
+    "units": 7,
+    "keep": 1,
+    "revise": 4,
+    "assembly": 2
+  },
+  {
+    "scene": 34,
+    "units": 28,
+    "keep": 6,
+    "revise": 9,
+    "assembly": 13
+  },
+  {
+    "scene": 35,
+    "units": 121,
+    "keep": 88,
+    "revise": 32,
+    "assembly": 1
+  },
+  {
+    "scene": 36,
+    "units": 25,
+    "keep": 9,
+    "revise": 6,
+    "assembly": 10
+  },
+  {
+    "scene": 37,
+    "units": 7,
+    "keep": 2,
+    "revise": 5,
+    "assembly": 0
+  },
+  {
+    "scene": 38,
+    "units": 39,
+    "keep": 15,
+    "revise": 18,
+    "assembly": 6
+  },
+  {
+    "scene": 39,
+    "units": 11,
+    "keep": 7,
+    "revise": 4,
+    "assembly": 0
+  },
+  {
+    "scene": 40,
+    "units": 15,
+    "keep": 7,
+    "revise": 8,
+    "assembly": 0
+  },
+  {
+    "scene": 41,
+    "units": 8,
+    "keep": 0,
+    "revise": 3,
+    "assembly": 5
+  },
+  {
+    "scene": 42,
+    "units": 34,
+    "keep": 5,
+    "revise": 9,
+    "assembly": 20
+  },
+  {
+    "scene": 43,
+    "units": 8,
+    "keep": 3,
+    "revise": 5,
+    "assembly": 0
+  },
+  {
+    "scene": 44,
+    "units": 22,
+    "keep": 5,
+    "revise": 9,
+    "assembly": 8
+  },
+  {
+    "scene": 45,
+    "units": 74,
+    "keep": 31,
+    "revise": 32,
+    "assembly": 11
+  },
+  {
+    "scene": 46,
+    "units": 32,
+    "keep": 8,
+    "revise": 17,
+    "assembly": 7
+  },
+  {
+    "scene": 47,
+    "units": 34,
+    "keep": 12,
+    "revise": 17,
+    "assembly": 5
+  },
+  {
+    "scene": 48,
+    "units": 49,
+    "keep": 19,
+    "revise": 23,
+    "assembly": 7
+  },
+  {
+    "scene": 49,
+    "units": 12,
+    "keep": 2,
+    "revise": 6,
+    "assembly": 4
+  },
+  {
+    "scene": 50,
+    "units": 21,
+    "keep": 7,
+    "revise": 7,
+    "assembly": 7
+  },
+  {
+    "scene": 51,
+    "units": 54,
+    "keep": 33,
+    "revise": 20,
+    "assembly": 1
+  },
+  {
+    "scene": 52,
+    "units": 20,
+    "keep": 8,
+    "revise": 11,
+    "assembly": 1
+  },
+  {
+    "scene": 53,
+    "units": 48,
+    "keep": 17,
+    "revise": 25,
+    "assembly": 6
+  },
+  {
+    "scene": 54,
+    "units": 41,
+    "keep": 15,
+    "revise": 20,
+    "assembly": 6
+  },
+  {
+    "scene": 55,
+    "units": 52,
+    "keep": 28,
+    "revise": 22,
+    "assembly": 2
+  },
+  {
+    "scene": 56,
+    "units": 47,
+    "keep": 13,
+    "revise": 0,
+    "assembly": 34
+  },
+  {
+    "scene": 57,
+    "units": 26,
+    "keep": 20,
+    "revise": 0,
+    "assembly": 6
+  },
+  {
+    "scene": 58,
+    "units": 12,
+    "keep": 11,
+    "revise": 0,
+    "assembly": 1
+  },
+  {
+    "scene": 59,
+    "units": 26,
+    "keep": 18,
+    "revise": 0,
+    "assembly": 8
+  },
+  {
+    "scene": 60,
+    "units": 39,
+    "keep": 27,
+    "revise": 0,
+    "assembly": 12
+  },
+  {
+    "scene": 61,
+    "units": 9,
+    "keep": 5,
+    "revise": 0,
+    "assembly": 4
+  },
+  {
+    "scene": 62,
+    "units": 22,
+    "keep": 21,
+    "revise": 0,
+    "assembly": 1
+  },
+  {
+    "scene": 63,
+    "units": 47,
+    "keep": 32,
+    "revise": 0,
+    "assembly": 15
+  },
+  {
+    "scene": 64,
+    "units": 23,
+    "keep": 22,
+    "revise": 0,
+    "assembly": 1
+  },
+  {
+    "scene": 65,
+    "units": 20,
+    "keep": 13,
+    "revise": 0,
+    "assembly": 7
+  },
+  {
+    "scene": 66,
+    "units": 55,
+    "keep": 54,
+    "revise": 0,
+    "assembly": 1
+  },
+  {
+    "scene": 67,
+    "units": 112,
+    "keep": 111,
+    "revise": 0,
+    "assembly": 1
+  },
+  {
+    "scene": 68,
+    "units": 12,
+    "keep": 12,
+    "revise": 0,
+    "assembly": 0
+  },
+  {
+    "scene": 69,
+    "units": 24,
+    "keep": 24,
+    "revise": 0,
+    "assembly": 0
+  },
+  {
+    "scene": 70,
+    "units": 18,
+    "keep": 18,
+    "revise": 0,
+    "assembly": 0
+  },
+  {
+    "scene": 71,
+    "units": 62,
+    "keep": 62,
+    "revise": 0,
+    "assembly": 0
+  },
+  {
+    "scene": 72,
+    "units": 17,
+    "keep": 13,
+    "revise": 0,
+    "assembly": 4
+  },
+  {
+    "scene": 73,
+    "units": 47,
+    "keep": 36,
+    "revise": 0,
+    "assembly": 11
+  },
+  {
+    "scene": 74,
+    "units": 59,
+    "keep": 59,
+    "revise": 0,
+    "assembly": 0
+  },
+  {
+    "scene": 75,
+    "units": 9,
+    "keep": 9,
+    "revise": 0,
+    "assembly": 0
+  },
+  {
+    "scene": 76,
+    "units": 22,
+    "keep": 20,
+    "revise": 0,
+    "assembly": 2
+  },
+  {
+    "scene": 77,
+    "units": 26,
+    "keep": 26,
+    "revise": 0,
+    "assembly": 0
+  },
+  {
+    "scene": 78,
+    "units": 27,
+    "keep": 21,
+    "revise": 0,
+    "assembly": 6
+  },
+  {
+    "scene": 79,
+    "units": 11,
+    "keep": 11,
+    "revise": 0,
+    "assembly": 0
+  },
+  {
+    "scene": 80,
+    "units": 32,
+    "keep": 32,
+    "revise": 0,
+    "assembly": 0
+  },
+  {
+    "scene": 81,
+    "units": 32,
+    "keep": 30,
+    "revise": 0,
+    "assembly": 2
+  },
+  {
+    "scene": 82,
+    "units": 10,
+    "keep": 10,
+    "revise": 0,
+    "assembly": 0
+  },
+  {
+    "scene": 83,
+    "units": 54,
+    "keep": 54,
+    "revise": 0,
+    "assembly": 0
+  },
+  {
+    "scene": 84,
+    "units": 44,
+    "keep": 27,
+    "revise": 0,
+    "assembly": 17
+  },
+  {
+    "scene": 85,
+    "units": 14,
+    "keep": 14,
+    "revise": 0,
+    "assembly": 0
+  },
+  {
+    "scene": 86,
+    "units": 25,
+    "keep": 20,
+    "revise": 0,
+    "assembly": 5
+  },
+  {
+    "scene": 87,
+    "units": 15,
+    "keep": 12,
+    "revise": 0,
+    "assembly": 3
+  },
+  {
+    "scene": 88,
+    "units": 62,
+    "keep": 59,
+    "revise": 0,
+    "assembly": 3
+  },
+  {
+    "scene": 89,
+    "units": 40,
+    "keep": 28,
+    "revise": 0,
+    "assembly": 12
+  },
+  {
+    "scene": 90,
+    "units": 35,
+    "keep": 32,
+    "revise": 0,
+    "assembly": 3
+  },
+  {
+    "scene": 91,
+    "units": 18,
+    "keep": 18,
+    "revise": 0,
+    "assembly": 0
+  },
+  {
+    "scene": 92,
+    "units": 29,
+    "keep": 27,
+    "revise": 0,
+    "assembly": 2
+  },
+  {
+    "scene": 93,
+    "units": 45,
+    "keep": 39,
+    "revise": 0,
+    "assembly": 6
+  },
+  {
+    "scene": 94,
+    "units": 28,
+    "keep": 20,
+    "revise": 0,
+    "assembly": 8
+  },
+  {
+    "scene": 95,
+    "units": 34,
+    "keep": 28,
+    "revise": 0,
+    "assembly": 6
+  },
+  {
+    "scene": 96,
+    "units": 25,
+    "keep": 15,
+    "revise": 0,
+    "assembly": 10
+  },
+  {
+    "scene": 97,
+    "units": 51,
+    "keep": 47,
+    "revise": 0,
+    "assembly": 4
+  },
+  {
+    "scene": 98,
+    "units": 71,
+    "keep": 65,
+    "revise": 0,
+    "assembly": 6
+  },
+  {
+    "scene": 99,
+    "units": 45,
+    "keep": 42,
+    "revise": 0,
+    "assembly": 3
+  },
+  {
+    "scene": 100,
+    "units": 21,
+    "keep": 10,
+    "revise": 0,
+    "assembly": 11
+  },
+  {
+    "scene": 101,
+    "units": 156,
+    "keep": 145,
+    "revise": 0,
+    "assembly": 11
+  },
+  {
+    "scene": 102,
+    "units": 32,
+    "keep": 27,
+    "revise": 0,
+    "assembly": 5
+  },
+  {
+    "scene": 103,
+    "units": 37,
+    "keep": 29,
+    "revise": 0,
+    "assembly": 8
+  },
+  {
+    "scene": 104,
+    "units": 35,
+    "keep": 24,
+    "revise": 0,
+    "assembly": 11
+  },
+  {
+    "scene": 105,
+    "units": 91,
+    "keep": 91,
+    "revise": 0,
+    "assembly": 0
+  },
+  {
+    "scene": 106,
+    "units": 26,
+    "keep": 26,
+    "revise": 0,
+    "assembly": 0
+  },
+  {
+    "scene": 107,
+    "units": 43,
+    "keep": 31,
+    "revise": 0,
+    "assembly": 12
+  },
+  {
+    "scene": 108,
+    "units": 43,
+    "keep": 39,
+    "revise": 0,
+    "assembly": 4
+  },
+  {
+    "scene": 109,
+    "units": 106,
+    "keep": 77,
+    "revise": 0,
+    "assembly": 29
+  },
+  {
+    "scene": 110,
+    "units": 11,
+    "keep": 10,
+    "revise": 0,
+    "assembly": 1
+  },
+  {
+    "scene": 111,
+    "units": 80,
+    "keep": 48,
+    "revise": 0,
+    "assembly": 32
+  },
+  {
+    "scene": 112,
+    "units": 52,
+    "keep": 49,
+    "revise": 0,
+    "assembly": 3
+  },
+  {
+    "scene": 113,
+    "units": 52,
+    "keep": 43,
+    "revise": 0,
+    "assembly": 9
+  },
+  {
+    "scene": 114,
+    "units": 62,
+    "keep": 54,
+    "revise": 0,
+    "assembly": 8
+  },
+  {
+    "scene": 115,
+    "units": 8,
+    "keep": 5,
+    "revise": 0,
+    "assembly": 3
+  },
+  {
+    "scene": 116,
+    "units": 47,
+    "keep": 42,
+    "revise": 0,
+    "assembly": 5
+  },
+  {
+    "scene": 117,
+    "units": 7,
+    "keep": 6,
+    "revise": 0,
+    "assembly": 1
+  },
+  {
+    "scene": 118,
+    "units": 42,
+    "keep": 25,
+    "revise": 0,
+    "assembly": 17
+  },
+  {
+    "scene": 119,
+    "units": 19,
+    "keep": 15,
+    "revise": 0,
+    "assembly": 4
+  },
+  {
+    "scene": 120,
+    "units": 11,
+    "keep": 8,
+    "revise": 0,
+    "assembly": 3
+  }
+]
