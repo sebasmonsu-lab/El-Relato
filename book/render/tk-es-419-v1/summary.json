@@ -1,0 +1,10 @@
+{
+  "scenes": 120,
+  "reviewed_units": 4123,
+  "render_objects": 3342,
+  "rendered_unit_ids": 3665,
+  "suppressed_exact_duplicate_unit_ids": 458,
+  "assembly_spans": 59,
+  "special_layouts": 1,
+  "coverage_validation": "PASS"
+}
