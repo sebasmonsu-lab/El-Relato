@@ -1,0 +1,52 @@
+name: Consolidate final audit
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/consolidate-final-audit.yml"
+permissions:
+  contents: write
+jobs:
+  consolidate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Consolidate 120 reviewed scenes
+        run: |
+          python - <<'PY'
+          import json,pathlib,collections
+          root=pathlib.Path("audit/reviewed")
+          allrows=[]; scene_summary=[]
+          for s in range(1,121):
+            p=root/f"scene-{s:03d}.jsonl"
+            assert p.exists(),p
+            rows=[json.loads(x) for x in p.read_text(encoding="utf-8").splitlines() if x.strip()]
+            allrows.extend(rows)
+            c=collections.Counter(r["decision"] for r in rows)
+            scene_summary.append({"scene":s,"units":len(rows),"keep":c["KEEP"],"revise":c["REVISE"],"assembly":c["REVIEW_ASSEMBLY"]})
+          ids=[r["unit_id"] for r in allrows]
+          assert len(allrows)==4123,len(allrows)
+          assert len(ids)==len(set(ids)),(len(ids),len(set(ids)))
+          queue=[r for r in allrows if r["review_status"]=="ASSEMBLY_REVIEW_REQUIRED"]
+          stats={
+            "scenes":120,"units":len(allrows),
+            "decision_counts":dict(collections.Counter(r["decision"] for r in allrows)),
+            "status_counts":dict(collections.Counter(r["review_status"] for r in allrows)),
+            "issue_counts":dict(collections.Counter(i for r in allrows for i in r.get("issues","").split("|") if i and i!="OK")),
+            "assembly_queue_units":len(queue)
+          }
+          pathlib.Path("audit/final-audit-summary.json").write_text(json.dumps(stats,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+          pathlib.Path("audit/final-scene-summary.json").write_text(json.dumps(scene_summary,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+          pathlib.Path("audit/final-assembly-queue.jsonl").write_text("".join(json.dumps(r,ensure_ascii=False,separators=(",",":"))+"\n" for r in queue),encoding="utf-8")
+          pathlib.Path("audit/final-reviewed-4123.jsonl").write_text("".join(json.dumps(r,ensure_ascii=False,separators=(",",":"))+"\n" for r in allrows),encoding="utf-8")
+          print(json.dumps(stats,ensure_ascii=False))
+          PY
+      - name: Commit consolidated audit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add audit/final-audit-summary.json audit/final-scene-summary.json audit/final-assembly-queue.jsonl audit/final-reviewed-4123.jsonl
+          git diff --cached --quiet && exit 0
+          git commit -m "audit: consolidate 120-scene final review"
+          git push
