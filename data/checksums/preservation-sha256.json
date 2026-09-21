@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T02:00:59+00:00",
+  "generated_at": "2026-09-21T01:34:27+00:00",
   "algorithm": "sha256",
   "files": [
     {
@@ -2108,9 +2108,24 @@
       "size": 1397
     },
     {
+      "path": "sources/gospel-editions/en-v1/edition.json",
+      "sha256": "31c9042cb3c7120da181a750120121e09215a91d7b22d21ed8b72e503618dac9",
+      "size": 479
+    },
+    {
+      "path": "sources/gospel-editions/en-v1/generated/matthew-01.jsonl",
+      "sha256": "cc7ff63171996508cadb1f75da4b36217f6e17fd1fc784df747e588eba43d7fd",
+      "size": 8290
+    },
+    {
+      "path": "sources/gospel-editions/en-v1/generated/matthew-02.jsonl",
+      "sha256": "a18b398f4f27618a5b753dedda8378b43b1a6cba17ad71c636035067cc76dae3",
+      "size": 8308
+    },
+    {
       "path": "sources/gospel-editions/es-419-v1/edition.json",
-      "sha256": "596b1af38cb46496d7f603b45ccbc5b582f45cc21aed5f4e11db4bf8a4c58b53",
-      "size": 597
+      "sha256": "a445506bab4d1111d9ea4450cfe37ce25bd47dc664379b5fadb5b872a96d68ef",
+      "size": 690
     },
     {
       "path": "sources/gospel-editions/es-419-v1/generated/john-01.jsonl",
@@ -2556,6 +2571,16 @@
       "path": "sources/gospel-editions/es-419-v1/generated/matthew-28.jsonl",
       "sha256": "3b55cc238d3e350648f2b5b8731c3a75ca4c2644ad409eed62f429b0a07c824b",
       "size": 6665
+    },
+    {
+      "path": "sources/gospel-editions/es-419-v1/validation-report.json",
+      "sha256": "6d4c36d415ff6d44b0c02a701dfd0d9fc7ae01048f21dadf73be01f02e0a65ff",
+      "size": 321
+    },
+    {
+      "path": "sources/gospel-editions/es-419-v1/verses.jsonl",
+      "sha256": "8cd1e0bb3e2730725a2840f7c467a2d16bf722bec00b81916a5a22bf6adab4a1",
+      "size": 605775
     },
     {
       "path": "sources/gospel-editions/grc-sblgnt-2010/edition.json",
