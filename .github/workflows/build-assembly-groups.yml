@@ -1,0 +1,77 @@
+name: Build final assembly groups
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/build-assembly-groups.yml"
+permissions:
+  contents: write
+jobs:
+  group:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build deterministic duplicate resolutions and merge groups
+        run: |
+          python - <<'PY'
+          import json,pathlib,collections
+          allrows=[json.loads(x) for x in pathlib.Path("audit/final-reviewed-4123.jsonl").read_text(encoding="utf-8").splitlines() if x.strip()]
+          packets={}
+          for s in range(1,121):
+            packets[s]=[json.loads(x) for x in pathlib.Path(f"audit/packets/scene-{s:03d}.jsonl").read_text(encoding="utf-8").splitlines() if x.strip()]
+          resolutions=[]; groups=[]
+          byscene=collections.defaultdict(list)
+          for r in allrows:
+            if r["review_status"]=="ASSEMBLY_REVIEW_REQUIRED": byscene[int(r["unit_id"].split(":")[1]) if False else next((p["scene_number"] for ss in packets.values() for p in ss if p["unit_id"]==r["unit_id"]),0)].append(r)
+          # Faster maps.
+          unit_scene={p["unit_id"]:s for s,ps in packets.items() for p in ps}
+          unit_order={p["unit_id"]:p["scene_order"] for s,ps in packets.items() for p in ps}
+          byscene=collections.defaultdict(list)
+          for r in allrows:
+            if r["review_status"]=="ASSEMBLY_REVIEW_REQUIRED": byscene[unit_scene[r["unit_id"]]].append(r)
+          remaining=0
+          for s in range(1,121):
+            rs=sorted(byscene.get(s,[]),key=lambda r:unit_order[r["unit_id"]])
+            nondup=[]
+            for r in rs:
+              issues=set(r.get("issues","").split("|"))
+              if "EXACT_DUPLICATE" in issues:
+                resolutions.append({"scene":s,"unit_id":r["unit_id"],"reference_raw":r["reference_raw"],"action":"DROP_DUPLICATE","reason":"same reference + identical Greek already represented in scene"})
+              else:
+                nondup.append(r)
+            # contiguous groups of unresolved non-duplicate units
+            cur=[]
+            for r in nondup:
+              o=unit_order[r["unit_id"]]
+              if cur and o!=unit_order[cur[-1]["unit_id"]]+1:
+                groups.append(cur);cur=[]
+              cur.append(r)
+            if cur:groups.append(cur)
+          group_rows=[]
+          for i,g in enumerate(groups,1):
+            s=unit_scene[g[0]["unit_id"]]
+            ps={p["unit_id"]:p for p in packets[s]}
+            group_rows.append({
+              "group_id":f"assembly:{i:04d}","scene":s,
+              "unit_ids":[r["unit_id"] for r in g],
+              "references":[r["reference_raw"] for r in g],
+              "greek_segments":[ps[r["unit_id"]]["greek_primary"] for r in g],
+              "reviewed_segments":[r["reviewed_es419"] for r in g],
+              "issues":sorted(set(i for r in g for i in r.get("issues","").split("|") if i)),
+              "action":"RECOMPOSE_BOOK_SPAN"
+            })
+          pathlib.Path("audit/final-assembly-duplicate-resolutions.jsonl").write_text("".join(json.dumps(r,ensure_ascii=False,separators=(",",":"))+"\n" for r in resolutions),encoding="utf-8")
+          pathlib.Path("audit/final-assembly-groups.jsonl").write_text("".join(json.dumps(r,ensure_ascii=False,separators=(",",":"))+"\n" for r in group_rows),encoding="utf-8")
+          summary={"assembly_queue":sum(len(v) for v in byscene.values()),"drop_duplicates":len(resolutions),"remaining_nonduplicate_units":sum(len(g) for g in groups),"recomposition_groups":len(groups)}
+          pathlib.Path("audit/final-assembly-summary.json").write_text(json.dumps(summary,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+          print(summary)
+          PY
+      - name: Commit assembly groups
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add audit/final-assembly-*.json*
+          git diff --cached --quiet && exit 0
+          git commit -m "audit: resolve duplicates and group assembly spans"
+          git push
