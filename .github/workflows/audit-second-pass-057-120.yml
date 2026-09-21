@@ -1,0 +1,50 @@
+name: Audit second pass scenes 057-120
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/audit-second-pass-057-120.yml"
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build second-pass risk index
+        run: |
+          python - <<'PY'
+          import json,re,pathlib,collections
+          root=pathlib.Path("audit/packets")
+          out=pathlib.Path("audit/second-pass-057-120.jsonl")
+          archaic=re.compile(r"\b(he aquí|aconteció|respondióle|vosotros|sois|habéis|tenéis|haced|ved|decid|sabéis|buscad|arrepentíos|preparad|halléis|avisadme|id)\b",re.I)
+          name_forms=re.compile(r"\b(Cafarnaúm|Jacobo|Jobed|Abrahán|Isabel)\b",re.I)
+          rows=[]
+          for scene in range(57,121):
+            data=[json.loads(x) for x in (root/f"scene-{scene:03d}.jsonl").read_text(encoding="utf-8").splitlines() if x.strip()]
+            seen={}
+            for x in data:
+              flags=[]
+              key=(x["reference_raw"],x["greek_primary"])
+              if key in seen: flags.append("EXACT_DUPLICATE")
+              else: seen[key]=x["unit_id"]
+              conf=min([w.get("confidence",1) for w in x.get("witnesses",[])] or [1])
+              if conf<0.9: flags.append("LOW_SOURCE_CONFIDENCE")
+              txt=x.get("generated_es419","")
+              if archaic.search(txt): flags.append("ES419_ARCHAISM")
+              if name_forms.search(txt): flags.append("NAME_FORM_REVIEW")
+              if len(txt.split())<=3 and txt and txt[-1] not in ".?!»”": flags.append("BROKEN_SENTENCE")
+              if "⸀" in txt or "⸂" in txt or "⸃" in txt: flags.append("TEXTUAL_MARKER_LEAK")
+              rows.append({"scene":scene,"unit_id":x["unit_id"],"reference_raw":x["reference_raw"],"flags":flags,"generated_es419":txt})
+          out.write_text("".join(json.dumps(r,ensure_ascii=False,separators=(",",":"))+"\n" for r in rows),encoding="utf-8")
+          print("units",len(rows),"flagged",sum(bool(r["flags"]) for r in rows))
+          PY
+      - name: Commit index
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add audit/second-pass-057-120.jsonl
+          git diff --cached --quiet && exit 0
+          git commit -m "audit: second-pass risk index scenes 057-120"
+          git push
